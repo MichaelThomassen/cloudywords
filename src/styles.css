@@ -1,0 +1,11 @@
+* {
+  touch-action: manipulation;
+}
+
+body {
+  height: 100%;
+  font-family: Arial, sans-serif;
+  background-color: black;
+  color: white;
+  margin: 0;
+}

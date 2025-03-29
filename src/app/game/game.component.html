@@ -1,0 +1,157 @@
+<div *ngIf="wrongAspect === false">
+  <div class="header">
+    <button *ngIf="appStatus === AppStatus.Game" class="menu-button" (click)="toggleMenu()">☰</button>
+    <button *ngIf="appStatus !== AppStatus.Game" class="menu-button" (click)="setAppStatus(AppStatus.Game)">←</button>
+    <div *ngIf="appStatus === AppStatus.Game" class="menu" [ngClass]="{ 'menu-expanded': isMenuExpanded }">
+      <div class="menu-item" *ngIf="getTotalScore() >= 25" (click)="setAppStatus(AppStatus.Meta)">Upgrades</div>
+      <div class="menu-item" (click)="setAppStatus(AppStatus.Stats)">Statistics</div>
+      <div class="menu-item" (click)="setAppStatus(AppStatus.Help)">Help</div>
+      <div class="menu-item" (click)="setAppStatus(AppStatus.About)">About</div>
+    </div>
+    <div *ngIf="appStatus === AppStatus.Game" class="score" [ngClass]="{ 'score-decrease': scoreDecreased }">
+      {{ score }}☁️
+    </div>
+  </div>
+  <div *ngIf="appStatus === AppStatus.Help" class="game-container">
+    <app-help></app-help>
+  </div>
+  <div *ngIf="appStatus === AppStatus.About" class="game-container">
+    <app-about></app-about>
+  </div>
+  <div *ngIf="appStatus === AppStatus.Stats" class="game-container">
+    <div>Words guessed: {{ dailyWordIndex }}</div>
+    <div>Words remaining: {{ WordList.length - dailyWordIndex }}</div>
+    <div>Available: {{ totalScore }}☁️</div>
+    <div>Total: {{ getTotalScore() }}☁️</div>
+    <div>
+      ☁️ / word:
+      {{ (getTotalScore() / dailyWordIndex | number : "1.0-2") || 0 }}
+    </div>
+    <div>&nbsp;</div>
+    <div *ngIf="showResetConfirmation">
+      <div class="confirmation-dialog">
+        <p>Are you sure you want to reset all progress? This action cannot be undone.</p>
+        <div class="actions">
+          <button class="confirm" (click)="confirmReset()">Yes</button>
+          <button class="cancel" (click)="cancelReset()">No</button>
+        </div>
+      </div>
+    </div>
+    <div class="buttons">
+      <button *ngIf="!showResetConfirmation && totalScore > 0" (click)="showResetConfirmation = true">
+        Reset all progress
+      </button>
+    </div>
+  </div>
+  <div *ngIf="appStatus === AppStatus.Meta" class="meta-container">
+    <div>
+      <div class="meta-item">☁️ available</div>
+      <div class="meta-progress">{{ totalScore }}/{{ getTotalScore() }}</div>
+      <button class="meta-button" (click)="resetMetaProgress()">Refund</button>
+    </div>
+    <div *ngFor="let metaItem of MetaSettings | keyvalue : originalOrder">
+      <div
+        class="meta-item"
+        *ngIf="getTotalScore() >= MetaSettings[metaItem.key].price"
+        (click)="showMetaExplanation(metaItem.key)"
+      >
+        {{ metaItem.key }}
+      </div>
+      <div class="meta-progress" *ngIf="getTotalScore() >= MetaSettings[metaItem.key].price">
+        {{ metaProgress[metaItem.key] }}/{{ MetaSettings[metaItem.key].maxValue }}
+      </div>
+      <button
+        class="meta-button"
+        *ngIf="getTotalScore() >= MetaSettings[metaItem.key].price"
+        [disabled]="
+          metaProgress[metaItem.key] >= MetaSettings[metaItem.key].maxValue ||
+          totalScore < MetaSettings[metaItem.key].price
+        "
+        (click)="setMetaProgress(metaItem.key)"
+      >
+        {{ metaItem.value.price }}☁️
+      </button>
+    </div>
+  </div>
+  <div *ngIf="metaExplanationVisible" class="meta-explanation-popup">
+    <div class="popup-content">
+      <p [innerHTML]="metaExplanation"></p>
+      <button (click)="closeMetaExplanation()">Close</button>
+    </div>
+  </div>
+  <div *ngIf="appStatus === AppStatus.Game" class="game-container">
+    <!-- <div>
+    Viewport: {{ viewportWidth }} x {{ viewportHeight }} 
+  </div> -->
+
+    <div class="word">
+      <div class="letter-boxes">
+        <div
+          class="cloud cloud-left"
+          *ngIf="gameStatus === 'playing' && currentWordMarkup.beginningVisible === false"
+        ></div>
+        <span
+          *ngFor="let letter of currentWordMarkup.visibleLetters.split('')"
+          [ngClass]="{
+        'correct-letter': guessedLetters.includes(letter),
+      }"
+        >
+          {{ guessedLetters.includes(letter) ? letter : "" }}
+        </span>
+        <div class="cloud cloud-right" *ngIf="gameStatus === 'playing' && currentWordMarkup.endVisible === false"></div>
+      </div>
+    </div>
+    <div class="category-theme">
+      <div class="category" *ngIf="metaProgress['Category visible'] >= 1 || gameStatus === 'win'">
+        Category:
+        {{ currentWord.category.charAt(0).toUpperCase() + currentWord.category.slice(1) }}
+      </div>
+      <div class="theme" *ngIf="metaProgress['Theme visible'] >= 1 || gameStatus === 'win'">
+        Theme:
+        {{ currentWord.theme.charAt(0).toUpperCase() + currentWord.theme.slice(1) }}
+      </div>
+    </div>
+    <div class="definition" *ngIf="metaProgress['Definition visible'] >= 1 || gameStatus === 'win'">
+      Definition:
+      {{
+        gameStatus === "win"
+          ? currentWord.definition
+          : maskDefinition(currentWord.definition.charAt(0).toUpperCase() + currentWord.definition.slice(1))
+      }}
+    </div>
+    <div *ngIf="gameStatus === 'playing'" class="keyboard">
+      <div class="keyboardrow" *ngFor="let row of KeyboardLayout">
+        <button
+          *ngFor="let letter of row"
+          (click)="guessLetter(letter)"
+          [disabled]="guessedLetters.includes(letter) || removedLetters.includes(letter)"
+          [ngClass]="{
+            guessedincorrect: guessedLetters.includes(letter) && !currentWord.word.includes(letter),
+            guessedcorrect: guessedLetters.includes(letter) && currentWord.word.includes(letter),
+            removedletter: removedLetters.includes(letter)
+          }"
+        >
+          {{ letter }}
+        </button>
+      </div>
+    </div>
+    <div *ngIf="gameStatus === 'win'" class="win-screen">
+      <div>Congratulations!</div>
+      <div>&nbsp;</div>
+      <div>You earned {{ score }}☁️</div>
+      <div>You have {{ totalScore }}☁️</div>
+      <div>&nbsp;</div>
+      <div class="buttons">
+        <button #newWordButton (click)="getWordFromWordList()">New Word</button>
+        <button [disabled]="getTotalScore() < 25" (click)="setAppStatus(AppStatus.Meta)">
+          Upgrades {{ isAnyMetaAffordable() ? "*" : "" }}
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+<div *ngIf="wrongAspect === true">
+  <div class="wrong-aspect-ratio">
+    <div>Please rotate your device to play the game.</div>
+  </div>
+</div>
