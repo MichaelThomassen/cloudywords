@@ -20,7 +20,8 @@
             "tsConfig": "tsconfig.app.json",
             "assets": ["src/favicon.png"],
             "styles": ["src/styles.css"],
-            "scripts": []
+            "scripts": [],
+            "baseHref": "/cloudywords/"
           },
           "configurations": {
             "production": {
