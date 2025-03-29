@@ -22,7 +22,7 @@ jobs:
         run: npm install
 
       - name: Build the Angular app
-        run: ng build --configuration=production --base-href /cloudywords/
+        run: npm run build --base-href cloudywords
 
       - name: Deploy to GitHub Pages
         uses: JamesIves/github-pages-deploy-action@v4
