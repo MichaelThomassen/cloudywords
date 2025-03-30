@@ -2,6 +2,10 @@
 
 Cloudy Words is a word-guessing game designed and developed by [Michael Thomassen](mailto:michael@voelit.dk). Built as an introduction to Angular, this game challenges players to reveal hidden words while managing their cloud score.
 
+## Play the Game
+
+You can play Cloudy Words online at [https://michaelthomassen.github.io/cloudywords/](https://michaelthomassen.github.io/cloudywords/).
+
 ## How to Play
 
 - You start with two clouds hiding the word.
