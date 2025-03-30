@@ -28,5 +28,5 @@ jobs:
         uses: JamesIves/github-pages-deploy-action@v4
         with:
           branch: gh-pages # The branch that GitHub Pages uses
-          folder: dist/cloudywords # The build output folder
+          folder: dist/cloudywords/browser # The build output folder
           token: ${{ secrets.GH_TOKEN }} # Use the default GitHub token to authenticate
