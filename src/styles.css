@@ -8,4 +8,66 @@ body {
   background-color: black;
   color: white;
   margin: 0px;
+  padding: 0px;
+}
+
+.buttons {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.buttons button {
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  border: 1px solid white;
+  background-color: #007bff;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.buttons button:hover {
+  background-color: #0056b3;
+}
+
+.buttons button:disabled {
+  background-color: #6c757d;
+  cursor: not-allowed;
+}
+
+h1 {
+  font-size: 2rem;
+  text-align: center;
+  margin-bottom: 1rem;
+  padding: 10px;
+}
+
+p {
+  font-size: 1rem;
+  line-height: 1.5;
+  margin: 0.5rem 0;
+  padding: 5px 20px;
+}
+
+a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+ul {
+  list-style-type: disc;
+  margin: 1rem 20px;
+  padding-left: 20px;
+}
+
+li {
+  margin: 0.5rem 0;
+  font-size: 1rem;
 }

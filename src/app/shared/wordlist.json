@@ -3,7000 +3,6000 @@
     "index": 0,
     "word": "reputation",
     "definition": "The beliefs or opinions held about someone or something.",
-    "category": "Noun",
     "theme": "Society"
   },
   {
     "index": 1,
     "word": "lighthouse",
     "definition": "A tower with a light to guide ships.",
-    "category": "Noun",
     "theme": "Maritime"
   },
   {
     "index": 2,
     "word": "stunning",
     "definition": "Extremely impressive or attractive.",
-    "category": "Adjective",
     "theme": "Appearance"
   },
   {
     "index": 3,
     "word": "candid",
     "definition": "Truthful and straightforward in speech or expression.",
-    "theme": "Personality",
-    "category": "Adjective"
+    "theme": "Personality"
   },
   {
     "index": 4,
     "word": "koala",
     "definition": "A tree-dwelling marsupial native to Australia.",
-    "category": "Mammal",
     "theme": "Marsupials"
   },
   {
     "index": 5,
     "word": "charm",
     "definition": "A quality that gives pleasure or attraction.",
-    "category": "Noun",
     "theme": "Personality"
   },
   {
     "index": 6,
     "word": "sophisticated",
     "definition": "Having a refined knowledge or understanding, especially of complex matters.",
-    "category": "Adjective",
     "theme": "Character"
   },
   {
     "index": 7,
     "word": "desperation",
     "definition": "A state of despair, typically one that results in rash or extreme behavior.",
-    "category": "Noun",
     "theme": "Emotion"
   },
   {
     "index": 8,
     "word": "axolotl",
     "definition": "A unique salamander that retains its larval features.",
-    "category": "Amphibian",
     "theme": "Aquatic Life"
   },
   {
     "index": 9,
     "word": "relic",
     "definition": "An object surviving from an earlier time.",
-    "theme": "History",
-    "category": "Noun"
+    "theme": "History"
   },
   {
     "index": 10,
     "word": "zesty",
     "definition": "Having a strong, pleasant, and spicy flavor.",
-    "category": "Adjective",
     "theme": "Food"
   },
   {
     "index": 11,
     "word": "capture",
     "definition": "To take control or possession of something.",
-    "category": "Verb",
     "theme": "Action"
   },
   {
     "index": 12,
-    "word": "captivate",
-    "definition": "To attract and hold interest.",
-    "category": "Verb",
-    "theme": "Attention"
+    "word": "quetzal",
+    "definition": "A colorful bird known for its vibrant feathers, native to Central America.",
+    "theme": "Tropical Birds"
   },
   {
     "index": 13,
     "word": "cultivate",
     "definition": "To foster the growth or development of something.",
-    "category": "Verb",
     "theme": "Action"
   },
   {
     "index": 14,
     "word": "cylinder",
     "definition": "A solid shape with straight parallel sides and a circular cross section.",
-    "category": "Noun",
     "theme": "Geometry"
   },
   {
     "index": 15,
     "word": "advocate",
     "definition": "A person who publicly supports or defends a cause.",
-    "category": "Noun",
     "theme": "Role"
   },
   {
     "index": 16,
-    "word": "quetzal",
-    "definition": "A colorful bird known for its vibrant feathers, native to Central America.",
-    "category": "Bird",
-    "theme": "Tropical Birds"
+    "word": "captivate",
+    "definition": "To attract and hold interest.",
+    "theme": "Attention"
   },
   {
     "index": 17,
     "word": "breakthrough",
     "definition": "A significant discovery or development.",
-    "category": "Noun",
     "theme": "Progress"
   },
   {
     "index": 18,
     "word": "boundless",
     "definition": "Without limits; endless.",
-    "category": "Adjective",
     "theme": "Infinity"
   },
   {
     "index": 19,
     "word": "advantage",
     "definition": "A condition or circumstance that puts one in a favorable or superior position.",
-    "category": "Noun",
     "theme": "Position"
   },
   {
     "index": 20,
     "word": "steadfast",
     "definition": "Firmly loyal or committed.",
-    "category": "Adjective",
     "theme": "Loyalty"
   },
   {
     "index": 21,
     "word": "dazzled",
     "definition": "Overcome with a strong impression, typically of light.",
-    "category": "Verb",
     "theme": "Emotion"
   },
   {
     "index": 22,
     "word": "ambition",
     "definition": "A strong desire to achieve something.",
-    "category": "Noun",
     "theme": "Aspiration"
   },
   {
     "index": 23,
     "word": "eagle",
     "definition": "A powerful bird of prey with keen eyesight.",
-    "category": "Bird",
     "theme": "Raptors"
   },
   {
     "index": 24,
     "word": "tolerate",
     "definition": "To allow something to happen or exist.",
-    "category": "Verb",
     "theme": "Action"
   },
   {
     "index": 25,
     "word": "effort",
     "definition": "A vigorous or determined attempt.",
-    "category": "Noun",
     "theme": "Action"
   },
   {
     "index": 26,
     "word": "mandrill",
     "definition": "A large, colorful primate native to Central Africa, known for its striking face.",
-    "category": "Mammal",
     "theme": "Primates"
   },
   {
     "index": 27,
     "word": "architecture",
     "definition": "The design of buildings.",
-    "category": "Noun",
     "theme": "Design"
   },
   {
     "index": 28,
     "word": "diverse",
     "definition": "Showing variety or differences.",
-    "category": "Adjective",
     "theme": "Variety"
   },
   {
     "index": 29,
     "word": "bestselling",
     "definition": "Having very high sales.",
-    "category": "Adjective",
     "theme": "Business"
   },
   {
     "index": 30,
     "word": "defendant",
     "definition": "A person being accused or sued in a court of law.",
-    "category": "Noun",
     "theme": "Law"
   },
   {
     "index": 31,
     "word": "jaguar",
     "definition": "A large wild cat native to the Americas.",
-    "category": "Mammal",
     "theme": "Big Cats"
   },
   {
     "index": 32,
     "word": "believe",
     "definition": "To accept something as true or real.",
-    "category": "Verb",
     "theme": "Thought"
   },
   {
     "index": 33,
     "word": "precision",
     "definition": "The quality of being exact.",
-    "category": "Noun",
     "theme": "Accuracy"
   },
   {
     "index": 34,
     "word": "chance",
     "definition": "A possibility of something happening.",
-    "category": "Noun",
     "theme": "Possibility"
   },
   {
     "index": 35,
     "word": "boundary",
     "definition": "A dividing line or limit.",
-    "category": "Noun",
     "theme": "Separation"
   },
   {
     "index": 36,
     "word": "chemistry",
     "definition": "The science of substances and their interactions.",
-    "category": "Noun",
     "theme": "Science"
   },
   {
     "index": 37,
     "word": "effervescent",
     "definition": "Bubbly and lively.",
-    "category": "Adjective",
     "theme": "Energy"
   },
   {
     "index": 38,
     "word": "zealously",
     "definition": "In a manner showing strong enthusiasm or passion.",
-    "category": "Adverb",
     "theme": "Emotion"
   },
   {
     "index": 39,
     "word": "crescendo",
     "definition": "A gradual increase in intensity.",
-    "category": "Noun",
     "theme": "Sound"
   },
   {
     "index": 40,
     "word": "election",
     "definition": "A formal process of voting to choose someone for office.",
-    "category": "Noun",
     "theme": "Politics"
   },
   {
     "index": 41,
     "word": "delicate",
     "definition": "Easily broken or damaged.",
-    "category": "Adjective",
     "theme": "Fragility"
   },
   {
     "index": 42,
     "word": "better",
     "definition": "Of a higher standard or quality.",
-    "category": "Adjective",
     "theme": "Quality"
   },
   {
     "index": 43,
     "word": "narwhal",
     "definition": "A marine mammal with a long, spiral tusk.",
-    "category": "Mammal",
     "theme": "Marine Life"
   },
   {
     "index": 44,
     "word": "decent",
     "definition": "Conforming to standards of morality or respectability.",
-    "theme": "Ethics",
-    "category": "Adjective"
+    "theme": "Ethics"
   },
   {
     "index": 45,
     "word": "remedy",
     "definition": "A cure or solution for a problem.",
-    "category": "Noun",
     "theme": "Solution"
   },
   {
     "index": 46,
     "word": "bricklayer",
     "definition": "A person who builds structures with bricks.",
-    "category": "Noun",
     "theme": "Occupation"
   },
   {
     "index": 47,
     "word": "discovery",
     "definition": "The process of finding or uncovering something new.",
-    "category": "Noun",
     "theme": "Action"
   },
   {
     "index": 48,
     "word": "stagnic",
     "definition": "Relating to stagnation or lack of movement.",
-    "category": "Adjective",
     "theme": "Environment"
   },
   {
     "index": 49,
     "word": "abomination",
     "definition": "A thing that causes disgust or hatred.",
-    "category": "Noun",
     "theme": "Emotion"
   },
   {
     "index": 50,
     "word": "threshold",
     "definition": "A point of entry or beginning.",
-    "category": "Noun",
     "theme": "Transition"
   },
   {
     "index": 51,
     "word": "strategy",
     "definition": "A plan of action to achieve a goal.",
-    "category": "Noun",
     "theme": "Planning"
   },
   {
     "index": 52,
     "word": "spectrum",
     "definition": "A range of different things.",
-    "category": "Noun",
     "theme": "Variety"
   },
   {
     "index": 53,
     "word": "airplane",
     "definition": "A powered flying vehicle with fixed wings.",
-    "category": "Noun",
     "theme": "Transportation"
   },
   {
     "index": 54,
     "word": "celestial",
     "definition": "Relating to the sky or heavens.",
-    "category": "Adjective",
     "theme": "Space"
   },
   {
     "index": 55,
     "word": "adventure",
     "definition": "An exciting or unusual experience.",
-    "category": "Noun",
     "theme": "Exploration"
   },
   {
     "index": 56,
     "word": "lapsed",
     "definition": "Having passed or fallen into a particular state.",
-    "category": "Adjective",
     "theme": "State"
   },
   {
     "index": 57,
     "word": "verdant",
     "definition": "Green with vegetation; lush.",
-    "category": "Adjective",
     "theme": "Nature"
   },
   {
     "index": 58,
     "word": "latent",
     "definition": "Existing but not yet developed or manifest.",
-    "theme": "Potential",
-    "category": "Adjective"
+    "theme": "Potential"
   },
   {
     "index": 59,
     "word": "wandering",
     "definition": "To move about without a fixed course or purpose.",
-    "category": "Verb",
     "theme": "Action"
   },
   {
     "index": 60,
     "word": "wanderlust",
     "definition": "A strong desire to travel.",
-    "category": "Noun",
     "theme": "Adventure"
   },
   {
     "index": 61,
     "word": "resource",
     "definition": "A supply or source of help or support.",
-    "category": "Noun",
     "theme": "Support"
   },
   {
     "index": 62,
     "word": "sloth",
     "definition": "A slow-moving tree-dwelling mammal.",
-    "category": "Mammal",
     "theme": "Jungle Animals"
   },
   {
     "index": 63,
     "word": "manipulative",
     "definition": "Exercising control or influence over others in a clever or unscrupulous way.",
-    "category": "Adjective",
     "theme": "Behavior"
   },
   {
     "index": 64,
     "word": "merchant",
     "definition": "A person involved in wholesale trade.",
-    "category": "Noun",
     "theme": "Business"
   },
   {
     "index": 65,
     "word": "echidna",
     "definition": "A spiny anteater, one of only a few egg-laying mammals, found in Australia.",
-    "category": "Mammal",
     "theme": "Unique Mammals"
   },
   {
     "index": 66,
     "word": "different",
     "definition": "Not the same as another or others.",
-    "category": "Adjective",
     "theme": "Comparison"
   },
   {
     "index": 67,
     "word": "blessing",
     "definition": "A beneficial thing for which one is grateful.",
-    "category": "Noun",
     "theme": "Spiritual"
   },
   {
     "index": 68,
     "word": "representatives",
     "definition": "People chosen to act for others.",
-    "category": "Noun",
     "theme": "Politics"
   },
   {
     "index": 69,
     "word": "argument",
     "definition": "An exchange of opposite views, often involving disagreement.",
-    "category": "Noun",
     "theme": "Communication"
   },
   {
     "index": 70,
     "word": "tractor",
     "definition": "A powerful vehicle used for pulling farm machinery.",
-    "category": "Noun",
     "theme": "Agriculture"
   },
   {
     "index": 71,
     "word": "miscommunication",
     "definition": "Failure to communicate something clearly.",
-    "category": "Noun",
     "theme": "Communication"
   },
   {
     "index": 72,
     "word": "calculation",
     "definition": "The action or process of calculating something.",
-    "category": "Noun",
     "theme": "Action"
   },
   {
     "index": 73,
     "word": "poignant",
     "definition": "Evoking deep emotions, especially sadness.",
-    "category": "Adjective",
     "theme": "Emotion"
   },
   {
     "index": 74,
     "word": "technology",
     "definition": "The application of scientific knowledge for practical purposes.",
-    "category": "Noun",
     "theme": "Science"
   },
   {
     "index": 75,
     "word": "lounge",
     "definition": "Relax in a lazy manner.",
-    "theme": "Leisure",
-    "category": "Verb"
+    "theme": "Leisure"
   },
   {
     "index": 76,
     "word": "countermeasure",
     "definition": "Action to prevent or hinder something.",
-    "category": "Noun",
     "theme": "Security"
   },
   {
     "index": 77,
     "word": "galago",
     "definition": "A small nocturnal primate with large eyes, native to Africa.",
-    "category": "Mammal",
     "theme": "Jungle Animals"
   },
   {
     "index": 78,
     "word": "celebrate",
     "definition": "To mark a special occasion with joy.",
-    "category": "Verb",
     "theme": "Festivity"
   },
   {
     "index": 79,
     "word": "magnet",
     "definition": "An object that produces a magnetic field.",
-    "category": "Noun",
     "theme": "Science"
   },
   {
     "index": 80,
     "word": "electrification",
     "definition": "The process of making electric.",
-    "category": "Noun",
     "theme": "Technology"
   },
   {
     "index": 81,
     "word": "dynamic",
     "definition": "Characterized by constant change or movement.",
-    "category": "Adjective",
     "theme": "Action"
   },
   {
     "index": 82,
     "word": "revolutionaries",
     "definition": "People advocating for major change.",
-    "category": "Noun",
     "theme": "History"
   },
   {
     "index": 83,
     "word": "celebration",
     "definition": "A joyful occasion to mark an event.",
-    "category": "Noun",
     "theme": "Social"
   },
   {
     "index": 84,
     "word": "elbow",
     "definition": "A joint connecting the upper and lower arm.",
-    "category": "Noun",
     "theme": "Body"
   },
   {
     "index": 85,
     "word": "blueprint",
     "definition": "A detailed plan or design.",
-    "category": "Noun",
     "theme": "Architecture"
   },
   {
     "index": 86,
     "word": "mankind",
     "definition": "Human beings collectively.",
-    "category": "Noun",
     "theme": "Humanity"
   },
   {
     "index": 87,
     "word": "diamonds",
     "definition": "Precious stones known for their hardness and brilliance.",
-    "category": "Noun",
     "theme": "Gemstones"
   },
   {
     "index": 88,
     "word": "cuttlefish",
     "definition": "A marine mollusk known for its color-changing ability.",
-    "category": "Mollusk",
     "theme": "Marine Life"
   },
   {
     "index": 89,
     "word": "specials",
     "definition": "Particular items or offerings, often with a discount.",
-    "category": "Noun",
     "theme": "Offerings"
   },
   {
     "index": 90,
     "word": "cavaliers",
     "definition": "A group of people who are committed to the defense of a cause.",
-    "category": "Noun",
     "theme": "History"
   },
   {
     "index": 91,
     "word": "ferret",
     "definition": "A small, playful, domesticated carnivore.",
-    "category": "Mammal",
     "theme": "Domesticated Animals"
   },
   {
     "index": 92,
     "word": "rippled",
     "definition": "Having a series of small waves or undulations.",
-    "category": "Adjective",
     "theme": "Nature"
   },
   {
     "index": 93,
     "word": "catalogs",
     "definition": "A systematic list of items, typically in a book.",
-    "category": "Noun",
     "theme": "Information"
   },
   {
     "index": 94,
     "word": "absolute",
     "definition": "Complete and total; not limited.",
-    "category": "Adjective",
     "theme": "State"
   },
   {
     "index": 95,
     "word": "elation",
     "definition": "Great happiness or joy.",
-    "category": "Noun",
     "theme": "Emotion"
   },
   {
     "index": 96,
     "word": "malnourishment",
     "definition": "The condition of lacking nutrition.",
-    "category": "Noun",
     "theme": "Health"
   },
   {
     "index": 97,
     "word": "revolutionary",
     "definition": "Involving or causing a complete change.",
-    "category": "Adjective",
     "theme": "Change"
   },
   {
     "index": 98,
     "word": "computer",
     "definition": "An electronic device for processing data.",
-    "category": "Noun",
     "theme": "Technology"
   },
   {
     "index": 99,
     "word": "suspicion",
     "definition": "A belief that something is wrong or hidden.",
-    "category": "Noun",
     "theme": "Emotion"
   },
   {
     "index": 100,
     "word": "together",
     "definition": "In or into one place or group.",
-    "category": "Adverb",
     "theme": "Unity"
   },
   {
     "index": 101,
     "word": "thriving",
     "definition": "Flourishing and successful.",
-    "category": "Adjective",
     "theme": "Growth"
   },
   {
     "index": 102,
     "word": "suspicious",
     "definition": "Having a distrustful or doubtful attitude.",
-    "category": "Adjective",
     "theme": "Emotion"
   },
   {
     "index": 103,
     "word": "announcement",
     "definition": "A formal public statement.",
-    "category": "Noun",
     "theme": "Communication"
   },
   {
     "index": 104,
     "word": "catalyst",
     "definition": "Something that speeds up a reaction or change.",
-    "category": "Noun",
     "theme": "Science"
   },
   {
     "index": 105,
     "word": "stamina",
     "definition": "The ability to sustain prolonged physical or mental effort.",
-    "category": "Noun",
     "theme": "Ability"
   },
   {
     "index": 106,
     "word": "disadvantageous",
     "definition": "Harmful or unfavorable.",
-    "category": "Adjective",
     "theme": "Condition"
   },
   {
     "index": 107,
     "word": "compatibility",
     "definition": "The ability of two things to work together without conflict.",
-    "category": "Noun",
     "theme": "Compatibility"
   },
   {
     "index": 108,
     "word": "manifest",
     "definition": "To show or display clearly.",
-    "category": "Verb",
     "theme": "Expression"
   },
   {
     "index": 109,
     "word": "contemporary",
     "definition": "Belonging to the same time period.",
-    "category": "Adjective",
     "theme": "Time"
   },
   {
     "index": 110,
     "word": "alluring",
     "definition": "Powerfully attractive or charming.",
-    "category": "Adjective",
     "theme": "Attraction"
   },
   {
     "index": 111,
     "word": "mellifluous",
     "definition": "Sweet or musical in sound.",
-    "category": "Adjective",
     "theme": "Sound"
   },
   {
     "index": 112,
     "word": "detection",
     "definition": "The action of identifying something hidden.",
-    "category": "Noun",
     "theme": "Security"
   },
   {
     "index": 113,
     "word": "apricot",
     "definition": "A small, soft fruit with orange-yellow skin.",
-    "category": "Noun",
     "theme": "Food"
   },
   {
     "index": 114,
     "word": "companion",
     "definition": "A person who accompanies or spends time with another.",
-    "category": "Noun",
     "theme": "Relationship"
   },
   {
     "index": 115,
     "word": "micromanagement",
     "definition": "Excessive control over small details.",
-    "category": "Noun",
     "theme": "Work"
   },
   {
     "index": 116,
     "word": "mission",
     "definition": "An important task or duty.",
-    "category": "Noun",
     "theme": "Objective"
   },
   {
     "index": 117,
     "word": "efficiency",
     "definition": "The ability to do something or produce something without wasting resources.",
-    "category": "Noun",
     "theme": "Quality"
   },
   {
     "index": 118,
     "word": "beginning",
     "definition": "The point at which something starts.",
-    "category": "Noun",
     "theme": "Time"
   },
   {
     "index": 119,
     "word": "misapprehension",
     "definition": "A misunderstanding or wrong interpretation.",
-    "category": "Noun",
     "theme": "Cognition"
   },
   {
     "index": 120,
     "word": "competence",
     "definition": "The ability to do something successfully or efficiently.",
-    "category": "Noun",
     "theme": "Ability"
   },
   {
     "index": 121,
     "word": "bison",
     "definition": "A large, shaggy-haired wild ox.",
-    "category": "Mammal",
     "theme": "Herbivores"
   },
   {
     "index": 122,
     "word": "liabilities",
     "definition": "Debts or financial obligations.",
-    "category": "Noun",
     "theme": "Finance"
   },
   {
     "index": 123,
     "word": "succeed",
     "definition": "To achieve a desired outcome or result.",
-    "category": "Verb",
     "theme": "Action"
   },
   {
     "index": 124,
     "word": "absolve",
     "definition": "To set someone free from guilt or responsibility.",
-    "category": "Verb",
     "theme": "Ethics"
   },
   {
     "index": 125,
     "word": "tolerance",
     "definition": "The ability or willingness to accept differences.",
-    "category": "Noun",
     "theme": "Character"
   },
   {
     "index": 126,
     "word": "circle",
     "definition": "A round plane figure whose boundary consists of points equidistant from the center.",
-    "category": "Noun",
     "theme": "Shape"
   },
   {
     "index": 127,
     "word": "courage",
     "definition": "The ability to do something despite fear.",
-    "category": "Noun",
     "theme": "Character"
   },
   {
     "index": 128,
     "word": "plaza",
     "definition": "A public square or open space in a city.",
-    "category": "Noun",
     "theme": "Place"
   },
   {
     "index": 129,
     "word": "pioneer",
     "definition": "A person who is among the first to do something.",
-    "category": "Noun",
     "theme": "Exploration"
   },
   {
     "index": 130,
     "word": "miracle",
     "definition": "A surprising and unexplainable event, often attributed to divine intervention.",
-    "category": "Noun",
     "theme": "Religion"
   },
   {
     "index": 131,
     "word": "zigzag",
     "definition": "A pattern created by sharp turns in alternating directions.",
-    "category": "Noun",
     "theme": "Shape"
   },
   {
     "index": 132,
     "word": "candle",
     "definition": "A stick of wax with a wick that is burned for light.",
-    "category": "Noun",
     "theme": "Object"
   },
   {
     "index": 133,
     "word": "adapt",
     "definition": "To adjust to new conditions.",
-    "category": "Verb",
     "theme": "Change"
   },
   {
     "index": 134,
     "word": "unstoppable",
     "definition": "Impossible to prevent or defeat.",
-    "category": "Adjective",
     "theme": "Power"
   },
   {
     "index": 135,
     "word": "biochemistry",
     "definition": "The study of chemical processes in living organisms.",
-    "category": "Noun",
     "theme": "Science"
   },
   {
     "index": 136,
     "word": "crumb",
     "definition": "A small piece of bread or cake.",
-    "category": "Noun",
     "theme": "Food"
   },
   {
     "index": 137,
     "word": "contribution",
     "definition": "A gift or payment made to a common fund or cause.",
-    "category": "Noun",
     "theme": "Action"
   },
   {
     "index": 138,
     "word": "delicious",
     "definition": "Having a very pleasant taste or flavor.",
-    "category": "Adjective",
     "theme": "Senses"
   },
   {
     "index": 139,
     "word": "vulnerable",
     "definition": "Capable of being physically or emotionally hurt or harmed.",
-    "category": "Adjective",
     "theme": "Condition"
   },
   {
     "index": 140,
     "word": "warrior",
     "definition": "Person engaged or experienced in battle.",
-    "category": "Noun",
     "theme": "History"
   },
   {
     "index": 141,
     "word": "lattice",
     "definition": "A structure of crossed wooden or metal strips.",
-    "category": "Noun",
     "theme": "Architecture"
   },
   {
     "index": 142,
     "word": "bizarre",
     "definition": "Very strange or unusual.",
-    "category": "Adjective",
     "theme": "Quality"
   },
   {
     "index": 143,
     "word": "aesthetic",
     "definition": "Concerned with beauty or artistic impact.",
-    "category": "Adjective",
     "theme": "Art"
   },
   {
     "index": 144,
     "word": "counterintuitive",
     "definition": "Contrary to what one would expect based on common sense.",
-    "category": "Adjective",
     "theme": "Quality"
   },
   {
     "index": 145,
     "word": "sociability",
     "definition": "The quality of being sociable or friendly.",
-    "category": "Noun",
     "theme": "Personality"
   },
   {
     "index": 146,
     "word": "determination",
     "definition": "Firmness of purpose; resoluteness.",
-    "category": "Noun",
     "theme": "Quality"
   },
   {
     "index": 147,
     "word": "documentation",
     "definition": "Material that provides official information.",
-    "category": "Noun",
     "theme": "Work"
   },
   {
     "index": 148,
     "word": "tolerantly",
     "definition": "In a manner that shows acceptance of differences.",
-    "category": "Adverb",
     "theme": "Attitude"
   },
   {
     "index": 149,
     "word": "calligraphy",
     "definition": "Decorative handwriting.",
-    "category": "Noun",
     "theme": "Art"
   },
   {
     "index": 150,
     "word": "literature",
     "definition": "Written works, especially those of artistic or intellectual value.",
-    "category": "Noun",
     "theme": "Art"
   },
   {
     "index": 151,
     "word": "surrender",
     "definition": "To yield to the power or control of another.",
-    "category": "Verb",
     "theme": "Action"
   },
   {
     "index": 152,
     "word": "resistance",
     "definition": "The refusal to accept or comply with something.",
-    "category": "Noun",
     "theme": "Action"
   },
   {
     "index": 153,
     "word": "cheetah",
     "definition": "The fastest land animal.",
-    "category": "Mammal",
     "theme": "Big Cats"
   },
   {
     "index": 154,
     "word": "tolerable",
     "definition": "Able to be endured or accepted.",
-    "category": "Adjective",
     "theme": "Quality"
   },
   {
     "index": 155,
     "word": "pharmacologist",
     "definition": "A scientist who studies drugs.",
-    "category": "Noun",
     "theme": "Medicine"
   },
   {
     "index": 156,
     "word": "buoyant",
     "definition": "Able to float or cheerful and optimistic.",
-    "category": "Adjective",
     "theme": "State"
   },
   {
     "index": 157,
     "word": "daring",
     "definition": "Willing to take risks or show boldness.",
-    "category": "Adjective",
     "theme": "Character"
   },
   {
     "index": 158,
     "word": "climate",
     "definition": "The prevailing weather conditions of a region.",
-    "category": "Noun",
     "theme": "Weather"
   },
   {
     "index": 159,
     "word": "stellar",
     "definition": "Relating to stars; outstanding.",
-    "category": "Adjective",
     "theme": "Astronomy"
   },
   {
     "index": 160,
     "word": "longevity",
     "definition": "A long duration of life or existence.",
-    "category": "Noun",
     "theme": "Time"
   },
   {
     "index": 161,
     "word": "walrus",
     "definition": "A large, tusked marine mammal.",
-    "category": "Mammal",
     "theme": "Marine Life"
   },
   {
     "index": 162,
     "word": "timeless",
     "definition": "Not affected by the passage of time.",
-    "category": "Adjective",
     "theme": "Permanence"
   },
   {
     "index": 163,
     "word": "effulgent",
     "definition": "Radiant and brilliantly shining.",
-    "category": "Adjective",
     "theme": "Light"
   },
   {
     "index": 164,
     "word": "teleconference",
     "definition": "A meeting held remotely via technology.",
-    "category": "Noun",
     "theme": "Business"
   },
   {
     "index": 165,
     "word": "connection",
     "definition": "A relationship or link between people or things.",
-    "category": "Noun",
     "theme": "Relationship"
   },
   {
     "index": 166,
     "word": "dolphin",
     "definition": "An intelligent marine mammal known for its agility.",
-    "category": "Mammal",
     "theme": "Marine Life"
   },
   {
     "index": 167,
     "word": "adaptable",
     "definition": "Able to adjust to new conditions.",
-    "category": "Adjective",
     "theme": "Flexibility"
   },
   {
     "index": 168,
     "word": "luminous",
     "definition": "Emitting or reflecting light.",
-    "category": "Adjective",
     "theme": "Light"
   },
   {
     "index": 169,
     "word": "arrange",
     "definition": "To put things in a neat or required order.",
-    "category": "Verb",
     "theme": "Action"
   },
   {
     "index": 170,
     "word": "positive",
     "definition": "Characterized by a good or beneficial quality.",
-    "category": "Adjective",
     "theme": "Emotion"
   },
   {
     "index": 171,
     "word": "rivals",
     "definition": "People competing for the same goal.",
-    "category": "Noun",
     "theme": "Competition"
   },
   {
     "index": 172,
     "word": "arduous",
     "definition": "Requiring great effort or endurance.",
-    "category": "Adjective",
     "theme": "Challenge"
   },
   {
     "index": 173,
     "word": "toucan",
     "definition": "A bird with a large, colorful beak.",
-    "category": "Bird",
     "theme": "Tropical Birds"
   },
   {
     "index": 174,
     "word": "campground",
     "definition": "A place where people can set up a camp.",
-    "category": "Noun",
     "theme": "Leisure"
   },
   {
     "index": 175,
     "word": "substantial",
     "definition": "Of considerable importance, size, or worth.",
-    "category": "Adjective",
     "theme": "Quantity"
   },
   {
     "index": 176,
     "word": "stare",
     "definition": "To look at something with intense focus.",
-    "category": "Verb",
     "theme": "Action"
   },
   {
     "index": 177,
     "word": "backpack",
     "definition": "A bag carried on the back and secured with straps.",
-    "category": "Noun",
     "theme": "Travel"
   },
   {
     "index": 178,
     "word": "breeze",
     "definition": "A gentle wind.",
-    "category": "Noun",
     "theme": "Nature"
   },
   {
     "index": 179,
     "word": "daybreak",
     "definition": "The first appearance of light in the morning.",
-    "category": "Noun",
     "theme": "Time"
   },
   {
     "index": 180,
     "word": "warrant",
     "definition": "A legal document authorizing the police to make an arrest.",
-    "category": "Noun",
     "theme": "Law"
   },
   {
     "index": 181,
     "word": "polished",
     "definition": "Smooth and shiny through being rubbed.",
-    "category": "Adjective",
     "theme": "Appearance"
   },
   {
     "index": 182,
     "word": "mathematics",
     "definition": "The study of numbers and shapes.",
-    "category": "Noun",
     "theme": "Science"
   },
   {
     "index": 183,
     "word": "disposition",
     "definition": "A person's inherent qualities of mind and character.",
-    "category": "Noun",
     "theme": "Personality"
   },
   {
     "index": 184,
     "word": "temporary",
     "definition": "Lasting for only a limited period of time.",
-    "category": "Adjective",
     "theme": "Time"
   },
   {
     "index": 185,
     "word": "manatee",
     "definition": "A large, slow-moving aquatic mammal.",
-    "category": "Mammal",
     "theme": "Marine Life"
   },
   {
     "index": 186,
     "word": "diligent",
     "definition": "Showing care in one's work.",
-    "category": "Adjective",
     "theme": "Behavior"
   },
   {
     "index": 187,
     "word": "brisk",
     "definition": "Energetic or quick in movement.",
-    "category": "Adjective",
     "theme": "Speed"
   },
   {
     "index": 188,
     "word": "authentic",
     "definition": "Genuine and real.",
-    "category": "Adjective",
     "theme": "Truth"
   },
   {
     "index": 189,
     "word": "altruism",
     "definition": "Unselfish concern for the well-being of others.",
-    "category": "Noun",
     "theme": "Kindness"
   },
   {
     "index": 190,
     "word": "cougar",
     "definition": "A large wild cat also called a mountain lion.",
-    "category": "Mammal",
     "theme": "Big Cats"
   },
   {
     "index": 191,
     "word": "resonate",
     "definition": "To produce a strong feeling or response.",
-    "category": "Verb",
     "theme": "Impact"
   },
   {
     "index": 192,
     "word": "combustibles",
     "definition": "Materials that are capable of catching fire and burning.",
-    "category": "Noun",
     "theme": "Science"
   },
   {
     "index": 193,
-    "word": "disenfranchisement",
-    "definition": "The act of depriving voting rights.",
-    "category": "Noun",
+    "word": "disenfranchised",
+    "definition": "Deprived of a right or privilege, especially the right to vote.",
     "theme": "Politics"
   },
   {
     "index": 194,
     "word": "catalysis",
     "definition": "The acceleration of a chemical reaction by a catalyst.",
-    "category": "Noun",
     "theme": "Science"
   },
   {
     "index": 195,
     "word": "atmosphere",
     "definition": "The layer of gases surrounding Earth.",
-    "category": "Noun",
     "theme": "Science"
   },
   {
     "index": 196,
     "word": "circuit",
     "definition": "A closed loop that allows electricity to flow.",
-    "category": "Noun",
     "theme": "Electronics"
   },
   {
     "index": 197,
     "word": "management",
     "definition": "The process of planning, organizing, and overseeing tasks and people.",
-    "category": "Noun",
     "theme": "Work"
   },
   {
     "index": 198,
     "word": "effortless",
     "definition": "Achieved with little effort.",
-    "category": "Adjective",
     "theme": "Ease"
   },
   {
     "index": 199,
     "word": "communication",
     "definition": "The exchange of information.",
-    "category": "Noun",
     "theme": "Language"
   },
   {
     "index": 200,
     "word": "comprehension",
     "definition": "The ability to understand something.",
-    "category": "Noun",
     "theme": "Cognition"
   },
   {
     "index": 201,
     "word": "gecko",
     "definition": "A small lizard known for its climbing ability.",
-    "category": "Reptile",
     "theme": "Lizards"
   },
   {
     "index": 202,
     "word": "reorganization",
     "definition": "The action or process of changing the structure or organization of something.",
-    "category": "Noun",
     "theme": "Action"
   },
   {
     "index": 203,
     "word": "civilized",
     "definition": "Polite and well-mannered.",
-    "category": "Adjective",
     "theme": "Society"
   },
   {
     "index": 204,
     "word": "planet",
     "definition": "A celestial body moving in orbit around a star.",
-    "category": "Noun",
     "theme": "Space"
   },
   {
     "index": 205,
     "word": "brainstorm",
     "definition": "A sudden creative idea.",
-    "category": "Noun",
     "theme": "Creativity"
   },
   {
     "index": 206,
     "word": "cascade",
     "definition": "A small waterfall or series of steps.",
-    "category": "Noun",
     "theme": "Nature"
   },
   {
     "index": 207,
     "word": "cabinet",
     "definition": "A storage cupboard with shelves or drawers.",
-    "category": "Noun",
     "theme": "Furniture"
   },
   {
     "index": 208,
     "word": "contemplation",
     "definition": "Deep reflective thought.",
-    "category": "Noun",
     "theme": "Philosophy"
   },
   {
     "index": 209,
     "word": "sparse",
     "definition": "Thinly dispersed or scattered.",
-    "theme": "Quantity",
-    "category": "Adjective"
+    "theme": "Quantity"
   },
   {
     "index": 210,
     "word": "salmon",
     "definition": "A fish that migrates between rivers and oceans.",
-    "category": "Fish",
     "theme": "Aquatic Life"
   },
   {
     "index": 211,
     "word": "balance",
     "definition": "A state of stability or equilibrium.",
-    "category": "Noun",
     "theme": "Stability"
   },
   {
     "index": 212,
     "word": "countryside",
     "definition": "A rural area outside towns and cities.",
-    "category": "Noun",
     "theme": "Geography"
   },
   {
     "index": 213,
     "word": "reliable",
     "definition": "Able to be trusted or depended on.",
-    "category": "Adjective",
     "theme": "Trust"
   },
   {
     "index": 214,
     "word": "diligence",
     "definition": "Careful and persistent effort.",
-    "category": "Noun",
     "theme": "Personality"
   },
   {
     "index": 215,
     "word": "abandonment",
     "definition": "The act of leaving someone or something behind.",
-    "category": "Noun",
     "theme": "Action"
   },
   {
     "index": 216,
     "word": "wombat",
     "definition": "A burrowing marsupial native to Australia.",
-    "category": "Mammal",
     "theme": "Marsupials"
   },
   {
     "index": 217,
     "word": "vibrancy",
     "definition": "The quality of being full of life and energy.",
-    "category": "Noun",
     "theme": "Intensity"
   },
   {
     "index": 218,
     "word": "divine",
     "definition": "Of or like a god; godly.",
-    "category": "Adjective",
     "theme": "Religion"
   },
   {
     "index": 219,
     "word": "abbreviations",
     "definition": "Shortened forms of words or phrases.",
-    "category": "Noun",
     "theme": "Language"
   },
   {
     "index": 220,
     "word": "abduction",
     "definition": "The action of forcibly taking someone away.",
-    "category": "Noun",
     "theme": "Crime"
   },
   {
     "index": 221,
     "word": "classification",
     "definition": "The action or process of classifying something.",
-    "category": "Noun",
     "theme": "Action"
   },
   {
     "index": 222,
     "word": "documentary",
     "definition": "A factual film or television program.",
-    "category": "Noun",
     "theme": "Media"
   },
   {
     "index": 223,
     "word": "abrupt",
     "definition": "Happening suddenly or unexpectedly.",
-    "theme": "Time",
-    "category": "Adjective"
+    "theme": "Time"
   },
   {
     "index": 224,
     "word": "accomplishment",
     "definition": "Something achieved successfully.",
-    "category": "Noun",
     "theme": "Success"
   },
   {
     "index": 225,
     "word": "photobiological",
     "definition": "Relating to light's effect on organisms.",
-    "category": "Adjective",
     "theme": "Science"
   },
   {
     "index": 226,
     "word": "ecstasy",
     "definition": "An overwhelming feeling of joy.",
-    "category": "Noun",
     "theme": "Emotion"
   },
   {
     "index": 227,
     "word": "aggressive",
     "definition": "Behaving in a strong, forceful, or combative way.",
-    "category": "Adjective",
     "theme": "Behavior"
   },
   {
     "index": 228,
     "word": "admire",
     "definition": "To regard with respect or warm approval.",
-    "category": "Verb",
     "theme": "Emotion"
   },
   {
     "index": 229,
     "word": "sword",
     "definition": "A weapon with a long blade used in combat.",
-    "category": "Noun",
     "theme": "Weapon"
   },
   {
     "index": 230,
     "word": "complexity",
     "definition": "The state of being intricate or complicated.",
-    "category": "Noun",
     "theme": "Quality"
   },
   {
     "index": 231,
     "word": "clocks",
     "definition": "Devices for measuring and indicating time.",
-    "category": "Noun",
     "theme": "Time"
   },
   {
     "index": 232,
     "word": "wander",
     "definition": "To move or travel without a fixed course or destination.",
-    "category": "Verb",
     "theme": "Action"
   },
   {
     "index": 233,
     "word": "liberate",
     "definition": "To set free from restrictions.",
-    "category": "Verb",
     "theme": "Freedom"
   },
   {
     "index": 234,
     "word": "destruction",
     "definition": "The act of causing ruin.",
-    "category": "Noun",
     "theme": "Disaster"
   },
   {
     "index": 235,
     "word": "acquaintanceship",
     "definition": "The state of being acquainted.",
-    "category": "Noun",
     "theme": "Social"
   },
   {
     "index": 236,
     "word": "careful",
     "definition": "Taking precautions to avoid mistakes.",
-    "category": "Adjective",
     "theme": "Action"
   },
   {
     "index": 237,
     "word": "elaborate",
     "definition": "Involving many careful details or complex elements.",
-    "category": "Adjective",
     "theme": "Description"
   },
   {
     "index": 238,
     "word": "meticulous",
     "definition": "Showing great attention to detail.",
-    "category": "Adjective",
     "theme": "Precision"
   },
   {
     "index": 239,
     "word": "coati",
     "definition": "A raccoon-like mammal native to Central and South America.",
-    "category": "Mammal",
     "theme": "Jungle Animals"
   },
   {
     "index": 240,
     "word": "tease",
     "definition": "To mock or provoke in a playful way.",
-    "category": "Verb",
     "theme": "Action"
   },
   {
     "index": 241,
     "word": "responsible",
     "definition": "Having an obligation to do something as part of one's job or role.",
-    "category": "Adjective",
     "theme": "Behavior"
   },
   {
     "index": 242,
     "word": "volatility",
     "definition": "The quality of being subject to rapid or unexpected change.",
-    "category": "Noun",
     "theme": "Change"
   },
   {
     "index": 243,
     "word": "mantle",
     "definition": "A covering or layer over a surface.",
-    "theme": "Objects & Materials",
-    "category": "Noun"
+    "theme": "Objects & Materials"
   },
   {
     "index": 244,
     "word": "demonstration",
     "definition": "An act of showing or proving.",
-    "category": "Noun",
     "theme": "General"
   },
   {
     "index": 245,
     "word": "distinguished",
     "definition": "Having an air of dignity, excellence, or distinction.",
-    "category": "Adjective",
     "theme": "Quality"
   },
   {
     "index": 246,
     "word": "superiority",
     "definition": "The state of being superior to others.",
-    "category": "Noun",
     "theme": "State"
   },
   {
     "index": 247,
     "word": "remarkable",
     "definition": "Worthy of attention; extraordinary.",
-    "category": "Adjective",
     "theme": "Recognition"
   },
   {
     "index": 248,
     "word": "leather",
     "definition": "Material made from the skin of animals.",
-    "category": "Noun",
     "theme": "Material"
   },
   {
     "index": 249,
     "word": "voluntary",
     "definition": "Done, given, or acting of one's own free will.",
-    "category": "Adjective",
     "theme": "Choice"
   },
   {
     "index": 250,
     "word": "pineapple",
     "definition": "A tropical fruit with a spiky exterior.",
-    "category": "Noun",
     "theme": "Food"
   },
   {
     "index": 251,
     "word": "magnetic",
     "definition": "Attracting attention or interest.",
-    "category": "Adjective",
     "theme": "Attraction"
   },
   {
     "index": 252,
     "word": "anthropologist",
     "definition": "A person who studies human societies.",
-    "category": "Noun",
     "theme": "Science"
   },
   {
     "index": 253,
     "word": "brilliant",
     "definition": "Exceptionally clever or talented.",
-    "category": "Adjective",
     "theme": "Intelligence"
   },
   {
     "index": 254,
     "word": "salads",
     "definition": "A dish consisting of mixed vegetables or fruit.",
-    "category": "Noun",
     "theme": "Food"
   },
   {
     "index": 255,
     "word": "clarity",
     "definition": "The quality of being clear and easy to understand.",
-    "category": "Noun",
     "theme": "Perception"
   },
   {
     "index": 256,
     "word": "characteristics",
     "definition": "Distinctive qualities of someone.",
-    "category": "Noun",
     "theme": "General"
   },
   {
     "index": 257,
     "word": "compromise",
     "definition": "An agreement reached by mutual concession.",
-    "category": "Noun",
     "theme": "Agreement"
   },
   {
     "index": 258,
     "word": "laptop",
     "definition": "A portable personal computer.",
-    "category": "Noun",
     "theme": "Technology"
   },
   {
     "index": 259,
     "word": "determinate",
     "definition": "Having a defined or certain end or limit.",
-    "category": "Adjective",
     "theme": "Nature"
   },
   {
     "index": 260,
     "word": "appreciable",
     "definition": "Large or significant enough to be noticed or measured.",
-    "category": "Adjective",
     "theme": "Quantity"
   },
   {
     "index": 261,
     "word": "achievement",
     "definition": "A thing done successfully with effort, skill, or courage.",
-    "category": "Noun",
     "theme": "Action"
   },
   {
     "index": 262,
     "word": "vortex",
     "definition": "A whirling mass of fluid or air that draws things inward.",
-    "theme": "Weather & Elements",
-    "category": "Noun"
+    "theme": "Weather & Elements"
   },
   {
     "index": 263,
     "word": "broadcast",
     "definition": "To transmit a program by radio or TV.",
-    "category": "Verb",
     "theme": "Media"
   },
   {
     "index": 264,
     "word": "consideration",
     "definition": "The action or process of thinking about something carefully.",
-    "category": "Noun",
     "theme": "Action"
   },
   {
     "index": 265,
     "word": "masterpiece",
     "definition": "An outstanding work of art.",
-    "category": "Noun",
     "theme": "Art"
   },
   {
     "index": 266,
     "word": "delegation",
     "definition": "The act of assigning tasks or responsibilities to others.",
-    "category": "Noun",
     "theme": "Management"
   },
   {
     "index": 267,
     "word": "volleyball",
     "definition": "A sport where players hit a ball over a net.",
-    "category": "Noun",
     "theme": "Sports"
   },
   {
     "index": 268,
     "word": "absents",
     "definition": "Not present or unavailable.",
-    "category": "Adjective",
     "theme": "State"
   },
   {
     "index": 269,
     "word": "cherish",
     "definition": "To hold dear and protect.",
-    "category": "Verb",
     "theme": "Love"
   },
   {
     "index": 270,
     "word": "thunderous",
     "definition": "Very loud or powerful.",
-    "category": "Adjective",
     "theme": "Sound"
   },
   {
     "index": 271,
     "word": "luminary",
     "definition": "A person who inspires or influences others.",
-    "category": "Noun",
     "theme": "Influence"
   },
   {
     "index": 272,
     "word": "disproportionate",
     "definition": "Too large or too small in comparison to something else.",
-    "category": "Adjective",
     "theme": "Quality"
   },
   {
     "index": 273,
     "word": "citizen",
     "definition": "A member of a particular country or community.",
-    "category": "Noun",
     "theme": "Society"
   },
   {
     "index": 274,
     "word": "beautician",
     "definition": "A person skilled in beauty treatments.",
-    "category": "Noun",
     "theme": "Occupation"
   },
   {
     "index": 275,
     "word": "elaborative",
     "definition": "Involving detailed explanation or description.",
-    "category": "Adjective",
     "theme": "Explanation"
   },
   {
     "index": 276,
     "word": "dazzling",
     "definition": "Extremely bright or impressive.",
-    "category": "Adjective",
     "theme": "Light"
   },
   {
     "index": 277,
     "word": "delight",
     "definition": "A great feeling of joy or pleasure.",
-    "category": "Noun",
     "theme": "Emotion"
   },
   {
     "index": 278,
     "word": "quokka",
     "definition": "A small, friendly marsupial native to Australia.",
-    "category": "Mammal",
     "theme": "Marsupials"
   },
   {
     "index": 279,
     "word": "crosswalk",
     "definition": "Marked path for pedestrians to cross streets.",
-    "category": "Noun",
     "theme": "Urban"
   },
   {
     "index": 280,
     "word": "tentative",
     "definition": "Not certain or fixed; provisional.",
-    "category": "Adjective",
     "theme": "Thought"
   },
   {
     "index": 281,
     "word": "phenomenalistic",
     "definition": "Relating to observable phenomena.",
-    "category": "Adjective",
     "theme": "Philosophy"
   },
   {
     "index": 282,
     "word": "strive",
     "definition": "To make a great effort to achieve something.",
-    "category": "Verb",
     "theme": "Action"
   },
   {
     "index": 283,
     "word": "latitude",
     "definition": "A geographic coordinate specifying north-south position.",
-    "category": "Noun",
     "theme": "Geography"
   },
   {
     "index": 284,
     "word": "mirth",
     "definition": "Great joy, amusement, or happiness.",
-    "category": "Noun",
     "theme": "Emotion"
   },
   {
     "index": 285,
     "word": "absolves",
     "definition": "To free someone from blame or responsibility.",
-    "category": "Verb",
     "theme": "Ethics"
   },
   {
     "index": 286,
     "word": "cooperation",
     "definition": "The process of working together to achieve a common goal.",
-    "category": "Noun",
     "theme": "Action"
   },
   {
     "index": 287,
     "word": "believer",
     "definition": "A person who has faith or belief in something.",
-    "category": "Noun",
     "theme": "Religion"
   },
   {
     "index": 288,
     "word": "telecommunication",
     "definition": "Long-distance communication methods.",
-    "category": "Noun",
     "theme": "Technology"
   },
   {
     "index": 289,
     "word": "commentator",
     "definition": "A person who provides spoken analysis.",
-    "category": "Noun",
     "theme": "Media"
   },
   {
     "index": 290,
     "word": "biscuit",
     "definition": "A small baked product made from dough.",
-    "category": "Noun",
     "theme": "Food"
   },
   {
     "index": 291,
     "word": "strawberry",
     "definition": "Red, sweet, and edible fruit.",
-    "category": "Noun",
     "theme": "Food"
   },
   {
     "index": 292,
     "word": "resplendent",
     "definition": "Shining brilliantly; splendid.",
-    "category": "Adjective",
     "theme": "Appearance"
   },
   {
     "index": 293,
     "word": "accommodation",
     "definition": "A room, group of rooms, or building in which someone may live or stay.",
-    "category": "Noun",
     "theme": "Place"
   },
   {
     "index": 294,
     "word": "vibration",
     "definition": "Rapid motion back and forth, often causing sound or movement.",
-    "category": "Noun",
     "theme": "Movement"
   },
   {
     "index": 295,
     "word": "majestic",
     "definition": "Impressively beautiful and grand.",
-    "category": "Adjective",
     "theme": "Appearance"
   },
   {
     "index": 296,
     "word": "vigorous",
     "definition": "Strong, healthy, and full of energy.",
-    "category": "Adjective",
     "theme": "Energy"
   },
   {
     "index": 297,
     "word": "courageous",
     "definition": "Brave and fearless in facing danger.",
-    "category": "Adjective",
     "theme": "Character"
   },
   {
     "index": 298,
     "word": "elapse",
     "definition": "Pass or go by, referring to time.",
-    "theme": "Time",
-    "category": "Verb"
+    "theme": "Time"
   },
   {
     "index": 299,
     "word": "competition",
     "definition": "The act of competing.",
-    "category": "Noun",
     "theme": "Sports"
   },
   {
     "index": 300,
     "word": "falcon",
     "definition": "A bird of prey known for its speed.",
-    "category": "Bird",
     "theme": "Raptors"
   },
   {
     "index": 301,
     "word": "drifting",
     "definition": "Moving slowly or aimlessly from place to place.",
-    "category": "Verb",
     "theme": "Nature"
   },
   {
     "index": 302,
     "word": "lending",
     "definition": "The act of giving something temporarily.",
-    "category": "Verb",
     "theme": "Action"
   },
   {
     "index": 303,
     "word": "aurora",
     "definition": "A natural light display in the sky.",
-    "category": "Noun",
     "theme": "Nature"
   },
   {
     "index": 304,
     "word": "electricity",
     "definition": "Form of energy resulting from charged particles.",
-    "category": "Noun",
     "theme": "Science"
   },
   {
     "index": 305,
     "word": "blossoming",
     "definition": "The process of a flower opening or blooming.",
-    "category": "Verb",
     "theme": "Nature"
   },
   {
     "index": 306,
     "word": "building",
     "definition": "A structure with walls and a roof.",
-    "category": "Noun",
     "theme": "Architecture"
   },
   {
     "index": 307,
     "word": "charity",
     "definition": "The voluntary giving of help to those in need.",
-    "category": "Noun",
     "theme": "Social"
   },
   {
     "index": 308,
     "word": "dormancy",
     "definition": "A state of inactivity or rest in an organism.",
-    "category": "Noun",
     "theme": "Biology"
   },
   {
     "index": 309,
     "word": "misinterpretation",
     "definition": "The action of interpreting something incorrectly.",
-    "category": "Noun",
     "theme": "Communication"
   },
   {
     "index": 310,
     "word": "ripple",
     "definition": "A small wave or series of waves on a surface.",
-    "theme": "Nature",
-    "category": "Noun"
+    "theme": "Nature"
   },
   {
     "index": 311,
     "word": "ascendant",
     "definition": "Rising in power or influence.",
-    "category": "Adjective",
     "theme": "Success"
   },
   {
     "index": 312,
     "word": "absorbent",
     "definition": "Able to soak up or absorb liquid.",
-    "category": "Adjective",
     "theme": "Material"
   },
   {
     "index": 313,
     "word": "baking",
     "definition": "The process of cooking food with dry heat.",
-    "category": "Verb",
     "theme": "Cooking"
   },
   {
     "index": 314,
     "word": "volunteer",
     "definition": "A person who offers to help freely.",
-    "category": "Noun",
     "theme": "Service"
   },
   {
     "index": 315,
     "word": "discretion",
     "definition": "The ability to make decisions based on careful judgment.",
-    "category": "Noun",
     "theme": "Behavior"
   },
   {
     "index": 316,
     "word": "splendid",
     "definition": "Magnificent or impressive in appearance.",
-    "category": "Adjective",
     "theme": "Beauty"
   },
   {
     "index": 317,
     "word": "disappearance",
     "definition": "The state of being lost or no longer visible.",
-    "category": "Noun",
     "theme": "State"
   },
   {
     "index": 318,
     "word": "consensus",
     "definition": "A general agreement or collective opinion.",
-    "category": "Noun",
     "theme": "Agreement"
   },
   {
     "index": 319,
     "word": "cinematography",
     "definition": "The art of making motion pictures.",
-    "category": "Noun",
     "theme": "Art"
   },
   {
     "index": 320,
     "word": "sublime",
     "definition": "Of great beauty or excellence.",
-    "category": "Adjective",
     "theme": "Aesthetics"
   },
   {
     "index": 321,
     "word": "python",
     "definition": "A large, nonvenomous snake.",
-    "category": "Reptile",
     "theme": "Snakes"
   },
   {
     "index": 322,
     "word": "astonishing",
     "definition": "Extremely surprising or impressive.",
-    "category": "Adjective",
     "theme": "Emotion"
   },
   {
     "index": 323,
     "word": "captivating",
     "definition": "Attracting and holding interest.",
-    "category": "Adjective",
     "theme": "Attention"
   },
   {
     "index": 324,
     "word": "characterize",
     "definition": "To describe the distinctive qualities of something or someone.",
-    "category": "Verb",
     "theme": "Action"
   },
   {
     "index": 325,
     "word": "leader",
     "definition": "A person who leads or commands.",
-    "category": "Noun",
     "theme": "Role"
   },
   {
     "index": 326,
     "word": "banter",
     "definition": "Playful and friendly exchange of teasing remarks.",
-    "theme": "Communication",
-    "category": "Noun"
+    "theme": "Communication"
   },
   {
     "index": 327,
     "word": "contributor",
     "definition": "Someone who adds to a cause or project.",
-    "category": "Noun",
     "theme": "Work"
   },
   {
     "index": 328,
     "word": "masterminded",
     "definition": "Planned and directed a complex project.",
-    "category": "Verb",
     "theme": "Strategy"
   },
   {
     "index": 329,
     "word": "eclipse",
     "definition": "Obscuring of light from one celestial body by another.",
-    "theme": "Astronomy",
-    "category": "Noun"
+    "theme": "Astronomy"
   },
   {
     "index": 330,
     "word": "charisma",
     "definition": "A compelling charm or attractiveness.",
-    "category": "Noun",
     "theme": "Personality"
   },
   {
     "index": 331,
     "word": "decimal",
     "definition": "Relating to a system of numbers based on ten.",
-    "category": "Adjective",
     "theme": "Mathematics"
   },
   {
     "index": 332,
     "word": "storyteller",
     "definition": "A person who tells or writes stories.",
-    "category": "Noun",
     "theme": "Literature"
   },
   {
     "index": 333,
     "word": "appreciation",
     "definition": "The recognition and enjoyment of the good qualities of someone or something.",
-    "category": "Noun",
     "theme": "Emotion"
   },
   {
     "index": 334,
     "word": "dedicated",
     "definition": "Devoted to a cause or purpose.",
-    "category": "Adjective",
     "theme": "Commitment"
   },
   {
     "index": 335,
     "word": "victorious",
     "definition": "Having won a victory.",
-    "category": "Adjective",
     "theme": "Achievement"
   },
   {
     "index": 336,
     "word": "lightweight",
     "definition": "Not heavy or bulky.",
-    "category": "Adjective",
     "theme": "Physical"
   },
   {
     "index": 337,
     "word": "touched",
     "definition": "Moved emotionally or affected by something.",
-    "category": "Adjective",
     "theme": "Emotion"
   },
   {
     "index": 338,
     "word": "satisfaction",
     "definition": "The fulfillment of a desire or need.",
-    "category": "Noun",
     "theme": "Emotion"
   },
   {
     "index": 339,
     "word": "mirage",
     "definition": "An optical illusion, especially in deserts.",
-    "category": "Noun",
     "theme": "Nature"
   },
   {
     "index": 340,
     "word": "collaboration",
     "definition": "Working jointly on an activity.",
-    "category": "Noun",
     "theme": "Work"
   },
   {
     "index": 341,
     "word": "supernatural",
     "definition": "Attributed to some force beyond scientific understanding or the laws of nature.",
-    "category": "Adjective",
     "theme": "Phenomenon"
   },
   {
     "index": 342,
     "word": "visionary",
     "definition": "Having original ideas about the future.",
-    "category": "Adjective",
     "theme": "Creativity"
   },
   {
     "index": 343,
     "word": "sustainable",
     "definition": "Able to be maintained or continued over the long term.",
-    "category": "Adjective",
     "theme": "Environment"
   },
   {
     "index": 344,
     "word": "technologies",
     "definition": "The application of scientific knowledge for practical purposes.",
-    "category": "Noun",
     "theme": "Science"
   },
   {
     "index": 345,
     "word": "satellite",
     "definition": "An object in orbit around a planet.",
-    "category": "Noun",
     "theme": "Space"
   },
   {
     "index": 346,
     "word": "bookkeeper",
     "definition": "A person responsible for financial records.",
-    "category": "Noun",
     "theme": "Occupation"
   },
   {
     "index": 347,
     "word": "stoic",
     "definition": "A person indifferent to joy, grief, or pleasure.",
-    "category": "Noun",
     "theme": "Philosophy"
   },
   {
     "index": 348,
     "word": "vibrate",
     "definition": "To move rapidly back and forth.",
-    "category": "Verb",
     "theme": "Physics"
   },
   {
     "index": 349,
     "word": "characteristic",
     "definition": "A feature or quality that distinguishes something.",
-    "category": "Noun",
     "theme": "Quality"
   },
   {
     "index": 350,
     "word": "timber",
     "definition": "Wood prepared for building and carpentry.",
-    "theme": "Objects & Materials",
-    "category": "Noun"
+    "theme": "Objects & Materials"
   },
   {
     "index": 351,
     "word": "television",
     "definition": "A system for transmitting visual images and sound to display moving pictures.",
-    "category": "Noun",
     "theme": "Technology"
   },
   {
     "index": 352,
     "word": "benefits",
     "definition": "An advantage or profit gained from something.",
-    "category": "Noun",
     "theme": "Economics"
   },
   {
     "index": 353,
     "word": "boldness",
     "definition": "Willingness to take risks.",
-    "category": "Noun",
     "theme": "Courage"
   },
   {
     "index": 354,
     "word": "strategic",
     "definition": "Relating to the identification of long-term or overall goals and the means to achieve them.",
-    "category": "Adjective",
     "theme": "Planning"
   },
   {
     "index": 355,
     "word": "confidence",
     "definition": "A feeling of self-assurance or certainty about something.",
-    "category": "Noun",
     "theme": "Emotion"
   },
   {
     "index": 356,
     "word": "subsequent",
     "definition": "Happening or coming after something.",
-    "category": "Adjective",
     "theme": "Time"
   },
   {
     "index": 357,
     "word": "deteriorate",
     "definition": "To become progressively worse over time.",
-    "category": "Verb",
     "theme": "Condition"
   },
   {
     "index": 358,
     "word": "vividly",
     "definition": "In a clear and detailed manner.",
-    "category": "Adverb",
     "theme": "Description"
   },
   {
     "index": 359,
     "word": "vivid",
     "definition": "Intense in color or clarity.",
-    "category": "Adjective",
     "theme": "Appearance"
   },
   {
     "index": 360,
     "word": "sifaka",
     "definition": "A type of lemur known for its leaping abilities, native to Madagascar.",
-    "category": "Mammal",
     "theme": "Jungle Animals"
   },
   {
     "index": 361,
     "word": "calibrate",
     "definition": "To adjust or set something to a correct or optimal standard.",
-    "category": "Verb",
     "theme": "Science"
   },
   {
     "index": 362,
     "word": "dismiss",
     "definition": "To send away or reject something.",
-    "category": "Verb",
     "theme": "Action"
   },
   {
     "index": 363,
     "word": "otter",
     "definition": "A playful, aquatic mammal.",
-    "category": "Mammal",
     "theme": "Marine Life"
   },
   {
     "index": 364,
     "word": "cancellation",
     "definition": "The act of calling something off.",
-    "category": "Noun",
     "theme": "General"
   },
   {
     "index": 365,
     "word": "lapse",
     "definition": "A temporary failure or error.",
-    "category": "Noun",
     "theme": "Mistake"
   },
   {
     "index": 366,
     "word": "resilient",
     "definition": "Able to recover quickly from difficulties.",
-    "category": "Adjective",
     "theme": "Strength"
   },
   {
     "index": 367,
     "word": "effusion",
     "definition": "An outpouring of emotion or enthusiasm.",
-    "category": "Noun",
     "theme": "Expression"
   },
   {
     "index": 368,
     "word": "zealousness",
     "definition": "The quality of being passionate or enthusiastic about something.",
-    "category": "Noun",
     "theme": "Emotion"
   },
   {
     "index": 369,
     "word": "disenchantment",
     "definition": "A feeling of disappointment.",
-    "category": "Noun",
     "theme": "Emotion"
   },
   {
     "index": 370,
     "word": "tired",
     "definition": "In need of rest or sleep.",
-    "category": "Adjective",
     "theme": "Emotion"
   },
   {
     "index": 371,
     "word": "appreciative",
     "definition": "Feeling or showing gratitude or pleasure.",
-    "category": "Adjective",
     "theme": "Emotion"
   },
   {
     "index": 372,
     "word": "abundant",
     "definition": "Existing or available in large quantities.",
-    "category": "Adjective",
     "theme": "Quantity"
   },
   {
     "index": 373,
     "word": "spending",
     "definition": "Using money to purchase goods or services.",
-    "category": "Verb",
     "theme": "Action"
   },
   {
     "index": 374,
     "word": "deficit",
     "definition": "The amount by which something falls short.",
-    "category": "Noun",
     "theme": "Finance"
   },
   {
     "index": 375,
     "word": "whimsical",
     "definition": "Playfully fanciful or imaginative.",
-    "category": "Adjective",
     "theme": "Creativity"
   },
   {
     "index": 376,
     "word": "metamorphic",
     "definition": "Relating to or denoting a process of transformation in geology.",
-    "category": "Adjective",
     "theme": "Science"
   },
   {
     "index": 377,
     "word": "rescue",
     "definition": "To save from a dangerous or distressing situation.",
-    "category": "Verb",
     "theme": "Action"
   },
   {
     "index": 378,
     "word": "disorganization",
     "definition": "Lack of order or structure.",
-    "category": "Noun",
     "theme": "Work"
   },
   {
     "index": 379,
     "word": "disadvantage",
     "definition": "An unfavorable condition or situation.",
-    "category": "Noun",
     "theme": "Condition"
   },
   {
     "index": 380,
     "word": "clash",
     "definition": "A violent confrontation or conflict.",
-    "category": "Noun",
     "theme": "Conflict"
   },
   {
     "index": 381,
     "word": "tiger",
     "definition": "A large, wild cat native to Asia.",
-    "category": "Noun",
     "theme": "Animal"
   },
   {
     "index": 382,
     "word": "bravery",
     "definition": "Courageous behavior or character.",
-    "category": "Noun",
     "theme": "Courage"
   },
   {
     "index": 383,
     "word": "consequence",
     "definition": "A result or effect of an action or condition.",
-    "category": "Noun",
     "theme": "Cause and Effect"
   },
   {
     "index": 384,
     "word": "plastic",
     "definition": "A synthetic material that can be molded into different shapes.",
-    "category": "Noun",
     "theme": "Material"
   },
   {
     "index": 385,
     "word": "panda",
     "definition": "A black-and-white bear native to China.",
-    "category": "Mammal",
     "theme": "Bears"
   },
   {
     "index": 386,
     "word": "platoon",
     "definition": "A subdivision of a military company.",
-    "category": "Noun",
     "theme": "Military"
   },
   {
     "index": 387,
     "word": "lively",
     "definition": "Full of life and energy.",
-    "category": "Adjective",
     "theme": "Emotion"
   },
   {
     "index": 388,
     "word": "thunder",
     "definition": "The loud noise produced by lightning.",
-    "category": "Noun",
     "theme": "Weather"
   },
   {
     "index": 389,
     "word": "comprehensible",
     "definition": "Able to be understood.",
-    "category": "Adjective",
     "theme": "Quality"
   },
   {
     "index": 390,
     "word": "champion",
     "definition": "A person who has won a competition.",
-    "category": "Noun",
     "theme": "Achievement"
   },
   {
     "index": 391,
     "word": "dominate",
     "definition": "To have control or power over something or someone.",
-    "category": "Verb",
     "theme": "Action"
   },
   {
     "index": 392,
     "word": "differential",
     "definition": "A difference or variation between two things.",
-    "category": "Noun",
     "theme": "Science"
   },
   {
     "index": 393,
     "word": "spice",
     "definition": "A plant-derived substance used to flavor food.",
-    "category": "Noun",
     "theme": "Food"
   },
   {
     "index": 394,
     "word": "vibrant",
     "definition": "Full of energy and life.",
-    "category": "Adjective",
     "theme": "Intensity"
   },
   {
     "index": 395,
     "word": "brainstorming",
     "definition": "Generating creative ideas quickly.",
-    "category": "Noun",
     "theme": "Creativity"
   },
   {
     "index": 396,
     "word": "leadership",
     "definition": "The act of guiding others.",
-    "category": "Noun",
     "theme": "Business"
   },
   {
     "index": 397,
     "word": "representation",
     "definition": "The action of speaking or acting on behalf of someone or something.",
-    "category": "Noun",
     "theme": "Action"
   },
   {
     "index": 398,
     "word": "tangible",
     "definition": "Able to be touched or felt.",
-    "category": "Adjective",
     "theme": "Reality"
   },
   {
     "index": 399,
     "word": "complicated",
     "definition": "Involving many difficult parts.",
-    "category": "Adjective",
     "theme": "General"
   },
   {
     "index": 400,
     "word": "absolutely",
     "definition": "Without any doubt; completely.",
-    "category": "Adverb",
     "theme": "Degree"
   },
   {
     "index": 401,
     "word": "markhor",
     "definition": "A wild goat with twisted horns, found in the mountainous regions of Central Asia.",
-    "category": "Mammal",
     "theme": "Mountain Animals"
   },
   {
     "index": 402,
     "word": "zephyr",
     "definition": "A soft, gentle breeze.",
-    "theme": "Nature",
-    "category": "Noun"
+    "theme": "Nature"
   },
   {
     "index": 403,
     "word": "pangolin",
     "definition": "A nocturnal mammal covered in scales, native to Asia and Africa.",
-    "category": "Mammal",
     "theme": "Endangered Species"
   },
   {
     "index": 404,
     "word": "charitable",
     "definition": "Generous in giving to others.",
-    "category": "Adjective",
     "theme": "Kindness"
   },
   {
     "index": 405,
     "word": "allegro",
     "definition": "A fast, lively tempo in music.",
-    "category": "Noun",
     "theme": "Music"
   },
   {
     "index": 406,
     "word": "maintenance",
     "definition": "The process of preserving condition.",
-    "category": "Noun",
     "theme": "Industry"
   },
   {
     "index": 407,
     "word": "special",
     "definition": "Distinct from what is ordinary or usual.",
-    "category": "Adjective",
     "theme": "Quality"
   },
   {
     "index": 408,
     "word": "soothing",
     "definition": "Having a calming or comforting effect.",
-    "category": "Adjective",
     "theme": "Emotion"
   },
   {
     "index": 409,
     "word": "tenacity",
     "definition": "Determination and perseverance.",
-    "category": "Noun",
     "theme": "Persistence"
   },
   {
     "index": 410,
     "word": "aggravation",
     "definition": "The action or process of making something worse or more serious.",
-    "category": "Noun",
     "theme": "Action"
   },
   {
     "index": 411,
     "word": "dishwasher",
     "definition": "A machine used to clean dishes.",
-    "category": "Noun",
     "theme": "Household"
   },
   {
     "index": 412,
     "word": "assistance",
     "definition": "Help or support provided to others.",
-    "category": "Noun",
     "theme": "Support"
   },
   {
     "index": 413,
     "word": "temporal",
     "definition": "Relating to time or the material world.",
-    "category": "Adjective",
     "theme": "Concept"
   },
   {
     "index": 414,
     "word": "zenith",
     "definition": "The highest point or peak.",
-    "theme": "Degree & Intensity",
-    "category": "Noun"
+    "theme": "Degree & Intensity"
   },
   {
     "index": 415,
     "word": "contemplate",
     "definition": "To think deeply or carefully about something.",
-    "category": "Verb",
     "theme": "Action"
   },
   {
     "index": 416,
     "word": "convection",
     "definition": "Heat transfer by the movement of fluids.",
-    "category": "Noun",
     "theme": "Science"
   },
   {
     "index": 417,
     "word": "consulate",
     "definition": "A government office responsible for handling diplomatic matters.",
-    "category": "Noun",
     "theme": "Politics"
   },
   {
     "index": 418,
     "word": "alliance",
     "definition": "A union formed for mutual benefit, especially between countries or organizations.",
-    "category": "Noun",
     "theme": "Partnership"
   },
   {
     "index": 419,
     "word": "revolution",
     "definition": "A forcible overthrow of a government or social order in favor of a new system.",
-    "category": "Noun",
     "theme": "Action"
   },
   {
     "index": 420,
     "word": "entrepreneur",
     "definition": "A person who creates businesses.",
-    "category": "Noun",
     "theme": "Business"
   },
   {
     "index": 421,
     "word": "luscious",
     "definition": "Richly appealing to the senses.",
-    "category": "Adjective",
     "theme": "Taste"
   },
   {
     "index": 422,
     "word": "acquaint",
     "definition": "To make someone familiar with something.",
-    "category": "Verb",
     "theme": "Interaction"
   },
   {
     "index": 423,
     "word": "documented",
     "definition": "Recorded or written down as evidence.",
-    "category": "Adjective",
     "theme": "Action"
   },
   {
     "index": 424,
     "word": "effusive",
     "definition": "Expressing emotions freely and openly.",
-    "category": "Adjective",
     "theme": "Expression"
   },
   {
     "index": 425,
     "word": "magnitude",
     "definition": "The size, extent, or importance of something.",
-    "category": "Noun",
     "theme": "Scale"
   },
   {
     "index": 426,
     "word": "argumentative",
     "definition": "Inclined to argue or provoke arguments.",
-    "category": "Adjective",
     "theme": "Personality"
   },
   {
     "index": 427,
     "word": "vulnerability",
     "definition": "The quality or state of being exposed to the possibility of harm or attack.",
-    "category": "Noun",
     "theme": "State"
   },
   {
     "index": 428,
     "word": "wealth",
     "definition": "An abundance of valuable possessions or money.",
-    "category": "Noun",
     "theme": "Finance"
   },
   {
     "index": 429,
     "word": "relocate",
     "definition": "To move to a new place or position.",
-    "category": "Verb",
     "theme": "Action"
   },
   {
     "index": 430,
     "word": "subordination",
     "definition": "The action or state of being under the authority or control of another.",
-    "category": "Noun",
     "theme": "Hierarchy"
   },
   {
     "index": 431,
     "word": "plenty",
     "definition": "A large amount or quantity.",
-    "category": "Noun",
     "theme": "Amount"
   },
   {
     "index": 432,
     "word": "reproduction",
     "definition": "The process of making more of the same kind of organism or object.",
-    "category": "Noun",
     "theme": "Biology"
   },
   {
     "index": 433,
     "word": "unintentionally",
     "definition": "Without intending to do so; accidentally.",
-    "category": "Adverb",
     "theme": "Action"
   },
   {
     "index": 434,
     "word": "zeniths",
     "definition": "The highest point or state of something.",
-    "category": "Noun",
     "theme": "Achievement"
   },
   {
     "index": 435,
     "word": "biotechnology",
     "definition": "The use of biology in technology.",
-    "category": "Noun",
     "theme": "Science"
   },
   {
     "index": 436,
     "word": "authorities",
     "definition": "The people or organizations having control or power over others.",
-    "category": "Noun",
     "theme": "Role"
   },
   {
     "index": 437,
     "word": "reverence",
     "definition": "Deep respect or admiration.",
-    "category": "Noun",
     "theme": "Honor"
   },
   {
     "index": 438,
     "word": "memorable",
     "definition": "Worth remembering or easily recalled.",
-    "category": "Adjective",
     "theme": "Experience"
   },
   {
     "index": 439,
     "word": "environmentalist",
     "definition": "A person who advocates for nature.",
-    "category": "Noun",
     "theme": "Nature"
   },
   {
     "index": 440,
     "word": "historiographer",
     "definition": "An expert in historical writing.",
-    "category": "Noun",
     "theme": "History"
   },
   {
     "index": 441,
     "word": "holiday",
     "definition": "A special day of celebration or rest.",
-    "category": "Noun",
     "theme": "Time"
   },
   {
     "index": 442,
     "word": "cigars",
     "definition": "A cylindrical roll of tobacco for smoking.",
-    "category": "Noun",
     "theme": "Tobacco"
   },
   {
     "index": 443,
     "word": "backstage",
     "definition": "In the area of a theater not visible to the audience.",
-    "category": "Adjective",
     "theme": "Location"
   },
   {
     "index": 444,
     "word": "environmental",
     "definition": "Related to the natural world.",
-    "category": "Adjective",
     "theme": "Nature"
   },
   {
     "index": 445,
     "word": "belliger",
     "definition": "A person or country engaged in a conflict or war.",
-    "category": "Noun",
     "theme": "War"
   },
   {
     "index": 446,
     "word": "earthquake",
     "definition": "A sudden shaking of the ground.",
-    "category": "Noun",
     "theme": "Natural"
   },
   {
     "index": 447,
     "word": "literates",
     "definition": "People who are able to read and write.",
-    "category": "Noun",
     "theme": "Education"
   },
   {
     "index": 448,
     "word": "blacksmith",
     "definition": "A person who creates objects from iron.",
-    "category": "Noun",
     "theme": "Occupation"
   },
   {
     "index": 449,
     "word": "absent",
     "definition": "Not present or available.",
-    "category": "Adjective",
     "theme": "State"
   },
   {
     "index": 450,
     "word": "tarantula",
     "definition": "A large, hairy spider found in warm regions worldwide.",
-    "category": "Arachnid",
     "theme": "Spiders"
   },
   {
     "index": 451,
     "word": "welcome",
     "definition": "To greet someone in a friendly way.",
-    "category": "Verb",
     "theme": "Social"
   },
   {
     "index": 452,
     "word": "unimaginable",
     "definition": "Difficult to imagine or comprehend.",
-    "category": "Adjective",
     "theme": "Quality"
   },
   {
     "index": 453,
     "word": "melodic",
     "definition": "Pleasing to hear, like music.",
-    "category": "Adjective",
     "theme": "Sound"
   },
   {
     "index": 454,
     "word": "billion",
     "definition": "The number 1,000,000,000.",
-    "category": "Noun",
     "theme": "Mathematics"
   },
   {
     "index": 455,
     "word": "dedicate",
     "definition": "To devote time or effort to something.",
-    "category": "Verb",
     "theme": "Commitment"
   },
   {
     "index": 456,
     "word": "comprehensive",
     "definition": "Including all or nearly all elements.",
-    "category": "Adjective",
     "theme": "General"
   },
   {
     "index": 457,
     "word": "elevations",
     "definition": "The height above a given level, especially above sea level.",
-    "category": "Noun",
     "theme": "Geography"
   },
   {
     "index": 458,
     "word": "resolve",
     "definition": "A firm determination to do something.",
-    "category": "Noun",
     "theme": "Determination"
   },
   {
     "index": 459,
     "word": "eagerly",
     "definition": "In an excited or enthusiastic way.",
-    "category": "Adverb",
     "theme": "Emotion"
   },
   {
     "index": 460,
     "word": "absentism",
     "definition": "The practice or habit of staying away from work or school.",
-    "category": "Noun",
     "theme": "Behavior"
   },
   {
     "index": 461,
     "word": "corgi",
     "definition": "A small, sturdy dog breed with short legs.",
-    "category": "Mammal",
     "theme": "Dog Breeds"
   },
   {
     "index": 462,
     "word": "sociology",
     "definition": "The study of society and social behavior.",
-    "category": "Noun",
     "theme": "Field of Study"
   },
   {
     "index": 463,
     "word": "legislation",
     "definition": "Laws, considered collectively.",
-    "category": "Noun",
     "theme": "Law"
   },
   {
     "index": 464,
     "word": "vivacity",
     "definition": "The quality of being lively and animated.",
-    "category": "Noun",
     "theme": "Energy"
   },
   {
     "index": 465,
     "word": "environmentally",
     "definition": "In a way related to the environment.",
-    "category": "Adverb",
     "theme": "Nature"
   },
   {
     "index": 466,
     "word": "relevant",
     "definition": "Closely connected or appropriate to what is being done or discussed.",
-    "category": "Adjective",
     "theme": "Context"
   },
   {
     "index": 467,
     "word": "broker",
     "definition": "A person who buys and sells goods or assets for others.",
-    "category": "Noun",
     "theme": "Finance"
   },
   {
     "index": 468,
     "word": "craftsmanship",
     "definition": "Skill in a particular craft.",
-    "category": "Noun",
     "theme": "Art"
   },
   {
     "index": 469,
     "word": "conservation",
     "definition": "The protection of natural resources.",
-    "category": "Noun",
     "theme": "Environment"
   },
   {
     "index": 470,
     "word": "adaptation",
     "definition": "A change to suit new conditions.",
-    "category": "Noun",
     "theme": "Biology"
   },
   {
     "index": 471,
     "word": "distinction",
     "definition": "A special feature or characteristic that sets something apart.",
-    "category": "Noun",
     "theme": "Quality"
   },
   {
     "index": 472,
     "word": "complicate",
     "definition": "To make something more difficult or complex.",
-    "category": "Verb",
     "theme": "Action"
   },
   {
     "index": 473,
     "word": "counterproductive",
     "definition": "Having the opposite effect of what was intended.",
-    "category": "Adjective",
     "theme": "Action"
   },
   {
     "index": 474,
     "word": "drowsy",
     "definition": "Feeling sleepy or lethargic.",
-    "theme": "Health",
-    "category": "Adjective"
+    "theme": "Health"
   },
   {
     "index": 475,
     "word": "vibrated",
     "definition": "To move rapidly back and forth.",
-    "category": "Verb",
     "theme": "Action"
   },
   {
     "index": 476,
     "word": "deceiver",
     "definition": "A person who misleads others.",
-    "category": "Noun",
     "theme": "Personality"
   },
   {
     "index": 477,
     "word": "misunderstanding",
     "definition": "A failure to understand something correctly.",
-    "category": "Noun",
     "theme": "Communication"
   },
   {
     "index": 478,
     "word": "briskness",
     "definition": "Quickness and energy in movement.",
-    "category": "Noun",
     "theme": "Speed"
   },
   {
     "index": 479,
     "word": "success",
     "definition": "The accomplishment of an aim or purpose.",
-    "category": "Noun",
     "theme": "Achievement"
   },
   {
     "index": 480,
     "word": "environment",
     "definition": "The natural world around us.",
-    "category": "Noun",
     "theme": "Nature"
   },
   {
     "index": 481,
     "word": "persuasion",
     "definition": "The action of convincing someone to do or believe something.",
-    "category": "Noun",
     "theme": "Action"
   },
   {
     "index": 482,
     "word": "equipment",
     "definition": "The necessary items or tools for a specific purpose.",
-    "category": "Noun",
     "theme": "Tools"
   },
   {
     "index": 483,
     "word": "abominable",
     "definition": "Very unpleasant or terrible.",
-    "category": "Adjective",
     "theme": "Quality"
   },
   {
     "index": 484,
     "word": "additional",
     "definition": "Added, extra, or supplementary.",
-    "category": "Adjective",
     "theme": "Quantity"
   },
   {
     "index": 485,
     "word": "relaxed",
     "definition": "Free from tension or anxiety.",
-    "category": "Adjective",
     "theme": "Emotion"
   },
   {
     "index": 486,
     "word": "reverie",
     "definition": "A state of being pleasantly lost in thought.",
-    "category": "Noun",
     "theme": "Imagination"
   },
   {
     "index": 487,
     "word": "crossover",
     "definition": "A point where two paths or ideas intersect.",
-    "category": "Noun",
     "theme": "General"
   },
   {
     "index": 488,
     "word": "adrenaline",
     "definition": "A hormone released in response to stress.",
-    "category": "Noun",
     "theme": "Biology"
   },
   {
     "index": 489,
     "word": "constellation",
     "definition": "A pattern formed by stars.",
-    "category": "Noun",
     "theme": "Astronomy"
   },
   {
     "index": 490,
     "word": "confidential",
     "definition": "Intended to be kept secret or private.",
-    "category": "Adjective",
     "theme": "Privacy"
   },
   {
     "index": 491,
     "word": "benchmark",
     "definition": "A standard for comparison.",
-    "category": "Noun",
     "theme": "Measurement"
   },
   {
     "index": 492,
     "word": "eloquent",
     "definition": "Fluent and expressive in speech or writing.",
-    "category": "Adjective",
     "theme": "Communication"
   },
   {
     "index": 493,
     "word": "enlightening",
     "definition": "Providing new insight or understanding.",
-    "category": "Adjective",
     "theme": "Knowledge"
   },
   {
     "index": 494,
     "word": "viewable",
     "definition": "Capable of being seen or viewed.",
-    "category": "Adjective",
     "theme": "Appearance"
   },
   {
     "index": 495,
     "word": "concentration",
     "definition": "The action of focusing attention.",
-    "category": "Noun",
     "theme": "Psychology"
   },
   {
     "index": 496,
     "word": "subordinate",
     "definition": "A person who is lower in rank or position.",
-    "category": "Noun",
     "theme": "Role"
   },
   {
     "index": 497,
     "word": "enriched",
     "definition": "Made better or more meaningful.",
-    "category": "Adjective",
     "theme": "Improvement"
   },
   {
     "index": 498,
     "word": "pounce",
     "definition": "Spring forward suddenly to seize something.",
-    "theme": "Action",
-    "category": "Verb"
+    "theme": "Action"
   },
   {
     "index": 499,
     "word": "misunderstood",
     "definition": "Failed to be understood correctly.",
-    "category": "Adjective",
     "theme": "Communication"
   },
   {
     "index": 500,
     "word": "larger",
     "definition": "Greater in size, extent, or amount.",
-    "category": "Adjective",
     "theme": "Size"
   },
   {
     "index": 501,
     "word": "vocal",
     "definition": "Relating to or produced by the voice.",
-    "category": "Adjective",
     "theme": "Sound"
   },
   {
     "index": 502,
     "word": "elevators",
     "definition": "Mechanical devices used to move people or objects between different floors of a building.",
-    "category": "Noun",
     "theme": "Transport"
   },
   {
     "index": 503,
     "word": "harmoniously",
     "definition": "In a way that is balanced and agreeable.",
-    "category": "Adverb",
     "theme": "Quality"
   },
   {
     "index": 504,
     "word": "blessed",
     "definition": "Made holy or consecrated.",
-    "category": "Adjective",
     "theme": "Religion"
   },
   {
     "index": 505,
     "word": "mysterious",
     "definition": "Difficult or impossible to understand or explain.",
-    "category": "Adjective",
     "theme": "Quality"
   },
   {
     "index": 506,
     "word": "sparkle",
     "definition": "To shine brightly with flashes of light.",
-    "category": "Verb",
     "theme": "Light"
   },
   {
     "index": 507,
     "word": "wasted",
     "definition": "Exhausted or used up without effect.",
-    "category": "Adjective",
     "theme": "State"
   },
   {
     "index": 508,
     "word": "haste",
     "definition": "Urgency or quickness in movement.",
-    "category": "Noun",
     "theme": "Speed"
   },
   {
     "index": 509,
     "word": "momentous",
     "definition": "Of great importance or significance.",
-    "category": "Adjective",
     "theme": "Event"
   },
   {
     "index": 510,
     "word": "misunderstand",
     "definition": "Fail to interpret something correctly.",
-    "category": "Verb",
     "theme": "Communication"
   },
   {
     "index": 511,
     "word": "composure",
     "definition": "Calmness and control under pressure.",
-    "category": "Noun",
     "theme": "Emotion"
   },
   {
     "index": 512,
     "word": "sensitive",
     "definition": "Having or displaying a quick or delicate understanding of others' feelings.",
-    "category": "Adjective",
     "theme": "Character"
   },
   {
     "index": 513,
     "word": "jigsaw",
     "definition": "A puzzle consisting of many pieces that fit together.",
-    "category": "Noun",
     "theme": "Games"
   },
   {
     "index": 514,
     "word": "flourish",
     "definition": "To grow or develop in a healthy way.",
-    "category": "Verb",
     "theme": "Growth"
   },
   {
     "index": 515,
     "word": "profound",
     "definition": "Deep in meaning or thought.",
-    "category": "Adjective",
     "theme": "Knowledge"
   },
   {
     "index": 516,
     "word": "whimsy",
     "definition": "Playfully odd or fanciful behavior.",
-    "theme": "Creativity",
-    "category": "Noun"
+    "theme": "Creativity"
   },
   {
     "index": 517,
     "word": "journeys",
     "definition": "Long trips, especially involving travel over distances.",
-    "category": "Noun",
     "theme": "Adventure"
   },
   {
     "index": 518,
     "word": "knitting",
     "definition": "The process of making fabric by interlocking yarn with needles.",
-    "category": "Noun",
     "theme": "Craft"
   },
   {
     "index": 519,
     "word": "reasons",
     "definition": "Explanations or justifications for actions or beliefs.",
-    "category": "Noun",
     "theme": "Logic"
   },
   {
     "index": 520,
     "word": "transportation",
     "definition": "The act of moving people or goods.",
-    "category": "Noun",
     "theme": "Logistics"
   },
   {
     "index": 521,
     "word": "infrastructure",
     "definition": "Basic physical systems of a society.",
-    "category": "Noun",
     "theme": "Urban"
   },
   {
     "index": 522,
     "word": "uncharacteristic",
     "definition": "Not typical of a particular person or thing.",
-    "category": "Adjective",
     "theme": "Quality"
   },
   {
     "index": 523,
     "word": "frustration",
     "definition": "A feeling of being upset or annoyed due to inability to achieve something.",
-    "category": "Noun",
     "theme": "Emotion"
   },
   {
     "index": 524,
     "word": "unpredictable",
     "definition": "Not able to be predicted; uncertain.",
-    "category": "Adjective",
     "theme": "State"
   },
   {
     "index": 525,
     "word": "functionality",
     "definition": "The quality of being useful.",
-    "category": "Noun",
     "theme": "Technology"
   },
   {
     "index": 526,
     "word": "significant",
     "definition": "Important or meaningful in effect or consequence.",
-    "category": "Adjective",
     "theme": "Importance"
   },
   {
     "index": 527,
     "word": "information",
     "definition": "Facts provided or learned about something or someone.",
-    "category": "Noun",
     "theme": "Knowledge"
   },
   {
     "index": 528,
     "word": "essence",
     "definition": "The basic nature of something.",
-    "category": "Noun",
     "theme": "Core"
   },
   {
     "index": 529,
     "word": "intrepid",
     "definition": "Fearless and adventurous.",
-    "category": "Adjective",
     "theme": "Courage"
   },
   {
     "index": 530,
     "word": "psychologically",
     "definition": "Relating to mental processes.",
-    "category": "Adverb",
     "theme": "Psychology"
   },
   {
     "index": 531,
     "word": "notable",
     "definition": "Worthy of attention or notice.",
-    "category": "Adjective",
     "theme": "Recognition"
   },
   {
     "index": 532,
     "word": "landmark",
     "definition": "An important historical or notable place.",
-    "category": "Noun",
     "theme": "Geography"
   },
   {
     "index": 533,
     "word": "noble",
     "definition": "Having high moral qualities or rank.",
-    "category": "Adjective",
     "theme": "Character"
   },
   {
     "index": 534,
     "word": "woodcarving",
     "definition": "The art of carving wood.",
-    "category": "Noun",
     "theme": "Craft"
   },
   {
     "index": 535,
     "word": "vacation",
     "definition": "A break from work or study for rest or travel.",
-    "category": "Noun",
     "theme": "Leisure"
   },
   {
     "index": 536,
     "word": "understanding",
     "definition": "The ability to grasp the meaning, significance, or nature of something.",
-    "category": "Noun",
     "theme": "Cognition"
   },
   {
     "index": 537,
     "word": "undrinkable",
     "definition": "Not suitable for drinking.",
-    "category": "Adjective",
     "theme": "Quality"
   },
   {
     "index": 538,
     "word": "programming",
     "definition": "The act of writing computer code.",
-    "category": "Noun",
     "theme": "Technology"
   },
   {
     "index": 539,
     "word": "vacancy",
     "definition": "An unfilled position or available space.",
-    "category": "Noun",
     "theme": "State"
   },
   {
     "index": 540,
     "word": "multidimensional",
     "definition": "Having many aspects or features.",
-    "category": "Adjective",
     "theme": "Science"
   },
   {
     "index": 541,
     "word": "weary",
     "definition": "Feeling tired or exhausted.",
-    "category": "Adjective",
     "theme": "Emotion"
   },
   {
     "index": 542,
     "word": "firewood",
     "definition": "Wood collected for burning as fuel.",
-    "category": "Noun",
     "theme": "Nature"
   },
   {
     "index": 543,
     "word": "workshop",
     "definition": "A space or meeting where practical work or learning takes place.",
-    "category": "Noun",
     "theme": "Education"
   },
   {
     "index": 544,
     "word": "yearly",
     "definition": "Occurring once every twelve months.",
-    "theme": "Time",
-    "category": "Adjective"
+    "theme": "Time"
   },
   {
     "index": 545,
     "word": "individual",
     "definition": "A single human being as distinct from a group, class, or family.",
-    "category": "Noun",
     "theme": "Person"
   },
   {
     "index": 546,
     "word": "inception",
     "definition": "The beginning of something.",
-    "category": "Noun",
     "theme": "Start"
   },
   {
     "index": 547,
     "word": "unquestionable",
     "definition": "Not able to be disputed or doubted.",
-    "category": "Adjective",
     "theme": "State"
   },
   {
     "index": 548,
     "word": "informed",
     "definition": "Having knowledge about a subject or situation.",
-    "category": "Adjective",
     "theme": "State"
   },
   {
     "index": 549,
     "word": "umbrella",
     "definition": "A device used for protection against rain or sun.",
-    "category": "Noun",
     "theme": "Object"
   },
   {
     "index": 550,
     "word": "willing",
     "definition": "Ready to do something, without reluctance.",
-    "category": "Adjective",
     "theme": "Character"
   },
   {
     "index": 551,
     "word": "productive",
     "definition": "Achieving or producing a significant amount of output or results.",
-    "category": "Adjective",
     "theme": "Action"
   },
   {
     "index": 552,
     "word": "velocity",
     "definition": "Speed in a given direction.",
-    "category": "Noun",
     "theme": "Physics"
   },
   {
     "index": 553,
     "word": "individualistic",
     "definition": "Focusing on personal independence.",
-    "category": "Adjective",
     "theme": "Personality"
   },
   {
     "index": 554,
     "word": "uncomfortable",
     "definition": "Causing physical or emotional unease.",
-    "category": "Adjective",
     "theme": "Feeling"
   },
   {
     "index": 555,
     "word": "uncontrollable",
     "definition": "Impossible to control or restrain.",
-    "category": "Adjective",
     "theme": "Quality"
   },
   {
     "index": 556,
     "word": "permanent",
     "definition": "Lasting or intended to last for a long time without change.",
-    "category": "Adjective",
     "theme": "Time"
   },
   {
     "index": 557,
     "word": "understand",
     "definition": "To grasp the meaning, significance, or nature of something.",
-    "category": "Verb",
     "theme": "Action"
   },
   {
     "index": 558,
     "word": "networking",
     "definition": "Interacting to exchange information.",
-    "category": "Noun",
     "theme": "Business"
   },
   {
     "index": 559,
     "word": "establishment",
     "definition": "The action or process of setting something up.",
-    "category": "Noun",
     "theme": "Action"
   },
   {
     "index": 560,
     "word": "fathom",
     "definition": "To understand deeply.",
-    "category": "Verb",
     "theme": "Comprehension"
   },
   {
     "index": 561,
     "word": "inspire",
     "definition": "To fill someone with the urge or ability to do something.",
-    "category": "Verb",
     "theme": "Action"
   },
   {
     "index": 562,
     "word": "parliamentarian",
     "definition": "A member of a parliamentary body.",
-    "category": "Noun",
     "theme": "Politics"
   },
   {
     "index": 563,
     "word": "injection",
     "definition": "An act of injecting a substance.",
-    "category": "Noun",
     "theme": "Medical"
   },
   {
     "index": 564,
     "word": "honoring",
     "definition": "Giving respect or recognition to someone or something.",
-    "category": "Verb",
     "theme": "Action"
   },
   {
     "index": 565,
     "word": "exquisite",
     "definition": "Extremely beautiful or delicate.",
-    "category": "Adjective",
     "theme": "Aesthetics"
   },
   {
     "index": 566,
     "word": "overestimated",
     "definition": "Judged to be larger, better, or more important than it really is.",
-    "category": "Adjective",
     "theme": "Action"
   },
   {
     "index": 567,
     "word": "jolly",
     "definition": "Happy and cheerful.",
-    "category": "Adjective",
     "theme": "Emotion"
   },
   {
     "index": 568,
     "word": "frozen",
     "definition": "Turned into ice or another solid as a result of extreme cold.",
-    "category": "Adjective",
     "theme": "Weather"
   },
   {
     "index": 569,
     "word": "fortunate",
     "definition": "Having good luck or favorable circumstances.",
-    "category": "Adjective",
     "theme": "Luck"
   },
   {
     "index": 570,
     "word": "utmost",
     "definition": "Of the greatest or highest degree.",
-    "theme": "Degree & Intensity",
-    "category": "Adjective"
+    "theme": "Degree & Intensity"
   },
   {
     "index": 571,
     "word": "unfortunate",
     "definition": "Having or marked by bad luck or unfavorable outcomes.",
-    "category": "Adjective",
     "theme": "State"
   },
   {
     "index": 572,
     "word": "language",
     "definition": "A system of communication using words.",
-    "category": "Noun",
     "theme": "Linguistics"
   },
   {
     "index": 573,
     "word": "hinder",
     "definition": "Create difficulties resulting in delay or obstruction.",
-    "theme": "Action",
-    "category": "Verb"
+    "theme": "Action"
   },
   {
     "index": 574,
     "word": "unpredictably",
     "definition": "In a manner that cannot be predicted.",
-    "category": "Adverb",
     "theme": "Quality"
   },
   {
     "index": 575,
     "word": "unavailability",
     "definition": "The state of not being available.",
-    "category": "Noun",
     "theme": "State"
   },
   {
     "index": 576,
     "word": "gravity",
     "definition": "The force that attracts objects toward one another.",
-    "category": "Noun",
     "theme": "Science"
   },
   {
     "index": 577,
     "word": "forgive",
     "definition": "To stop feeling anger or resentment toward someone.",
-    "category": "Verb",
     "theme": "Action"
   },
   {
     "index": 578,
     "word": "landscape",
     "definition": "The features of an area of land.",
-    "category": "Noun",
     "theme": "Nature"
   },
   {
     "index": 579,
     "word": "silence",
     "definition": "The absence of sound or noise.",
-    "category": "Noun",
     "theme": "State"
   },
   {
     "index": 580,
     "word": "motorcycle",
     "definition": "A two-wheeled motor vehicle.",
-    "category": "Noun",
     "theme": "Transport"
   },
   {
     "index": 581,
     "word": "pyramid",
     "definition": "A monumental structure with a square base and triangular sides.",
-    "category": "Noun",
     "theme": "Architecture"
   },
   {
     "index": 582,
     "word": "wonderfully",
     "definition": "In an impressive or admirable way.",
-    "category": "Adverb",
     "theme": "Quality"
   },
   {
     "index": 583,
     "word": "shrink",
     "definition": "To become or make smaller in size.",
-    "category": "Verb",
     "theme": "Action"
   },
   {
     "index": 584,
     "word": "frown",
     "definition": "A facial expression showing displeasure.",
-    "category": "Noun",
     "theme": "Emotion"
   },
   {
     "index": 585,
     "word": "exploration",
     "definition": "The action of traveling in or through an unfamiliar area.",
-    "category": "Noun",
     "theme": "Action"
   },
   {
     "index": 586,
     "word": "impact",
     "definition": "Effect or influence on something.",
-    "theme": "Cause & Effect",
-    "category": "Noun"
+    "theme": "Cause & Effect"
   },
   {
     "index": 587,
     "word": "wires",
     "definition": "Thin, flexible strands of metal used in wiring.",
-    "category": "Noun",
     "theme": "Materials"
   },
   {
     "index": 588,
     "word": "yearlings",
     "definition": "Young animals that are one year old.",
-    "category": "Noun",
     "theme": "Nature"
   },
   {
     "index": 589,
     "word": "euphoria",
     "definition": "A feeling of intense happiness.",
-    "category": "Noun",
     "theme": "Emotion"
   },
   {
     "index": 590,
     "word": "vacant",
     "definition": "Empty or unoccupied.",
-    "category": "Adjective",
     "theme": "State"
   },
   {
     "index": 591,
     "word": "graced",
     "definition": "Provided with elegance or beauty.",
-    "category": "Verb",
     "theme": "Appearance"
   },
   {
     "index": 592,
     "word": "motivation",
     "definition": "The reason for acting in a certain way.",
-    "category": "Noun",
     "theme": "Drive"
   },
   {
     "index": 593,
     "word": "knuckle",
     "definition": "A joint in the fingers, especially when bent.",
-    "category": "Noun",
     "theme": "Anatomy"
   },
   {
     "index": 594,
     "word": "unsuccessfully",
     "definition": "In a manner that does not achieve the desired outcome.",
-    "category": "Adverb",
     "theme": "Failure"
   },
   {
     "index": 595,
     "word": "frugal",
     "definition": "Economical in use or expenditure.",
-    "theme": "Money",
-    "category": "Adjective"
+    "theme": "Money"
   },
   {
     "index": 596,
     "word": "fidelity",
     "definition": "Faithfulness or loyalty.",
-    "category": "Noun",
     "theme": "Commitment"
   },
   {
     "index": 597,
     "word": "seeking",
     "definition": "To attempt to find something.",
-    "category": "Verb",
     "theme": "Action"
   },
   {
     "index": 598,
-    "word": "oversimplification",
-    "definition": "Making something too basic.",
-    "category": "Noun",
+    "word": "oversimplified",
+    "definition": "Making something too basic. (duplicate, need fix)",
     "theme": "Logic"
   },
   {
     "index": 599,
     "word": "overexaggeration",
     "definition": "The act of describing something in an overly exaggerated manner.",
-    "category": "Noun",
     "theme": "Communication"
   },
   {
     "index": 600,
     "word": "radiation",
     "definition": "The emission of energy in the form of waves or particles.",
-    "category": "Noun",
     "theme": "Science"
   },
   {
     "index": 601,
     "word": "exaggerate",
     "definition": "To represent something as being larger, better, or worse than it really is.",
-    "category": "Verb",
     "theme": "Action"
   },
   {
     "index": 602,
     "word": "fertility",
     "definition": "The ability to produce offspring or crops.",
-    "category": "Noun",
     "theme": "Nature"
   },
   {
     "index": 603,
     "word": "youngster",
     "definition": "A child or young person.",
-    "category": "Noun",
     "theme": "People"
   },
   {
     "index": 604,
     "word": "velvet",
     "definition": "A soft, luxurious fabric with a dense pile.",
-    "category": "Noun",
     "theme": "Material"
   },
   {
     "index": 605,
     "word": "vacuuming",
     "definition": "The act of cleaning with a vacuum cleaner.",
-    "category": "Noun",
     "theme": "Household"
   },
   {
     "index": 606,
     "word": "translator",
     "definition": "A person who converts text between languages.",
-    "category": "Noun",
     "theme": "Language"
   },
   {
     "index": 607,
     "word": "fails",
     "definition": "To be unsuccessful or not meet expectations.",
-    "category": "Verb",
     "theme": "Action"
   },
   {
     "index": 608,
     "word": "harmony",
     "definition": "A pleasing arrangement of elements.",
-    "category": "Noun",
     "theme": "Balance"
   },
   {
     "index": 609,
     "word": "uncover",
     "definition": "To reveal something that was hidden or secret.",
-    "category": "Verb",
     "theme": "Action"
   },
   {
     "index": 610,
     "word": "intervention",
     "definition": "The act of interfering in a situation or event.",
-    "category": "Noun",
     "theme": "Action"
   },
   {
     "index": 611,
     "word": "handwriting",
     "definition": "Writing done by hand.",
-    "category": "Noun",
     "theme": "Communication"
   },
   {
     "index": 612,
     "word": "unsuitable",
     "definition": "Not appropriate or acceptable for a particular purpose or situation.",
-    "category": "Adjective",
     "theme": "Quality"
   },
   {
     "index": 613,
     "word": "unconstitutional",
     "definition": "Not in accordance with a constitution, especially a political constitution.",
-    "category": "Adjective",
     "theme": "Law"
   },
   {
     "index": 614,
     "word": "judgemental",
     "definition": "Having or displaying a critical or disapproving attitude.",
-    "category": "Adjective",
     "theme": "Personality"
   },
   {
     "index": 615,
     "word": "unbelievably",
     "definition": "In a way that is hard to believe.",
-    "category": "Adverb",
     "theme": "Quality"
   },
   {
     "index": 616,
     "word": "exuberant",
     "definition": "Filled with lively energy and excitement.",
-    "category": "Adjective",
     "theme": "Emotion"
   },
   {
     "index": 617,
     "word": "writing",
     "definition": "The activity or skill of composing text.",
-    "category": "Noun",
     "theme": "Action"
   },
   {
     "index": 618,
     "word": "proportional",
     "definition": "Corresponding in size or amount to something else.",
-    "category": "Adjective",
     "theme": "Mathematics"
   },
   {
     "index": 619,
     "word": "vacations",
     "definition": "An extended period of leisure and travel.",
-    "category": "Noun",
     "theme": "Leisure"
   },
   {
     "index": 620,
     "word": "horticulture",
     "definition": "The practice of garden cultivation.",
-    "category": "Noun",
     "theme": "Nature"
   },
   {
     "index": 621,
     "word": "hazard",
     "definition": "A danger or risk.",
-    "theme": "Safety",
-    "category": "Noun"
+    "theme": "Safety"
   },
   {
     "index": 622,
     "word": "yonder",
     "definition": "At some distance in the direction indicated.",
-    "theme": "Direction",
-    "category": "Adverb"
+    "theme": "Direction"
   },
   {
     "index": 623,
     "word": "xenophobe",
     "definition": "A person with an irrational fear or dislike of foreigners.",
-    "category": "Noun",
     "theme": "Society"
   },
   {
     "index": 624,
     "word": "wonderful",
     "definition": "Extremely good; marvelous.",
-    "category": "Adjective",
     "theme": "Emotion"
   },
   {
     "index": 625,
     "word": "knowledgeable",
     "definition": "Having or showing knowledge or understanding about a subject.",
-    "category": "Adjective",
     "theme": "Education"
   },
   {
     "index": 626,
     "word": "tundra",
     "definition": "A vast, treeless Arctic region with frozen subsoil.",
-    "theme": "Nature",
-    "category": "Noun"
+    "theme": "Nature"
   },
   {
     "index": 627,
     "word": "nonetheless",
     "definition": "In spite of what has just been said.",
-    "category": "Adverb",
     "theme": "Time"
   },
   {
     "index": 628,
     "word": "whisper",
     "definition": "To speak very softly.",
-    "category": "Verb",
     "theme": "Communication"
   },
   {
     "index": 629,
     "word": "prosperity",
     "definition": "The state of being successful or thriving, especially in terms of wealth.",
-    "category": "Noun",
     "theme": "Economics"
   },
   {
     "index": 630,
     "word": "jovial",
     "definition": "Cheerful and full of good humor.",
-    "category": "Adjective",
     "theme": "Mood"
   },
   {
     "index": 631,
     "word": "unbelievable",
     "definition": "Difficult to believe; extraordinary.",
-    "category": "Adjective",
     "theme": "Quality"
   },
   {
     "index": 632,
     "word": "eternal",
     "definition": "Lasting forever.",
-    "category": "Adjective",
     "theme": "Time"
   },
   {
     "index": 633,
     "word": "transmission",
     "definition": "The act of sending something out.",
-    "category": "Noun",
     "theme": "Technology"
   },
   {
     "index": 634,
     "word": "extinction",
     "definition": "The state of a species, family, or larger group being no longer in existence.",
-    "category": "Noun",
     "theme": "State"
   },
   {
     "index": 635,
     "word": "qualified",
     "definition": "Having the necessary skills or experience.",
-    "category": "Adjective",
     "theme": "Skills"
   },
   {
     "index": 636,
     "word": "significance",
     "definition": "The quality of being worthy of attention or importance.",
-    "category": "Noun",
     "theme": "Importance"
   },
   {
     "index": 637,
     "word": "freedom",
     "definition": "The power to act without constraint.",
-    "category": "Noun",
     "theme": "Rights"
   },
   {
     "index": 638,
     "word": "flame",
     "definition": "A hot, glowing body of ignited gas.",
-    "category": "Noun",
     "theme": "Fire"
   },
   {
     "index": 639,
     "word": "utopian",
     "definition": "Perfect or idealistic in nature.",
-    "category": "Adjective",
     "theme": "Idealism"
   },
   {
     "index": 640,
     "word": "uplifted",
     "definition": "Filled with hope or happiness.",
-    "category": "Adjective",
     "theme": "Emotion"
   },
   {
     "index": 641,
     "word": "grandiloquence",
     "definition": "Pompous or extravagant speech.",
-    "category": "Noun",
     "theme": "Language"
   },
   {
     "index": 642,
     "word": "quench",
     "definition": "Satisfy thirst or extinguish something.",
-    "theme": "Needs",
-    "category": "Verb"
+    "theme": "Needs"
   },
   {
     "index": 643,
     "word": "universe",
     "definition": "All existing matter and space as a whole.",
-    "category": "Noun",
     "theme": "Space"
   },
   {
     "index": 644,
     "word": "mystic",
     "definition": "Involving supernatural or mysterious elements.",
-    "theme": "Mystical & Supernatural",
-    "category": "Adjective"
+    "theme": "Mystical & Supernatural"
   },
   {
     "index": 645,
     "word": "trenches",
     "definition": "Long, narrow excavations in the ground.",
-    "category": "Noun",
     "theme": "Geography"
   },
   {
     "index": 646,
     "word": "emperor",
     "definition": "A sovereign ruler of great power and rank.",
-    "category": "Noun",
     "theme": "History"
   },
   {
     "index": 647,
     "word": "optimisms",
     "definition": "A tendency to be hopeful about the future.",
-    "category": "Noun",
     "theme": "Emotion"
   },
   {
     "index": 648,
     "word": "xenophile",
     "definition": "A person who has a love for foreign things.",
-    "category": "Noun",
     "theme": "Culture"
   },
   {
     "index": 649,
     "word": "generation",
     "definition": "All people born and living at about the same time.",
-    "category": "Noun",
     "theme": "Society"
   },
   {
     "index": 650,
     "word": "empathy",
     "definition": "The ability to understand another’s feelings.",
-    "category": "Noun",
     "theme": "Emotion"
   },
   {
     "index": 651,
     "word": "honesty",
     "definition": "The quality of being truthful and free from deceit.",
-    "category": "Noun",
     "theme": "Virtue"
   },
   {
     "index": 652,
     "word": "updating",
     "definition": "The process of making something current or new.",
-    "category": "Verb",
     "theme": "Action"
   },
   {
     "index": 653,
     "word": "navigation",
     "definition": "The process of planning a route.",
-    "category": "Noun",
     "theme": "Travel"
   },
   {
     "index": 654,
     "word": "venture",
     "definition": "A risky or daring journey or enterprise.",
-    "category": "Noun",
     "theme": "Adventure"
   },
   {
     "index": 655,
     "word": "elimination",
     "definition": "The complete removal or destruction of something.",
-    "category": "Noun",
     "theme": "Action"
   },
   {
     "index": 656,
     "word": "notification",
     "definition": "The action or process of notifying someone about something.",
-    "category": "Noun",
     "theme": "Communication"
   },
   {
     "index": 657,
     "word": "transform",
     "definition": "To change completely in form or appearance.",
-    "category": "Verb",
     "theme": "Change"
   },
   {
     "index": 658,
     "word": "wonderous",
     "definition": "Inspiring a feeling of wonder.",
-    "category": "Adjective",
     "theme": "Emotion"
   },
   {
     "index": 659,
     "word": "worry",
     "definition": "To feel anxious or concerned.",
-    "category": "Verb",
     "theme": "Emotion"
   },
   {
     "index": 660,
     "word": "industrializing",
     "definition": "Developing industries on a large scale.",
-    "category": "Verb",
     "theme": "Economy"
   },
   {
     "index": 661,
     "word": "heartfelt",
     "definition": "Sincere or deeply felt.",
-    "category": "Adjective",
     "theme": "Emotion"
   },
   {
     "index": 662,
     "word": "tranquil",
     "definition": "Calm and peaceful.",
-    "category": "Adjective",
     "theme": "Serenity"
   },
   {
     "index": 663,
     "word": "understood",
     "definition": "To comprehend or grasp the meaning of something.",
-    "category": "Verb",
     "theme": "Cognition"
   },
   {
     "index": 664,
     "word": "parallel",
     "definition": "Two or more lines equally distant from each other.",
-    "category": "Adjective",
     "theme": "Geometry"
   },
   {
     "index": 665,
     "word": "fisherman",
     "definition": "A person who catches fish.",
-    "category": "Noun",
     "theme": "Occupation"
   },
   {
     "index": 666,
     "word": "equivalent",
     "definition": "Equal in value, amount, function, or meaning.",
-    "category": "Adjective",
     "theme": "Comparison"
   },
   {
     "index": 667,
     "word": "individuals",
     "definition": "A single person or thing, as distinct from a group.",
-    "category": "Noun",
     "theme": "Person"
   },
   {
     "index": 668,
     "word": "guardian",
     "definition": "A person who protects or takes care of someone.",
-    "category": "Noun",
     "theme": "Social"
   },
   {
     "index": 669,
     "word": "incompatibility",
     "definition": "The state of being incompatible.",
-    "category": "Noun",
     "theme": "State"
   },
   {
     "index": 670,
     "word": "fabric",
     "definition": "Cloth or material produced by weaving or knitting.",
-    "category": "Noun",
     "theme": "Material"
   },
   {
     "index": 671,
     "word": "opaque",
     "definition": "Not allowing light to pass through; unclear.",
-    "theme": "Objects & Materials",
-    "category": "Adjective"
+    "theme": "Objects & Materials"
   },
   {
     "index": 672,
     "word": "formidable",
     "definition": "Inspiring fear or respect.",
-    "category": "Adjective",
     "theme": "Power"
   },
   {
     "index": 673,
     "word": "gracious",
     "definition": "Courteous and kind.",
-    "category": "Adjective",
     "theme": "Manners"
   },
   {
     "index": 674,
     "word": "vaccine",
     "definition": "A substance used to stimulate the production of antibodies.",
-    "category": "Noun",
     "theme": "Medicine"
   },
   {
     "index": 675,
     "word": "kindred",
     "definition": "Similar in nature or character.",
-    "category": "Adjective",
     "theme": "Connection"
   },
   {
     "index": 676,
     "word": "languish",
     "definition": "To suffer from weakness or neglect.",
-    "category": "Verb",
     "theme": "Emotion"
   },
   {
     "index": 677,
     "word": "fundamentality",
     "definition": "The state of being essential.",
-    "category": "Noun",
     "theme": "Philosophy"
   },
   {
     "index": 678,
     "word": "extraordinarily",
     "definition": "In a very unusual manner.",
-    "category": "Adverb",
     "theme": "General"
   },
   {
     "index": 679,
     "word": "momentum",
     "definition": "The force gained by a moving object.",
-    "category": "Noun",
     "theme": "Physics"
   },
   {
     "index": 680,
     "word": "perceptions",
     "definition": "The ability to become aware of something through the senses.",
-    "category": "Noun",
     "theme": "Thought"
   },
   {
     "index": 681,
     "word": "workplace",
     "definition": "A location where people engage in their job or occupation.",
-    "category": "Noun",
     "theme": "Environment"
   },
   {
     "index": 682,
     "word": "honest",
     "definition": "Truthful and sincere.",
-    "category": "Adjective",
     "theme": "Character"
   },
   {
     "index": 683,
     "word": "fancy",
     "definition": "Elaborate in design or decoration.",
-    "category": "Adjective",
     "theme": "Style"
   },
   {
     "index": 684,
     "word": "unmanageable",
     "definition": "Impossible to control or manage.",
-    "category": "Adjective",
     "theme": "Quality"
   },
   {
     "index": 685,
     "word": "helicopter",
     "definition": "An aircraft with rotating blades.",
-    "category": "Noun",
     "theme": "Transport"
   },
   {
     "index": 686,
     "word": "inspiring",
     "definition": "Filling someone with confidence or motivation.",
-    "category": "Adjective",
     "theme": "Emotion"
   },
   {
     "index": 687,
     "word": "inconsiderate",
     "definition": "Lacking consideration for others.",
-    "category": "Adjective",
     "theme": "Behavior"
   },
   {
     "index": 688,
     "word": "prosperous",
     "definition": "Successful and wealthy.",
-    "category": "Adjective",
     "theme": "Success"
   },
   {
     "index": 689,
     "word": "necessary",
     "definition": "Required or essential for a particular purpose.",
-    "category": "Adjective",
     "theme": "Quality"
   },
   {
     "index": 690,
     "word": "enchanted",
     "definition": "Magically or charmingly attractive.",
-    "category": "Adjective",
     "theme": "Fantasy"
   },
   {
     "index": 691,
     "word": "faction",
     "definition": "A small, organized group within a larger group.",
-    "category": "Noun",
     "theme": "Society"
   },
   {
     "index": 692,
     "word": "question",
     "definition": "A sentence worded to elicit information.",
-    "category": "Noun",
     "theme": "Communication"
   },
   {
     "index": 693,
     "word": "indivisibility",
     "definition": "The state of being unable to be divided.",
-    "category": "Noun",
     "theme": "State"
   },
   {
     "index": 694,
     "word": "hallucination",
     "definition": "Perceiving something not present.",
-    "category": "Noun",
     "theme": "Psychology"
   },
   {
     "index": 695,
     "word": "elevates",
     "definition": "To raise or lift something to a higher position.",
-    "category": "Verb",
     "theme": "Action"
   },
   {
     "index": 696,
     "word": "elevated",
     "definition": "Raised or lifted to a higher position.",
-    "category": "Adjective",
     "theme": "Position"
   },
   {
     "index": 697,
     "word": "kinetic",
     "definition": "Relating to motion.",
-    "category": "Adjective",
     "theme": "Physics"
   },
   {
     "index": 698,
     "word": "triumphs",
     "definition": "Great successes or victories.",
-    "category": "Noun",
     "theme": "Achievement"
   },
   {
     "index": 699,
     "word": "mystery",
     "definition": "Something that is difficult to understand or explain.",
-    "category": "Noun",
     "theme": "Mystery"
   },
   {
     "index": 700,
     "word": "embrace",
     "definition": "To accept or hold something eagerly.",
-    "category": "Verb",
     "theme": "Acceptance"
   },
   {
     "index": 701,
     "word": "uplift",
     "definition": "To raise someone’s mood or spirit.",
-    "category": "Verb",
     "theme": "Emotion"
   },
   {
     "index": 702,
     "word": "helps",
     "definition": "Assists or makes something easier.",
-    "category": "Verb",
     "theme": "Action"
   },
   {
     "index": 703,
     "word": "zealous",
     "definition": "Full of energy and enthusiasm in pursuit of a cause.",
-    "category": "Adjective",
     "theme": "Emotion"
   },
   {
     "index": 704,
     "word": "opportunity",
     "definition": "A set of circumstances that makes it possible to do something.",
-    "category": "Noun",
     "theme": "Chance"
   },
   {
     "index": 705,
     "word": "knowledge",
     "definition": "Facts, information, and skills acquired through experience.",
-    "category": "Noun",
     "theme": "Education"
   },
   {
     "index": 706,
     "word": "transformation",
     "definition": "A thorough or dramatic change in form or appearance.",
-    "category": "Noun",
     "theme": "Change"
   },
   {
     "index": 707,
     "word": "sincerer",
     "definition": "More genuine or truthful in expression.",
-    "category": "Adjective",
     "theme": "Character"
   },
   {
     "index": 708,
     "word": "insect",
     "definition": "A small arthropod animal with six legs and generally one or two pairs of wings.",
-    "category": "Noun",
     "theme": "Nature"
   },
   {
     "index": 709,
     "word": "nerve",
     "definition": "Courage or bravery to do something difficult.",
-    "category": "Noun",
     "theme": "Character"
   },
   {
     "index": 710,
     "word": "serenade",
     "definition": "A song performed in someone's honor.",
-    "category": "Noun",
     "theme": "Music"
   },
   {
     "index": 711,
     "word": "inspired",
     "definition": "Filled with motivation and creativity.",
-    "category": "Adjective",
     "theme": "Drive"
   },
   {
     "index": 712,
     "word": "fearless",
     "definition": "Without fear; brave.",
-    "category": "Adjective",
     "theme": "Courage"
   },
   {
     "index": 713,
     "word": "imagination",
     "definition": "The ability to form new ideas, images, or concepts not present to the senses.",
-    "category": "Noun",
     "theme": "Ability"
   },
   {
     "index": 714,
     "word": "opposite",
     "definition": "Contrary or entirely different in position or direction.",
-    "category": "Adjective",
     "theme": "Comparison"
   },
   {
     "index": 715,
     "word": "prescription",
     "definition": "A doctor's order for the preparation and administration of a medicine.",
-    "category": "Noun",
     "theme": "Medical"
   },
   {
     "index": 716,
     "word": "silly",
     "definition": "Lacking in seriousness or sense.",
-    "category": "Adjective",
     "theme": "Character"
   },
   {
     "index": 717,
     "word": "embassy",
     "definition": "A diplomatic mission or the building that houses it.",
-    "category": "Noun",
     "theme": "Politics"
   },
   {
     "index": 718,
     "word": "happiness",
     "definition": "The state of being happy.",
-    "category": "Noun",
     "theme": "Emotion"
   },
   {
     "index": 719,
     "word": "scholarship",
     "definition": "A grant awarded for academic merit.",
-    "category": "Noun",
     "theme": "Education"
   },
   {
     "index": 720,
     "word": "kilometers",
     "definition": "A metric unit of length, equal to 1,000 meters.",
-    "category": "Noun",
     "theme": "Measurement"
   },
   {
     "index": 721,
     "word": "fascination",
     "definition": "The power to attract or hold the interest of someone.",
-    "category": "Noun",
     "theme": "Emotion"
   },
   {
     "index": 722,
     "word": "reflect",
     "definition": "To throw back light, heat, or an image.",
-    "category": "Verb",
     "theme": "Science"
   },
   {
     "index": 723,
     "word": "indistinguishable",
     "definition": "Impossible to tell apart.",
-    "category": "Adjective",
     "theme": "General"
   },
   {
     "index": 724,
     "word": "notion",
     "definition": "A conception or belief about something.",
-    "theme": "Ideas",
-    "category": "Noun"
+    "theme": "Ideas"
   },
   {
     "index": 725,
     "word": "invincible",
     "definition": "Impossible to defeat or overcome.",
-    "category": "Adjective",
     "theme": "Strength"
   },
   {
     "index": 726,
     "word": "particular",
     "definition": "Used to single out an individual member of a specified group or class.",
-    "category": "Adjective",
     "theme": "Specific"
   },
   {
     "index": 727,
     "word": "mysticism",
     "definition": "A belief in spiritual intuition.",
-    "category": "Noun",
     "theme": "Philosophy"
   },
   {
     "index": 728,
     "word": "preclude",
     "definition": "To prevent something from happening.",
-    "category": "Verb",
     "theme": "Action"
   },
   {
     "index": 729,
     "word": "insubordinate",
     "definition": "Disobedient to authority.",
-    "category": "Adjective",
     "theme": "Behavior"
   },
   {
     "index": 730,
     "word": "oversimplified",
     "definition": "Made too simple to the point of missing important details.",
-    "category": "Adjective",
     "theme": "Quality"
   },
   {
     "index": 731,
     "word": "hesitant",
     "definition": "Uncertain or unsure about taking action.",
-    "category": "Adjective",
     "theme": "Emotion"
   },
   {
     "index": 732,
     "word": "guestbook",
     "definition": "A book in which visitors write their names and comments.",
-    "category": "Noun",
     "theme": "Social"
   },
   {
     "index": 733,
     "word": "qualify",
     "definition": "To meet the necessary standards or conditions.",
-    "category": "Verb",
     "theme": "Action"
   },
   {
     "index": 734,
     "word": "frost",
     "definition": "Ice crystals forming on a surface.",
-    "category": "Noun",
     "theme": "Weather"
   },
   {
     "index": 735,
     "word": "unavoidable",
     "definition": "Unable to be avoided or prevented.",
-    "category": "Adjective",
     "theme": "Quality"
   },
   {
     "index": 736,
     "word": "scout",
     "definition": "A person sent out to gather information.",
-    "category": "Noun",
     "theme": "Exploration"
   },
   {
     "index": 737,
     "word": "hilarity",
     "definition": "Great amusement or laughter.",
-    "category": "Noun",
     "theme": "Emotion"
   },
   {
     "index": 738,
     "word": "satisfy",
     "definition": "To fulfill the needs or desires of someone.",
-    "category": "Verb",
     "theme": "Emotion"
   },
   {
     "index": 739,
     "word": "innovate",
     "definition": "To introduce new ideas or methods.",
-    "category": "Verb",
     "theme": "Creativity"
   },
   {
     "index": 740,
     "word": "urgent",
     "definition": "Requiring immediate action or attention.",
-    "category": "Adjective",
     "theme": "Situation"
   },
   {
     "index": 741,
     "word": "insight",
     "definition": "A deep understanding of something.",
-    "category": "Noun",
     "theme": "Knowledge"
   },
   {
     "index": 742,
     "word": "neurophysiology",
     "definition": "Study of nervous system functions.",
-    "category": "Noun",
     "theme": "Science"
   },
   {
     "index": 743,
     "word": "frequented",
     "definition": "Visited or done regularly.",
-    "category": "Adjective",
     "theme": "Activity"
   },
   {
     "index": 744,
     "word": "formation",
     "definition": "The action of forming or process of being formed.",
-    "category": "Noun",
     "theme": "Process"
   },
   {
     "index": 745,
     "word": "unveil",
     "definition": "Reveal or make known.",
-    "theme": "Discovery",
-    "category": "Verb"
+    "theme": "Discovery"
   },
   {
     "index": 746,
     "word": "xenotype",
     "definition": "An organism resulting from the introduction of foreign genes.",
-    "category": "Noun",
     "theme": "Biology"
   },
   {
     "index": 747,
     "word": "foundation",
     "definition": "The basis or groundwork for something.",
-    "category": "Noun",
     "theme": "Structure"
   },
   {
     "index": 748,
     "word": "investment",
     "definition": "The act of allocating resources for profit.",
-    "category": "Noun",
     "theme": "Finance"
   },
   {
     "index": 749,
     "word": "overloaded",
     "definition": "Having too much weight or burden to carry or manage.",
-    "category": "Adjective",
     "theme": "Condition"
   },
   {
     "index": 750,
     "word": "keyboard",
     "definition": "A panel of keys used for typing on a computer.",
-    "category": "Noun",
     "theme": "Technology"
   },
   {
     "index": 751,
     "word": "fragrance",
     "definition": "A sweet or pleasant odor, often from flowers or perfumes.",
-    "category": "Noun",
     "theme": "Senses"
   },
   {
     "index": 752,
     "word": "fantastic",
     "definition": "Extraordinarily good or great.",
-    "category": "Adjective",
     "theme": "Quality"
   },
   {
     "index": 753,
     "word": "investigation",
     "definition": "The action of investigating something or someone.",
-    "category": "Noun",
     "theme": "Action"
   },
   {
     "index": 754,
     "word": "simplicity",
     "definition": "The state of being easy to understand or not complex.",
-    "category": "Noun",
     "theme": "Quality"
   },
   {
     "index": 755,
     "word": "underappreciated",
     "definition": "Not fully recognized or valued.",
-    "category": "Adjective",
     "theme": "Perception"
   },
   {
     "index": 756,
     "word": "natural",
     "definition": "Existing in nature and not made by humans.",
-    "category": "Adjective",
     "theme": "Nature"
   },
   {
     "index": 757,
     "word": "underestimate",
     "definition": "To judge something as being smaller or less important than it really is.",
-    "category": "Verb",
     "theme": "Action"
   },
   {
     "index": 758,
     "word": "uplifting",
     "definition": "Morally or spiritually inspiring.",
-    "category": "Adjective",
     "theme": "Emotion"
   },
   {
     "index": 759,
     "word": "fragile",
     "definition": "Easily broken or damaged.",
-    "category": "Adjective",
     "theme": "Quality"
   },
   {
     "index": 760,
     "word": "gloves",
     "definition": "Garments covering the hands for protection or warmth.",
-    "category": "Noun",
     "theme": "Clothing"
   },
   {
     "index": 761,
     "word": "evolution",
     "definition": "The gradual development of something.",
-    "category": "Noun",
     "theme": "Biology"
   },
   {
     "index": 762,
     "word": "quartz",
     "definition": "A hard mineral consisting of silica.",
-    "category": "Noun",
     "theme": "Geology"
   },
   {
     "index": 763,
     "word": "infinity",
     "definition": "An endless or unlimited amount.",
-    "category": "Noun",
     "theme": "Concept"
   },
   {
     "index": 764,
     "word": "flocky",
     "definition": "Covered with or resembling a flock.",
-    "category": "Adjective",
     "theme": "Appearance"
   },
   {
     "index": 765,
     "word": "fragrant",
     "definition": "Having a pleasant or sweet smell.",
-    "category": "Adjective",
     "theme": "Senses"
   },
   {
     "index": 766,
     "word": "instrumentation",
     "definition": "Arrangement of musical instruments.",
-    "category": "Noun",
     "theme": "Music"
   },
   {
     "index": 767,
     "word": "moods",
     "definition": "Temporary states of mind or feeling.",
-    "category": "Noun",
     "theme": "Emotion"
   },
   {
     "index": 768,
     "word": "pristine",
     "definition": "Perfectly clean and unspoiled.",
-    "category": "Adjective",
     "theme": "Purity"
   },
   {
     "index": 769,
     "word": "unrivaled",
     "definition": "Having no equal or competition.",
-    "category": "Adjective",
     "theme": "Superiority"
   },
   {
     "index": 770,
     "word": "rehabilitation",
     "definition": "Restoring someone to health.",
-    "category": "Noun",
     "theme": "Health"
   },
   {
     "index": 771,
     "word": "perception",
     "definition": "The ability to see, hear, or become aware of something through the senses.",
-    "category": "Noun",
     "theme": "Senses"
   },
   {
     "index": 772,
     "word": "reduced",
     "definition": "Made smaller or less in amount, degree, or size.",
-    "category": "Adjective",
     "theme": "Change"
   },
   {
     "index": 773,
     "word": "flattering",
     "definition": "Complimentary or showing admiration.",
-    "category": "Adjective",
     "theme": "Emotion"
   },
   {
     "index": 774,
     "word": "optimistic",
     "definition": "Expecting the best possible outcome.",
-    "category": "Adjective",
     "theme": "Attitude"
   },
   {
     "index": 775,
     "word": "quiet",
     "definition": "Free from noise or disturbance.",
-    "category": "Adjective",
     "theme": "State"
   },
   {
     "index": 776,
     "word": "overcompensation",
     "definition": "The act of making excessive or unnecessary efforts to correct something.",
-    "category": "Noun",
     "theme": "Behavior"
   },
   {
     "index": 777,
     "word": "whispered",
     "definition": "To speak very softly, often to avoid being heard.",
-    "category": "Verb",
     "theme": "Action"
   },
   {
     "index": 778,
     "word": "flick",
     "definition": "A sudden sharp movement.",
-    "category": "Verb",
     "theme": "Action"
   },
   {
     "index": 779,
     "word": "kingdom",
     "definition": "A country ruled by a king or queen.",
-    "category": "Noun",
     "theme": "Government"
   },
   {
     "index": 780,
     "word": "unscrupulous",
     "definition": "Having or showing no moral principles.",
-    "category": "Adjective",
     "theme": "Behavior"
   },
   {
     "index": 781,
     "word": "nuance",
     "definition": "A subtle difference in meaning or expression.",
-    "theme": "Ideas",
-    "category": "Noun"
+    "theme": "Ideas"
   },
   {
     "index": 782,
     "word": "justice",
     "definition": "Fair treatment under the law.",
-    "category": "Noun",
     "theme": "Law"
   },
   {
     "index": 783,
     "word": "overconsumption",
     "definition": "Using too much of something.",
-    "category": "Noun",
     "theme": "Environment"
   },
   {
     "index": 784,
     "word": "generator",
     "definition": "A machine that converts mechanical energy into electrical energy.",
-    "category": "Noun",
     "theme": "Technology"
   },
   {
     "index": 785,
     "word": "opposition",
     "definition": "Resistance or dissent.",
-    "category": "Noun",
     "theme": "Politics"
   },
   {
     "index": 786,
     "word": "optimal",
     "definition": "Best or most effective.",
-    "category": "Adjective",
     "theme": "Quality"
   },
   {
     "index": 787,
     "word": "hospitable",
     "definition": "Friendly and welcoming to guests or strangers.",
-    "category": "Adjective",
     "theme": "Personality"
   },
   {
     "index": 788,
     "word": "influential",
     "definition": "Having great influence on someone or something.",
-    "category": "Adjective",
     "theme": "Power"
   },
   {
     "index": 789,
     "word": "recovery",
     "definition": "The process of returning to a normal state or condition.",
-    "category": "Noun",
     "theme": "Health"
   },
   {
     "index": 790,
     "word": "knight",
     "definition": "A man granted an honorary title.",
-    "category": "Noun",
     "theme": "History"
   },
   {
     "index": 791,
     "word": "questioning",
     "definition": "The act of asking questions to gain information.",
-    "category": "Verb",
     "theme": "Communication"
   },
   {
     "index": 792,
     "word": "overcompensated",
     "definition": "Compensated for more than is necessary.",
-    "category": "Adjective",
     "theme": "Action"
   },
   {
     "index": 793,
     "word": "hospital",
     "definition": "A place where sick or injured people receive medical treatment.",
-    "category": "Noun",
     "theme": "Healthcare"
   },
   {
     "index": 794,
     "word": "friendship",
     "definition": "The emotions or conduct of friends; the state of being friends.",
-    "category": "Noun",
     "theme": "Relationship"
   },
   {
     "index": 795,
     "word": "incredible",
     "definition": "Impossible to believe; extraordinary.",
-    "category": "Adjective",
     "theme": "Quality"
   },
   {
     "index": 796,
     "word": "wilderness",
     "definition": "An area of land that has not been significantly modified by human activity.",
-    "category": "Noun",
     "theme": "Environment"
   },
   {
     "index": 797,
     "word": "innovative",
     "definition": "Introducing new and creative ideas.",
-    "category": "Adjective",
     "theme": "Creativity"
   },
   {
     "index": 798,
     "word": "prestige",
     "definition": "Reputation based on success or quality.",
-    "category": "Noun",
     "theme": "Recognition"
   },
   {
     "index": 799,
     "word": "skill",
     "definition": "The ability to do something well.",
-    "category": "Noun",
     "theme": "Talent"
   },
   {
     "index": 800,
     "word": "internationalism",
     "definition": "A political principle favoring cooperation.",
-    "category": "Noun",
     "theme": "Politics"
   },
   {
     "index": 801,
     "word": "intellectualism",
     "definition": "Emphasis on intellect over emotion.",
-    "category": "Noun",
     "theme": "Philosophy"
   },
   {
     "index": 802,
     "word": "oversimplifying",
     "definition": "Making something too simple.",
-    "category": "Verb",
     "theme": "Argument"
   },
   {
     "index": 803,
     "word": "organization",
     "definition": "A group arranged for a purpose.",
-    "category": "Noun",
     "theme": "Business"
   },
   {
     "index": 804,
     "word": "fashionable",
     "definition": "In style or popular.",
-    "category": "Adjective",
     "theme": "Fashion"
   },
   {
     "index": 805,
     "word": "prevention",
     "definition": "The action of stopping something from happening or arising.",
-    "category": "Noun",
     "theme": "Action"
   },
   {
     "index": 806,
     "word": "schoolyard",
     "definition": "An outdoor area where children play at school.",
-    "category": "Noun",
     "theme": "Education"
   },
   {
     "index": 807,
     "word": "yellow",
     "definition": "A color resembling that of gold or the sun.",
-    "category": "Adjective",
     "theme": "Color"
   },
   {
     "index": 808,
     "word": "unusual",
     "definition": "Not normal or expected; rare or strange.",
-    "category": "Adjective",
     "theme": "Quality"
   },
   {
     "index": 809,
     "word": "underprivileged",
     "definition": "Lacking basic social rights.",
-    "category": "Adjective",
     "theme": "Society"
   },
   {
     "index": 810,
     "word": "newspaper",
     "definition": "Printed publication with news articles.",
-    "category": "Noun",
     "theme": "Media"
   },
   {
     "index": 811,
     "word": "psychotherapist",
     "definition": "A mental health specialist.",
-    "category": "Noun",
     "theme": "Health"
   },
   {
     "index": 812,
     "word": "jubilant",
     "definition": "Feeling or expressing great joy.",
-    "category": "Adjective",
     "theme": "Happiness"
   },
   {
     "index": 813,
     "word": "trophy",
     "definition": "An award given as a prize for a victory or achievement.",
-    "category": "Noun",
     "theme": "Competition"
   },
   {
     "index": 814,
     "word": "obeys",
     "definition": "Complies with commands or instructions.",
-    "category": "Verb",
     "theme": "Action"
   },
   {
     "index": 815,
     "word": "patience",
     "definition": "The ability to wait calmly for something.",
-    "category": "Noun",
     "theme": "Virtue"
   },
   {
     "index": 816,
     "word": "sightseeing",
     "definition": "Visiting interesting places.",
-    "category": "Noun",
     "theme": "Travel"
   },
   {
     "index": 817,
     "word": "fathoms",
     "definition": "Units of depth, typically used to measure water.",
-    "category": "Noun",
     "theme": "Measurement"
   },
   {
     "index": 818,
     "word": "restaurant",
     "definition": "A place where meals are served.",
-    "category": "Noun",
     "theme": "Food"
   },
   {
     "index": 819,
     "word": "invisible",
     "definition": "Impossible to see; hidden from view.",
-    "category": "Adjective",
     "theme": "Appearance"
   },
   {
     "index": 820,
     "word": "implementation",
     "definition": "The process of putting into effect.",
-    "category": "Noun",
     "theme": "Work"
   },
   {
     "index": 821,
     "word": "gathering",
     "definition": "The act of bringing things or people together.",
-    "category": "Noun",
     "theme": "Event"
   },
   {
     "index": 822,
     "word": "jargon",
     "definition": "Special words or expressions used by a profession or group.",
-    "theme": "Language",
-    "category": "Noun"
+    "theme": "Language"
   },
   {
     "index": 823,
     "word": "unrecognizable",
     "definition": "Impossible to recognize.",
-    "category": "Adjective",
     "theme": "State"
   },
   {
     "index": 824,
     "word": "warranted",
     "definition": "Justified or authorized; having a good reason.",
-    "category": "Adjective",
     "theme": "Law"
   },
   {
     "index": 825,
     "word": "fatherhood",
     "definition": "The state of being a father.",
-    "category": "Noun",
     "theme": "Family"
   },
   {
     "index": 826,
     "word": "radiance",
     "definition": "Brightness or light emitted from something.",
-    "category": "Noun",
     "theme": "Light"
   },
   {
     "index": 827,
     "word": "expansion",
     "definition": "The act of growing or spreading out.",
-    "category": "Noun",
     "theme": "Growth"
   },
   {
     "index": 828,
     "word": "reestablishment",
     "definition": "The act of setting up again.",
-    "category": "Noun",
     "theme": "General"
   },
   {
     "index": 829,
     "word": "imposing",
     "definition": "Having an appearance or manner that impresses others.",
-    "category": "Adjective",
     "theme": "Appearance"
   },
   {
     "index": 830,
     "word": "ultimate",
     "definition": "The best or most extreme of its kind.",
-    "category": "Adjective",
     "theme": "Achievement"
   },
   {
     "index": 831,
     "word": "harvest",
     "definition": "The process of gathering crops.",
-    "category": "Noun",
     "theme": "Agriculture"
   },
   {
     "index": 832,
     "word": "overwhelming",
     "definition": "Very intense or powerful, especially in effect.",
-    "category": "Adjective",
     "theme": "Intensity"
   },
   {
     "index": 833,
     "word": "ethereal",
     "definition": "Delicate and light in a way that seems not of this world.",
-    "category": "Adjective",
     "theme": "Appearance"
   },
   {
     "index": 834,
     "word": "increased",
     "definition": "Made larger or greater in amount or number.",
-    "category": "Adjective",
     "theme": "Change"
   },
   {
     "index": 835,
     "word": "festival",
     "definition": "A series of cultural or religious events.",
-    "category": "Noun",
     "theme": "Culture"
   },
   {
     "index": 836,
     "word": "skirt",
     "definition": "A garment worn by women or girls.",
-    "category": "Noun",
     "theme": "Clothing"
   },
   {
     "index": 837,
     "word": "introduction",
     "definition": "The action of introducing something or someone.",
-    "category": "Noun",
     "theme": "Action"
   },
   {
     "index": 838,
     "word": "junction",
     "definition": "A point where two or more things are joined.",
-    "category": "Noun",
     "theme": "Geography"
   },
   {
     "index": 839,
     "word": "goalkeeper",
     "definition": "A player who defends the goal in sports.",
-    "category": "Noun",
     "theme": "Sports"
   },
   {
     "index": 840,
     "word": "jumble",
     "definition": "A confused mixture of things.",
-    "theme": "Disorder",
-    "category": "Noun"
+    "theme": "Disorder"
   },
   {
     "index": 841,
     "word": "reality",
     "definition": "The world as it is, not as it seems or is imagined.",
-    "category": "Noun",
     "theme": "Philosophy"
   },
   {
     "index": 842,
     "word": "nurture",
     "definition": "To care for and encourage growth.",
-    "category": "Verb",
     "theme": "Development"
   },
   {
     "index": 843,
     "word": "jungle",
     "definition": "A dense forest, typically in a tropical climate.",
-    "category": "Noun",
     "theme": "Nature"
   },
   {
     "index": 844,
     "word": "exaggeration",
     "definition": "A statement that represents something as being larger, better, or worse than it really is.",
-    "category": "Noun",
     "theme": "Action"
   },
   {
     "index": 845,
     "word": "prosecution",
     "definition": "The legal pursuit of charges against a defendant in court.",
-    "category": "Noun",
     "theme": "Law"
   },
   {
     "index": 846,
     "word": "imprisonment",
     "definition": "The act of confining someone.",
-    "category": "Noun",
     "theme": "Law"
   },
   {
     "index": 847,
     "word": "separation",
     "definition": "The action of moving or being moved apart.",
-    "category": "Noun",
     "theme": "State"
   },
   {
     "index": 848,
     "word": "hospitalization",
     "definition": "The act of admitting to a hospital.",
-    "category": "Noun",
     "theme": "Health"
   },
   {
     "index": 849,
     "word": "exalted",
     "definition": "Held in high regard or status.",
-    "category": "Adjective",
     "theme": "Honor"
   },
   {
     "index": 850,
     "word": "observation",
     "definition": "The action or process of observing something or someone carefully.",
-    "category": "Noun",
     "theme": "Action"
   },
   {
     "index": 851,
     "word": "widespread",
     "definition": "Something that extends over a large area or is widely known.",
-    "category": "Adjective",
     "theme": "Scope"
   },
   {
     "index": 852,
     "word": "irreversible",
     "definition": "Not able to be undone or altered.",
-    "category": "Adjective",
     "theme": "State"
   },
   {
     "index": 853,
     "word": "insurrection",
     "definition": "A violent uprising against an authority or government.",
-    "category": "Noun",
     "theme": "Action"
   },
   {
     "index": 854,
     "word": "triangle",
     "definition": "A three-sided polygon.",
-    "category": "Noun",
     "theme": "Geometry"
   },
   {
     "index": 855,
     "word": "semiautonomous",
     "definition": "Partially self-governing.",
-    "category": "Adjective",
     "theme": "Politics"
   },
   {
     "index": 856,
     "word": "glorious",
     "definition": "Having great beauty or splendor.",
-    "category": "Adjective",
     "theme": "Appearance"
   },
   {
     "index": 857,
     "word": "rapture",
     "definition": "A feeling of intense joy or pleasure.",
-    "category": "Noun",
     "theme": "Emotion"
   },
   {
     "index": 858,
     "word": "exceptionalism",
     "definition": "Belief in being unique or superior.",
-    "category": "Noun",
     "theme": "Sociology"
   },
   {
     "index": 859,
     "word": "serious",
     "definition": "Demanding careful consideration or application.",
-    "category": "Adjective",
     "theme": "Behavior"
   },
   {
     "index": 860,
     "word": "sizzle",
     "definition": "Emit a hissing sound when frying or cooking.",
-    "theme": "Cooking",
-    "category": "Verb"
+    "theme": "Cooking"
   },
   {
     "index": 861,
     "word": "receptionist",
     "definition": "A person employed to answer the telephone, deal with clients, and greet visitors.",
-    "category": "Noun",
     "theme": "Occupation"
   },
   {
     "index": 862,
     "word": "hatchy",
     "definition": "Relating to or resembling a hatch.",
-    "category": "Adjective",
     "theme": "Appearance"
   },
   {
     "index": 863,
     "word": "involvement",
     "definition": "The state of being involved with something or someone.",
-    "category": "Noun",
     "theme": "Action"
   },
   {
     "index": 864,
     "word": "inconsequential",
     "definition": "Not important or significant.",
-    "category": "Adjective",
     "theme": "General"
   },
   {
     "index": 865,
     "word": "indestructibility",
     "definition": "The quality of being indestructible.",
-    "category": "Noun",
     "theme": "Quality"
   },
   {
     "index": 866,
     "word": "gather",
     "definition": "To bring things or people together.",
-    "category": "Verb",
     "theme": "Action"
   },
   {
     "index": 867,
     "word": "internationally",
     "definition": "Across or involving multiple countries.",
-    "category": "Adverb",
     "theme": "Geography"
   },
   {
     "index": 868,
     "word": "invoke",
     "definition": "Call upon something, especially a higher power.",
-    "theme": "Mystical & Supernatural",
-    "category": "Verb"
+    "theme": "Mystical & Supernatural"
   },
   {
     "index": 869,
     "word": "identification",
     "definition": "The act of recognizing something.",
-    "category": "Noun",
     "theme": "Security"
   },
   {
     "index": 870,
     "word": "enlightened",
     "definition": "Having or showing a rational, modern, and well-informed outlook.",
-    "category": "Adjective",
     "theme": "State"
   },
   {
     "index": 871,
     "word": "serendipity",
     "definition": "The occurrence of fortunate events by chance.",
-    "category": "Noun",
     "theme": "Luck"
   },
   {
     "index": 872,
     "word": "parade",
     "definition": "A public procession for celebration.",
-    "theme": "Events",
-    "category": "Noun"
+    "theme": "Events"
   },
   {
     "index": 873,
     "word": "navigable",
     "definition": "Able to be sailed on or traveled across.",
-    "category": "Adjective",
     "theme": "Geography"
   },
   {
     "index": 874,
     "word": "preference",
     "definition": "A greater liking for one alternative over another.",
-    "category": "Noun",
     "theme": "Choice"
   },
   {
     "index": 875,
     "word": "judiciary",
     "definition": "The system of courts and judges that interpret laws.",
-    "category": "Noun",
     "theme": "Law"
   },
   {
     "index": 876,
     "word": "neighbor",
     "definition": "A person living near or next door to another.",
-    "category": "Noun",
     "theme": "Social"
   },
   {
     "index": 877,
     "word": "horizon",
     "definition": "The line where the sky meets the land or sea.",
-    "category": "Noun",
     "theme": "Nature"
   },
   {
     "index": 878,
     "word": "excitement",
     "definition": "A feeling of great enthusiasm or eagerness.",
-    "category": "Noun",
     "theme": "Emotion"
   },
   {
     "index": 879,
     "word": "neutral",
     "definition": "Not taking sides in a conflict or dispute.",
-    "category": "Adjective",
     "theme": "Politics"
   },
   {
     "index": 880,
     "word": "flicker",
     "definition": "To shine with an unsteady or wavering light.",
-    "category": "Verb",
     "theme": "Light"
   },
   {
     "index": 881,
     "word": "experience",
     "definition": "Practical contact with and observation of facts or events.",
-    "category": "Noun",
     "theme": "Knowledge"
   },
   {
     "index": 882,
     "word": "feared",
     "definition": "Experienced a sense of dread or apprehension.",
-    "category": "Verb",
     "theme": "Emotion"
   },
   {
     "index": 883,
     "word": "workmanship",
     "definition": "The quality of someone's craft.",
-    "category": "Noun",
     "theme": "Craft"
   },
   {
     "index": 884,
     "word": "exploring",
     "definition": "The act of traveling or searching to discover something.",
-    "category": "Verb",
     "theme": "Action"
   },
   {
     "index": 885,
     "word": "elephant",
     "definition": "A large herbivorous mammal with a trunk.",
-    "category": "Noun",
     "theme": "Animals"
   },
   {
     "index": 886,
     "word": "overcome",
     "definition": "To succeed in dealing with a difficulty or obstacle.",
-    "category": "Verb",
     "theme": "Achievement"
   },
   {
     "index": 887,
     "word": "soaring",
     "definition": "Flying or rising high in the air.",
-    "category": "Adjective",
     "theme": "Movement"
   },
   {
     "index": 888,
     "word": "genuine",
     "definition": "Real and authentic; not false or pretend.",
-    "category": "Adjective",
     "theme": "Character"
   },
   {
     "index": 889,
     "word": "glistening",
     "definition": "Shining with a sparkling light.",
-    "category": "Adjective",
     "theme": "Light"
   },
   {
     "index": 890,
     "word": "objective",
     "definition": "A goal or purpose to be achieved.",
-    "category": "Noun",
     "theme": "Task"
   },
   {
     "index": 891,
     "word": "journalist",
     "definition": "A person who writes news stories.",
-    "category": "Noun",
     "theme": "Occupation"
   },
   {
     "index": 892,
     "word": "knack",
     "definition": "A special skill or ability.",
-    "category": "Noun",
     "theme": "Talent"
   },
   {
     "index": 893,
     "word": "illuminate",
     "definition": "To light something or make it bright.",
-    "category": "Verb",
     "theme": "Action"
   },
   {
     "index": 894,
     "word": "fascinate",
     "definition": "To attract and hold interest.",
-    "category": "Verb",
     "theme": "Curiosity"
   },
   {
     "index": 895,
     "word": "radiating",
     "definition": "Emitting energy or light.",
-    "category": "Verb",
     "theme": "Light"
   },
   {
     "index": 896,
     "word": "impression",
     "definition": "A strong effect produced on someone or something.",
-    "category": "Noun",
     "theme": "Effect"
   },
   {
     "index": 897,
     "word": "jacket",
     "definition": "A piece of clothing worn on the upper body.",
-    "category": "Noun",
     "theme": "Clothing"
   },
   {
     "index": 898,
     "word": "improvises",
     "definition": "To make or do something without preparation.",
-    "category": "Verb",
     "theme": "Action"
   },
   {
     "index": 899,
     "word": "humility",
     "definition": "A modest or low view of one's importance.",
-    "category": "Noun",
     "theme": "Character"
   },
   {
     "index": 900,
     "word": "glitch",
     "definition": "A small fault or malfunction in a system.",
-    "theme": "Technology",
-    "category": "Noun"
+    "theme": "Technology"
   },
   {
     "index": 901,
     "word": "serenity",
     "definition": "A state of calm and peace.",
-    "category": "Noun",
     "theme": "Emotion"
   },
   {
     "index": 902,
     "word": "kernel",
     "definition": "The softer, usually edible part of a seed or nut.",
-    "category": "Noun",
     "theme": "Food"
   },
   {
     "index": 903,
     "word": "workable",
     "definition": "Capable of being used or worked with effectively.",
-    "category": "Adjective",
     "theme": "Functionality"
   },
   {
     "index": 904,
     "word": "quotation",
     "definition": "A group of words taken from a text or speech.",
-    "category": "Noun",
     "theme": "Literature"
   },
   {
     "index": 905,
     "word": "personality",
     "definition": "The combination of characteristics or qualities that form an individual's distinctive character.",
-    "category": "Noun",
     "theme": "Psychology"
   },
   {
     "index": 906,
     "word": "impress",
     "definition": "To make someone feel admiration or respect.",
-    "category": "Verb",
     "theme": "Emotion"
   },
   {
     "index": 907,
     "word": "independent",
     "definition": "Not influenced or controlled by others.",
-    "category": "Adjective",
     "theme": "State"
   },
   {
     "index": 908,
     "word": "halcyon",
     "definition": "Peaceful and calm; happy and golden.",
-    "category": "Adjective",
     "theme": "Serenity"
   },
   {
     "index": 909,
     "word": "international",
     "definition": "Involving multiple countries.",
-    "category": "Adjective",
     "theme": "Geography"
   },
   {
     "index": 910,
     "word": "happy",
     "definition": "Feeling or showing joy or contentment.",
-    "category": "Adjective",
     "theme": "Emotion"
   },
   {
     "index": 911,
     "word": "figurative",
     "definition": "Using figures of speech for expression.",
-    "category": "Adjective",
     "theme": "Language"
   },
   {
     "index": 912,
     "word": "object",
     "definition": "A material thing that can be seen and touched.",
-    "category": "Noun",
     "theme": "General"
   },
   {
     "index": 913,
     "word": "sensitivity",
     "definition": "The quality of being sensitive or responsive to stimuli.",
-    "category": "Noun",
     "theme": "Personality"
   },
   {
     "index": 914,
     "word": "shame",
     "definition": "A painful feeling of humiliation.",
-    "category": "Noun",
     "theme": "Emotion"
   },
   {
     "index": 915,
     "word": "geometric",
     "definition": "Relating to geometry or the properties of shapes and sizes.",
-    "category": "Adjective",
     "theme": "Mathematics"
   },
   {
     "index": 916,
     "word": "racer",
     "definition": "A person who competes in races.",
-    "category": "Noun",
     "theme": "Sport"
   },
   {
     "index": 917,
     "word": "irreplaceable",
     "definition": "Impossible to replace because of being unique.",
-    "category": "Adjective",
     "theme": "Quality"
   },
   {
     "index": 918,
     "word": "overcomplicated",
     "definition": "Made more complex than necessary.",
-    "category": "Adjective",
     "theme": "Quality"
   },
   {
     "index": 919,
     "word": "endurance",
     "definition": "The ability to withstand hardship.",
-    "category": "Noun",
     "theme": "Strength"
   },
   {
     "index": 920,
     "word": "galactic",
     "definition": "Relating to a galaxy, especially the Milky Way.",
-    "category": "Adjective",
     "theme": "Space"
   },
   {
     "index": 921,
     "word": "unquestionably",
     "definition": "In a way that is beyond doubt.",
-    "category": "Adverb",
     "theme": "State"
   },
   {
     "index": 922,
     "word": "reckoning",
     "definition": "A time of judgment or calculation.",
-    "category": "Noun",
     "theme": "Evaluation"
   },
   {
     "index": 923,
     "word": "festive",
     "definition": "Relating to a celebration or holiday.",
-    "category": "Adjective",
     "theme": "Celebration"
   },
   {
     "index": 924,
     "word": "keenly",
     "definition": "In an eager or enthusiastic manner.",
-    "theme": "Emotion",
-    "category": "Adverb"
+    "theme": "Emotion"
   },
   {
     "index": 925,
     "word": "rehearsal",
     "definition": "A practice session for a performance.",
-    "category": "Noun",
     "theme": "Theater"
   },
   {
     "index": 926,
     "word": "expansive",
     "definition": "Wide-ranging or extensive.",
-    "category": "Adjective",
     "theme": "Scale"
   },
   {
     "index": 927,
     "word": "enlighten",
     "definition": "To provide someone with greater knowledge or understanding.",
-    "category": "Verb",
     "theme": "Action"
   },
   {
     "index": 928,
     "word": "wildflower",
     "definition": "A flower that grows naturally in the wild.",
-    "category": "Noun",
     "theme": "Nature"
   },
   {
     "index": 929,
     "word": "narrow",
     "definition": "Of small width in relation to length.",
-    "category": "Adjective",
     "theme": "Measurement"
   },
   {
     "index": 930,
     "word": "seriously",
     "definition": "In a thoughtful or earnest manner.",
-    "category": "Adverb",
     "theme": "Action"
   },
   {
     "index": 931,
     "word": "reconciliation",
     "definition": "The process of restoring friendly relations after a disagreement.",
-    "category": "Noun",
     "theme": "Action"
   },
   {
     "index": 932,
     "word": "opinion",
     "definition": "A personal view or belief about something.",
-    "category": "Noun",
     "theme": "Communication"
   },
   {
     "index": 933,
     "word": "wisdom",
     "definition": "The ability to make good judgments.",
-    "category": "Noun",
     "theme": "Knowledge"
   },
   {
     "index": 934,
     "word": "fiction",
     "definition": "Literature based on imaginative narration.",
-    "category": "Noun",
     "theme": "Literature"
   },
   {
     "index": 935,
     "word": "scattered",
     "definition": "Thrown or spread in random directions.",
-    "category": "Verb",
     "theme": "Action"
   },
   {
     "index": 936,
     "word": "treatment",
     "definition": "The care provided to improve a condition.",
-    "category": "Noun",
     "theme": "Medical"
   },
   {
     "index": 937,
     "word": "experimental",
     "definition": "Relating to trials or tests to discover something new.",
-    "category": "Adjective",
     "theme": "Science"
   },
   {
     "index": 938,
     "word": "gargle",
     "definition": "Wash or rinse the throat by holding liquid in the mouth and agitating it.",
-    "theme": "Health",
-    "category": "Verb"
+    "theme": "Health"
   },
   {
     "index": 939,
     "word": "sneak",
     "definition": "To move or do something stealthily.",
-    "category": "Verb",
     "theme": "Action"
   },
   {
     "index": 940,
     "word": "questioner",
     "definition": "A person who asks questions, especially for clarification or inquiry.",
-    "category": "Noun",
     "theme": "Communication"
   },
   {
     "index": 941,
     "word": "flock",
     "definition": "A group of birds or people.",
-    "category": "Noun",
     "theme": "Group"
   },
   {
     "index": 942,
     "word": "imperfection",
     "definition": "A fault or flaw in something.",
-    "category": "Noun",
     "theme": "Quality"
   },
   {
     "index": 943,
     "word": "wonderment",
     "definition": "A feeling of awe or admiration.",
-    "category": "Noun",
     "theme": "Emotion"
   },
   {
     "index": 944,
     "word": "overwhelmingly",
     "definition": "In a way that is overpowering or enormous in effect.",
-    "category": "Adverb",
     "theme": "Intensity"
   },
   {
     "index": 945,
     "word": "journey",
     "definition": "A long trip or voyage.",
-    "category": "Noun",
     "theme": "Adventure"
   },
   {
     "index": 946,
     "word": "quest",
     "definition": "A long or arduous search for something.",
-    "category": "Noun",
     "theme": "Adventure"
   },
   {
     "index": 947,
     "word": "narrative",
     "definition": "A spoken or written account of connected events or experiences.",
-    "category": "Noun",
     "theme": "Story"
   },
   {
     "index": 948,
     "word": "glisten",
     "definition": "To shine with a soft, reflected light.",
-    "category": "Verb",
     "theme": "Nature"
   },
   {
     "index": 949,
     "word": "scissors",
     "definition": "A tool used for cutting paper, fabric, etc.",
-    "category": "Noun",
     "theme": "Object"
   },
   {
     "index": 950,
     "word": "interpretation",
     "definition": "The action of explaining the meaning of something.",
-    "category": "Noun",
     "theme": "Action"
   },
   {
     "index": 951,
     "word": "gleaming",
     "definition": "Shining brightly.",
-    "category": "Adjective",
     "theme": "Light"
   },
   {
     "index": 952,
     "word": "youthful",
     "definition": "Having qualities associated with young people.",
-    "category": "Adjective",
     "theme": "Age"
   },
   {
     "index": 953,
     "word": "relationship",
     "definition": "The way in which two or more people or things are connected.",
-    "category": "Noun",
     "theme": "Social"
   },
   {
     "index": 954,
     "word": "justification",
     "definition": "The action of proving something right.",
-    "category": "Noun",
     "theme": "Argument"
   },
   {
     "index": 955,
     "word": "xenial",
     "definition": "Relating to hospitality between host and guest.",
-    "theme": "Social",
-    "category": "Adjective"
+    "theme": "Social"
   },
   {
     "index": 956,
     "word": "governor",
     "definition": "A person who is the head of a state or province.",
-    "category": "Noun",
     "theme": "Role"
   },
   {
     "index": 957,
     "word": "quicken",
     "definition": "To make something move or happen faster.",
-    "category": "Verb",
     "theme": "Action"
   },
   {
     "index": 958,
     "word": "immediate",
     "definition": "Happening or done without delay.",
-    "category": "Adjective",
     "theme": "Time"
   },
   {
     "index": 959,
     "word": "grateful",
     "definition": "Feeling or showing appreciation.",
-    "category": "Adjective",
     "theme": "Emotion"
   },
   {
     "index": 960,
     "word": "jealousies",
     "definition": "Feelings of envy or resentment towards someone or something.",
-    "category": "Noun",
     "theme": "Emotion"
   },
   {
     "index": 961,
     "word": "radiant",
     "definition": "Sending out light; shining brightly.",
-    "category": "Adjective",
     "theme": "Brightness"
   },
   {
     "index": 962,
     "word": "races",
     "definition": "Competing in speed or performance.",
-    "category": "Verb",
     "theme": "Sport"
   },
   {
     "index": 963,
     "word": "giggle",
     "definition": "Short and repeated laughter.",
-    "category": "Noun",
     "theme": "Emotion"
   },
   {
     "index": 964,
     "word": "elevate",
     "definition": "To lift or raise to a higher level.",
-    "category": "Verb",
     "theme": "Height"
   },
   {
     "index": 965,
     "word": "overachievement",
     "definition": "Performing better than expected.",
-    "category": "Noun",
     "theme": "Work"
   },
   {
     "index": 966,
     "word": "paddle",
     "definition": "A short, flat blade used to row a boat.",
-    "category": "Noun",
     "theme": "Sport"
   },
   {
     "index": 967,
     "word": "yesterday",
     "definition": "The day before today.",
-    "category": "Noun",
     "theme": "Time"
   },
   {
     "index": 968,
     "word": "insistence",
     "definition": "The act of demanding something persistently.",
-    "category": "Noun",
     "theme": "Behavior"
   },
   {
     "index": 969,
     "word": "interpretations",
     "definition": "Different ways of understanding something.",
-    "category": "Noun",
     "theme": "Communication"
   },
   {
     "index": 970,
     "word": "identifiable",
     "definition": "Able to be recognized or distinguished.",
-    "category": "Adjective",
     "theme": "Recognition"
   },
   {
     "index": 971,
     "word": "triumph",
     "definition": "A great victory or achievement.",
-    "category": "Noun",
     "theme": "Success"
   },
   {
     "index": 972,
     "word": "inviting",
     "definition": "Attractive and welcoming.",
-    "category": "Adjective",
     "theme": "Hospitality"
   },
   {
     "index": 973,
     "word": "idlely",
     "definition": "In a lazy or inactive manner.",
-    "category": "Adverb",
     "theme": "Action"
   },
   {
     "index": 974,
     "word": "infinite",
     "definition": "Without limits or end.",
-    "category": "Adjective",
     "theme": "Time"
   },
   {
     "index": 975,
     "word": "numerous",
     "definition": "Great in number; many.",
-    "category": "Adjective",
     "theme": "Quantity"
   },
   {
     "index": 976,
     "word": "illusion",
     "definition": "A false perception of reality.",
-    "category": "Noun",
     "theme": "Perception"
   },
   {
     "index": 977,
     "word": "reconceptualize",
     "definition": "To form a new concept of something.",
-    "category": "Verb",
     "theme": "Creativity"
   },
   {
     "index": 978,
     "word": "fickle",
     "definition": "Changing frequently, especially regarding loyalties or affections.",
-    "theme": "Emotion",
-    "category": "Adjective"
+    "theme": "Emotion"
   },
   {
     "index": 979,
     "word": "intensive",
     "definition": "Involving a lot of effort, focus, or resources.",
-    "category": "Adjective",
     "theme": "Effort"
   },
   {
     "index": 980,
     "word": "fantasy",
     "definition": "An imagined or unreal experience.",
-    "category": "Noun",
     "theme": "Imagination"
   },
   {
     "index": 981,
     "word": "glory",
     "definition": "High praise or honor.",
-    "category": "Noun",
     "theme": "Achievement"
   },
   {
     "index": 982,
     "word": "indestructible",
     "definition": "Impossible to destroy.",
-    "category": "Adjective",
     "theme": "Quality"
   },
   {
     "index": 983,
     "word": "overrepresented",
     "definition": "Represented in a larger number or proportion than is typical.",
-    "category": "Adjective",
     "theme": "State"
   },
   {
     "index": 984,
     "word": "hostility",
     "definition": "Aggressive behavior or attitude.",
-    "category": "Noun",
     "theme": "Emotion"
   },
   {
     "index": 985,
     "word": "invention",
     "definition": "A newly created device or idea.",
-    "category": "Noun",
     "theme": "Innovation"
   },
   {
     "index": 986,
     "word": "forever",
     "definition": "For an endless time.",
-    "category": "Adverb",
     "theme": "Time"
   },
   {
     "index": 987,
     "word": "feeling",
     "definition": "An emotional state or reaction.",
-    "category": "Noun",
     "theme": "Emotion"
   },
   {
     "index": 988,
     "word": "sincere",
     "definition": "Genuine and honest in feelings or expression.",
-    "category": "Adjective",
     "theme": "Character"
   },
   {
     "index": 989,
     "word": "persistence",
     "definition": "The act of continuing steadily despite problems or obstacles.",
-    "category": "Noun",
     "theme": "Quality"
   },
   {
     "index": 990,
     "word": "generous",
     "definition": "Willing to give or share with others.",
-    "category": "Adjective",
     "theme": "Personality"
   },
   {
     "index": 991,
     "word": "opiniony",
     "definition": "A belief or judgment held about something.",
-    "category": "Noun",
     "theme": "Thought"
   },
   {
     "index": 992,
     "word": "situation",
     "definition": "A set of circumstances or conditions at a particular time.",
-    "category": "Noun",
     "theme": "Condition"
   },
   {
     "index": 993,
     "word": "persevere",
     "definition": "To persist in a difficult situation.",
-    "category": "Verb",
     "theme": "Determination"
   },
   {
     "index": 994,
     "word": "knighted",
     "definition": "To grant the title of knight to someone.",
-    "category": "Verb",
     "theme": "Honor"
   },
   {
     "index": 995,
     "word": "intercontinental",
     "definition": "Relating to or spanning more than one continent.",
-    "category": "Adjective",
     "theme": "Geography"
   },
   {
     "index": 996,
     "word": "personification",
     "definition": "Attributing human traits to non-humans.",
-    "category": "Noun",
     "theme": "Literature"
   },
   {
     "index": 997,
     "word": "reflection",
     "definition": "The throwing back of light, heat, or sound from a surface.",
-    "category": "Noun",
     "theme": "Physics"
   },
   {
     "index": 998,
     "word": "fervent",
     "definition": "Having or displaying passionate intensity.",
-    "category": "Adjective",
     "theme": "Emotion"
   },
   {
     "index": 999,
     "word": "outreach",
     "definition": "The act of reaching out to help or engage with people.",
-    "category": "Noun",
     "theme": "Community"
   }
 ]

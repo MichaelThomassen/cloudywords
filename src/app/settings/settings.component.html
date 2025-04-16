@@ -1,0 +1,112 @@
+<h1>Settings</h1>
+
+<div class="setting-container">
+  <div class="setting-item">
+    <div
+      class="setting-label"
+      (click)="showHelp.emit('<strong>Cheat mode</strong><p>Enable cheat mode to customize your game experience</p>')"
+    >
+      Cheat mode
+    </div>
+    <div class="setting-toggle">
+      <label class="switch">
+        <input type="checkbox" [(ngModel)]="localSettings['Cheat']" (ngModelChange)="settingsChange.emit('Cheat')" />
+        <span class="slider"></span>
+      </label>
+    </div>
+  </div>
+  <ng-container *ngIf="localSettings['Cheat']">
+    <div class="setting-item">
+      <div
+        class="setting-label"
+        (click)="
+          showHelp.emit(
+            '<strong>Clouds disabled</strong><p>This will remove the clouds at the beginning and end of the word, allowing you always to see the length of the word</p>'
+          )
+        "
+      >
+        Clouds disabled
+      </div>
+      <div class="setting-toggle">
+        <label class="switch">
+          <input
+            type="checkbox"
+            [(ngModel)]="localSettings['Clouds disabled']"
+            (ngModelChange)="settingsChange.emit('Clouds disabled')"
+          />
+          <span class="slider"></span>
+        </label>
+      </div>
+    </div>
+    <div class="setting-item">
+      <div
+        class="setting-label"
+        (click)="showHelp.emit('<strong>Easy mode</strong><p>This will give you all available upgrades</p>')"
+      >
+        Easy mode (all upgrades)
+      </div>
+      <div class="setting-toggle">
+        <label class="switch">
+          <input type="checkbox" [(ngModel)]="localSettings['Easy']" (ngModelChange)="settingsChange.emit('Easy')" />
+          <span class="slider"></span>
+        </label>
+      </div>
+    </div>
+    <div class="setting-item">
+      <div
+        class="setting-label"
+        (click)="
+          showHelp.emit(
+            '<strong>Word number</strong><p>Here you can set the word number, allowing you to start over or skip some words</p>'
+          )
+        "
+      >
+        Word number (max: {{ localWordCount.toLocaleString() }})
+      </div>
+      <div class="setting-toggle">
+        <input
+          type="number"
+          min="0"
+          max="1000"
+          (keydown)="blockInvalidKeys($event)"
+          [(ngModel)]="localCurrentWordIndex"
+          (ngModelChange)="changeCurrentWordIndexLocal($event)"
+          class="styled-input"
+        />
+      </div>
+    </div>
+    <div class="setting-item">
+      <div
+        class="setting-label"
+        (click)="showHelp.emit('<strong>☁️</strong><p>Give yourself some clouds, to be spend on upgrades</p>')"
+      >
+        ☁️ (max: 10.000)
+      </div>
+      <div class="setting-toggle">
+        <input
+          type="number"
+          min="0"
+          max="10000"
+          (keydown)="blockInvalidKeys($event)"
+          [(ngModel)]="localTotalScore"
+          (ngModelChange)="changeTotalScoreLocal($event)"
+          class="styled-input"
+        />
+      </div>
+    </div>
+  </ng-container>
+</div>
+<div *ngIf="showResetConfirmation">
+  <div class="confirmation-dialog">
+    <p>Are you sure you want to reset all progress? This action cannot be undone.</p>
+    <div class="actions">
+      <button class="cancel" (click)="cancelReset()">No</button>
+      <button class="confirm" (click)="confirmReset()">Yes</button>
+    </div>
+  </div>
+</div>
+<div class="buttons">
+  <button *ngIf="!showResetConfirmation && totalScore > 0" (click)="showResetConfirmation = true">
+    Reset all progress
+  </button>
+</div>
