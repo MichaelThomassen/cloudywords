@@ -59,7 +59,6 @@ export class SettingsComponent {
     setTimeout(() => {
       this.localCurrentWordIndex = clamped;
     }, 50);
-    console.log('clamped', clamped);
     this.changeCurrentWordIndex.emit(clamped);
   }
   changeTotalScoreLocal(newValue: number | string): void {
@@ -67,7 +66,6 @@ export class SettingsComponent {
     setTimeout(() => {
       this.localTotalScore = clamped;
     }, 50);
-    console.log('clamped', clamped);
     this.changeTotalScore.emit(clamped);
   }
 

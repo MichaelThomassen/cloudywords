@@ -438,7 +438,6 @@ export class GameComponent implements OnInit {
   }
 
   showHelp(txt: string) {
-    console.log('showHelp', txt);
     this.helpText = txt;
     this.helpVisible = true;
   }
@@ -488,13 +487,11 @@ export class GameComponent implements OnInit {
     this.newWord();
   }
   changeCurrentWordIndex(wordNumber: number) {
-    console.log('wordNumberChange', wordNumber);
     this.currentWordIndex = wordNumber;
     localStorage.setItem('currentWordIndex', wordNumber.toString());
     this.newWord();
   }
   changeTotalScore(score: number) {
-    console.log('totalScoreChange', score);
     this.totalScore = score;
     localStorage.setItem('totalScore', score.toString());
   }
