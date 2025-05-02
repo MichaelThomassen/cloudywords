@@ -202,7 +202,7 @@ export class GameComponent implements OnInit {
     //remove letters from word depending on level of metaProgress
     let leftOverLettersFromPreviousGroup = 0;
     for (let i = 0; i < LetterGroups.length; i++) {
-      const lettersInGroup = LetterGroups[i].sort(() => Math.random() - 0.5);
+      const lettersInGroup = [...LetterGroups[i]].sort(() => Math.random() - 0.5);
       const lettersToRemoveInGroup =
         this.metaProgress[`Purge group ${i + 1}` as keyof MetaProgress] + leftOverLettersFromPreviousGroup;
       if (lettersToRemoveInGroup > 0) {
@@ -229,10 +229,17 @@ export class GameComponent implements OnInit {
     }
     //add free letter if available
     if (this.metaProgress['Free letter'] > 0) {
-      //using [...new Set] to remove duplicates from word (excluding first and last letter), then sort the letters randomly and then pick the first one
-      const lettersInWord = [...new Set(this.currentWord.word.slice(1, -1).split(''))].sort(() => Math.random() - 0.5);
-      const letterToRemove = lettersInWord[0];
-      this.guessLetter(letterToRemove, true);
+      const firstLetter = this.currentWord.word[0];
+      const lastLetter = this.currentWord.word[this.currentWord.word.length - 1];
+      const regex = new RegExp(`[${firstLetter}${lastLetter}]`, 'g');
+      const cleaned = this.currentWord.word.replace(regex, '');
+
+      const uniqueLetters = [...new Set(cleaned)];
+      if (uniqueLetters.length > 0) {
+        const randomIndex = Math.floor(Math.random() * uniqueLetters.length);
+        const randomLetter = uniqueLetters[randomIndex];
+        this.guessLetter(randomLetter, true);
+      }
     }
   }
 
