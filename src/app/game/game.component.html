@@ -178,7 +178,7 @@
       </div>
     </div>
     <div *ngIf="gameStatus === 'win'" class="win-screen">
-      <div>Congratulations!</div>
+      <div>{{ getRandomWinMessage() }}</div>
       <div>&nbsp;</div>
       <div>You earned {{ score }}☁️</div>
       <div>You have {{ totalScore }}☁️</div>

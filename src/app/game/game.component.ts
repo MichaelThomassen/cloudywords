@@ -2,7 +2,7 @@ import { Component, OnInit, Renderer2, ViewChild, ElementRef } from '@angular/co
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 import WordList from '../shared/wordlist.json';
-import { KeyboardLayout, LetterGroups, MetaSettings } from '../shared/constants';
+import { KeyboardLayout, LetterGroups, MetaSettings, winMessages } from '../shared/constants';
 import { AppStatus, GameStatus, MetaProgress, Settings, Word } from './game.model';
 import { AboutComponent } from '../about/about.component';
 import { HelpComponent } from '../help/help.component';
@@ -22,6 +22,7 @@ export class GameComponent implements OnInit {
   MetaSettings = MetaSettings;
   KeyboardLayout = KeyboardLayout;
   LetterGroups = LetterGroups;
+  winMessages = winMessages;
 
   WordList: Word[] = WordList;
 
@@ -141,6 +142,9 @@ export class GameComponent implements OnInit {
     return WordList.find((word) => {
       return word.index === this.currentWordIndex;
     });
+  }
+  getRandomWinMessage() {
+    return winMessages[Math.floor(Math.random() * winMessages.length)];
   }
 
   restoreGameState() {
