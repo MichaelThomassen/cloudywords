@@ -15,7 +15,7 @@ export class StorageService {
 
   safeLoadInt(key: string, fallback = 0): number {
     const raw = localStorage.getItem(key);
-    const parsed = raw !== null ? parseInt(raw, 10) : NaN;
+    const parsed = raw !== null ? parseInt(JSON.parse(raw), 10) : NaN;
 
     if (isNaN(parsed)) {
       localStorage.setItem(key, fallback.toString());
