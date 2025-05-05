@@ -24,7 +24,6 @@ export class SettingsComponent {
 
   localSettings: Settings = {
     Cheat: false,
-    'Clouds disabled': false,
     Easy: false,
   };
   localCurrentWordIndex = 0;

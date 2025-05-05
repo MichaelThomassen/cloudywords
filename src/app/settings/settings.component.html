@@ -1,6 +1,6 @@
 <h1>Settings</h1>
-
 <div class="setting-container">
+  <h4>Only available for testing in beta (will be removed from final game)</h4>
   <div class="setting-item">
     <div
       class="setting-label"
@@ -16,28 +16,6 @@
     </div>
   </div>
   <ng-container *ngIf="localSettings['Cheat']">
-    <div class="setting-item">
-      <div
-        class="setting-label"
-        (click)="
-          showHelp.emit(
-            '<strong>Clouds disabled</strong><p>This will remove the clouds at the beginning and end of the word, allowing you always to see the length of the word</p>'
-          )
-        "
-      >
-        Clouds disabled
-      </div>
-      <div class="setting-toggle">
-        <label class="switch">
-          <input
-            type="checkbox"
-            [(ngModel)]="localSettings['Clouds disabled']"
-            (ngModelChange)="settingsChange.emit('Clouds disabled')"
-          />
-          <span class="slider"></span>
-        </label>
-      </div>
-    </div>
     <div class="setting-item">
       <div
         class="setting-label"

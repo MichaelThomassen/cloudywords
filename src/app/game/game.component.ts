@@ -2,7 +2,7 @@ import { Component, OnInit, Renderer2, ViewChild, ElementRef } from '@angular/co
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 import WordList from '../shared/wordlist.json';
-import { KeyboardLayout, LetterGroups, MetaSettings, winMessages } from '../shared/constants';
+import { KeyboardLayout, LetterGroups, MetaSettings, winMessages, styledCategories } from '../shared/constants';
 import { AppStatus, GameStatus, MetaProgress, Settings, Word } from './game.model';
 import { AboutComponent } from '../about/about.component';
 import { HelpComponent } from '../help/help.component';
@@ -41,6 +41,7 @@ export class GameComponent implements OnInit {
     'Purge group 2': 0,
     'Purge group 3': 0,
     'Free letter': 0,
+    'Remove clouds': 0,
   };
   gameProgress: {
     guessedLetters: string[];
@@ -51,7 +52,6 @@ export class GameComponent implements OnInit {
   };
   settings: Settings = {
     Cheat: false,
-    'Clouds disabled': false,
     Easy: false,
   };
 
@@ -107,6 +107,7 @@ export class GameComponent implements OnInit {
       'Purge group 2': 0,
       'Purge group 3': 0,
       'Free letter': 0,
+      'Remove clouds': 0,
     };
     validKeys.forEach((key) => {
       newMetaProgress[key as keyof MetaProgress] = this.metaProgress[key as keyof MetaProgress];
@@ -185,6 +186,11 @@ export class GameComponent implements OnInit {
   getWinMessage() {
     return winMessages[this.currentWord.index % winMessages.length];
   }
+  getStyledCategory() {
+    const category = this.currentWord.category;
+    const index = styledCategories.findIndex((cat) => cat.includes(category));
+    return index !== -1 ? styledCategories[index] : category;
+  }
 
   restoreGameState() {
     this.gameStatus = GameStatus.Playing;
@@ -198,9 +204,9 @@ export class GameComponent implements OnInit {
     this.score = 10;
 
     this.currentWordMarkup = {
-      beginningVisible: false,
-      endVisible: false,
-      visibleLetters: '',
+      beginningVisible: this.metaProgress['Remove clouds'] > 0,
+      endVisible: this.metaProgress['Remove clouds'] > 0,
+      visibleLetters: this.metaProgress['Remove clouds'] > 0 ? this.currentWord.word : '',
     };
     const guessedLetters = this.gameProgress.guessedLetters;
     this.gameProgress.guessedLetters = [];
@@ -228,7 +234,7 @@ export class GameComponent implements OnInit {
       return;
     }
 
-    if (this.settings.Cheat && this.settings['Clouds disabled']) {
+    if (this.metaProgress['Remove clouds'] > 0) {
       this.currentWordMarkup = {
         beginningVisible: true,
         endVisible: true,
@@ -299,7 +305,7 @@ export class GameComponent implements OnInit {
     //set gameprogress in local storage
     this.storage.save('gameProgress', this.gameProgress);
     //update currentWordMarkup
-    if (this.settings.Cheat && this.settings['Clouds disabled']) {
+    if (this.metaProgress['Remove clouds'] > 0) {
       //if cheat is enabled, show all letters in the word
       this.currentWordMarkup.visibleLetters = this.currentWord.word;
       this.currentWordMarkup.beginningVisible = true;
@@ -423,6 +429,7 @@ export class GameComponent implements OnInit {
       'Purge group 2': 0,
       'Purge group 3': 0,
       'Free letter': 0,
+      'Remove clouds': 0,
     };
     this.storage.save('metaProgress', this.metaProgress);
     this.storage.save('totalScore', this.totalScore.toString());
@@ -464,6 +471,7 @@ export class GameComponent implements OnInit {
       'Purge group 2': 0,
       'Purge group 3': 0,
       'Free letter': 0,
+      'Remove clouds': 0,
     };
     this.storage.save('metaProgress', this.metaProgress);
     this.totalScore = 0;
@@ -478,7 +486,6 @@ export class GameComponent implements OnInit {
 
     this.settings = {
       Cheat: false,
-      'Clouds disabled': false,
       Easy: false,
     };
 
@@ -526,6 +533,7 @@ export class GameComponent implements OnInit {
         'Purge group 2': 0,
         'Purge group 3': 0,
         'Free letter': 0,
+        'Remove clouds': 0,
       };
       this.storage.save('totalScore', this.totalScore.toString());
       this.storage.save('metaProgress', this.metaProgress);

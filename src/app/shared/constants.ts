@@ -35,6 +35,12 @@ export const MetaSettings: {
     price: 1000,
     explanation: '<strong>Free letter:</strong><br/><br/>Get a random free letter when starting a new word.',
   },
+  'Remove clouds': {
+    maxValue: 1,
+    price: 2500,
+    explanation:
+      '<strong>Remove clouds:</strong><br/><br/>Removes the clouds around the word.<br/>Always see full length of the word.',
+  },
 };
 
 export const KeyboardLayout: string[][] = [
@@ -49,6 +55,26 @@ export const LetterGroups: string[][] = [
   ['e', 'a', 'r', 'i', 'o', 't', 'n', 's', 'l'],
   ['c', 'u', 'd', 'p', 'm', 'h', 'g', 'b'],
   ['f', 'y', 'w', 'v', 'k', 'x', 'z', 'j', 'q'],
+];
+
+export const styledCategories = [
+  '🧑‍🤝‍🧑 People and Relationships 💞',
+  '🌿 Nature and Environment 🌍',
+  '🫁 Body and Health 🩺',
+  '🍕 Food and Drink 🥤',
+  '🛠️ Objects and Tools 🧰',
+  '🗺️ Places and Geography 🌆',
+  '⏳ Time and Dates 📅',
+  '😄 Emotions and States 🧠',
+  '🎯 Activities and Leisure 🕹️',
+  '🚶 Movement and Travel ✈️',
+  '🗣️ Communication and Language ✍️',
+  '💼 Work and Business 📈',
+  '🏛️ Society and Politics 🗳️',
+  '🔬 Science and Technology 🤖',
+  '📏 Quantities and Measurements ⚖️',
+  '🌌 Abstract Concepts 🧠',
+  '🎨 Colors and Descriptions 🧵',
 ];
 
 export const winMessages = [

@@ -28,6 +28,7 @@ export interface MetaProgress {
   'Purge group 2': number;
   'Purge group 3': number;
   'Free letter': number;
+  'Remove clouds': number;
 }
 
 export interface MetaSettings {
@@ -37,11 +38,11 @@ export interface MetaSettings {
   'Purge group 2': { maxValue: number; price: number; explanation: string };
   'Purge group 3': { maxValue: number; price: number; explanation: string };
   'Free letter': { maxValue: number; price: number; explanation: string };
+  'Remove clouds': { maxValue: number; price: number; explanation: string };
   // Add other meta settings here as needed
 }
 
 export interface Settings {
   Cheat: boolean;
-  'Clouds disabled': boolean;
   Easy: boolean;
 }

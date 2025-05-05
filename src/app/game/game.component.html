@@ -22,7 +22,7 @@
       >
         <div class="menu-item" *ngIf="getTotalScore() >= 25" (click)="setAppStatus(AppStatus.Meta)">Upgrades</div>
         <div class="menu-item" (click)="setAppStatus(AppStatus.Stats)">Statistics</div>
-        <div class="menu-item" (click)="setAppStatus(AppStatus.Settings)">Settings</div>
+        <div class="menu-item" (click)="setAppStatus(AppStatus.Settings)">β Settings</div>
         <div class="menu-item" (click)="setAppStatus(AppStatus.Help)">Help</div>
         <div class="menu-item" (click)="setAppStatus(AppStatus.About)">About</div>
       </div>
@@ -151,7 +151,7 @@
       </div>
     </div>
     <div class="category" *ngIf="metaProgress['Category visible'] >= 1 || gameStatus === 'win'">
-      🧠 {{ currentWord.category.charAt(0).toUpperCase() + currentWord.category.slice(1) }} 🧠
+      {{ getStyledCategory() }}
     </div>
     <div class="definition" *ngIf="metaProgress['Definition visible'] >= 1 || gameStatus === 'win'">
       🔍
@@ -160,7 +160,6 @@
           ? currentWord.definition
           : maskDefinition(currentWord.definition.charAt(0).toUpperCase() + currentWord.definition.slice(1))
       }}
-      🔍
     </div>
     <div *ngIf="gameStatus === 'playing'" class="keyboard">
       <div class="keyboardrow" *ngFor="let row of KeyboardLayout">
