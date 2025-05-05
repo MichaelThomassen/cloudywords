@@ -1,51 +1,52 @@
 <div *ngIf="wrongAspect === false">
   <div class="header">
-    <button
-      *ngIf="appStatus === AppStatus.Game || appStatus === AppStatus.OutOfWords"
-      class="menu-button"
-      (click)="toggleMenu()"
-    >
-      ☰
-    </button>
-    <button
-      *ngIf="appStatus !== AppStatus.Game && appStatus !== AppStatus.OutOfWords"
-      class="menu-button"
-      (click)="setAppStatus(AppStatus.Game)"
-    >
-      ←
-    </button>
-    <div
-      *ngIf="appStatus === AppStatus.Game || appStatus === AppStatus.OutOfWords"
-      class="menu"
-      [ngClass]="{ 'menu-expanded': isMenuExpanded }"
-    >
-      <div class="menu-item" *ngIf="getTotalScore() >= 25" (click)="setAppStatus(AppStatus.Meta)">Upgrades</div>
-      <div class="menu-item" (click)="setAppStatus(AppStatus.Stats)">Statistics</div>
-      <div class="menu-item" (click)="setAppStatus(AppStatus.Settings)">Settings</div>
-      <div class="menu-item" (click)="setAppStatus(AppStatus.Help)">Help</div>
-      <div class="menu-item" (click)="setAppStatus(AppStatus.About)">About</div>
+    <div class="menu-wrapper">
+      <button
+        *ngIf="appStatus === AppStatus.Game || appStatus === AppStatus.OutOfWords"
+        class="menu-button"
+        (click)="toggleMenu()"
+      >
+        ☰
+      </button>
+      <button
+        *ngIf="appStatus !== AppStatus.Game && appStatus !== AppStatus.OutOfWords"
+        class="menu-button"
+        (click)="setAppStatus(AppStatus.Game)"
+      >
+        ←
+      </button>
+      <div
+        *ngIf="appStatus === AppStatus.Game || appStatus === AppStatus.OutOfWords"
+        class="menu"
+        [ngClass]="{ 'menu-expanded': isMenuExpanded }"
+      >
+        <div class="menu-item" *ngIf="getTotalScore() >= 25" (click)="setAppStatus(AppStatus.Meta)">Upgrades</div>
+        <div class="menu-item" (click)="setAppStatus(AppStatus.Stats)">Statistics</div>
+        <div class="menu-item" (click)="setAppStatus(AppStatus.Settings)">Settings</div>
+        <div class="menu-item" (click)="setAppStatus(AppStatus.Help)">Help</div>
+        <div class="menu-item" (click)="setAppStatus(AppStatus.About)">About</div>
+      </div>
     </div>
-    <div class="title" *ngIf="appStatus === AppStatus.Game">
-      <div></div>
-      <div
-        [ngClass]="{ 'score-decrease': scoreDecreased }"
-        (click)="
-          showHelp(
-            '<strong>☁️ Clouds ☁️</strong><p>You earn ☁️ by guessing words correctly</p><p>Spend your ☁️ on upgrades to help you progress faster</p><p>Each incorrect letter guess costs 1 ☁️</p><p>You’ll never drop below 2 ☁️, no matter how many mistakes you make</p>'
-          )
-        "
-      >
-        <span>{{ score }}☁️</span>
-      </div>
-      <div
-        (click)="
-          showHelp(
-            '<strong>Word Progress</strong><p>The first number is how many words you have guessed</p><p>The second is the total number of words in the game</p><p>Keep going to earn more ☁️ and unlock upgrades!</p>'
-          )
-        "
-      >
-        <span>{{ currentWordIndex }}/{{ WordList.length }}</span>
-      </div>
+    <div
+      class="score-wrapper"
+      [ngClass]="{ 'score-decrease': scoreDecreased }"
+      (click)="
+        showHelp(
+          '<strong>☁️ Clouds ☁️</strong><p>You earn ☁️ by guessing words correctly</p><p>Spend your ☁️ on upgrades to help you progress faster</p><p>Each incorrect letter guess costs 1 ☁️</p><p>You’ll never drop below 2 ☁️, no matter how many mistakes you make</p>'
+        )
+      "
+    >
+      <span>{{ score }} ☁️</span>
+    </div>
+    <div
+      class="progress-wrapper"
+      (click)="
+        showHelp(
+          '<strong>Word Progress</strong><p>The first number is how many words you have guessed</p><p>The second is the total number of words in the game</p><p>Keep going to earn more ☁️ and unlock upgrades!</p>'
+        )
+      "
+    >
+      <span>{{ currentWordIndex }}/{{ WordList.length }}</span>
     </div>
   </div>
   <div *ngIf="appStatus === AppStatus.Help" class="game-container">
@@ -149,17 +150,17 @@
         ></div>
       </div>
     </div>
-    <div class="theme" *ngIf="metaProgress['Theme visible'] >= 1 || gameStatus === 'win'">
-      Theme:
-      {{ currentWord.theme.charAt(0).toUpperCase() + currentWord.theme.slice(1) }}
+    <div class="category" *ngIf="metaProgress['Category visible'] >= 1 || gameStatus === 'win'">
+      🧠 {{ currentWord.category.charAt(0).toUpperCase() + currentWord.category.slice(1) }} 🧠
     </div>
     <div class="definition" *ngIf="metaProgress['Definition visible'] >= 1 || gameStatus === 'win'">
-      Definition:
+      🔍
       {{
         gameStatus === "win"
           ? currentWord.definition
           : maskDefinition(currentWord.definition.charAt(0).toUpperCase() + currentWord.definition.slice(1))
       }}
+      🔍
     </div>
     <div *ngIf="gameStatus === 'playing'" class="keyboard">
       <div class="keyboardrow" *ngFor="let row of KeyboardLayout">
@@ -178,10 +179,9 @@
       </div>
     </div>
     <div *ngIf="gameStatus === 'win'" class="win-screen">
-      <div>{{ getRandomWinMessage() }}</div>
-      <div>&nbsp;</div>
-      <div>You earned {{ score }}☁️</div>
-      <div>You have {{ totalScore }}☁️</div>
+      <div class="win-message">{{ getWinMessage() }}</div>
+      <div>Earned: +{{ score }} ☁️</div>
+      <div>Balance: {{ totalScore }} ☁️</div>
       <div>&nbsp;</div>
       <div class="buttons">
         <button #newWordButton (click)="newWord()">New Word</button>

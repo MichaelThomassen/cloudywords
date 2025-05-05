@@ -18,11 +18,11 @@ export interface Word {
   index: number;
   word: string;
   definition: string;
-  theme: string;
+  category: string;
 }
 
 export interface MetaProgress {
-  'Theme visible': number;
+  'Category visible': number;
   'Definition visible': number;
   'Purge group 1': number;
   'Purge group 2': number;
@@ -31,7 +31,7 @@ export interface MetaProgress {
 }
 
 export interface MetaSettings {
-  'Theme visible': { maxValue: number; price: number; explanation: string };
+  'Category visible': { maxValue: number; price: number; explanation: string };
   'Definition visible': { maxValue: number; price: number; explanation: string };
   'Purge group 1': { maxValue: number; price: number; explanation: string };
   'Purge group 2': { maxValue: number; price: number; explanation: string };

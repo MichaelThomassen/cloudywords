@@ -1,17 +1,42 @@
 .header {
   display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  margin-top: 20px;
-  margin-bottom: 0px;
-  height: 40px;
+  flex-direction: row;
+  align-items: stretch; /* default: items fill container width */
+  margin-top: 10px;
+  height: auto;
   width: 100%;
+  font-size: 24px;
+  line-height: 25px;
+  margin-bottom: 10px;
 }
+
+.header > div {
+  flex: 1;
+  display: flex;
+}
+
+.menu-wrapper {
+  position: relative; /* Needed to anchor absolute positioning */
+  justify-content: flex-start;
+  padding: 0 10px;
+}
+.score-wrapper,
+.progress-wrapper {
+  padding: 10px 0;
+}
+.score-wrapper {
+  justify-content: center;
+}
+.progress-wrapper {
+  justify-content: flex-end;
+  margin-right: 10px;
+}
+.score-wrapper > span,
+.progress-wrapper > span {
+  cursor: pointer;
+}
+
 .menu-button {
-  position: absolute;
-  top: 10px;
-  left: 10px;
   width: 40px;
   height: 40px;
   padding: 0 0 0 0;
@@ -27,13 +52,15 @@
 .menu {
   position: absolute;
   top: 60px;
-  left: 10px;
+  left: 0;
+  width: 150px;
   background-color: black;
   border: 1px solid #ccc;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
   z-index: 1000;
   display: none;
   flex-direction: column;
+  font-size: 20px;
 }
 
 .menu-item {
@@ -42,7 +69,7 @@
 }
 
 .menu-item:hover {
-  background-color: #f0f0f0;
+  background-color: #007bff;
 }
 
 .menu-expanded {
@@ -72,7 +99,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 90px;
+  height: 80px;
   width: 100%;
   overflow: hidden;
 }
@@ -160,40 +187,17 @@
   border-color: #218838;
 }
 
-.theme {
-  display: block;
-  font-size: 20px;
-  margin: 0px 2px 10px 2px;
-  height: 22px;
-  padding: 2px;
+.category {
+  font-size: 22px;
+  margin: 15px 2px 15px 2px;
   text-align: center;
 }
 
 .definition {
-  font-size: 20px;
+  font-size: 22px;
   margin: 0px 5px 10px 5px;
-  height: 95px;
-  padding: 2px;
   width: calc(100% - 10px);
   text-align: center;
-}
-.title {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
-  align-items: center;
-  flex-wrap: nowrap;
-  width: 100%;
-  margin-bottom: 10px;
-  font-size: 20px;
-  line-height: 25px;
-}
-.title div {
-  flex: 1;
-  text-align: center;
-}
-.title span {
-  cursor: pointer;
 }
 
 .score-decrease {
@@ -268,8 +272,12 @@
   bottom: 0;
   width: 100%;
   background-color: black;
-  padding: 10px 0;
-  font-size: 20px;
+  padding: 15px 0;
+  font-size: 24px;
+}
+.win-message {
+  font-size: 28px;
+  margin-bottom: 10px;
 }
 
 .wrong-aspect-ratio {
@@ -345,8 +353,8 @@
 .help-popup {
   position: fixed;
   top: 0;
-  left: 0;
   width: 100%;
+  max-width: 500px;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.5);
   display: flex;

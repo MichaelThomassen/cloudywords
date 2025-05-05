@@ -1,10 +1,10 @@
 export const MetaSettings: {
   [key: string]: { maxValue: number; price: number; explanation: string };
 } = {
-  'Theme visible': {
+  'Category visible': {
     maxValue: 1,
     price: 25,
-    explanation: '<strong>Theme visible:</strong><br/><br/>Shows the theme for the word',
+    explanation: '<strong>Category visible:</strong><br/><br/>Shows the category for the word',
   },
   'Purge group 3': {
     maxValue: 4,
@@ -102,4 +102,34 @@ export const winMessages = [
   'Look at you! 🌟',
   'All day! ⏰',
   'Bangarang! 🛎️',
+  'Boomshakalaka! 💣',
+  'That was slick! 🧊',
+  'One shot, one win! 🎯',
+  'Feelin’ lucky? You should! 🍀',
+  'Masterstroke! 🎨',
+  'Overachiever! 🥇',
+  'Zing! ⚡',
+  'You’re a natural! 🌱',
+  'Game on, game won! 🕹️',
+  'Savage guess! 😤',
+  'Mind = Blown 💥',
+  'Big W! 🅆',
+  'Crackshot! 🎯',
+  'Stellar! 🌠',
+  'No contest! 🥊',
+  'Dead-on! 🧷',
+  'Like a boss! 💼',
+  'Clean sweep! 🧹',
+  'Touché! 🗡️',
+  'Prime pick! 🔍',
+  'Unreal! 🎭',
+  'You crushed that! 🍉',
+  'Golden guess! 🥇',
+  'Flawless! 🧼',
+  'Too smooth! 🧊',
+  'Sniped it! 🎯',
+  'Goat level! 🐐',
+  'Victory lap! 🏁',
+  'The stuff of legends! 📖',
+  'King/Queen move! 👑',
 ];

@@ -9,6 +9,7 @@ import { HelpComponent } from '../help/help.component';
 import { OutOfWordsComponent } from '../outofwords/outofwords.component';
 import { SettingsComponent } from '../settings/settings.component';
 import { environment } from '../../environments/environment';
+import { StorageService } from '../../services/storage.service';
 
 @Component({
   selector: 'app-word-list',
@@ -34,7 +35,7 @@ export class GameComponent implements OnInit {
 
   originalOrder = () => 0;
   metaProgress: MetaProgress = {
-    'Theme visible': 0,
+    'Category visible': 0,
     'Definition visible': 0,
     'Purge group 1': 0,
     'Purge group 2': 0,
@@ -61,7 +62,7 @@ export class GameComponent implements OnInit {
   currentWord: Word = {
     index: -1,
     word: '',
-    theme: '',
+    category: '',
     definition: '',
   };
   currentWordMarkup: {
@@ -74,7 +75,7 @@ export class GameComponent implements OnInit {
 
   @ViewChild('newWordButton', { static: false }) newWordButton!: ElementRef;
 
-  constructor(private renderer: Renderer2) {
+  constructor(private renderer: Renderer2, private storage: StorageService) {
     this.renderer.listen('document', 'keydown', (event) => {
       this.handleKeyPress(event);
     });
@@ -89,12 +90,36 @@ export class GameComponent implements OnInit {
   helpText: string = '';
 
   ngOnInit() {
-    //Load progress from local storage
-    this.currentWordIndex = parseInt(localStorage.getItem('currentWordIndex') || '0', 10);
-    this.totalScore = parseInt(localStorage.getItem('totalScore') || '0', 10);
-    this.metaProgress = JSON.parse(localStorage.getItem('metaProgress') || JSON.stringify(this.metaProgress));
-    this.gameProgress = JSON.parse(localStorage.getItem('gameProgress') || JSON.stringify(this.gameProgress));
-    this.settings = JSON.parse(localStorage.getItem('settings') || JSON.stringify(this.settings));
+    this.currentWordIndex = this.storage.safeLoadInt('currentWordIndex', 0);
+    this.totalScore = this.storage.safeLoadInt('totalScore', 0);
+    this.metaProgress = this.storage.safeLoad('metaProgress', this.metaProgress);
+    this.gameProgress = this.storage.safeLoad('gameProgress', this.gameProgress);
+    this.settings = this.storage.safeLoad('settings', this.settings);
+
+    //check if all keys in metaProgress are valid
+    const validKeys = Object.keys(this.metaProgress).filter((key) => {
+      return Object.keys(MetaSettings).includes(key);
+    });
+    const newMetaProgress: MetaProgress = {
+      'Category visible': 0,
+      'Definition visible': 0,
+      'Purge group 1': 0,
+      'Purge group 2': 0,
+      'Purge group 3': 0,
+      'Free letter': 0,
+    };
+    validKeys.forEach((key) => {
+      newMetaProgress[key as keyof MetaProgress] = this.metaProgress[key as keyof MetaProgress];
+    });
+    //check if there's a setting in local storage that doesn't exist anymore
+    // "Theme visible" is replaced by "Category visible" -> transfer the progress to the new setting
+    if ((this.metaProgress as any)['Theme visible'] !== undefined) {
+      newMetaProgress['Category visible'] = (this.metaProgress as any)['Theme visible'];
+    }
+
+    this.metaProgress = newMetaProgress;
+    //set metaProgress in local storage
+    this.storage.save('metaProgress', this.metaProgress);
 
     if (this.gameProgress === null) {
       this.gameProgress = {
@@ -125,6 +150,20 @@ export class GameComponent implements OnInit {
         ({ word }, index, self) => wordCount.get(word) > 1 && index === self.findIndex((w) => w.word === word) // avoid repeats in output
       );
       console.log(`Duplicates (${duplicates.length}):`, duplicates);
+
+      // Longest definition
+      const longestDefEntry = WordList.reduce((max, entry) =>
+        entry.definition.length > max.definition.length ? entry : max
+      );
+
+      // Average lengths
+      const totalWords = WordList.length;
+      const avgWordLength = WordList.reduce((sum, entry) => sum + entry.word.length, 0) / totalWords;
+      const avgDefLength = WordList.reduce((sum, entry) => sum + entry.definition.length, 0) / totalWords;
+
+      console.log('Longest definition:', longestDefEntry.definition);
+      console.log('Average word length:', avgWordLength.toFixed(2));
+      console.log('Average definition length:', avgDefLength.toFixed(2));
     }
   }
 
@@ -143,8 +182,8 @@ export class GameComponent implements OnInit {
       return word.index === this.currentWordIndex;
     });
   }
-  getRandomWinMessage() {
-    return winMessages[Math.floor(Math.random() * winMessages.length)];
+  getWinMessage() {
+    return winMessages[this.currentWord.index % winMessages.length];
   }
 
   restoreGameState() {
@@ -217,8 +256,7 @@ export class GameComponent implements OnInit {
             continue;
           }
           this.gameProgress.removedLetters.push(letter);
-          //set localstorage
-          localStorage.setItem('gameProgress', JSON.stringify(this.gameProgress));
+          this.storage.save('gameProgress', this.gameProgress);
           lettersRemoved++;
           if (lettersRemoved >= lettersToRemoveInGroup) {
             break;
@@ -249,7 +287,7 @@ export class GameComponent implements OnInit {
 
   guessLetter(letter: string, overrideAppStatus: boolean = false) {
     //overrideAppStatus is used to allow guessing letters when the app status is not Game (usually when changing settings)
-    if (this.appStatus !== AppStatus.Game && !overrideAppStatus) {
+    if ((this.appStatus !== AppStatus.Game || this.gameStatus !== GameStatus.Playing) && !overrideAppStatus) {
       //when typing letters when not in game
       return;
     }
@@ -259,7 +297,7 @@ export class GameComponent implements OnInit {
     }
     this.gameProgress.guessedLetters.push(letter);
     //set gameprogress in local storage
-    localStorage.setItem('gameProgress', JSON.stringify(this.gameProgress));
+    this.storage.save('gameProgress', this.gameProgress);
     //update currentWordMarkup
     if (this.settings.Cheat && this.settings['Clouds disabled']) {
       //if cheat is enabled, show all letters in the word
@@ -287,13 +325,13 @@ export class GameComponent implements OnInit {
     if (this.currentWord.word.split('').every((l) => this.gameProgress.guessedLetters.includes(l))) {
       this.gameStatus = GameStatus.Win;
       this.currentWordIndex++;
-      localStorage.setItem('currentWordIndex', this.currentWordIndex.toString());
+      this.storage.save('currentWordIndex', this.currentWordIndex.toString());
       //reset game progress
       this.gameProgress = {
         guessedLetters: [],
         removedLetters: [],
       };
-      localStorage.setItem('gameProgress', JSON.stringify(this.gameProgress));
+      this.storage.save('gameProgress', this.gameProgress);
       //Focus on new word button (for keyboard users to press enter)
       setTimeout(() => {
         this.newWordButton.nativeElement.focus();
@@ -301,7 +339,7 @@ export class GameComponent implements OnInit {
 
       //Update totalScore
       this.totalScore += this.score;
-      localStorage.setItem('totalScore', this.totalScore.toString());
+      this.storage.save('totalScore', this.totalScore.toString());
     }
   }
 
@@ -363,8 +401,8 @@ export class GameComponent implements OnInit {
     this.metaProgress[meta] = this.metaProgress[meta] + 1;
     this.totalScore -= MetaSettings[meta].price;
     //update meta progress and total score in local storage
-    localStorage.setItem('metaProgress', JSON.stringify(this.metaProgress));
-    localStorage.setItem('totalScore', this.totalScore.toString());
+    this.storage.save('metaProgress', this.metaProgress);
+    this.storage.save('totalScore', this.totalScore.toString());
   }
 
   resetMetaProgress() {
@@ -379,15 +417,15 @@ export class GameComponent implements OnInit {
     });
 
     this.metaProgress = {
-      'Theme visible': 0,
+      'Category visible': 0,
       'Definition visible': 0,
       'Purge group 1': 0,
       'Purge group 2': 0,
       'Purge group 3': 0,
       'Free letter': 0,
     };
-    localStorage.setItem('metaProgress', JSON.stringify(this.metaProgress));
-    localStorage.setItem('totalScore', this.totalScore.toString());
+    this.storage.save('metaProgress', this.metaProgress);
+    this.storage.save('totalScore', this.totalScore.toString());
   }
 
   maskDefinition(definition: string) {
@@ -420,23 +458,23 @@ export class GameComponent implements OnInit {
 
   resetAllProgress() {
     this.metaProgress = {
-      'Theme visible': 0,
+      'Category visible': 0,
       'Definition visible': 0,
       'Purge group 1': 0,
       'Purge group 2': 0,
       'Purge group 3': 0,
       'Free letter': 0,
     };
-    localStorage.setItem('metaProgress', JSON.stringify(this.metaProgress));
+    this.storage.save('metaProgress', this.metaProgress);
     this.totalScore = 0;
-    localStorage.setItem('totalScore', this.totalScore.toString());
+    this.storage.save('totalScore', this.totalScore.toString());
     this.currentWordIndex = 0;
-    localStorage.setItem('currentWordIndex', this.currentWordIndex.toString());
+    this.storage.save('currentWordIndex', this.currentWordIndex.toString());
     this.gameProgress = {
       guessedLetters: [],
       removedLetters: [],
     };
-    localStorage.setItem('gameProgress', JSON.stringify(this.gameProgress));
+    this.storage.save('gameProgress', this.gameProgress);
 
     this.settings = {
       Cheat: false,
@@ -473,8 +511,8 @@ export class GameComponent implements OnInit {
       });
 
       this.totalScore = Math.max(0, this.totalScore);
-      localStorage.setItem('totalScore', this.totalScore.toString());
-      localStorage.setItem('metaProgress', JSON.stringify(this.metaProgress));
+      this.storage.save('totalScore', this.totalScore.toString());
+      this.storage.save('metaProgress', this.metaProgress);
     } else if (tmpset === 'Easy' && this.settings['Easy']) {
       //reset all meta progress to 0 and refund points spent
       Object.keys(this.metaProgress).forEach((meta) => {
@@ -482,28 +520,28 @@ export class GameComponent implements OnInit {
           this.metaProgress[meta as keyof MetaProgress] * MetaSettings[meta as keyof MetaProgress].price;
       });
       this.metaProgress = {
-        'Theme visible': 0,
+        'Category visible': 0,
         'Definition visible': 0,
         'Purge group 1': 0,
         'Purge group 2': 0,
         'Purge group 3': 0,
         'Free letter': 0,
       };
-      localStorage.setItem('totalScore', this.totalScore.toString());
-      localStorage.setItem('metaProgress', JSON.stringify(this.metaProgress));
+      this.storage.save('totalScore', this.totalScore.toString());
+      this.storage.save('metaProgress', this.metaProgress);
     }
 
     this.settings[tmpset] = !this.settings[tmpset];
-    localStorage.setItem('settings', JSON.stringify(this.settings));
+    this.storage.save('settings', this.settings);
     this.newWord();
   }
   changeCurrentWordIndex(wordNumber: number) {
     this.currentWordIndex = wordNumber;
-    localStorage.setItem('currentWordIndex', wordNumber.toString());
+    this.storage.save('currentWordIndex', wordNumber.toString());
     this.newWord();
   }
   changeTotalScore(score: number) {
     this.totalScore = score;
-    localStorage.setItem('totalScore', score.toString());
+    this.storage.save('totalScore', score.toString());
   }
 }
