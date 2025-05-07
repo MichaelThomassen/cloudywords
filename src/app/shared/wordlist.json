@@ -1,33 +1,33 @@
 [
   {
     "index": 0,
-    "word": "polymer",
-    "category": "Science and Technology",
-    "definition": "A large molecule composed of many repeated subunits called monomers."
+    "word": "welcome",
+    "category": "People and Relationships",
+    "definition": "A polite or friendly reception given to someone arriving at a place."
   },
   {
     "index": 1,
-    "word": "tandoor",
-    "category": "Food and Drink",
-    "definition": "A cylindrical clay oven used in Indian cuisine for baking or roasting meats and breads."
+    "word": "geocache",
+    "category": "Activities and Leisure",
+    "definition": "A hidden container located outdoors, found using GPS coordinates as part of a recreational treasure-hunting activity."
   },
   {
     "index": 2,
-    "word": "corgi",
-    "category": "Nature and Environment",
-    "definition": "A small, short-legged breed of dog originally from Wales, known for its herding abilities."
-  },
-  {
-    "index": 3,
     "word": "deteriorate",
     "category": "Abstract Concepts",
     "definition": "To become progressively worse in quality, condition, or value over time."
   },
   {
+    "index": 3,
+    "word": "corgi",
+    "category": "Nature and Environment",
+    "definition": "A small, short-legged breed of dog originally from Wales, known for its herding abilities."
+  },
+  {
     "index": 4,
-    "word": "geocache",
-    "category": "Activities and Leisure",
-    "definition": "A hidden container located outdoors, found using GPS coordinates as part of a recreational treasure-hunting activity."
+    "word": "tandoor",
+    "category": "Food and Drink",
+    "definition": "A cylindrical clay oven used in Indian cuisine for baking or roasting meats and breads."
   },
   {
     "index": 5,
@@ -4813,9 +4813,9 @@
   },
   {
     "index": 802,
-    "word": "welcome",
-    "category": "People and Relationships",
-    "definition": "A polite or friendly reception given to someone arriving at a place."
+    "word": "polymer",
+    "category": "Science and Technology",
+    "definition": "A large molecule composed of many repeated subunits called monomers."
   },
   {
     "index": 803,

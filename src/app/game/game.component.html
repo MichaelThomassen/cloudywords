@@ -184,7 +184,11 @@
       <div>&nbsp;</div>
       <div class="buttons">
         <button #newWordButton (click)="newWord()">New Word</button>
-        <button [disabled]="getTotalScore() < 25" (click)="setAppStatus(AppStatus.Meta)">
+        <button
+          [attr.aria-disabled]="getTotalScore() < 25"
+          [class.disabled]="getTotalScore() < 25"
+          (click)="getTotalScore() < 25 ? showHelp('Earn 25 ☁️ to unlock upgrades!') : setAppStatus(AppStatus.Meta)"
+        >
           Upgrades {{ isAnyMetaAffordable() ? "*" : "" }}
         </button>
       </div>

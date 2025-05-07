@@ -1,6 +1,6 @@
 <h1>Settings</h1>
 <div class="setting-container">
-  <h4>Only available for testing in beta (will be removed from final game)</h4>
+  <p>Only available for testing in beta (will be removed from final game)</p>
   <div class="setting-item">
     <div
       class="setting-label"
@@ -76,10 +76,12 @@
 </div>
 <div *ngIf="showResetConfirmation">
   <div class="confirmation-dialog">
-    <p>Are you sure you want to reset all progress? This action cannot be undone.</p>
-    <div class="actions">
-      <button class="cancel" (click)="cancelReset()">No</button>
-      <button class="confirm" (click)="confirmReset()">Yes</button>
+    <div class="confirmation-content">
+      <p>Are you sure you want to reset all progress? This action cannot be undone.</p>
+      <div class="actions">
+        <button class="cancel" (click)="cancelReset()">No</button>
+        <button class="confirm" (click)="confirmReset()">Yes</button>
+      </div>
     </div>
   </div>
 </div>

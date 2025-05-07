@@ -2,7 +2,14 @@ import { Component, OnInit, Renderer2, ViewChild, ElementRef } from '@angular/co
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 import WordList from '../shared/wordlist.json';
-import { KeyboardLayout, LetterGroups, MetaSettings, winMessages, styledCategories } from '../shared/constants';
+import {
+  KeyboardLayout,
+  LetterGroups,
+  MetaSettings,
+  winMessages,
+  styledCategories,
+  defaultMetaProgress,
+} from '../shared/constants';
 import { AppStatus, GameStatus, MetaProgress, Settings, Word } from './game.model';
 import { AboutComponent } from '../about/about.component';
 import { HelpComponent } from '../help/help.component';
@@ -34,15 +41,7 @@ export class GameComponent implements OnInit {
   averageScorePerWord = 0;
 
   originalOrder = () => 0;
-  metaProgress: MetaProgress = {
-    'Category visible': 0,
-    'Definition visible': 0,
-    'Purge group 1': 0,
-    'Purge group 2': 0,
-    'Purge group 3': 0,
-    'Free letter': 0,
-    'Remove clouds': 0,
-  };
+  metaProgress: MetaProgress = { ...defaultMetaProgress };
   gameProgress: {
     guessedLetters: string[];
     removedLetters: string[];
@@ -100,15 +99,7 @@ export class GameComponent implements OnInit {
     const validKeys = Object.keys(this.metaProgress).filter((key) => {
       return Object.keys(MetaSettings).includes(key);
     });
-    const newMetaProgress: MetaProgress = {
-      'Category visible': 0,
-      'Definition visible': 0,
-      'Purge group 1': 0,
-      'Purge group 2': 0,
-      'Purge group 3': 0,
-      'Free letter': 0,
-      'Remove clouds': 0,
-    };
+    const newMetaProgress: MetaProgress = { ...defaultMetaProgress };
     validKeys.forEach((key) => {
       newMetaProgress[key as keyof MetaProgress] = this.metaProgress[key as keyof MetaProgress];
     });
@@ -162,7 +153,7 @@ export class GameComponent implements OnInit {
       const avgWordLength = WordList.reduce((sum, entry) => sum + entry.word.length, 0) / totalWords;
       const avgDefLength = WordList.reduce((sum, entry) => sum + entry.definition.length, 0) / totalWords;
 
-      console.log('Longest definition:', longestDefEntry.definition);
+      console.log('Longest definition:', longestDefEntry.index, longestDefEntry.definition);
       console.log('Average word length:', avgWordLength.toFixed(2));
       console.log('Average definition length:', avgDefLength.toFixed(2));
     }
@@ -422,15 +413,7 @@ export class GameComponent implements OnInit {
       }
     });
 
-    this.metaProgress = {
-      'Category visible': 0,
-      'Definition visible': 0,
-      'Purge group 1': 0,
-      'Purge group 2': 0,
-      'Purge group 3': 0,
-      'Free letter': 0,
-      'Remove clouds': 0,
-    };
+    this.metaProgress = { ...defaultMetaProgress };
     this.storage.save('metaProgress', this.metaProgress);
     this.storage.save('totalScore', this.totalScore.toString());
   }
@@ -464,15 +447,7 @@ export class GameComponent implements OnInit {
   }
 
   resetAllProgress() {
-    this.metaProgress = {
-      'Category visible': 0,
-      'Definition visible': 0,
-      'Purge group 1': 0,
-      'Purge group 2': 0,
-      'Purge group 3': 0,
-      'Free letter': 0,
-      'Remove clouds': 0,
-    };
+    this.metaProgress = { ...defaultMetaProgress };
     this.storage.save('metaProgress', this.metaProgress);
     this.totalScore = 0;
     this.storage.save('totalScore', this.totalScore.toString());
@@ -526,15 +501,7 @@ export class GameComponent implements OnInit {
         this.totalScore +=
           this.metaProgress[meta as keyof MetaProgress] * MetaSettings[meta as keyof MetaProgress].price;
       });
-      this.metaProgress = {
-        'Category visible': 0,
-        'Definition visible': 0,
-        'Purge group 1': 0,
-        'Purge group 2': 0,
-        'Purge group 3': 0,
-        'Free letter': 0,
-        'Remove clouds': 0,
-      };
+      this.metaProgress = { ...defaultMetaProgress };
       this.storage.save('totalScore', this.totalScore.toString());
       this.storage.save('metaProgress', this.metaProgress);
     }

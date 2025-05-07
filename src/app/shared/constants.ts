@@ -1,6 +1,6 @@
-export const MetaSettings: {
-  [key: string]: { maxValue: number; price: number; explanation: string };
-} = {
+import { MetaProgress, MetaSettings as MetaSettingsType } from '../game/game.model';
+
+export const MetaSettings: MetaSettingsType = {
   'Category visible': {
     maxValue: 1,
     price: 25,
@@ -41,6 +41,16 @@ export const MetaSettings: {
     explanation:
       '<strong>Remove clouds:</strong><br/><br/>Removes the clouds around the word.<br/>Always see full length of the word.',
   },
+};
+
+export const defaultMetaProgress: MetaProgress = {
+  'Category visible': 0,
+  'Definition visible': 0,
+  'Purge group 1': 0,
+  'Purge group 2': 0,
+  'Purge group 3': 0,
+  'Free letter': 0,
+  'Remove clouds': 0,
 };
 
 export const KeyboardLayout: string[][] = [

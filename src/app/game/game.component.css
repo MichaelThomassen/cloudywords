@@ -5,7 +5,7 @@
   margin-top: 10px;
   height: auto;
   width: 100%;
-  font-size: 24px;
+  font-size: clamp(16px, 5vw, 24px);
   line-height: 25px;
   margin-bottom: 10px;
 }
@@ -44,7 +44,7 @@
   background-color: #007bff;
   color: white;
   border: 1px solid lightblue;
-  font-size: 24px;
+  font-size: clamp(16px, 5vw, 24px);
   cursor: pointer;
   z-index: 999;
 }
@@ -60,7 +60,7 @@
   z-index: 1000;
   display: none;
   flex-direction: column;
-  font-size: 20px;
+  font-size: clamp(16px, 5vw, 20px);
 }
 
 .menu-item {
@@ -176,7 +176,7 @@
   border: 1px solid white;
   text-align: center;
   line-height: 30px;
-  font-size: 20px;
+  font-size: clamp(10px, 5vw, 20px);
   font-weight: bold;
   text-transform: uppercase;
   font-family: Arial, sans-serif;
@@ -188,13 +188,13 @@
 }
 
 .category {
-  font-size: 22px;
+  font-size: clamp(16px, 5vw, 22px);
   margin: 15px 2px 15px 2px;
   text-align: center;
 }
 
 .definition {
-  font-size: 22px;
+  font-size: clamp(16px, 5vw, 22px);
   margin: 0px 5px 10px 5px;
   width: calc(100% - 10px);
   text-align: center;
@@ -215,26 +215,31 @@
 
 .keyboard {
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column; /* stack rows vertically */
   justify-content: center;
+  align-items: center;
   position: fixed;
   bottom: 0;
   width: 100%;
   background-color: black;
   padding: 30px 0;
+  gap: 4px; /* vertical spacing between rows */
 }
 
 .keyboardrow {
   display: flex;
-  width: 100%;
   justify-content: center;
+  gap: 4px; /* spacing between buttons */
+  padding: 0 10px; /* horizontal spacing to sides of screen */
+  width: 100%;
+  box-sizing: border-box; /* ensure padding is included in width */
 }
 
 .keyboard button {
-  width: 36px;
-  height: 36px;
-  margin: 2px;
-  font-size: 22px;
+  --key-size: min(8vw, 36px);
+  width: var(--key-size);
+  height: var(--key-size);
+  font-size: clamp(16px, 5vw, 22px);
   font-weight: bold;
   border: 1px solid white;
   background-color: #007bff;
@@ -246,6 +251,7 @@
   display: flex;
   text-transform: uppercase;
   padding: 0;
+  flex-shrink: 0;
 }
 
 .keyboard button:hover {
@@ -273,10 +279,10 @@
   width: 100%;
   background-color: black;
   padding: 15px 0;
-  font-size: 24px;
+  font-size: clamp(16px, 5vw, 24px);
 }
 .win-message {
-  font-size: 28px;
+  font-size: clamp(18px, 5vw, 28px);
   margin-bottom: 10px;
 }
 
@@ -308,7 +314,7 @@
   margin: 5px 0;
   border-radius: 5px;
   color: #0056b3;
-  font-size: 16px;
+  font-size: clamp(8px, 4vw, 16px);
 }
 
 .meta-container .meta-item {
@@ -335,7 +341,7 @@
 .meta-container button {
   width: 90px;
   padding: 5px 10px;
-  font-size: 16px;
+  font-size: clamp(10px, 4vw, 16px);
   font-weight: bold;
   border: 1px solid lightblue;
   border-radius: 5px;
@@ -373,14 +379,14 @@
 
 .popup-content p {
   margin-bottom: 20px;
-  font-size: 16px;
+  font-size: clamp(10px, 4vw, 16px);
   text-align: left;
 }
 
 .popup-content button {
   padding: 10px 20px;
   margin-bottom: 20px;
-  font-size: 14px;
+  font-size: clamp(10px, 4vw, 16px);
   font-weight: bold;
   background-color: #007bff;
   color: white;
@@ -391,4 +397,10 @@
 
 .popup-content button:hover {
   background-color: #0056b3;
+}
+
+button.disabled {
+  opacity: 0.5;
+  pointer-events: auto; /* important: allow clicks */
+  cursor: not-allowed;
 }

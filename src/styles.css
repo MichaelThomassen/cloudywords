@@ -25,7 +25,7 @@ body {
 
 .buttons button {
   padding: 10px 20px;
-  font-size: 16px;
+  font-size: clamp(10px, 4vw, 16px);
   font-weight: bold;
   border: 1px solid white;
   background-color: #007bff;
