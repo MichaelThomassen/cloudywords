@@ -17,6 +17,7 @@ import { OutOfWordsComponent } from '../outofwords/outofwords.component';
 import { SettingsComponent } from '../settings/settings.component';
 import { environment } from '../../environments/environment';
 import { StorageService } from '../../services/storage.service';
+import { GoogleAnalyticsService } from '../../services/google-analytics.service';
 
 @Component({
   selector: 'app-word-list',
@@ -74,7 +75,11 @@ export class GameComponent implements OnInit {
 
   @ViewChild('newWordButton', { static: false }) newWordButton!: ElementRef;
 
-  constructor(private renderer: Renderer2, private storage: StorageService) {
+  constructor(
+    private renderer: Renderer2,
+    private storage: StorageService,
+    private googleAnalytics: GoogleAnalyticsService
+  ) {
     this.renderer.listen('document', 'keydown', (event) => {
       this.handleKeyPress(event);
     });
@@ -224,6 +229,10 @@ export class GameComponent implements OnInit {
       this.appStatus = AppStatus.OutOfWords;
       return;
     }
+
+    this.googleAnalytics.event('new_word', {
+      wordId: word.index,
+    });
 
     if (this.metaProgress['Remove clouds'] > 0) {
       this.currentWordMarkup = {
