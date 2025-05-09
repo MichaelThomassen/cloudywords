@@ -24,6 +24,7 @@ export interface Word {
 export interface MetaProgress {
   'Category visible': number;
   'Definition visible': number;
+  'Daily boost': number;
   'Purge group 1': number;
   'Purge group 2': number;
   'Purge group 3': number;
@@ -34,6 +35,7 @@ export interface MetaProgress {
 export interface MetaSettings {
   'Category visible': { maxValue: number; price: number; explanation: string };
   'Definition visible': { maxValue: number; price: number; explanation: string };
+  'Daily boost': { maxValue: number; price: number; explanation: string };
   'Purge group 1': { maxValue: number; price: number; explanation: string };
   'Purge group 2': { maxValue: number; price: number; explanation: string };
   'Purge group 3': { maxValue: number; price: number; explanation: string };

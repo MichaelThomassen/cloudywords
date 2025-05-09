@@ -36,7 +36,10 @@
         )
       "
     >
-      <span>{{ score }} ☁️</span>
+      <span *ngIf="gameProgress.boostActive">
+        {{ score }} <img src="assets/goldcloud.png" alt="Boosted Cloud" style="height: 1.4em; vertical-align: middle" />
+      </span>
+      <span *ngIf="!gameProgress.boostActive"> {{ score }} ☁️ </span>
     </div>
     <div
       class="progress-wrapper"
@@ -124,6 +127,7 @@
       <div class="letter-boxes">
         <div
           class="cloud cloud-left"
+          [ngClass]="{ boosted: gameProgress.boostActive }"
           *ngIf="gameStatus === 'playing' && currentWordMarkup.beginningVisible === false"
           (click)="
             showHelp(
@@ -141,6 +145,7 @@
         </span>
         <div
           class="cloud cloud-right"
+          [ngClass]="{ boosted: gameProgress.boostActive }"
           *ngIf="gameStatus === 'playing' && currentWordMarkup.endVisible === false"
           (click)="
             showHelp(
@@ -184,6 +189,16 @@
       <div>&nbsp;</div>
       <div class="buttons">
         <button #newWordButton (click)="newWord()">New Word</button>
+        <button
+          class="daily-boost"
+          [disabled]="boostDisabled"
+          (click)="newWord(true)"
+          *ngIf="metaProgress['Daily boost'] >= 1"
+        >
+          Daily Boost <br />
+          <span *ngIf="!boostDisabled">({{ remainingBoosts }}/{{ dailyLimit }})</span>
+          <span *ngIf="boostDisabled">{{ countdown }}</span>
+        </button>
         <button
           [attr.aria-disabled]="getTotalScore() < 25"
           [class.disabled]="getTotalScore() < 25"

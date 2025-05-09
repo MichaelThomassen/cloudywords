@@ -24,7 +24,7 @@ body {
 }
 
 .buttons button {
-  padding: 10px 20px;
+  padding: 10px 10px;
   font-size: clamp(10px, 4vw, 16px);
   font-weight: bold;
   border: 1px solid white;
@@ -34,13 +34,30 @@ body {
   transition: background-color 0.3s;
 }
 
-.buttons button:hover {
-  background-color: #0056b3;
-}
-
 .buttons button:disabled {
   background-color: #6c757d;
   cursor: not-allowed;
+}
+
+@keyframes glowPulse {
+  0% {
+    box-shadow: 0 0 6px 2px rgba(255, 193, 7, 0.4);
+  }
+  50% {
+    box-shadow: 0 0 12px 2px rgba(255, 193, 7, 0.7);
+  }
+  100% {
+    box-shadow: 0 0 6px 2px rgba(255, 193, 7, 0.4);
+  }
+}
+
+.buttons .daily-boost {
+  background-color: #ffc107; /* gold */
+  color: #222;
+  border: 1px solid #fff8dc;
+  box-shadow: 0 0 8px 2px rgba(255, 193, 7, 0.4); /* faint gold glow */
+  transition: background-color 0.3s, box-shadow 0.3s;
+  animation: glowPulse 2s infinite;
 }
 
 h1 {

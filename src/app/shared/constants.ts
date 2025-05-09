@@ -6,6 +6,12 @@ export const MetaSettings: MetaSettingsType = {
     price: 25,
     explanation: '<strong>Category visible:</strong><br/><br/>Shows the category for the word',
   },
+  'Daily boost': {
+    maxValue: 1,
+    price: 50,
+    explanation:
+      '<strong>Daily Boost:</strong><br/><br/>Unlocks 5 boosted words every day, each worth 10 times the usual ☁️.',
+  },
   'Purge group 3': {
     maxValue: 4,
     price: 50,
@@ -46,6 +52,7 @@ export const MetaSettings: MetaSettingsType = {
 export const defaultMetaProgress: MetaProgress = {
   'Category visible': 0,
   'Definition visible': 0,
+  'Daily boost': 0,
   'Purge group 1': 0,
   'Purge group 2': 0,
   'Purge group 3': 0,

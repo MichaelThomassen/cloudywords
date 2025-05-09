@@ -39,16 +39,17 @@ export class GameComponent implements OnInit {
   appStatus: AppStatus = AppStatus.Game;
   currentWordIndex = 0;
   totalScore = 0;
-  averageScorePerWord = 0;
 
   originalOrder = () => 0;
   metaProgress: MetaProgress = { ...defaultMetaProgress };
   gameProgress: {
     guessedLetters: string[];
     removedLetters: string[];
+    boostActive: boolean;
   } = {
     guessedLetters: [],
     removedLetters: [],
+    boostActive: false,
   };
   settings: Settings = {
     Cheat: false,
@@ -72,6 +73,12 @@ export class GameComponent implements OnInit {
   } = { beginningVisible: false, endVisible: false, visibleLetters: '' };
   score: number = 10;
   scoreDecreased: boolean = false;
+
+  boostedWordsUsed = 0;
+  dailyLimit = 5;
+  countdown = '';
+  resetKey = 'dailyBoostResetTime';
+  usageKey = 'dailyBoostUsed';
 
   @ViewChild('newWordButton', { static: false }) newWordButton!: ElementRef;
 
@@ -122,14 +129,23 @@ export class GameComponent implements OnInit {
       this.gameProgress = {
         guessedLetters: [],
         removedLetters: [],
+        boostActive: false,
       };
     }
 
-    if (this.gameProgress.guessedLetters.length > 0 || this.gameProgress.removedLetters.length > 0) {
+    if (
+      this.gameProgress.guessedLetters.length > 0 ||
+      this.gameProgress.removedLetters.length > 0 ||
+      this.gameProgress.boostActive
+    ) {
       this.restoreGameState();
     } else {
       this.newWord();
     }
+
+    this.boostedWordsUsed = this.checkAndResetDailyBoost();
+    this.updateCountdown();
+    setInterval(() => this.updateCountdown(), 1000);
 
     window.addEventListener('resize', this.updateViewportSize.bind(this));
     this.updateViewportSize();
@@ -197,7 +213,7 @@ export class GameComponent implements OnInit {
     if (!environment.production && word) {
       console.log('Word is:', word.word);
     }
-    this.score = 10;
+    this.score = this.gameProgress.boostActive ? 100 : 10;
 
     this.currentWordMarkup = {
       beginningVisible: this.metaProgress['Remove clouds'] > 0,
@@ -211,18 +227,22 @@ export class GameComponent implements OnInit {
     });
   }
 
-  newWord() {
+  newWord(boost: boolean = false) {
     this.gameStatus = GameStatus.Playing;
     const word = this.getWord();
     if (!environment.production && word) {
       console.log('Word is:', word.word);
     }
 
-    this.score = 10;
+    this.score = boost ? 100 : 10;
     this.gameProgress = {
       guessedLetters: [],
       removedLetters: [],
+      boostActive: boost,
     };
+    this.storage.save('gameProgress', this.gameProgress);
+    if (boost) this.incrementBoostedWordUse();
+
     if (word) {
       this.currentWord = word;
     } else {
@@ -230,9 +250,12 @@ export class GameComponent implements OnInit {
       return;
     }
 
-    this.googleAnalytics.event('new_word', {
-      wordId: word.index,
-    });
+    //only track the event if we're on production
+    if (environment.production) {
+      this.googleAnalytics.event('new_word', {
+        wordId: word.index,
+      });
+    }
 
     if (this.metaProgress['Remove clouds'] > 0) {
       this.currentWordMarkup = {
@@ -322,20 +345,23 @@ export class GameComponent implements OnInit {
       this.currentWordMarkup.visibleLetters = this.currentWordMarkup.visibleLetters.trim();
     }
 
-    //Update score, score should be 10 - number of letters guess that's not in the word, minimum 2
+    //Update score, score should be 10 - number of letters guess that's not in the word, minimum 2, if boost active, multiply by 10
     this.updateScore(
-      Math.max(2, 10 - this.gameProgress.guessedLetters.filter((l) => !this.currentWord.word.includes(l)).length)
+      Math.max(2, 10 - this.gameProgress.guessedLetters.filter((l) => !this.currentWord.word.includes(l)).length) *
+        (this.gameProgress.boostActive ? 10 : 1)
     );
 
     // Check if all letters are guessed
     if (this.currentWord.word.split('').every((l) => this.gameProgress.guessedLetters.includes(l))) {
       this.gameStatus = GameStatus.Win;
+      this.updateCountdown();
       this.currentWordIndex++;
       this.storage.save('currentWordIndex', this.currentWordIndex.toString());
       //reset game progress
       this.gameProgress = {
         guessedLetters: [],
         removedLetters: [],
+        boostActive: false,
       };
       this.storage.save('gameProgress', this.gameProgress);
       //Focus on new word button (for keyboard users to press enter)
@@ -465,6 +491,7 @@ export class GameComponent implements OnInit {
     this.gameProgress = {
       guessedLetters: [],
       removedLetters: [],
+      boostActive: false,
     };
     this.storage.save('gameProgress', this.gameProgress);
 
@@ -527,5 +554,59 @@ export class GameComponent implements OnInit {
   changeTotalScore(score: number) {
     this.totalScore = score;
     this.storage.save('totalScore', score.toString());
+  }
+
+  checkAndResetDailyBoost(): number {
+    const now = new Date();
+    const resetTimeStr = this.storage.safeLoad<string>(this.resetKey, '');
+    const resetTime = resetTimeStr ? new Date(resetTimeStr) : null;
+
+    if (!resetTime || resetTime < now) {
+      // Reset usage
+      this.storage.save(this.usageKey, 0);
+
+      const tomorrow = new Date();
+      tomorrow.setHours(24, 0, 0, 0);
+      this.storage.save(this.resetKey, tomorrow.toISOString());
+      return 0;
+    }
+
+    return this.storage.safeLoadInt(this.usageKey);
+  }
+  incrementBoostedWordUse(): void {
+    const used = this.checkAndResetDailyBoost();
+    if (used < this.dailyLimit) {
+      this.storage.save(this.usageKey, used + 1);
+      this.boostedWordsUsed = used + 1;
+    }
+  }
+  getTimeUntilReset(): string {
+    const resetStr = this.storage.safeLoad<string>(this.resetKey, '');
+    if (!resetStr) return '';
+
+    const ms = new Date(resetStr).getTime() - Date.now();
+    if (ms <= 0) return '00:00:00';
+
+    const h = Math.floor(ms / 3600000);
+    const m = Math.floor((ms % 3600000) / 60000);
+    const s = Math.floor((ms % 60000) / 1000);
+
+    return `${this.pad(h)}:${this.pad(m)}:${this.pad(s)}`;
+  }
+
+  pad(num: number): string {
+    return num.toString().padStart(2, '0');
+  }
+  updateCountdown(): void {
+    this.countdown = this.getTimeUntilReset();
+    this.boostedWordsUsed = this.checkAndResetDailyBoost();
+  }
+
+  get remainingBoosts(): number {
+    return this.dailyLimit - this.boostedWordsUsed;
+  }
+
+  get boostDisabled(): boolean {
+    return this.boostedWordsUsed >= this.dailyLimit;
   }
 }
