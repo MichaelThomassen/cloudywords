@@ -78,41 +78,54 @@
     ></app-settings>
   </div>
   <div *ngIf="appStatus === AppStatus.Stats" class="game-container">
-    <div>Words guessed: {{ currentWordIndex }}</div>
-    <div>Words remaining: {{ WordList.length - currentWordIndex }}</div>
-    <div>Available: {{ totalScore }}☁️</div>
-    <div>Total: {{ getTotalScore() }}☁️</div>
-    <div>
-      ☁️ / word:
-      {{ (getTotalScore() / currentWordIndex | number : "1.0-2") || 0 }}
+    <h2 style="padding: 0; margin-top: 0">☁️ Statistics ☁️</h2>
+    <div style="max-width: 400px; width: 70%; margin: 0 auto">
+      <div style="display: flex; justify-content: space-between; padding: 4px 0">
+        <span>Words guessed:</span>
+        <span>{{ currentWordIndex }}</span>
+      </div>
+      <div style="display: flex; justify-content: space-between; padding: 4px 0">
+        <span>Words remaining:</span>
+        <span>{{ WordList.length - currentWordIndex }}</span>
+      </div>
+      <div style="display: flex; justify-content: space-between; padding: 4px 0">
+        <span>Available:</span>
+        <span>{{ totalScore }}☁️</span>
+      </div>
+      <div style="display: flex; justify-content: space-between; padding: 4px 0">
+        <span>Total:</span>
+        <span>{{ getTotalScore() }}☁️</span>
+      </div>
+      <div style="display: flex; justify-content: space-between; padding: 4px 0">
+        <span>Average per word:</span>
+        <span>{{ (getTotalScore() / currentWordIndex | number : "1.0-2") || 0 }}☁️</span>
+      </div>
     </div>
-    <div>&nbsp;</div>
   </div>
   <div *ngIf="appStatus === AppStatus.Meta" class="meta-container">
+    <h2 style="padding: 0; margin-top: 0px">☁️ Upgrades ☁️</h2>
     <div>
       <div class="meta-item">☁️ available</div>
       <div class="meta-progress">{{ totalScore }}/{{ getTotalScore() }}</div>
       <button class="meta-button" (click)="resetMetaProgress()">Refund</button>
     </div>
     <div *ngFor="let metaItem of MetaSettings | keyvalue : originalOrder">
-      <ng-container *ngIf="getTotalScore() >= MetaSettings[metaItem.key].price">
-        <div class="meta-item" (click)="showHelp(MetaSettings[metaItem.key].explanation)">
-          {{ metaItem.key }}
-        </div>
-        <div class="meta-progress">
-          {{ metaProgress[castVariableToKeyOfMetaProgress(metaItem.key)] }}/{{ MetaSettings[metaItem.key].maxValue }}
-        </div>
-        <button
-          class="meta-button"
-          [disabled]="
-            metaProgress[castVariableToKeyOfMetaProgress(metaItem.key)] >= MetaSettings[metaItem.key].maxValue ||
-            totalScore < MetaSettings[metaItem.key].price
-          "
-          (click)="setMetaProgress(castVariableToKeyOfMetaProgress(metaItem.key))"
-        >
-          {{ metaItem.value.price }}☁️
-        </button>
-      </ng-container>
+      <div class="meta-item" (click)="showHelp(MetaSettings[metaItem.key].explanation)">
+        {{ metaItem.key }}
+      </div>
+      <div class="meta-progress">
+        {{ metaProgress[castVariableToKeyOfMetaProgress(metaItem.key)] }}/{{ MetaSettings[metaItem.key].maxValue }}
+      </div>
+      <button
+        class="meta-button"
+        [disabled]="
+          metaProgress[castVariableToKeyOfMetaProgress(metaItem.key)] >= MetaSettings[metaItem.key].maxValue ||
+          totalScore < MetaSettings[metaItem.key].price
+        "
+        (click)="setMetaProgress(castVariableToKeyOfMetaProgress(metaItem.key))"
+      >
+        {{ metaItem.value.price }}☁️
+      </button>
     </div>
   </div>
   <div *ngIf="helpVisible" class="help-popup" (click)="closeHelp()">
@@ -122,10 +135,6 @@
     </div>
   </div>
   <div *ngIf="appStatus === AppStatus.Game" class="game-container">
-    <!-- <div>
-    Viewport: {{ viewportWidth }} x {{ viewportHeight }} 
-  </div> -->
-
     <div class="word">
       <div class="letter-boxes">
         <div
