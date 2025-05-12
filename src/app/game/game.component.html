@@ -202,7 +202,7 @@
       <div class="buttons">
         <button #newWordButton (click)="newWord()">New Word</button>
         <button
-          class="daily-boost"
+          [class.daily-boost]="remainingBoosts > 0"
           [disabled]="boostDisabled"
           (click)="newWord(true)"
           *ngIf="metaProgress['Daily boost'] >= 1"
@@ -214,9 +214,10 @@
         <button
           [attr.aria-disabled]="getTotalScore() < 25"
           [class.disabled]="getTotalScore() < 25"
+          [class.pulsing-upgrade]="isAnyMetaAffordable()"
           (click)="getTotalScore() < 25 ? showHelp('Earn 25 ☁️ to unlock upgrades!') : setAppStatus(AppStatus.Meta)"
         >
-          Upgrades {{ isAnyMetaAffordable() ? "*" : "" }}
+          Upgrades
         </button>
       </div>
     </div>

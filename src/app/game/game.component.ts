@@ -6,7 +6,9 @@ import {
   KeyboardLayout,
   LetterGroups,
   MetaSettings,
-  winMessages,
+  winMessagesLow,
+  winMessagesMid,
+  winMessagesHigh,
   styledCategories,
   defaultMetaProgress,
 } from '../shared/constants';
@@ -31,7 +33,9 @@ export class GameComponent implements OnInit {
   MetaSettings = MetaSettings;
   KeyboardLayout = KeyboardLayout;
   LetterGroups = LetterGroups;
-  winMessages = winMessages;
+  winMessagesLow = winMessagesLow;
+  winMessagesMid = winMessagesMid;
+  winMessagesHigh = winMessagesHigh;
 
   WordList: Word[] = WordList;
 
@@ -199,9 +203,24 @@ export class GameComponent implements OnInit {
       return word.index === this.currentWordIndex;
     });
   }
-  getWinMessage() {
-    return winMessages[this.currentWord.index % winMessages.length];
+
+  getWinMessage(): string {
+    let messages: string[];
+    //handle boosted words, score will be at least 20, so divide by 10
+    const localScore = this.score <= 10 ? this.score : this.score / 10;
+
+    if (localScore <= 4) {
+      messages = winMessagesLow;
+    } else if (localScore <= 8) {
+      messages = winMessagesMid;
+    } else {
+      messages = winMessagesHigh;
+    }
+
+    const index = this.currentWord.index % messages.length;
+    return messages[index];
   }
+
   getStyledCategory() {
     const category = this.currentWord.category;
     const index = styledCategories.findIndex((cat) => cat.includes(category));
