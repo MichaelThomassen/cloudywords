@@ -1,41 +1,59 @@
 # Cloudy Words
 
-Cloudy Words is a word-guessing game designed and developed by [Michael Thomassen](mailto:michael@voelit.dk).
+Cloudy Words is a roguelite-style word-guessing game created by [Michael Thomassen](mailto:michael@voelit.dk), where you guess hidden words, earn ☁️ points, and unlock upgrades that make future words easier.
 
-## Play the Game
+## 🎮 Play the Game
 
-You can play Cloudy Words online at [https://michaelthomassen.github.io/cloudywords/](https://michaelthomassen.github.io/cloudywords/).
+Play online at: [https://michaelthomassen.github.io/cloudywords/](https://michaelthomassen.github.io/cloudywords/)
 
-## How to Play
+## ☁️ How to Play
 
 - You start with two clouds hiding the word.
 - Guess letters using the on-screen keyboard.
 - Correct letters appear in their positions between the clouds.
-- Revealing the first or last letter removes that cloud, showing the word’s full length.
+- Reveal the first or last letter to remove that cloud and show the word’s full length.
 - Your score starts at **10☁️** per word and decreases by **1☁️** per wrong guess (minimum **2☁️**).
-- Collect **25☁️** to start unlocking upgrades that make future words easier to guess!
-- More upgrades unlock as you accumulate ☁️, so check back often!
-- Tap an upgrade to read what it does.
+- Earn points to unlock upgrades that reveal hints, reduce distractions, or give bonus letters.
+- Unlock the **Daily Boost** upgrade to supercharge 5 words per day with **10× points**.
+- The game gets easier the more you play, but you can refund upgrades to adjust difficulty.
+- All words are 5+ letters long and contain only basic English characters (A–Z).
+- A word may have multiple meanings, but usually only one or two definitions are shown.
 
-## Features
+## 🧠 Learn While You Play
 
-- **Fun and Challenging Gameplay** – Test your word-guessing skills with a simple yet engaging mechanic.
-- **Meta Progression** – Earn cloud points to unlock upgrades that improve your chances.
-- **Mobile-Friendly** – Designed for portrait mode but works well on desktop too.
-- **Open Source** – The game's source code is available for learning and contributions.
+Each word comes with a short, dictionary-style definition to help you build your English vocabulary as you play.  
+There are currently **1,500 words** in the game — and more are added regularly!  
+Your progress is tracked, and the word counter is always visible in the top-right corner.
 
-## Technologies Used
+## ⚙️ Features
 
-- **Angular** – Built as an introduction to Angular.
-- **TypeScript** – For type-safe and scalable development.
-- **HTML & CSS** – Responsive design optimized for mobile play.
+- **Roguelite Progression** – Unlock and refund upgrades to suit your preferred playstyle.
+- **Daily Boost System** – High-reward words to keep you coming back.
+- **Fun and Challenging** – No clues up front, just logic and deduction.
+- **Educational** – Great for learning new English words every day.
+- **Mobile-Friendly** – Built primarily for portrait mode, but works great on desktop too.
+- **Open Source** – The source code is publicly available for learning or inspiration.
 
-## License
+## 🛠️ Technologies Used
 
-This project is **not licensed** and is protected by copyright. You may not use, copy, modify, or distribute this code without explicit permission from the author.
+- **Angular 19** – Modern, standalone component-based app structure
+- **TypeScript** – Strong typing and maintainable architecture
+- **HTML/CSS** – Fully responsive and touch-friendly design
 
-For any inquiries or requests, please contact me directly at [Michael Thomassen](mailto:michael@voelit.dk).
+## 📁 Source & Contributions
+
+The full source code is available on GitHub:  
+[https://github.com/MichaelThomassen/cloudywords](https://github.com/MichaelThomassen/cloudywords)
+
+Bug reports and suggestions are very welcome!
+
+## 📜 License & Legal
+
+This project is **not licensed** and is protected by copyright.  
+You may not use, copy, modify, or distribute this code without explicit permission from the author.
+
+For any inquiries or requests, please contact: [Michael Thomassen](mailto:michael@voelit.dk)
 
 ---
 
-Enjoy playing Cloudy Words! ☁️
+Thanks for playing — and enjoy the clouds! ☁️
