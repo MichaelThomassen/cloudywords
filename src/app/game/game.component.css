@@ -85,7 +85,6 @@
 
 .game-container {
   max-width: 480px;
-  max-height: 896px;
   width: 100%;
   height: 100%;
   display: flex;

@@ -30,6 +30,7 @@
     <div
       class="score-wrapper"
       [ngClass]="{ 'score-decrease': scoreDecreased }"
+      *ngIf="appStatus === AppStatus.Game || appStatus === AppStatus.OutOfWords"
       (click)="
         showHelp(
           '<strong>☁️ Clouds ☁️</strong><p>You earn ☁️ by guessing words correctly</p><p>Spend your ☁️ on upgrades to help you progress faster</p><p>Each incorrect letter guess costs 1 ☁️</p><p>You’ll never drop below 2 ☁️, no matter how many mistakes you make</p>'
@@ -37,12 +38,14 @@
       "
     >
       <span *ngIf="gameProgress.boostActive">
-        {{ score }} <img src="assets/goldcloud.png" alt="Boosted Cloud" style="height: 1.4em; vertical-align: middle" />
+        {{ score }}
+        <img src="assets/goldcloud.png" alt="Boosted Cloud" style="height: 1.4em; vertical-align: middle" />
       </span>
       <span *ngIf="!gameProgress.boostActive"> {{ score }} ☁️ </span>
     </div>
     <div
       class="progress-wrapper"
+      *ngIf="appStatus === AppStatus.Game || appStatus === AppStatus.OutOfWords"
       (click)="
         showHelp(
           '<strong>Word Progress</strong><p>The first number is how many words you have guessed</p><p>The second is the total number of words in the game</p><p>Keep going to earn more ☁️ and unlock upgrades!</p>'
@@ -53,7 +56,7 @@
     </div>
   </div>
   <div *ngIf="appStatus === AppStatus.Help" class="game-container">
-    <app-help></app-help>
+    <app-help [wordCount]="WordList.length" (onClose)="setAppStatus(AppStatus.Game)"></app-help>
   </div>
   <div *ngIf="appStatus === AppStatus.About" class="game-container">
     <app-about></app-about>

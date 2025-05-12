@@ -101,6 +101,10 @@ export class GameComponent implements OnInit {
   helpText: string = '';
 
   ngOnInit() {
+    if (localStorage.getItem('currentWordIndex') === null) {
+      //first time user, show help component
+      this.appStatus = AppStatus.Help;
+    }
     this.currentWordIndex = this.storage.safeLoadInt('currentWordIndex', 0);
     this.totalScore = this.storage.safeLoadInt('totalScore', 0);
     this.metaProgress = this.storage.safeLoad('metaProgress', this.metaProgress);

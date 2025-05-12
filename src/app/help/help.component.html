@@ -1,16 +1,86 @@
-<h2>How to Play</h2>
+<div style="text-align: center">
+  <img src="assets/logo.png" alt="Cloudy Words Logo" style="width: 80%" />
+</div>
+
+<h2>How to Play 🕹️</h2>
 
 <p>Guess the hidden word, one letter at a time!</p>
-
 <ul>
-  <li>You start with nothing but two clouds hiding the word.</li>
-  <li>Guess letters using the on-screen keyboard.</li>
-  <li>Correct letters appear in their positions between the clouds.</li>
-  <li>Find the first or last letter to remove that cloud, revealing the word’s full length.</li>
-  <li>Your score starts at 10☁️ per word and decreases by 1☁️ per wrong guess (minimum 2☁️).</li>
-  <li>Collect 25☁️ to start unlocking upgrades that make future words easier to guess!</li>
-  <li>More upgrades unlock as you accumulate ☁️, so check back often!</li>
-  <li>Tap an upgrade to read what it does.</li>
+  <li>🌫️ You start with nothing but two clouds hiding the word.</li>
+  <li>⌨️ Guess letters using the on-screen keyboard.</li>
+  <li>✅ Correct letters appear in their positions between the clouds.</li>
+  <li>🌤️ Find the first or last letter to remove that cloud and reveal the word’s full length.</li>
+  <li>☁️ Your score starts at 10☁️ per word and decreases by 1☁️ for each incorrect guess (minimum 2☁️).</li>
 </ul>
 
-<p>Good luck and have fun! ☁️</p>
+<h2>Game Structure: A Roguelite Word Experience 🎲</h2>
+
+<p>
+  Cloudy Words is designed as a <strong>roguelite</strong> — a type of game where you start with almost nothing, and
+  gradually unlock new tools and advantages through play.
+</p>
+<p>
+  At first, the game is deliberately <strong>hard</strong> 💀. But as you earn ☁️, you'll be able to unlock helpful
+  upgrades that make guessing easier. You shape your own progression and playstyle 🎯.
+</p>
+<p>
+  If you later feel that the game becomes <strong>too</strong> easy, you can always <strong>refund</strong> individual
+  upgrades to make the challenge feel right again 🔄.
+</p>
+
+<h2>Upgrades ⚙️</h2>
+
+<p>
+  Once you've collected at least <strong>25☁️</strong>, you’ll gain access to the upgrade menu. Upgrades can do things
+  like:
+</p>
+<ul>
+  <li>📂 Reveal the word’s category or definition</li>
+  <li>🚫 Remove letters from the keyboard that are not part of the word</li>
+  <li>🎁 Give you a free letter</li>
+  <li>🔍 Show the word length earlier</li>
+</ul>
+
+<p>
+  For <strong>50☁️</strong>, you can unlock the <strong>Daily Boost</strong> upgrade ⚡. This gives you the ability to
+  <strong>boost</strong> 5 words each day, making them worth <strong>10× the usual points</strong> 💥.
+</p>
+<p>Daily Boost is perfect for speeding up progression or adding a little extra fun to your daily play session 🎉.</p>
+
+<h2>Word Rules 📖</h2>
+
+<p>All words in the game follow these rules:</p>
+<ul>
+  <li>🔤 Words are in English and contain only basic letters A–Z (no symbols, spaces, or accents).</li>
+  <li>📏 Each word is at least <strong>5 letters</strong> long.</li>
+  <li>
+    🧠 Some words have multiple meanings, but usually only <strong>one definition</strong> is shown due to space
+    limitations.
+  </li>
+</ul>
+<p>
+  There are currently <strong>{{ wordCount.toLocaleString() }} words</strong> in the game — and we’re regularly adding
+  more to keep things fresh! You can always see how far along you are via the word counter in the top right corner of
+  the screen.
+</p>
+
+<h2>Learn While You Play 🧑‍🏫</h2>
+
+<p>
+  Cloudy Words isn't just a game — it's also a great way to expand your English vocabulary 📚. Each word comes with a
+  short definition, so you’ll not only guess, but also learn as you go.
+</p>
+<p>
+  We almost guarantee that you won’t know every single word in the game — and that’s the fun of it! Whether you're a
+  language nerd or just curious, there’s always something new to discover 🕵️.
+</p>
+
+<h2>Good Luck! 🍀</h2>
+
+<p>
+  Whether you're in it for the upgrades, the vocabulary, or just the satisfaction of cracking a tough word — Cloudy
+  Words is meant to grow with you. Enjoy the clouds! ☁️
+</p>
+<div class="buttons" style="margin: 20px">
+  <button (click)="closeIt()">Start Playing</button>
+</div>
