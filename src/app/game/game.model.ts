@@ -4,14 +4,14 @@ export enum GameStatus {
 }
 
 export enum AppStatus {
-  Game = 'game',
+  Daily = 'daily',
+  Practice = 'practice',
   Meta = 'meta',
   Stats = 'stats',
   Options = 'options',
   About = 'about',
   Help = 'help',
   OutOfWords = 'outofwords',
-  Settings = 'settings',
 }
 
 export interface Word {
@@ -19,6 +19,16 @@ export interface Word {
   word: string;
   definition: string;
   category: string;
+}
+
+export interface DailyWord extends Word {
+  dailyConfig?: DailyConfig;
+}
+
+export interface DailyConfig {
+  purgedLetters?: string[];
+  freeLetters?: string[];
+  hints?: string[];
 }
 
 export interface MetaProgress {
@@ -42,9 +52,4 @@ export interface MetaSettings {
   'Free letter': { maxValue: number; price: number; explanation: string };
   'Remove clouds': { maxValue: number; price: number; explanation: string };
   // Add other meta settings here as needed
-}
-
-export interface Settings {
-  Cheat: boolean;
-  Easy: boolean;
 }

@@ -1,7 +1,9 @@
 import { Component, OnInit, Renderer2, ViewChild, ElementRef } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
+
 import WordList from '../shared/wordlist.json';
+import DailyWordList from '../shared/dailywordlist.json';
 import {
   KeyboardLayout,
   LetterGroups,
@@ -10,20 +12,19 @@ import {
   winMessagesMid,
   winMessagesHigh,
   styledCategories,
-  defaultMetaProgress,
 } from '../shared/constants';
-import { AppStatus, GameStatus, MetaProgress, Settings, Word } from './game.model';
+import { AppStatus, DailyWord, GameStatus, MetaProgress, Word } from './game.model';
 import { AboutComponent } from '../about/about.component';
 import { HelpComponent } from '../help/help.component';
 import { OutOfWordsComponent } from '../outofwords/outofwords.component';
-import { SettingsComponent } from '../settings/settings.component';
 import { environment } from '../../environments/environment';
 import { StorageService } from '../../services/storage.service';
 import { GoogleAnalyticsService } from '../../services/google-analytics.service';
+import { defaultMetaProgress } from '../shared/defaults';
 
 @Component({
   selector: 'app-word-list',
-  imports: [CommonModule, FormsModule, AboutComponent, HelpComponent, OutOfWordsComponent, SettingsComponent],
+  imports: [CommonModule, FormsModule, AboutComponent, HelpComponent, OutOfWordsComponent],
   templateUrl: './game.component.html',
   styleUrls: ['./game.component.css'],
 })
@@ -38,9 +39,10 @@ export class GameComponent implements OnInit {
   winMessagesHigh = winMessagesHigh;
 
   WordList: Word[] = WordList;
+  DailyWordList: DailyWord[] = DailyWordList;
 
   gameStatus: GameStatus = GameStatus.Playing;
-  appStatus: AppStatus = AppStatus.Game;
+  appStatus: AppStatus = AppStatus.Practice;
   currentWordIndex = 0;
   totalScore = 0;
 
@@ -54,10 +56,6 @@ export class GameComponent implements OnInit {
     guessedLetters: [],
     removedLetters: [],
     boostActive: false,
-  };
-  settings: Settings = {
-    Cheat: false,
-    Easy: false,
   };
 
   viewportWidth: number = window.innerWidth;
@@ -113,7 +111,6 @@ export class GameComponent implements OnInit {
     this.totalScore = this.storage.safeLoadInt('totalScore', 0);
     this.metaProgress = this.storage.safeLoad('metaProgress', this.metaProgress);
     this.gameProgress = this.storage.safeLoad('gameProgress', this.gameProgress);
-    this.settings = this.storage.safeLoad('settings', this.settings);
 
     //check if all keys in metaProgress are valid
     const validKeys = Object.keys(this.metaProgress).filter((key) => {
@@ -339,7 +336,7 @@ export class GameComponent implements OnInit {
 
   guessLetter(letter: string, overrideAppStatus: boolean = false) {
     //overrideAppStatus is used to allow guessing letters when the app status is not Game (usually when changing settings)
-    if ((this.appStatus !== AppStatus.Game || this.gameStatus !== GameStatus.Playing) && !overrideAppStatus) {
+    if ((this.appStatus !== AppStatus.Practice || this.gameStatus !== GameStatus.Playing) && !overrideAppStatus) {
       //when typing letters when not in game
       return;
     }
@@ -407,7 +404,7 @@ export class GameComponent implements OnInit {
   }
 
   setAppStatus(status: AppStatus) {
-    if (status === AppStatus.Game && !this.getWord()) {
+    if (status === AppStatus.Practice && !this.getWord()) {
       this.appStatus = AppStatus.OutOfWords;
     } else {
       this.appStatus = status;
@@ -518,13 +515,8 @@ export class GameComponent implements OnInit {
     };
     this.storage.save('gameProgress', this.gameProgress);
 
-    this.settings = {
-      Cheat: false,
-      Easy: false,
-    };
-
     this.newWord();
-    this.appStatus = AppStatus.Game;
+    this.appStatus = AppStatus.Practice;
   }
 
   showHelp(txt: string) {
@@ -539,36 +531,6 @@ export class GameComponent implements OnInit {
     return v as keyof MetaProgress;
   }
 
-  settingsChange(setting: string) {
-    const tmpset = setting as keyof typeof this.settings;
-    if (tmpset === 'Easy' && !this.settings['Easy']) {
-      //give all meta progresss for free, subtract points from total score if enough, otherwise set it to 0
-      Object.keys(this.metaProgress).forEach((meta) => {
-        this.totalScore +=
-          this.metaProgress[meta as keyof MetaProgress] * MetaSettings[meta as keyof MetaProgress].price;
-        this.metaProgress[meta as keyof MetaProgress] = MetaSettings[meta as keyof MetaProgress].maxValue;
-        this.totalScore -=
-          MetaSettings[meta as keyof MetaProgress].maxValue * MetaSettings[meta as keyof MetaProgress].price;
-      });
-
-      this.totalScore = Math.max(0, this.totalScore);
-      this.storage.save('totalScore', this.totalScore.toString());
-      this.storage.save('metaProgress', this.metaProgress);
-    } else if (tmpset === 'Easy' && this.settings['Easy']) {
-      //reset all meta progress to 0 and refund points spent
-      Object.keys(this.metaProgress).forEach((meta) => {
-        this.totalScore +=
-          this.metaProgress[meta as keyof MetaProgress] * MetaSettings[meta as keyof MetaProgress].price;
-      });
-      this.metaProgress = { ...defaultMetaProgress };
-      this.storage.save('totalScore', this.totalScore.toString());
-      this.storage.save('metaProgress', this.metaProgress);
-    }
-
-    this.settings[tmpset] = !this.settings[tmpset];
-    this.storage.save('settings', this.settings);
-    this.newWord();
-  }
   changeCurrentWordIndex(wordNumber: number) {
     this.currentWordIndex = wordNumber;
     this.storage.save('currentWordIndex', wordNumber.toString());

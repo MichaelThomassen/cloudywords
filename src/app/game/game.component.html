@@ -2,27 +2,26 @@
   <div class="header">
     <div class="menu-wrapper">
       <button
-        *ngIf="appStatus === AppStatus.Game || appStatus === AppStatus.OutOfWords"
+        *ngIf="appStatus === AppStatus.Practice || appStatus === AppStatus.OutOfWords"
         class="menu-button"
         (click)="toggleMenu()"
       >
         ☰
       </button>
       <button
-        *ngIf="appStatus !== AppStatus.Game && appStatus !== AppStatus.OutOfWords"
+        *ngIf="appStatus !== AppStatus.Practice && appStatus !== AppStatus.OutOfWords"
         class="menu-button"
-        (click)="setAppStatus(AppStatus.Game)"
+        (click)="setAppStatus(AppStatus.Practice)"
       >
         ←
       </button>
       <div
-        *ngIf="appStatus === AppStatus.Game || appStatus === AppStatus.OutOfWords"
+        *ngIf="appStatus === AppStatus.Practice || appStatus === AppStatus.OutOfWords"
         class="menu"
         [ngClass]="{ 'menu-expanded': isMenuExpanded }"
       >
         <div class="menu-item" *ngIf="getTotalScore() >= 25" (click)="setAppStatus(AppStatus.Meta)">Upgrades</div>
         <div class="menu-item" (click)="setAppStatus(AppStatus.Stats)">Statistics</div>
-        <div class="menu-item" (click)="setAppStatus(AppStatus.Settings)">β Settings</div>
         <div class="menu-item" (click)="setAppStatus(AppStatus.Help)">Help</div>
         <div class="menu-item" (click)="setAppStatus(AppStatus.About)">About</div>
       </div>
@@ -30,7 +29,7 @@
     <div
       class="score-wrapper"
       [ngClass]="{ 'score-decrease': scoreDecreased }"
-      *ngIf="appStatus === AppStatus.Game || appStatus === AppStatus.OutOfWords"
+      *ngIf="appStatus === AppStatus.Practice || appStatus === AppStatus.OutOfWords"
       (click)="
         showHelp(
           '<strong>☁️ Clouds ☁️</strong><p>You earn ☁️ by guessing words correctly</p><p>Spend your ☁️ on upgrades to help you progress faster</p><p>Each incorrect letter guess costs 1 ☁️</p><p>You’ll never drop below 2 ☁️, no matter how many mistakes you make</p>'
@@ -45,7 +44,7 @@
     </div>
     <div
       class="progress-wrapper"
-      *ngIf="appStatus === AppStatus.Game || appStatus === AppStatus.OutOfWords"
+      *ngIf="appStatus === AppStatus.Practice || appStatus === AppStatus.OutOfWords"
       (click)="
         showHelp(
           '<strong>Word Progress</strong><p>The first number is how many words you have guessed</p><p>The second is the total number of words in the game</p><p>Keep going to earn more ☁️ and unlock upgrades!</p>'
@@ -56,26 +55,13 @@
     </div>
   </div>
   <div *ngIf="appStatus === AppStatus.Help" class="game-container">
-    <app-help [wordCount]="WordList.length" (onClose)="setAppStatus(AppStatus.Game)"></app-help>
+    <app-help [wordCount]="WordList.length" (onClose)="setAppStatus(AppStatus.Practice)"></app-help>
   </div>
   <div *ngIf="appStatus === AppStatus.About" class="game-container">
     <app-about></app-about>
   </div>
   <div *ngIf="appStatus === AppStatus.OutOfWords" class="game-container">
     <app-outofwords></app-outofwords>
-  </div>
-  <div *ngIf="appStatus === AppStatus.Settings" class="game-container">
-    <app-settings
-      [totalScore]="totalScore"
-      [currentWordIndex]="currentWordIndex"
-      [wordCount]="WordList.length"
-      [settings]="settings"
-      (resetAllProgress)="resetAllProgress()"
-      (showHelp)="showHelp($event)"
-      (settingsChange)="settingsChange($event)"
-      (changeCurrentWordIndex)="changeCurrentWordIndex($event)"
-      (changeTotalScore)="changeTotalScore($event)"
-    ></app-settings>
   </div>
   <div *ngIf="appStatus === AppStatus.Stats" class="game-container">
     <h2 style="padding: 0; margin-top: 0">☁️ Statistics ☁️</h2>
@@ -134,7 +120,7 @@
       <button (click)="closeHelp()">Close</button>
     </div>
   </div>
-  <div *ngIf="appStatus === AppStatus.Game" class="game-container">
+  <div *ngIf="appStatus === AppStatus.Practice" class="game-container">
     <div class="word">
       <div class="letter-boxes">
         <div

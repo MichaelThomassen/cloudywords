@@ -1,0 +1,4715 @@
+[
+  {
+    "index": 0,
+    "word": "raconteur",
+    "category": "People and Relationships",
+    "definition": "A person skilled at telling anecdotes or engaging stories.",
+    "dailyConfig": {
+      "purgedLetters": [
+        "l",
+        "d",
+        "m",
+        "f",
+        "q",
+        "w"
+      ],
+      "freeLetters": [
+        "u"
+      ],
+      "hints": [
+        "A type of storyteller"
+      ]
+    }
+  },
+  {
+    "index": 1,
+    "word": "ljubljana",
+    "category": "Places and Geography",
+    "definition": "The capital city of Slovenia, located in central Europe.",
+    "dailyConfig": {
+      "purgedLetters": [
+        "e",
+        "c",
+        "m",
+        "x",
+        "y",
+        "f"
+      ],
+      "freeLetters": [
+        "u"
+      ],
+      "hints": [
+        "A European capital city"
+      ]
+    }
+  },
+  {
+    "index": 2,
+    "word": "dyslexia",
+    "category": "Body and Health",
+    "definition": "A condition affecting the ability to read or interpret words and letters.",
+    "dailyConfig": {
+      "purgedLetters": [
+        "r",
+        "p",
+        "c",
+        "w",
+        "f",
+        "k"
+      ],
+      "freeLetters": [
+        "y"
+      ],
+      "hints": [
+        "A medical condition"
+      ]
+    }
+  },
+  {
+    "index": 3,
+    "word": "obfuscate",
+    "category": "Communication and Language",
+    "definition": "To make something unclear or difficult to understand; to obscure meaning.",
+    "dailyConfig": {
+      "purgedLetters": [
+        "i",
+        "d",
+        "m",
+        "y",
+        "w",
+        "k"
+      ],
+      "freeLetters": [
+        "f"
+      ],
+      "hints": [
+        "A communication-related action"
+      ]
+    }
+  },
+  {
+    "index": 4,
+    "word": "obdurate",
+    "category": "Emotions and States",
+    "definition": "Stubbornly refusing to change one's opinion or course of action.",
+    "dailyConfig": {
+      "purgedLetters": [
+        "n",
+        "h",
+        "g",
+        "x",
+        "q",
+        "z"
+      ],
+      "freeLetters": [
+        "b"
+      ],
+      "hints": [
+        "A personality trait"
+      ]
+    }
+  },
+  {
+    "index": 5,
+    "word": "noctilucent",
+    "category": "Nature and Environment",
+    "definition": "Shining or glowing in the night, especially referring to certain high-altitude clouds.",
+    "dailyConfig": {
+      "purgedLetters": [
+        "r",
+        "d",
+        "m",
+        "x",
+        "k",
+        "y"
+      ],
+      "freeLetters": [
+        "u"
+      ],
+      "hints": [
+        "A type of atmospheric phenomenon"
+      ]
+    }
+  },
+  {
+    "index": 6,
+    "word": "gossamer",
+    "category": "Objects and Tools",
+    "definition": "A very light, thin, and delicate material or substance.",
+    "dailyConfig": {
+      "purgedLetters": [
+        "i",
+        "p",
+        "u",
+        "q",
+        "w",
+        "x"
+      ],
+      "freeLetters": [
+        "m"
+      ],
+      "hints": [
+        "A delicate material"
+      ]
+    }
+  },
+  {
+    "index": 7,
+    "word": "ephemeral",
+    "category": "Time and Dates",
+    "definition": "Lasting for a very short time; fleeting or transitory.",
+    "dailyConfig": {
+      "purgedLetters": [
+        "i",
+        "c",
+        "u",
+        "q",
+        "v",
+        "w"
+      ],
+      "freeLetters": [
+        "h"
+      ],
+      "hints": [
+        "A time-related description"
+      ]
+    }
+  },
+  {
+    "index": 8,
+    "word": "syzygy",
+    "category": "Science and Technology",
+    "definition": "An alignment of three celestial bodies in a straight line.",
+    "dailyConfig": {
+      "purgedLetters": [
+        "q",
+        "a",
+        "w",
+        "r",
+        "f",
+        "t",
+        "u",
+        "j",
+        "i"
+      ],
+      "freeLetters": [
+        "z"
+      ],
+      "hints": [
+        "An astronomical event"
+      ]
+    }
+  },
+  {
+    "index": 9,
+    "word": "umbrage",
+    "category": "Emotions and States",
+    "definition": "A feeling of offense, annoyance, or resentment.",
+    "dailyConfig": {
+      "purgedLetters": [
+        "i",
+        "d",
+        "c",
+        "q",
+        "f",
+        "y"
+      ],
+      "freeLetters": [
+        "g"
+      ],
+      "hints": [
+        "A type of feeling or mood"
+      ]
+    }
+  },
+  {
+    "index": 10,
+    "word": "panacea",
+    "category": "Science and Technology",
+    "definition": "A remedy or solution for all problems or difficulties.",
+    "dailyConfig": {
+      "purgedLetters": [
+        "r",
+        "h",
+        "u",
+        "q",
+        "y",
+        "v"
+      ],
+      "freeLetters": [
+        "c"
+      ],
+      "hints": [
+        "A kind of medicine or remedy"
+      ]
+    }
+  },
+  {
+    "index": 11,
+    "word": "crepuscular",
+    "category": "Nature and Environment",
+    "definition": "Active or occurring during the twilight hours, especially at dawn or dusk.",
+    "dailyConfig": {
+      "purgedLetters": [
+        "i",
+        "m",
+        "d",
+        "f",
+        "y",
+        "z"
+      ],
+      "freeLetters": [
+        "p"
+      ],
+      "hints": [
+        "A description in animal behavior"
+      ]
+    }
+  },
+  {
+    "index": 12,
+    "word": "aphelion",
+    "category": "Science and Technology",
+    "definition": "The point in a planet's orbit farthest from the sun.",
+    "dailyConfig": {
+      "purgedLetters": [
+        "r",
+        "d",
+        "c",
+        "q",
+        "f",
+        "w"
+      ],
+      "freeLetters": [
+        "h"
+      ],
+      "hints": [
+        "An astronomy term"
+      ]
+    }
+  },
+  {
+    "index": 13,
+    "word": "dissimulation",
+    "category": "Communication and Language",
+    "definition": "The act of concealing true intentions or feelings.",
+    "dailyConfig": {
+      "purgedLetters": [
+        "r",
+        "c",
+        "h",
+        "q",
+        "x",
+        "k"
+      ],
+      "freeLetters": [
+        "u"
+      ],
+      "hints": [
+        "A type of communication"
+      ]
+    }
+  },
+  {
+    "index": 14,
+    "word": "parthenogenesis",
+    "category": "Science and Technology",
+    "definition": "A form of reproduction where offspring develop from unfertilized eggs.",
+    "dailyConfig": {
+      "purgedLetters": [
+        "l",
+        "d",
+        "c",
+        "k",
+        "x",
+        "f"
+      ],
+      "freeLetters": [
+        "g"
+      ],
+      "hints": [
+        "A biological reproduction process"
+      ]
+    }
+  },
+  {
+    "index": 15,
+    "word": "palimpsest",
+    "category": "Objects and Tools",
+    "definition": "A manuscript or surface where earlier writing has been erased for reuse.",
+    "dailyConfig": {
+      "purgedLetters": [
+        "r",
+        "u",
+        "d",
+        "v",
+        "q",
+        "k"
+      ],
+      "freeLetters": [
+        "m"
+      ],
+      "hints": [
+        "An old type of written material"
+      ]
+    }
+  },
+  {
+    "index": 16,
+    "word": "oubliette",
+    "category": "Places and Geography",
+    "definition": "A secret dungeon with access only through a trapdoor in its ceiling.",
+    "dailyConfig": {
+      "purgedLetters": [
+        "n",
+        "c",
+        "d",
+        "f",
+        "v",
+        "y"
+      ],
+      "freeLetters": [
+        "b"
+      ],
+      "hints": [
+        "A type of hidden prison room"
+      ]
+    }
+  },
+  {
+    "index": 17,
+    "word": "phalanx",
+    "category": "Objects and Tools",
+    "definition": "A compact group of people, animals, or things arranged closely together, often in a formation.",
+    "dailyConfig": {
+      "purgedLetters": [
+        "i",
+        "c",
+        "d",
+        "w",
+        "y",
+        "f"
+      ],
+      "freeLetters": [
+        "h"
+      ],
+      "hints": [
+        "A formation or grouping"
+      ]
+    }
+  },
+  {
+    "index": 18,
+    "word": "hyperbole",
+    "category": "Communication and Language",
+    "definition": "An exaggerated statement not meant to be taken literally.",
+    "dailyConfig": {
+      "purgedLetters": [
+        "s",
+        "c",
+        "d",
+        "f",
+        "z",
+        "k"
+      ],
+      "freeLetters": [
+        "y"
+      ],
+      "hints": [
+        "A figure of speech"
+      ]
+    }
+  },
+  {
+    "index": 19,
+    "word": "solipsism",
+    "category": "Abstract Concepts",
+    "definition": "The philosophical view that only one's own mind is sure to exist.",
+    "dailyConfig": {
+      "purgedLetters": [
+        "e",
+        "u",
+        "c",
+        "q",
+        "y",
+        "w"
+      ],
+      "freeLetters": [
+        "p"
+      ],
+      "hints": [
+        "A philosophical belief"
+      ]
+    }
+  },
+  {
+    "index": 20,
+    "word": "deracinate",
+    "category": "Movement and Travel",
+    "definition": "To remove something completely from its original place or environment.",
+    "dailyConfig": {
+      "purgedLetters": [
+        "s",
+        "p",
+        "m",
+        "f",
+        "v",
+        "y"
+      ],
+      "freeLetters": [
+        "c"
+      ],
+      "hints": [
+        "A formal action involving removal"
+      ]
+    }
+  },
+  {
+    "index": 21,
+    "word": "caldera",
+    "category": "Nature and Environment",
+    "definition": "A large, bowl-shaped volcanic depression formed after an eruption.",
+    "dailyConfig": {
+      "purgedLetters": [
+        "t",
+        "u",
+        "p",
+        "f",
+        "w",
+        "y"
+      ],
+      "freeLetters": [
+        "d"
+      ],
+      "hints": [
+        "A landform from volcanic activity"
+      ]
+    }
+  },
+  {
+    "index": 22,
+    "word": "quincunx",
+    "category": "Quantities and Measurements",
+    "definition": "An arrangement of five objects with four at the corners and one at the center.",
+    "dailyConfig": {
+      "purgedLetters": [
+        "a",
+        "h",
+        "p",
+        "f",
+        "y",
+        "k"
+      ],
+      "freeLetters": [
+        "c"
+      ],
+      "hints": [
+        "A geometric pattern"
+      ]
+    }
+  },
+  {
+    "index": 23,
+    "word": "mellifluous",
+    "category": "Communication and Language",
+    "definition": "Having a smooth, pleasant, and sweet-sounding quality, especially in reference to a voice or music.",
+    "dailyConfig": {
+      "purgedLetters": [
+        "a",
+        "h",
+        "p",
+        "y",
+        "v",
+        "k"
+      ],
+      "freeLetters": [
+        "f"
+      ],
+      "hints": [
+        "A quality of pleasant sounds"
+      ]
+    }
+  },
+  {
+    "index": 24,
+    "word": "lamentation",
+    "category": "Emotions and States",
+    "definition": "The act of expressing deep sorrow or grief, often audibly.",
+    "dailyConfig": {
+      "purgedLetters": [
+        "r",
+        "u",
+        "d",
+        "z",
+        "w",
+        "q"
+      ],
+      "freeLetters": [
+        "m"
+      ],
+      "hints": [
+        "A feeling or emotional state"
+      ]
+    }
+  },
+  {
+    "index": 25,
+    "word": "sounder",
+    "category": "Nature and Environment",
+    "definition": "A group of pigs, especially wild ones, moving together.",
+    "dailyConfig": {
+      "purgedLetters": [
+        "i",
+        "h",
+        "m",
+        "y",
+        "v",
+        "f"
+      ],
+      "freeLetters": [
+        "u"
+      ],
+      "hints": [
+        "A group of animals"
+      ]
+    }
+  },
+  {
+    "index": 26,
+    "word": "ostentation",
+    "category": "Abstract Concepts",
+    "definition": "Display meant to attract notice or impress others, often through extravagance.",
+    "dailyConfig": {
+      "purgedLetters": [
+        "l",
+        "c",
+        "u",
+        "k",
+        "q",
+        "x"
+      ],
+      "freeLetters": [
+        "s"
+      ],
+      "hints": [
+        "A type of behavior or display"
+      ]
+    }
+  },
+  {
+    "index": 27,
+    "word": "pandemonium",
+    "category": "Emotions and States",
+    "definition": "A situation marked by wild confusion, noise, or disorder.",
+    "dailyConfig": {
+      "purgedLetters": [
+        "r",
+        "c",
+        "h",
+        "y",
+        "w",
+        "v"
+      ],
+      "freeLetters": [
+        "d"
+      ],
+      "hints": [
+        "A type of chaotic situation"
+      ]
+    }
+  },
+  {
+    "index": 28,
+    "word": "candelabrum",
+    "category": "Objects and Tools",
+    "definition": "A branched holder designed to support multiple candles.",
+    "dailyConfig": {
+      "purgedLetters": [
+        "i",
+        "g",
+        "p",
+        "f",
+        "y",
+        "w"
+      ],
+      "freeLetters": [
+        "d"
+      ],
+      "hints": [
+        "A household decorative item"
+      ]
+    }
+  },
+  {
+    "index": 29,
+    "word": "flamboyance",
+    "category": "Abstract Concepts",
+    "definition": "A showy or elaborate style that attracts attention.",
+    "dailyConfig": {
+      "purgedLetters": [
+        "i",
+        "u",
+        "h",
+        "v",
+        "k",
+        "w"
+      ],
+      "freeLetters": [
+        "y"
+      ],
+      "hints": [
+        "A style or manner"
+      ]
+    }
+  },
+  {
+    "index": 30,
+    "word": "megafauna",
+    "category": "Nature and Environment",
+    "definition": "Large animal species, typically those weighing over 100 pounds.",
+    "dailyConfig": {
+      "purgedLetters": [
+        "t",
+        "d",
+        "c",
+        "y",
+        "w",
+        "k"
+      ],
+      "freeLetters": [
+        "f"
+      ],
+      "hints": [
+        "Large animals"
+      ]
+    }
+  },
+  {
+    "index": 31,
+    "word": "obstinacy",
+    "category": "Emotions and States",
+    "definition": "Persistent refusal to change one’s opinion or chosen course.",
+    "dailyConfig": {
+      "purgedLetters": [
+        "e",
+        "u",
+        "m",
+        "j",
+        "w",
+        "z"
+      ],
+      "freeLetters": [
+        "b"
+      ],
+      "hints": [
+        "A mental or emotional state"
+      ]
+    }
+  },
+  {
+    "index": 32,
+    "word": "convocation",
+    "category": "Society and Politics",
+    "definition": "A formal gathering or assembly, often for a ceremony.",
+    "dailyConfig": {
+      "purgedLetters": [
+        "e",
+        "d",
+        "u",
+        "y",
+        "k",
+        "w"
+      ],
+      "freeLetters": [
+        "v"
+      ],
+      "hints": [
+        "A formal group event"
+      ]
+    }
+  },
+  {
+    "index": 33,
+    "word": "shrewd",
+    "category": "Emotions and States",
+    "definition": "Having sharp judgment and practical intelligence, especially in business or practical matters.",
+    "dailyConfig": {
+      "purgedLetters": [
+        "o",
+        "u",
+        "p",
+        "k",
+        "f",
+        "y"
+      ],
+      "freeLetters": [
+        "w"
+      ],
+      "hints": [
+        "A personality trait"
+      ]
+    }
+  },
+  {
+    "index": 34,
+    "word": "incandescent",
+    "category": "Science and Technology",
+    "definition": "Emitting visible light as a result of being heated to a high temperature.",
+    "dailyConfig": {
+      "purgedLetters": [
+        "l",
+        "u",
+        "g",
+        "x",
+        "z",
+        "k"
+      ],
+      "freeLetters": [
+        "c"
+      ],
+      "hints": [
+        "A lighting-related scientific term"
+      ]
+    }
+  },
+  {
+    "index": 35,
+    "word": "manticore",
+    "category": "Nature and Environment",
+    "definition": "A mythical creature with a lion's body, a human head, and a tail often depicted with venomous spines.",
+    "dailyConfig": {
+      "purgedLetters": [
+        "s",
+        "b",
+        "g",
+        "f",
+        "y",
+        "q"
+      ],
+      "freeLetters": [
+        "c"
+      ],
+      "hints": [
+        "A legendary animal"
+      ]
+    }
+  },
+  {
+    "index": 36,
+    "word": "disproportionate",
+    "category": "Quantities and Measurements",
+    "definition": "Not matching in size, amount, or degree compared to something else.",
+    "dailyConfig": {
+      "purgedLetters": [
+        "l",
+        "m",
+        "c",
+        "x",
+        "v",
+        "k"
+      ],
+      "freeLetters": [
+        "a"
+      ],
+      "hints": [
+        "A measurement or comparison term"
+      ]
+    }
+  },
+  {
+    "index": 37,
+    "word": "corsair",
+    "category": "People and Relationships",
+    "definition": "A pirate, especially one operating along the Mediterranean coast during the 16th to 18th centuries.",
+    "dailyConfig": {
+      "purgedLetters": [
+        "l",
+        "m",
+        "u",
+        "k",
+        "x",
+        "f"
+      ],
+      "freeLetters": [
+        "i"
+      ],
+      "hints": [
+        "A historical type of seafarer"
+      ]
+    }
+  },
+  {
+    "index": 38,
+    "word": "geocache",
+    "category": "Activities and Leisure",
+    "definition": "A hidden container located outdoors, found using GPS coordinates as part of a recreational treasure-hunting activity.",
+    "dailyConfig": {
+      "purgedLetters": [
+        "l",
+        "p",
+        "d",
+        "j",
+        "x",
+        "f"
+      ],
+      "freeLetters": [
+        "h"
+      ],
+      "hints": [
+        "A recreational pursuit"
+      ]
+    }
+  },
+  {
+    "index": 39,
+    "word": "significant",
+    "category": "Abstract Concepts",
+    "definition": "Having considerable importance, influence, or meaning.",
+    "dailyConfig": {
+      "purgedLetters": [
+        "r",
+        "p",
+        "d",
+        "y",
+        "v",
+        "z"
+      ],
+      "freeLetters": [
+        "f"
+      ],
+      "hints": [
+        "A degree of importance"
+      ]
+    }
+  },
+  {
+    "index": 40,
+    "word": "hospitable",
+    "category": "People and Relationships",
+    "definition": "Welcoming and generous toward guests or strangers, offering comfort and kindness.",
+    "dailyConfig": {
+      "purgedLetters": [
+        "n",
+        "c",
+        "d",
+        "q",
+        "y",
+        "w"
+      ],
+      "freeLetters": [
+        "p"
+      ],
+      "hints": [
+        "A personality trait"
+      ]
+    }
+  },
+  {
+    "index": 41,
+    "word": "luminous",
+    "category": "Colors and Descriptions",
+    "definition": "Emitting or reflecting light; shining or glowing with brightness.",
+    "dailyConfig": {
+      "purgedLetters": [
+        "r",
+        "g",
+        "p",
+        "q",
+        "k",
+        "w"
+      ],
+      "freeLetters": [
+        "m"
+      ],
+      "hints": [
+        "A visual appearance quality"
+      ]
+    }
+  },
+  {
+    "index": 42,
+    "word": "eloquent",
+    "category": "Communication and Language",
+    "definition": "Fluent and effective in expressing ideas or feelings verbally.",
+    "dailyConfig": {
+      "purgedLetters": [
+        "i",
+        "d",
+        "c",
+        "f",
+        "y",
+        "w"
+      ],
+      "freeLetters": [
+        "q"
+      ],
+      "hints": [
+        "A way of speaking or writing"
+      ]
+    }
+  },
+  {
+    "index": 43,
+    "word": "taxonomy",
+    "category": "Science and Technology",
+    "definition": "The science of arranging living things into groups based on shared characteristics.",
+    "dailyConfig": {
+      "purgedLetters": [
+        "e",
+        "c",
+        "u",
+        "k",
+        "w",
+        "v"
+      ],
+      "freeLetters": [
+        "x"
+      ],
+      "hints": [
+        "A scientific classification system"
+      ]
+    }
+  },
+  {
+    "index": 44,
+    "word": "aurora",
+    "category": "Nature and Environment",
+    "definition": "A natural display of colored lights in the sky, typically seen in polar regions, caused by charged particles from the sun.",
+    "dailyConfig": {
+      "purgedLetters": [
+        "e",
+        "c",
+        "b",
+        "y",
+        "x",
+        "f"
+      ],
+      "freeLetters": [
+        "u"
+      ],
+      "hints": [
+        "A natural sky phenomenon"
+      ]
+    }
+  },
+  {
+    "index": 45,
+    "word": "serendipity",
+    "category": "Abstract Concepts",
+    "definition": "The occurrence of unexpected and fortunate events by chance.",
+    "dailyConfig": {
+      "purgedLetters": [
+        "a",
+        "u",
+        "m",
+        "w",
+        "f",
+        "q"
+      ],
+      "freeLetters": [
+        "p"
+      ],
+      "hints": [
+        "A type of luck or chance"
+      ]
+    }
+  },
+  {
+    "index": 46,
+    "word": "narwhal",
+    "category": "Nature and Environment",
+    "definition": "A marine mammal of Arctic waters, notable for its long, spiral tusk extending from the head.",
+    "dailyConfig": {
+      "purgedLetters": [
+        "s",
+        "u",
+        "c",
+        "k",
+        "x",
+        "v"
+      ],
+      "freeLetters": [
+        "w"
+      ],
+      "hints": [
+        "An ocean animal"
+      ]
+    }
+  },
+  {
+    "index": 47,
+    "word": "vilnius",
+    "category": "Places and Geography",
+    "definition": "The capital city of Lithuania, located in eastern Europe.",
+    "dailyConfig": {
+      "purgedLetters": [
+        "r",
+        "c",
+        "d",
+        "y",
+        "f",
+        "w"
+      ],
+      "freeLetters": [
+        "u"
+      ],
+      "hints": [
+        "A capital city in the Baltics"
+      ]
+    }
+  },
+  {
+    "index": 48,
+    "word": "chupacabra",
+    "category": "Nature and Environment",
+    "definition": "A legendary creature said to prey on livestock, especially goats, in the Americas.",
+    "dailyConfig": {
+      "purgedLetters": [
+        "t",
+        "g",
+        "m",
+        "q",
+        "w",
+        "y"
+      ],
+      "freeLetters": [
+        "u"
+      ],
+      "hints": [
+        "A mythical animal"
+      ]
+    }
+  },
+  {
+    "index": 49,
+    "word": "antibody",
+    "category": "Body and Health",
+    "definition": "A protein produced by the immune system to neutralize harmful substances.",
+    "dailyConfig": {
+      "purgedLetters": [
+        "e",
+        "p",
+        "c",
+        "w",
+        "f",
+        "x"
+      ],
+      "freeLetters": [
+        "b"
+      ],
+      "hints": [
+        "A biological substance in the body"
+      ]
+    }
+  },
+  {
+    "index": 50,
+    "word": "bahamas",
+    "category": "Places and Geography",
+    "definition": "A group of islands forming a country in the Atlantic Ocean, southeast of Florida.",
+    "dailyConfig": {
+      "purgedLetters": [
+        "i",
+        "c",
+        "u",
+        "q",
+        "y",
+        "v"
+      ],
+      "freeLetters": [
+        "h"
+      ],
+      "hints": [
+        "A group of islands"
+      ]
+    }
+  },
+  {
+    "index": 51,
+    "word": "nudiustertian",
+    "category": "Time and Dates",
+    "definition": "Relating to the day before yesterday.",
+    "dailyConfig": {
+      "purgedLetters": [
+        "l",
+        "c",
+        "p",
+        "f",
+        "q",
+        "y"
+      ],
+      "freeLetters": [
+        "d"
+      ],
+      "hints": [
+        "A time-related term"
+      ]
+    }
+  },
+  {
+    "index": 52,
+    "word": "thyroid",
+    "category": "Body and Health",
+    "definition": "A gland in the neck that produces hormones regulating metabolism and growth.",
+    "dailyConfig": {
+      "purgedLetters": [
+        "e",
+        "p",
+        "u",
+        "w",
+        "v",
+        "j"
+      ],
+      "freeLetters": [
+        "y"
+      ],
+      "hints": [
+        "A part of the human anatomy"
+      ]
+    }
+  },
+  {
+    "index": 53,
+    "word": "arbitrary",
+    "category": "Abstract Concepts",
+    "definition": "Based on personal choice or random selection rather than any reason or system.",
+    "dailyConfig": {
+      "purgedLetters": [
+        "o",
+        "u",
+        "d",
+        "q",
+        "v",
+        "k"
+      ],
+      "freeLetters": [
+        "b"
+      ],
+      "hints": [
+        "A type of decision or choice"
+      ]
+    }
+  },
+  {
+    "index": 54,
+    "word": "luscious",
+    "category": "Colors and Descriptions",
+    "definition": "Highly pleasing to the senses, especially taste or smell; richly appealing or attractive.",
+    "dailyConfig": {
+      "purgedLetters": [
+        "e",
+        "d",
+        "m",
+        "q",
+        "f",
+        "w"
+      ],
+      "freeLetters": [
+        "c"
+      ],
+      "hints": [
+        "A descriptive quality or characteristic"
+      ]
+    }
+  },
+  {
+    "index": 55,
+    "word": "vortex",
+    "category": "Nature and Environment",
+    "definition": "A mass of fluid or air that spins rapidly around a central point, often forming a spiral shape.",
+    "dailyConfig": {
+      "purgedLetters": [
+        "a",
+        "d",
+        "c",
+        "w",
+        "f",
+        "z"
+      ],
+      "freeLetters": [
+        "r"
+      ],
+      "hints": [
+        "A natural air or water phenomenon"
+      ]
+    }
+  },
+  {
+    "index": 56,
+    "word": "flashmob",
+    "category": "Activities and Leisure",
+    "definition": "A group of people who assemble suddenly in a public place to perform a coordinated act, then quickly disperse.",
+    "dailyConfig": {
+      "purgedLetters": [
+        "r",
+        "u",
+        "c",
+        "w",
+        "y",
+        "v"
+      ],
+      "freeLetters": [
+        "m"
+      ],
+      "hints": [
+        "A social gathering or event"
+      ]
+    }
+  },
+  {
+    "index": 57,
+    "word": "jargon",
+    "category": "Communication and Language",
+    "definition": "Specialized vocabulary used by a particular profession or group, often difficult for outsiders to understand.",
+    "dailyConfig": {
+      "purgedLetters": [
+        "i",
+        "p",
+        "u",
+        "y",
+        "w",
+        "f"
+      ],
+      "freeLetters": [
+        "g"
+      ],
+      "hints": [
+        "A type of vocabulary"
+      ]
+    }
+  },
+  {
+    "index": 58,
+    "word": "quidditch",
+    "category": "Activities and Leisure",
+    "definition": "A fictional team sport played on flying broomsticks in the Harry Potter universe.",
+    "dailyConfig": {
+      "purgedLetters": [
+        "a",
+        "g",
+        "m",
+        "f",
+        "y",
+        "w"
+      ],
+      "freeLetters": [
+        "t"
+      ],
+      "hints": [
+        "A fantasy team sport"
+      ]
+    }
+  },
+  {
+    "index": 59,
+    "word": "wanderlust",
+    "category": "Movement and Travel",
+    "definition": "A strong desire or impulse to travel and explore distant places.",
+    "dailyConfig": {
+      "purgedLetters": [
+        "i",
+        "h",
+        "c",
+        "f",
+        "x",
+        "v"
+      ],
+      "freeLetters": [
+        "u"
+      ],
+      "hints": [
+        "A feeling or state of longing"
+      ]
+    }
+  },
+  {
+    "index": 60,
+    "word": "belligerent",
+    "category": "Emotions and States",
+    "definition": "Hostile or aggressive in attitude, often eager to engage in conflict or argument.",
+    "dailyConfig": {
+      "purgedLetters": [
+        "a",
+        "u",
+        "p",
+        "q",
+        "k",
+        "y"
+      ],
+      "freeLetters": [
+        "g"
+      ],
+      "hints": [
+        "A personality trait or mood"
+      ]
+    }
+  },
+  {
+    "index": 61,
+    "word": "lethologica",
+    "category": "Body and Health",
+    "definition": "Temporary inability to recall a specific word or name.",
+    "dailyConfig": {
+      "purgedLetters": [
+        "r",
+        "d",
+        "u",
+        "f",
+        "w",
+        "q"
+      ],
+      "freeLetters": [
+        "h"
+      ],
+      "hints": [
+        "A mental state or condition"
+      ]
+    }
+  },
+  {
+    "index": 62,
+    "word": "intrepid",
+    "category": "Emotions and States",
+    "definition": "Showing great courage and determination in the face of danger or difficulty.",
+    "dailyConfig": {
+      "purgedLetters": [
+        "a",
+        "u",
+        "c",
+        "q",
+        "v",
+        "f"
+      ],
+      "freeLetters": [
+        "p"
+      ],
+      "hints": [
+        "A personality trait or quality"
+      ]
+    }
+  },
+  {
+    "index": 63,
+    "word": "equinox",
+    "category": "Time and Dates",
+    "definition": "The time when day and night are of equal length.",
+    "dailyConfig": {
+      "purgedLetters": [
+        "s",
+        "c",
+        "d",
+        "z",
+        "w",
+        "f"
+      ],
+      "freeLetters": [
+        "q"
+      ],
+      "hints": [
+        "A point in the yearly calendar"
+      ]
+    }
+  },
+  {
+    "index": 64,
+    "word": "tenacity",
+    "category": "Emotions and States",
+    "definition": "Persistent determination in continuing despite difficulty or opposition.",
+    "dailyConfig": {
+      "purgedLetters": [
+        "r",
+        "u",
+        "m",
+        "f",
+        "w",
+        "v"
+      ],
+      "freeLetters": [
+        "c"
+      ],
+      "hints": [
+        "A personal quality or trait"
+      ]
+    }
+  },
+  {
+    "index": 65,
+    "word": "gargoyle",
+    "category": "Objects and Tools",
+    "definition": "A carved stone figure on buildings, often shaped like a monster, used to direct rainwater away.",
+    "dailyConfig": {
+      "purgedLetters": [
+        "n",
+        "c",
+        "d",
+        "f",
+        "w",
+        "v"
+      ],
+      "freeLetters": [
+        "y"
+      ],
+      "hints": [
+        "A building decoration"
+      ]
+    }
+  },
+  {
+    "index": 66,
+    "word": "pedantic",
+    "category": "Emotions and States",
+    "definition": "Excessively concerned with minor details or formal rules, often in teaching or learning contexts.",
+    "dailyConfig": {
+      "purgedLetters": [
+        "o",
+        "g",
+        "m",
+        "q",
+        "f",
+        "w"
+      ],
+      "freeLetters": [
+        "d"
+      ],
+      "hints": [
+        "A personality trait"
+      ]
+    }
+  },
+  {
+    "index": 67,
+    "word": "exhibition",
+    "category": "Activities and Leisure",
+    "definition": "A public display of items, artworks, or information for viewing.",
+    "dailyConfig": {
+      "purgedLetters": [
+        "r",
+        "g",
+        "u",
+        "y",
+        "w",
+        "f"
+      ],
+      "freeLetters": [
+        "x"
+      ],
+      "hints": [
+        "A public event with displays"
+      ]
+    }
+  },
+  {
+    "index": 68,
+    "word": "altruism",
+    "category": "Emotions and States",
+    "definition": "Selfless concern for the well-being of others.",
+    "dailyConfig": {
+      "purgedLetters": [
+        "e",
+        "c",
+        "p",
+        "x",
+        "q",
+        "y"
+      ],
+      "freeLetters": [
+        "u"
+      ],
+      "hints": [
+        "A kind of feeling or attitude"
+      ]
+    }
+  },
+  {
+    "index": 69,
+    "word": "mirage",
+    "category": "Nature and Environment",
+    "definition": "An optical illusion where distant objects appear displaced or distorted, often caused by atmospheric conditions.",
+    "dailyConfig": {
+      "purgedLetters": [
+        "t",
+        "u",
+        "c",
+        "f",
+        "y",
+        "w"
+      ],
+      "freeLetters": [
+        "g"
+      ],
+      "hints": [
+        "A visual phenomenon"
+      ]
+    }
+  },
+  {
+    "index": 70,
+    "word": "genotype",
+    "category": "Science and Technology",
+    "definition": "The genetic constitution of an organism, determining specific characteristics.",
+    "dailyConfig": {
+      "purgedLetters": [
+        "i",
+        "c",
+        "h",
+        "v",
+        "k",
+        "w"
+      ],
+      "freeLetters": [
+        "y"
+      ],
+      "hints": [
+        "A biological classification"
+      ]
+    }
+  },
+  {
+    "index": 71,
+    "word": "acquiescence",
+    "category": "Emotions and States",
+    "definition": "Passive acceptance or agreement without protest or objection.",
+    "dailyConfig": {
+      "purgedLetters": [
+        "o",
+        "h",
+        "p",
+        "w",
+        "v",
+        "f"
+      ],
+      "freeLetters": [
+        "q"
+      ],
+      "hints": [
+        "A state of agreement"
+      ]
+    }
+  },
+  {
+    "index": 72,
+    "word": "defenestrate",
+    "category": "Movement and Travel",
+    "definition": "To throw someone or something out of a window.",
+    "dailyConfig": {
+      "purgedLetters": [
+        "i",
+        "u",
+        "p",
+        "v",
+        "y",
+        "q"
+      ],
+      "freeLetters": [
+        "s"
+      ],
+      "hints": [
+        "An action involving windows"
+      ]
+    }
+  },
+  {
+    "index": 73,
+    "word": "chlorophyll",
+    "category": "Science and Technology",
+    "definition": "A green pigment in plants and algae that enables photosynthesis.",
+    "dailyConfig": {
+      "purgedLetters": [
+        "a",
+        "g",
+        "m",
+        "k",
+        "f",
+        "v"
+      ],
+      "freeLetters": [
+        "y"
+      ],
+      "hints": [
+        "A plant-related chemical"
+      ]
+    }
+  },
+  {
+    "index": 74,
+    "word": "horticulture",
+    "category": "Nature and Environment",
+    "definition": "The science and art of cultivating fruits, vegetables, flowers, or ornamental plants.",
+    "dailyConfig": {
+      "purgedLetters": [
+        "a",
+        "p",
+        "d",
+        "y",
+        "f",
+        "w"
+      ],
+      "freeLetters": [
+        "c"
+      ],
+      "hints": [
+        "Plant cultivation field"
+      ]
+    }
+  },
+  {
+    "index": 75,
+    "word": "plutocracy",
+    "category": "Society and Politics",
+    "definition": "A system of governance where wealthy individuals control power.",
+    "dailyConfig": {
+      "purgedLetters": [
+        "e",
+        "h",
+        "m",
+        "f",
+        "v",
+        "x"
+      ],
+      "freeLetters": [
+        "u"
+      ],
+      "hints": [
+        "A form of government"
+      ]
+    }
+  },
+  {
+    "index": 76,
+    "word": "lavender",
+    "category": "Nature and Environment",
+    "definition": "A fragrant purple-flowered plant often used for scent or decoration.",
+    "dailyConfig": {
+      "purgedLetters": [
+        "t",
+        "c",
+        "p",
+        "k",
+        "f",
+        "y"
+      ],
+      "freeLetters": [
+        "v"
+      ],
+      "hints": [
+        "A flowering garden plant"
+      ]
+    }
+  },
+  {
+    "index": 77,
+    "word": "languish",
+    "category": "Emotions and States",
+    "definition": "To become weak or lose vitality, often due to neglect, lack of activity, or unfavorable conditions.",
+    "dailyConfig": {
+      "purgedLetters": [
+        "e",
+        "b",
+        "m",
+        "q",
+        "y",
+        "f"
+      ],
+      "freeLetters": [
+        "u"
+      ],
+      "hints": [
+        "A mental or physical condition"
+      ]
+    }
+  },
+  {
+    "index": 78,
+    "word": "axolotl",
+    "category": "Nature and Environment",
+    "definition": "A Mexican aquatic salamander known for retaining larval features throughout its life and remarkable regenerative abilities.",
+    "dailyConfig": {
+      "purgedLetters": [
+        "r",
+        "u",
+        "c",
+        "v",
+        "w",
+        "y"
+      ],
+      "freeLetters": [
+        "x"
+      ],
+      "hints": [
+        "An amphibian species"
+      ]
+    }
+  },
+  {
+    "index": 79,
+    "word": "kinetic",
+    "category": "Science and Technology",
+    "definition": "Relating to or resulting from motion or movement.",
+    "dailyConfig": {
+      "purgedLetters": [
+        "a",
+        "d",
+        "p",
+        "y",
+        "f",
+        "x"
+      ],
+      "freeLetters": [
+        "n"
+      ],
+      "hints": [
+        "A scientific adjective"
+      ]
+    }
+  },
+  {
+    "index": 80,
+    "word": "dazzle",
+    "category": "Emotions and States",
+    "definition": "To overwhelm someone with intense brightness or impressive qualities.",
+    "dailyConfig": {
+      "purgedLetters": [
+        "r",
+        "u",
+        "c",
+        "y",
+        "w",
+        "x"
+      ],
+      "freeLetters": [
+        "l"
+      ],
+      "hints": [
+        "A sensory experience"
+      ]
+    }
+  },
+  {
+    "index": 81,
+    "word": "anthropologist",
+    "category": "People and Relationships",
+    "definition": "A person who studies human societies, cultures, and their development.",
+    "dailyConfig": {
+      "purgedLetters": [
+        "e",
+        "c",
+        "d",
+        "v",
+        "y",
+        "f"
+      ],
+      "freeLetters": [
+        "g"
+      ],
+      "hints": [
+        "A profession"
+      ]
+    }
+  },
+  {
+    "index": 82,
+    "word": "macaroon",
+    "category": "Food and Drink",
+    "definition": "A small, sweet baked treat made with egg whites, sugar, and ground nuts, often coconut or almonds.",
+    "dailyConfig": {
+      "purgedLetters": [
+        "t",
+        "g",
+        "d",
+        "q",
+        "x",
+        "f"
+      ],
+      "freeLetters": [
+        "c"
+      ],
+      "hints": [
+        "A kind of dessert or snack"
+      ]
+    }
+  },
+  {
+    "index": 83,
+    "word": "itinerary",
+    "category": "Movement and Travel",
+    "definition": "A planned schedule of travel events, destinations, or activities.",
+    "dailyConfig": {
+      "purgedLetters": [
+        "s",
+        "c",
+        "g",
+        "f",
+        "w",
+        "v"
+      ],
+      "freeLetters": [
+        "t"
+      ],
+      "hints": [
+        "A travel or trip schedule"
+      ]
+    }
+  },
+  {
+    "index": 84,
+    "word": "preclude",
+    "category": "Abstract Concepts",
+    "definition": "To make something impossible or prevent it from happening in advance.",
+    "dailyConfig": {
+      "purgedLetters": [
+        "i",
+        "m",
+        "h",
+        "x",
+        "k",
+        "f"
+      ],
+      "freeLetters": [
+        "c"
+      ],
+      "hints": [
+        "A type of prevention or exclusion"
+      ]
+    }
+  },
+  {
+    "index": 85,
+    "word": "acupressure",
+    "category": "Body and Health",
+    "definition": "A therapeutic technique involving the application of physical pressure to specific points on the body to relieve pain or promote health.",
+    "dailyConfig": {
+      "purgedLetters": [
+        "i",
+        "m",
+        "d",
+        "f",
+        "y",
+        "w"
+      ],
+      "freeLetters": [
+        "p"
+      ],
+      "hints": [
+        "A wellness method"
+      ]
+    }
+  },
+  {
+    "index": 86,
+    "word": "sphinx",
+    "category": "Nature and Environment",
+    "definition": "A mythical creature with a lion’s body and a human head, found in ancient Egyptian and Greek art and legend.",
+    "dailyConfig": {
+      "purgedLetters": [
+        "r",
+        "u",
+        "m",
+        "y",
+        "z",
+        "f"
+      ],
+      "freeLetters": [
+        "h"
+      ],
+      "hints": [
+        "A legendary animal in mythology"
+      ]
+    }
+  },
+  {
+    "index": 87,
+    "word": "exuberant",
+    "category": "Emotions and States",
+    "definition": "Full of lively energy and excitement; very cheerful.",
+    "dailyConfig": {
+      "purgedLetters": [
+        "o",
+        "d",
+        "p",
+        "w",
+        "k",
+        "f"
+      ],
+      "freeLetters": [
+        "b"
+      ],
+      "hints": [
+        "A mood or feeling"
+      ]
+    }
+  },
+  {
+    "index": 88,
+    "word": "petrichor",
+    "category": "Nature and Environment",
+    "definition": "The distinct earthy scent produced when rain falls on dry soil.",
+    "dailyConfig": {
+      "purgedLetters": [
+        "n",
+        "d",
+        "u",
+        "v",
+        "x",
+        "k"
+      ],
+      "freeLetters": [
+        "c"
+      ],
+      "hints": [
+        "A natural scent"
+      ]
+    }
+  },
+  {
+    "index": 89,
+    "word": "zugzwang",
+    "category": "Activities and Leisure",
+    "definition": "A situation in chess where any move worsens a player's position.",
+    "dailyConfig": {
+      "purgedLetters": [
+        "e",
+        "m",
+        "p",
+        "k",
+        "f",
+        "j"
+      ],
+      "freeLetters": [
+        "w"
+      ],
+      "hints": [
+        "A chess-related situation"
+      ]
+    }
+  },
+  {
+    "index": 90,
+    "word": "expropriate",
+    "category": "Society and Politics",
+    "definition": "To take property from someone, often for public use, usually with compensation.",
+    "dailyConfig": {
+      "purgedLetters": [
+        "s",
+        "c",
+        "u",
+        "y",
+        "w",
+        "v"
+      ],
+      "freeLetters": [
+        "o"
+      ],
+      "hints": [
+        "A legal or governmental action"
+      ]
+    }
+  },
+  {
+    "index": 91,
+    "word": "griffin",
+    "category": "Nature and Environment",
+    "definition": "A legendary animal with the head and wings of an eagle and the body of a lion.",
+    "dailyConfig": {
+      "purgedLetters": [
+        "a",
+        "d",
+        "u",
+        "z",
+        "w",
+        "v"
+      ],
+      "freeLetters": [
+        "r"
+      ],
+      "hints": [
+        "A mythical animal"
+      ]
+    }
+  },
+  {
+    "index": 92,
+    "word": "duckface",
+    "category": "Body and Health",
+    "definition": "A facial expression where lips are pressed together and pushed outward, often for photographs.",
+    "dailyConfig": {
+      "purgedLetters": [
+        "o",
+        "h",
+        "m",
+        "w",
+        "y",
+        "v"
+      ],
+      "freeLetters": [
+        "k"
+      ],
+      "hints": [
+        "A facial expression"
+      ]
+    }
+  },
+  {
+    "index": 93,
+    "word": "zenith",
+    "category": "Nature and Environment",
+    "definition": "The point in the sky directly above an observer.",
+    "dailyConfig": {
+      "purgedLetters": [
+        "r",
+        "c",
+        "d",
+        "f",
+        "w",
+        "y"
+      ],
+      "freeLetters": [
+        "t"
+      ],
+      "hints": [
+        "A position in the sky"
+      ]
+    }
+  },
+  {
+    "index": 94,
+    "word": "poignant",
+    "category": "Emotions and States",
+    "definition": "Evoking a strong sense of sadness or deep emotion.",
+    "dailyConfig": {
+      "purgedLetters": [
+        "r",
+        "b",
+        "d",
+        "q",
+        "y",
+        "f"
+      ],
+      "freeLetters": [
+        "g"
+      ],
+      "hints": [
+        "A feeling or mood"
+      ]
+    }
+  },
+  {
+    "index": 95,
+    "word": "bootlegger",
+    "category": "People and Relationships",
+    "definition": "A person who illegally makes, transports, or sells alcohol.",
+    "dailyConfig": {
+      "purgedLetters": [
+        "s",
+        "c",
+        "u",
+        "f",
+        "y",
+        "w"
+      ],
+      "freeLetters": [
+        "l"
+      ],
+      "hints": [
+        "A type of person"
+      ]
+    }
+  },
+  {
+    "index": 96,
+    "word": "iambic",
+    "category": "Communication and Language",
+    "definition": "Relating to a metrical foot in poetry consisting of an unstressed syllable followed by a stressed syllable.",
+    "dailyConfig": {
+      "purgedLetters": [
+        "r",
+        "g",
+        "u",
+        "y",
+        "x",
+        "z"
+      ],
+      "freeLetters": [
+        "b"
+      ],
+      "hints": [
+        "A type of poetic rhythm"
+      ]
+    }
+  },
+  {
+    "index": 97,
+    "word": "undulate",
+    "category": "Movement and Travel",
+    "definition": "To move in a smooth, wave-like pattern or motion.",
+    "dailyConfig": {
+      "purgedLetters": [
+        "i",
+        "p",
+        "m",
+        "k",
+        "z",
+        "x"
+      ],
+      "freeLetters": [
+        "d"
+      ],
+      "hints": [
+        "A type of physical motion"
+      ]
+    }
+  },
+  {
+    "index": 98,
+    "word": "preantepenultimate",
+    "category": "Quantities and Measurements",
+    "definition": "Denoting the item that comes fourth from the end in a sequence.",
+    "dailyConfig": {
+      "purgedLetters": [
+        "o",
+        "d",
+        "c",
+        "y",
+        "w",
+        "f"
+      ],
+      "freeLetters": [
+        "m"
+      ],
+      "hints": [
+        "A position in a sequence"
+      ]
+    }
+  },
+  {
+    "index": 99,
+    "word": "bratislava",
+    "category": "Places and Geography",
+    "definition": "The capital city of Slovakia, located along the Danube River.",
+    "dailyConfig": {
+      "purgedLetters": [
+        "e",
+        "c",
+        "m",
+        "y",
+        "f",
+        "w"
+      ],
+      "freeLetters": [
+        "l"
+      ],
+      "hints": [
+        "A European capital city"
+      ]
+    }
+  },
+  {
+    "index": 100,
+    "word": "murmuration",
+    "category": "Nature and Environment",
+    "definition": "A large, coordinated flock of starlings moving together in patterns.",
+    "dailyConfig": {
+      "purgedLetters": [
+        "l",
+        "c",
+        "p",
+        "q",
+        "k",
+        "f"
+      ],
+      "freeLetters": [
+        "o"
+      ],
+      "hints": [
+        "A group of birds in flight"
+      ]
+    }
+  },
+  {
+    "index": 101,
+    "word": "kinnikinnik",
+    "category": "Objects and Tools",
+    "definition": "A mixture of dried leaves and bark traditionally smoked by Indigenous peoples of North America.",
+    "dailyConfig": {
+      "purgedLetters": [
+        "q",
+        "a",
+        "z",
+        "e",
+        "d",
+        "c",
+        "t",
+        "g",
+        "b",
+        "u",
+        "j",
+        "m",
+        "o",
+        "l"
+      ],
+      "hints": [
+        "A traditional herbal mixture"
+      ]
+    }
+  },
+  {
+    "index": 102,
+    "word": "tranquil",
+    "category": "Emotions and States",
+    "definition": "Free from disturbance or agitation; calm and peaceful.",
+    "dailyConfig": {
+      "purgedLetters": [
+        "s",
+        "p",
+        "c",
+        "f",
+        "v",
+        "y"
+      ],
+      "freeLetters": [
+        "q"
+      ],
+      "hints": [
+        "A mood or feeling"
+      ]
+    }
+  },
+  {
+    "index": 103,
+    "word": "aesthetic",
+    "category": "Abstract Concepts",
+    "definition": "Concerned with beauty or the appreciation of visual or artistic appearance.",
+    "dailyConfig": {
+      "purgedLetters": [
+        "o",
+        "u",
+        "d",
+        "z",
+        "y",
+        "w"
+      ],
+      "freeLetters": [
+        "h"
+      ],
+      "hints": [
+        "An artistic or visual quality"
+      ]
+    }
+  },
+  {
+    "index": 104,
+    "word": "erinaceous",
+    "category": "Nature and Environment",
+    "definition": "Resembling or relating to a hedgehog, especially in appearance or characteristics.",
+    "dailyConfig": {
+      "purgedLetters": [
+        "l",
+        "d",
+        "h",
+        "z",
+        "k",
+        "q"
+      ],
+      "freeLetters": [
+        "u"
+      ],
+      "hints": [
+        "An animal resemblance term"
+      ]
+    }
+  },
+  {
+    "index": 105,
+    "word": "isthmus",
+    "category": "Places and Geography",
+    "definition": "A narrow strip of land connecting two larger land areas, usually with water on both sides.",
+    "dailyConfig": {
+      "purgedLetters": [
+        "o",
+        "d",
+        "c",
+        "q",
+        "k",
+        "y"
+      ],
+      "freeLetters": [
+        "h"
+      ],
+      "hints": [
+        "A landform"
+      ]
+    }
+  },
+  {
+    "index": 106,
+    "word": "arduous",
+    "category": "Abstract Concepts",
+    "definition": "Requiring significant effort and endurance due to difficulty or demanding nature.",
+    "dailyConfig": {
+      "purgedLetters": [
+        "t",
+        "c",
+        "p",
+        "w",
+        "f",
+        "y"
+      ],
+      "freeLetters": [
+        "d"
+      ],
+      "hints": [
+        "A type of difficulty"
+      ]
+    }
+  },
+  {
+    "index": 107,
+    "word": "leprechaun",
+    "category": "People and Relationships",
+    "definition": "A small, mischievous fairy in Irish folklore, often depicted as a bearded man in green clothing who hides pots of gold.",
+    "dailyConfig": {
+      "purgedLetters": [
+        "i",
+        "d",
+        "m",
+        "f",
+        "w",
+        "y"
+      ],
+      "freeLetters": [
+        "h"
+      ],
+      "hints": [
+        "A mythical person from folklore"
+      ]
+    }
+  },
+  {
+    "index": 108,
+    "word": "wendigo",
+    "category": "Nature and Environment",
+    "definition": "A mythical creature from Algonquian folklore said to crave human flesh.",
+    "dailyConfig": {
+      "purgedLetters": [
+        "t",
+        "f",
+        "y",
+        "v",
+        "h",
+        "b",
+        "c"
+      ],
+      "freeLetters": [
+        "g"
+      ],
+      "hints": [
+        "A legendary supernatural being"
+      ]
+    }
+  },
+  {
+    "index": 109,
+    "word": "callipygian",
+    "category": "Body and Health",
+    "definition": "Having well-shaped or attractive buttocks.",
+    "dailyConfig": {
+      "purgedLetters": [
+        "r",
+        "d",
+        "m",
+        "v",
+        "f",
+        "k"
+      ],
+      "freeLetters": [
+        "y"
+      ],
+      "hints": [
+        "A body description"
+      ]
+    }
+  },
+  {
+    "index": 110,
+    "word": "semiautonomous",
+    "category": "Abstract Concepts",
+    "definition": "Partly able to operate or function independently while still being subject to some external control.",
+    "dailyConfig": {
+      "purgedLetters": [
+        "r",
+        "p",
+        "d",
+        "w",
+        "f",
+        "y"
+      ],
+      "freeLetters": [
+        "t"
+      ],
+      "hints": [
+        "A kind of independence"
+      ]
+    }
+  },
+  {
+    "index": 111,
+    "word": "solstice",
+    "category": "Time and Dates",
+    "definition": "Either of the two times each year when the sun is at its greatest distance from the celestial equator.",
+    "dailyConfig": {
+      "purgedLetters": [
+        "a",
+        "u",
+        "p",
+        "q",
+        "w",
+        "v"
+      ],
+      "freeLetters": [
+        "c"
+      ],
+      "hints": [
+        "A calendar event or date"
+      ]
+    }
+  },
+  {
+    "index": 112,
+    "word": "chrysanthemum",
+    "category": "Nature and Environment",
+    "definition": "A flowering plant with large, colorful blooms, often cultivated as an ornamental.",
+    "dailyConfig": {
+      "purgedLetters": [
+        "i",
+        "d",
+        "p",
+        "v",
+        "w",
+        "k"
+      ],
+      "freeLetters": [
+        "y"
+      ],
+      "hints": [
+        "A type of garden flower"
+      ]
+    }
+  },
+  {
+    "index": 113,
+    "word": "insubordinate",
+    "category": "People and Relationships",
+    "definition": "Unwilling to follow orders or obey authority figures.",
+    "dailyConfig": {
+      "purgedLetters": [
+        "l",
+        "p",
+        "c",
+        "x",
+        "y",
+        "z"
+      ],
+      "freeLetters": [
+        "b"
+      ],
+      "hints": [
+        "A personality trait"
+      ]
+    }
+  },
+  {
+    "index": 114,
+    "word": "orchid",
+    "category": "Nature and Environment",
+    "definition": "A plant known for its complex, often fragrant blooms and wide variety of species.",
+    "dailyConfig": {
+      "purgedLetters": [
+        "s",
+        "b",
+        "m",
+        "q",
+        "f",
+        "y"
+      ],
+      "freeLetters": [
+        "c"
+      ],
+      "hints": [
+        "A kind of flowering plant"
+      ]
+    }
+  },
+  {
+    "index": 115,
+    "word": "exquisite",
+    "category": "Colors and Descriptions",
+    "definition": "Extremely beautiful, delicate, or finely detailed in appearance or quality.",
+    "dailyConfig": {
+      "purgedLetters": [
+        "r",
+        "d",
+        "c",
+        "y",
+        "w",
+        "v"
+      ],
+      "freeLetters": [
+        "q"
+      ],
+      "hints": [
+        "A way to describe something appealing"
+      ]
+    }
+  },
+  {
+    "index": 116,
+    "word": "crescendo",
+    "category": "Communication and Language",
+    "definition": "A gradual increase in loudness or intensity, especially in music.",
+    "dailyConfig": {
+      "purgedLetters": [
+        "l",
+        "p",
+        "m",
+        "k",
+        "y",
+        "v"
+      ],
+      "freeLetters": [
+        "d"
+      ],
+      "hints": [
+        "A musical term"
+      ]
+    }
+  },
+  {
+    "index": 117,
+    "word": "mysticism",
+    "category": "Abstract Concepts",
+    "definition": "Belief in direct, personal experience of ultimate reality or the divine.",
+    "dailyConfig": {
+      "purgedLetters": [
+        "l",
+        "p",
+        "d",
+        "w",
+        "v",
+        "f"
+      ],
+      "freeLetters": [
+        "y"
+      ],
+      "hints": [
+        "A spiritual belief system"
+      ]
+    }
+  },
+  {
+    "index": 118,
+    "word": "vocabulary",
+    "category": "Communication and Language",
+    "definition": "The set of words known and used by a person or group.",
+    "dailyConfig": {
+      "purgedLetters": [
+        "e",
+        "h",
+        "d",
+        "f",
+        "w",
+        "x"
+      ],
+      "freeLetters": [
+        "u"
+      ],
+      "hints": [
+        "A language-related collection"
+      ]
+    }
+  },
+  {
+    "index": 119,
+    "word": "gargantuan",
+    "category": "Colors and Descriptions",
+    "definition": "Extremely large in size, amount, or degree.",
+    "dailyConfig": {
+      "purgedLetters": [
+        "c",
+        "d",
+        "z",
+        "x",
+        "s",
+        "f"
+      ],
+      "freeLetters": [
+        "u"
+      ],
+      "hints": [
+        "A size or dimension description"
+      ]
+    }
+  },
+  {
+    "index": 120,
+    "word": "cacophony",
+    "category": "Communication and Language",
+    "definition": "A harsh, jarring mixture of loud, discordant sounds.",
+    "dailyConfig": {
+      "purgedLetters": [
+        "r",
+        "g",
+        "m",
+        "f",
+        "x",
+        "j"
+      ],
+      "freeLetters": [
+        "p"
+      ],
+      "hints": [
+        "A type of unpleasant sound"
+      ]
+    }
+  },
+  {
+    "index": 121,
+    "word": "photosynthesis",
+    "category": "Science and Technology",
+    "definition": "A process in which green plants create food using sunlight, water, and carbon dioxide.",
+    "dailyConfig": {
+      "purgedLetters": [
+        "a",
+        "c",
+        "d",
+        "k",
+        "v",
+        "z"
+      ],
+      "freeLetters": [
+        "y"
+      ],
+      "hints": [
+        "A natural process in plants"
+      ]
+    }
+  },
+  {
+    "index": 122,
+    "word": "cerulean",
+    "category": "Colors and Descriptions",
+    "definition": "A deep shade of blue resembling the sky on a clear day.",
+    "dailyConfig": {
+      "purgedLetters": [
+        "o",
+        "d",
+        "p",
+        "v",
+        "y",
+        "f"
+      ],
+      "freeLetters": [
+        "u"
+      ],
+      "hints": [
+        "A color"
+      ]
+    }
+  },
+  {
+    "index": 123,
+    "word": "supercollider",
+    "category": "Science and Technology",
+    "definition": "A large scientific device that accelerates particles to high speeds and causes them to crash into each other for research purposes.",
+    "dailyConfig": {
+      "purgedLetters": [
+        "n",
+        "m",
+        "h",
+        "y",
+        "q",
+        "f"
+      ],
+      "freeLetters": [
+        "p"
+      ],
+      "hints": [
+        "A scientific device"
+      ]
+    }
+  },
+  {
+    "index": 124,
+    "word": "reverence",
+    "category": "Emotions and States",
+    "definition": "Deep respect or admiration felt toward someone or something.",
+    "dailyConfig": {
+      "purgedLetters": [
+        "s",
+        "u",
+        "d",
+        "k",
+        "f",
+        "y"
+      ],
+      "freeLetters": [
+        "v"
+      ],
+      "hints": [
+        "A feeling or state"
+      ]
+    }
+  },
+  {
+    "index": 125,
+    "word": "technocracy",
+    "category": "Society and Politics",
+    "definition": "A system of governance where experts in science or technology hold power.",
+    "dailyConfig": {
+      "purgedLetters": [
+        "s",
+        "p",
+        "d",
+        "v",
+        "k",
+        "w"
+      ],
+      "freeLetters": [
+        "h"
+      ],
+      "hints": [
+        "A form of government"
+      ]
+    }
+  },
+  {
+    "index": 126,
+    "word": "translucent",
+    "category": "Colors and Descriptions",
+    "definition": "Allowing light to pass through but diffusing it so objects are not clearly visible.",
+    "dailyConfig": {
+      "purgedLetters": [
+        "i",
+        "m",
+        "p",
+        "k",
+        "x",
+        "y"
+      ],
+      "freeLetters": [
+        "c"
+      ],
+      "hints": [
+        "A visual appearance term"
+      ]
+    }
+  },
+  {
+    "index": 127,
+    "word": "alkaline",
+    "category": "Science and Technology",
+    "definition": "Having a pH greater than 7; basic rather than acidic.",
+    "dailyConfig": {
+      "purgedLetters": [
+        "o",
+        "c",
+        "p",
+        "y",
+        "w",
+        "f"
+      ],
+      "freeLetters": [
+        "k"
+      ],
+      "hints": [
+        "A chemical property"
+      ]
+    }
+  },
+  {
+    "index": 128,
+    "word": "counterintuitive",
+    "category": "Abstract Concepts",
+    "definition": "Contrary to what one would expect based on common sense or initial reasoning.",
+    "dailyConfig": {
+      "purgedLetters": [
+        "a",
+        "g",
+        "b",
+        "y",
+        "f",
+        "w"
+      ],
+      "freeLetters": [
+        "v"
+      ],
+      "hints": [
+        "A type of abstract idea"
+      ]
+    }
+  },
+  {
+    "index": 129,
+    "word": "xenotype",
+    "category": "Science and Technology",
+    "definition": "An organism or cell type that originates from a different species, often used in genetic or biomedical contexts.",
+    "dailyConfig": {
+      "purgedLetters": [
+        "i",
+        "u",
+        "c",
+        "v",
+        "w",
+        "k"
+      ],
+      "freeLetters": [
+        "y"
+      ],
+      "hints": [
+        "A scientific or biological term"
+      ]
+    }
+  },
+  {
+    "index": 130,
+    "word": "jubilant",
+    "category": "Emotions and States",
+    "definition": "Feeling or expressing great happiness and triumph.",
+    "dailyConfig": {
+      "purgedLetters": [
+        "e",
+        "c",
+        "p",
+        "w",
+        "y",
+        "k"
+      ],
+      "freeLetters": [
+        "u"
+      ],
+      "hints": [
+        "A feeling or mood"
+      ]
+    }
+  },
+  {
+    "index": 131,
+    "word": "automaton",
+    "category": "Science and Technology",
+    "definition": "A machine designed to perform tasks automatically, often resembling a human or animal.",
+    "dailyConfig": {
+      "purgedLetters": [
+        "r",
+        "c",
+        "d",
+        "f",
+        "w",
+        "y"
+      ],
+      "freeLetters": [
+        "m"
+      ],
+      "hints": [
+        "A type of machine or robot"
+      ]
+    }
+  },
+  {
+    "index": 132,
+    "word": "micromanagement",
+    "category": "Work and Business",
+    "definition": "Excessive control or attention to minor details, especially by a supervisor overseeing tasks.",
+    "dailyConfig": {
+      "purgedLetters": [
+        "l",
+        "u",
+        "p",
+        "f",
+        "q",
+        "w"
+      ],
+      "freeLetters": [
+        "c"
+      ],
+      "hints": [
+        "A workplace leadership style"
+      ]
+    }
+  },
+  {
+    "index": 133,
+    "word": "vivacity",
+    "category": "Emotions and States",
+    "definition": "Liveliness and spirited energy, especially in manner or appearance.",
+    "dailyConfig": {
+      "purgedLetters": [
+        "e",
+        "u",
+        "p",
+        "w",
+        "z",
+        "x"
+      ],
+      "freeLetters": [
+        "c"
+      ],
+      "hints": [
+        "A quality of mood or personality"
+      ]
+    }
+  },
+  {
+    "index": 134,
+    "word": "halcyon",
+    "category": "Abstract Concepts",
+    "definition": "A period marked by calmness, peace, and happiness.",
+    "dailyConfig": {
+      "purgedLetters": [
+        "e",
+        "p",
+        "m",
+        "w",
+        "f",
+        "k"
+      ],
+      "freeLetters": [
+        "y"
+      ],
+      "hints": [
+        "A type of peaceful time"
+      ]
+    }
+  },
+  {
+    "index": 135,
+    "word": "epidermis",
+    "category": "Body and Health",
+    "definition": "The outermost layer of cells covering the body of animals or plants.",
+    "dailyConfig": {
+      "purgedLetters": [
+        "n",
+        "c",
+        "g",
+        "f",
+        "w",
+        "y"
+      ],
+      "freeLetters": [
+        "m"
+      ],
+      "hints": [
+        "A part of animal or plant anatomy"
+      ]
+    }
+  },
+  {
+    "index": 136,
+    "word": "disenfranchise",
+    "category": "Society and Politics",
+    "definition": "To deprive someone of the right to vote or participate in civic life.",
+    "dailyConfig": {
+      "purgedLetters": [
+        "t",
+        "u",
+        "p",
+        "x",
+        "v",
+        "y"
+      ],
+      "freeLetters": [
+        "f"
+      ],
+      "hints": [
+        "A legal or political term"
+      ]
+    }
+  },
+  {
+    "index": 137,
+    "word": "emetic",
+    "category": "Body and Health",
+    "definition": "A substance that causes a person to vomit.",
+    "dailyConfig": {
+      "purgedLetters": [
+        "r",
+        "p",
+        "u",
+        "x",
+        "v",
+        "z"
+      ],
+      "freeLetters": [
+        "m"
+      ],
+      "hints": [
+        "A type of medicine or drug"
+      ]
+    }
+  },
+  {
+    "index": 138,
+    "word": "quixotic",
+    "category": "Abstract Concepts",
+    "definition": "Unrealistically idealistic or impractically romantic in pursuit of goals.",
+    "dailyConfig": {
+      "purgedLetters": [
+        "r",
+        "d",
+        "g",
+        "y",
+        "f",
+        "w"
+      ],
+      "freeLetters": [
+        "x"
+      ],
+      "hints": [
+        "A type of personality trait"
+      ]
+    }
+  },
+  {
+    "index": 139,
+    "word": "oxidation",
+    "category": "Science and Technology",
+    "definition": "A chemical process in which a substance combines with oxygen or loses electrons.",
+    "dailyConfig": {
+      "purgedLetters": [
+        "r",
+        "p",
+        "c",
+        "y",
+        "f",
+        "k"
+      ],
+      "freeLetters": [
+        "x"
+      ],
+      "hints": [
+        "A chemical process"
+      ]
+    }
+  },
+  {
+    "index": 140,
+    "word": "reconnoiter",
+    "category": "Movement and Travel",
+    "definition": "To explore or survey an area to gather information, especially for military purposes.",
+    "dailyConfig": {
+      "purgedLetters": [
+        "a",
+        "u",
+        "m",
+        "w",
+        "j",
+        "q"
+      ],
+      "freeLetters": [
+        "c"
+      ],
+      "hints": [
+        "A military or exploration activity"
+      ]
+    }
+  },
+  {
+    "index": 141,
+    "word": "basilisk",
+    "category": "Nature and Environment",
+    "definition": "A legendary reptilian creature said to cause death with a single glance.",
+    "dailyConfig": {
+      "purgedLetters": [
+        "t",
+        "d",
+        "c",
+        "w",
+        "f",
+        "j"
+      ],
+      "freeLetters": [
+        "l"
+      ],
+      "hints": [
+        "A mythical animal or reptile"
+      ]
+    }
+  },
+  {
+    "index": 142,
+    "word": "allegro",
+    "category": "Communication and Language",
+    "definition": "A musical term indicating a fast and lively tempo.",
+    "dailyConfig": {
+      "purgedLetters": [
+        "t",
+        "u",
+        "c",
+        "q",
+        "k",
+        "x"
+      ],
+      "freeLetters": [
+        "g"
+      ],
+      "hints": [
+        "A musical tempo marking"
+      ]
+    }
+  },
+  {
+    "index": 143,
+    "word": "electrode",
+    "category": "Science and Technology",
+    "definition": "A conductor through which electricity enters or leaves a medium.",
+    "dailyConfig": {
+      "purgedLetters": [
+        "n",
+        "p",
+        "u",
+        "y",
+        "w",
+        "f"
+      ],
+      "freeLetters": [
+        "d"
+      ],
+      "hints": [
+        "A component in electrical devices"
+      ]
+    }
+  },
+  {
+    "index": 144,
+    "word": "psychosomatic",
+    "category": "Body and Health",
+    "definition": "Related to physical symptoms caused or influenced by mental or emotional factors.",
+    "dailyConfig": {
+      "purgedLetters": [
+        "r",
+        "g",
+        "b",
+        "x",
+        "w",
+        "z"
+      ],
+      "freeLetters": [
+        "y"
+      ],
+      "hints": [
+        "A medical or health-related term"
+      ]
+    }
+  },
+  {
+    "index": 145,
+    "word": "orrery",
+    "category": "Objects and Tools",
+    "definition": "A mechanical model that shows the motions of planets around a star, typically used for demonstration or teaching.",
+    "dailyConfig": {
+      "purgedLetters": [
+        "a",
+        "m",
+        "u",
+        "k",
+        "v",
+        "f"
+      ],
+      "freeLetters": [
+        "e"
+      ],
+      "hints": [
+        "A scientific demonstration device"
+      ]
+    }
+  },
+  {
+    "index": 146,
+    "word": "grandiloquent",
+    "category": "Communication and Language",
+    "definition": "Using elaborate or pompous language to impress others.",
+    "dailyConfig": {
+      "purgedLetters": [
+        "s",
+        "p",
+        "c",
+        "w",
+        "f",
+        "y"
+      ],
+      "freeLetters": [
+        "q"
+      ],
+      "hints": [
+        "A style of speaking or writing"
+      ]
+    }
+  },
+  {
+    "index": 147,
+    "word": "zephyr",
+    "category": "Nature and Environment",
+    "definition": "A gentle, mild breeze, often associated with spring or pleasant weather.",
+    "dailyConfig": {
+      "purgedLetters": [
+        "o",
+        "u",
+        "c",
+        "f",
+        "v",
+        "k"
+      ],
+      "freeLetters": [
+        "h"
+      ],
+      "hints": [
+        "A type of wind"
+      ]
+    }
+  },
+  {
+    "index": 148,
+    "word": "meticulous",
+    "category": "Emotions and States",
+    "definition": "Showing great attention to detail and precision in performing tasks.",
+    "dailyConfig": {
+      "purgedLetters": [
+        "r",
+        "d",
+        "p",
+        "k",
+        "z",
+        "x"
+      ],
+      "freeLetters": [
+        "c"
+      ],
+      "hints": [
+        "A personality trait or quality"
+      ]
+    }
+  },
+  {
+    "index": 149,
+    "word": "sublimate",
+    "category": "Science and Technology",
+    "definition": "To transform a solid directly into a gas without passing through the liquid state.",
+    "dailyConfig": {
+      "purgedLetters": [
+        "o",
+        "p",
+        "h",
+        "f",
+        "y",
+        "w"
+      ],
+      "freeLetters": [
+        "m"
+      ],
+      "hints": [
+        "A physical science process"
+      ]
+    }
+  },
+  {
+    "index": 150,
+    "word": "frugal",
+    "category": "Abstract Concepts",
+    "definition": "Careful in the use of resources, especially money, to avoid unnecessary waste.",
+    "dailyConfig": {
+      "purgedLetters": [
+        "s",
+        "d",
+        "c",
+        "y",
+        "w",
+        "x"
+      ],
+      "freeLetters": [
+        "g"
+      ],
+      "hints": [
+        "A way of handling expenses"
+      ]
+    }
+  },
+  {
+    "index": 151,
+    "word": "parallax",
+    "category": "Science and Technology",
+    "definition": "The apparent shift in position of an object when viewed from different locations.",
+    "dailyConfig": {
+      "purgedLetters": [
+        "e",
+        "u",
+        "m",
+        "f",
+        "v",
+        "w"
+      ],
+      "freeLetters": [
+        "r"
+      ],
+      "hints": [
+        "A scientific observation term"
+      ]
+    }
+  },
+  {
+    "index": 152,
+    "word": "vertebrate",
+    "category": "Nature and Environment",
+    "definition": "An animal possessing a backbone or spinal column.",
+    "dailyConfig": {
+      "purgedLetters": [
+        "s",
+        "p",
+        "c",
+        "f",
+        "y",
+        "w"
+      ],
+      "freeLetters": [
+        "b"
+      ],
+      "hints": [
+        "A kind of animal"
+      ]
+    }
+  },
+  {
+    "index": 153,
+    "word": "larynx",
+    "category": "Body and Health",
+    "definition": "The organ in the throat containing the vocal cords, used for producing sound.",
+    "dailyConfig": {
+      "purgedLetters": [
+        "e",
+        "c",
+        "d",
+        "v",
+        "f",
+        "w"
+      ],
+      "freeLetters": [
+        "n"
+      ],
+      "hints": [
+        "A part of the throat"
+      ]
+    }
+  },
+  {
+    "index": 154,
+    "word": "trailblaze",
+    "category": "Activities and Leisure",
+    "definition": "To be the first to do something new or innovative, often making a path for others to follow.",
+    "dailyConfig": {
+      "purgedLetters": [
+        "n",
+        "c",
+        "u",
+        "f",
+        "w",
+        "q"
+      ],
+      "freeLetters": [
+        "z"
+      ],
+      "hints": [
+        "An adventurous action"
+      ]
+    }
+  },
+  {
+    "index": 155,
+    "word": "absquatulate",
+    "category": "Movement and Travel",
+    "definition": "To leave suddenly or depart in a hurried or secretive manner.",
+    "dailyConfig": {
+      "purgedLetters": [
+        "i",
+        "d",
+        "c",
+        "f",
+        "y",
+        "w"
+      ],
+      "freeLetters": [
+        "q"
+      ],
+      "hints": [
+        "A type of sudden departure"
+      ]
+    }
+  },
+  {
+    "index": 156,
+    "word": "calligraphy",
+    "category": "Activities and Leisure",
+    "definition": "The art of creating decorative handwriting or lettering with a pen or brush.",
+    "dailyConfig": {
+      "purgedLetters": [
+        "n",
+        "m",
+        "b",
+        "w",
+        "v",
+        "x"
+      ],
+      "freeLetters": [
+        "h"
+      ],
+      "hints": [
+        "A visual artistic activity"
+      ]
+    }
+  },
+  {
+    "index": 157,
+    "word": "hazmat",
+    "category": "Objects and Tools",
+    "definition": "Materials that pose a risk to health, safety, or property due to their hazardous nature. Short for \"hazardous materials.\"",
+    "dailyConfig": {
+      "purgedLetters": [
+        "o",
+        "u",
+        "c",
+        "y",
+        "f",
+        "w"
+      ],
+      "freeLetters": [
+        "z"
+      ],
+      "hints": [
+        "A type of dangerous material"
+      ]
+    }
+  },
+  {
+    "index": 158,
+    "word": "metamorphic",
+    "category": "Science and Technology",
+    "definition": "Changed in structure or form, especially due to heat and pressure.",
+    "dailyConfig": {
+      "purgedLetters": [
+        "s",
+        "u",
+        "d",
+        "w",
+        "z",
+        "f"
+      ],
+      "freeLetters": [
+        "h"
+      ],
+      "hints": [
+        "A scientific or geological term"
+      ]
+    }
+  },
+  {
+    "index": 159,
+    "word": "taxidermist",
+    "category": "People and Relationships",
+    "definition": "A person who prepares, stuffs, and mounts the skins of animals for display or study.",
+    "dailyConfig": {
+      "purgedLetters": [
+        "g",
+        "h",
+        "k",
+        "f",
+        "j",
+        "l"
+      ],
+      "freeLetters": [
+        "d"
+      ],
+      "hints": [
+        "A profession"
+      ]
+    }
+  },
+  {
+    "index": 160,
+    "word": "peculiar",
+    "category": "Colors and Descriptions",
+    "definition": "Unusual or different from what is normal or expected.",
+    "dailyConfig": {
+      "purgedLetters": [
+        "t",
+        "d",
+        "m",
+        "y",
+        "f",
+        "v"
+      ],
+      "freeLetters": [
+        "u"
+      ],
+      "hints": [
+        "A descriptive quality"
+      ]
+    }
+  },
+  {
+    "index": 161,
+    "word": "chromosome",
+    "category": "Science and Technology",
+    "definition": "A threadlike structure in cells carrying genetic information in the form of DNA.",
+    "dailyConfig": {
+      "purgedLetters": [
+        "l",
+        "d",
+        "g",
+        "q",
+        "y",
+        "k"
+      ],
+      "freeLetters": [
+        "h"
+      ],
+      "hints": [
+        "A part of living cells"
+      ]
+    }
+  },
+  {
+    "index": 162,
+    "word": "judiciary",
+    "category": "Society and Politics",
+    "definition": "The system of courts that interprets and applies laws within a country or state.",
+    "dailyConfig": {
+      "purgedLetters": [
+        "e",
+        "m",
+        "p",
+        "f",
+        "w",
+        "v"
+      ],
+      "freeLetters": [
+        "d"
+      ],
+      "hints": [
+        "A branch of government"
+      ]
+    }
+  },
+  {
+    "index": 163,
+    "word": "dendritic",
+    "category": "Science and Technology",
+    "definition": "Having a branching, tree-like structure, often used to describe certain patterns or forms in biology or geology.",
+    "dailyConfig": {
+      "purgedLetters": [
+        "o",
+        "h",
+        "u",
+        "f",
+        "y",
+        "z"
+      ],
+      "freeLetters": [
+        "n"
+      ],
+      "hints": [
+        "A scientific descriptive term"
+      ]
+    }
+  },
+  {
+    "index": 164,
+    "word": "bespoke",
+    "category": "Work and Business",
+    "definition": "Custom-made or tailored to the specific requirements of an individual.",
+    "dailyConfig": {
+      "purgedLetters": [
+        "a",
+        "u",
+        "c",
+        "f",
+        "y",
+        "w"
+      ],
+      "freeLetters": [
+        "k"
+      ],
+      "hints": [
+        "A business or craft term"
+      ]
+    }
+  },
+  {
+    "index": 165,
+    "word": "verdant",
+    "category": "Nature and Environment",
+    "definition": "Covered with lush green vegetation or appearing fresh and green in color.",
+    "dailyConfig": {
+      "purgedLetters": [
+        "o",
+        "c",
+        "p",
+        "y",
+        "f",
+        "w"
+      ],
+      "freeLetters": [
+        "d"
+      ],
+      "hints": [
+        "A description of plant life"
+      ]
+    }
+  },
+  {
+    "index": 166,
+    "word": "proselytize",
+    "category": "Communication and Language",
+    "definition": "To attempt to persuade others to adopt a particular belief, faith, or ideology.",
+    "dailyConfig": {
+      "purgedLetters": [
+        "a",
+        "m",
+        "h",
+        "w",
+        "f",
+        "x"
+      ],
+      "freeLetters": [
+        "y"
+      ],
+      "hints": [
+        "A way to share beliefs"
+      ]
+    }
+  },
+  {
+    "index": 167,
+    "word": "dreadnought",
+    "category": "Objects and Tools",
+    "definition": "A type of large, heavily armored battleship with powerful guns, especially those built in the early 20th century.",
+    "dailyConfig": {
+      "purgedLetters": [
+        "i",
+        "c",
+        "m",
+        "f",
+        "v",
+        "y"
+      ],
+      "freeLetters": [
+        "h"
+      ],
+      "hints": [
+        "A type of large warship"
+      ]
+    }
+  },
+  {
+    "index": 168,
+    "word": "cartilage",
+    "category": "Body and Health",
+    "definition": "A firm, flexible connective tissue found in joints and other parts of the body.",
+    "dailyConfig": {
+      "purgedLetters": [
+        "s",
+        "m",
+        "d",
+        "w",
+        "q",
+        "y"
+      ],
+      "freeLetters": [
+        "g"
+      ],
+      "hints": [
+        "A body tissue"
+      ]
+    }
+  },
+  {
+    "index": 169,
+    "word": "kaleidoscope",
+    "category": "Objects and Tools",
+    "definition": "A tube-shaped optical instrument containing mirrors and colored objects that create changing patterns when rotated.",
+    "dailyConfig": {
+      "purgedLetters": [
+        "n",
+        "u",
+        "m",
+        "f",
+        "w",
+        "v"
+      ],
+      "freeLetters": [
+        "c"
+      ],
+      "hints": [
+        "A visual toy or device"
+      ]
+    }
+  },
+  {
+    "index": 170,
+    "word": "tangible",
+    "category": "Abstract Concepts",
+    "definition": "Capable of being touched or physically perceived by the senses.",
+    "dailyConfig": {
+      "purgedLetters": [
+        "o",
+        "m",
+        "c",
+        "y",
+        "q",
+        "z"
+      ],
+      "freeLetters": [
+        "g"
+      ],
+      "hints": [
+        "A physical property"
+      ]
+    }
+  },
+  {
+    "index": 171,
+    "word": "referendum",
+    "category": "Society and Politics",
+    "definition": "A direct vote by the electorate on a specific proposal or issue.",
+    "dailyConfig": {
+      "purgedLetters": [
+        "o",
+        "b",
+        "p",
+        "w",
+        "y",
+        "v"
+      ],
+      "freeLetters": [
+        "f"
+      ],
+      "hints": [
+        "A government or voting process"
+      ]
+    }
+  },
+  {
+    "index": 172,
+    "word": "estuary",
+    "category": "Nature and Environment",
+    "definition": "A coastal area where freshwater from rivers meets and mixes with saltwater.",
+    "dailyConfig": {
+      "purgedLetters": [
+        "o",
+        "c",
+        "p",
+        "v",
+        "f",
+        "w"
+      ],
+      "freeLetters": [
+        "u"
+      ],
+      "hints": [
+        "A coastal water feature"
+      ]
+    }
+  },
+  {
+    "index": 173,
+    "word": "xenium",
+    "category": "People and Relationships",
+    "definition": "A gift or offering presented to a guest or stranger, especially in ancient times.",
+    "dailyConfig": {
+      "purgedLetters": [
+        "l",
+        "p",
+        "d",
+        "k",
+        "v",
+        "j"
+      ],
+      "freeLetters": [
+        "u"
+      ],
+      "hints": [
+        "A type of present or gift"
+      ]
+    }
+  },
+  {
+    "index": 174,
+    "word": "constellation",
+    "category": "Nature and Environment",
+    "definition": "A group of stars forming a recognizable pattern, often named after mythological figures or objects.",
+    "dailyConfig": {
+      "purgedLetters": [
+        "r",
+        "p",
+        "b",
+        "z",
+        "v",
+        "j"
+      ],
+      "freeLetters": [
+        "a"
+      ],
+      "hints": [
+        "A pattern of stars"
+      ]
+    }
+  },
+  {
+    "index": 175,
+    "word": "diligent",
+    "category": "Abstract Concepts",
+    "definition": "Showing careful and persistent effort in completing tasks or duties.",
+    "dailyConfig": {
+      "purgedLetters": [
+        "a",
+        "p",
+        "b",
+        "x",
+        "f",
+        "z"
+      ],
+      "freeLetters": [
+        "g"
+      ],
+      "hints": [
+        "A personality trait"
+      ]
+    }
+  },
+  {
+    "index": 176,
+    "word": "taradiddle",
+    "category": "Communication and Language",
+    "definition": "A trivial or petty lie; a falsehood told without serious intent.",
+    "dailyConfig": {
+      "purgedLetters": [
+        "o",
+        "g",
+        "m",
+        "k",
+        "x",
+        "v"
+      ],
+      "freeLetters": [
+        "i"
+      ],
+      "hints": [
+        "A type of untruth"
+      ]
+    }
+  },
+  {
+    "index": 177,
+    "word": "spelunk",
+    "category": "Activities and Leisure",
+    "definition": "To explore natural underground cavities, especially as a recreational activity.",
+    "dailyConfig": {
+      "purgedLetters": [
+        "a",
+        "h",
+        "m",
+        "v",
+        "z",
+        "x"
+      ],
+      "freeLetters": [
+        "p"
+      ],
+      "hints": [
+        "A form of outdoor exploration"
+      ]
+    }
+  },
+  {
+    "index": 178,
+    "word": "archipelago",
+    "category": "Places and Geography",
+    "definition": "A group or chain of islands clustered together in a sea or ocean.",
+    "dailyConfig": {
+      "purgedLetters": [
+        "n",
+        "b",
+        "m",
+        "f",
+        "x",
+        "j"
+      ],
+      "freeLetters": [
+        "p"
+      ],
+      "hints": [
+        "A group of islands"
+      ]
+    }
+  },
+  {
+    "index": 179,
+    "word": "effervescent",
+    "category": "Colors and Descriptions",
+    "definition": "Producing small bubbles of gas; lively or full of high-spirited energy.",
+    "dailyConfig": {
+      "purgedLetters": [
+        "o",
+        "m",
+        "p",
+        "w",
+        "x",
+        "j"
+      ],
+      "freeLetters": [
+        "v"
+      ],
+      "hints": [
+        "A descriptive quality or appearance"
+      ]
+    }
+  },
+  {
+    "index": 180,
+    "word": "reverie",
+    "category": "Emotions and States",
+    "definition": "A state of being pleasantly lost in one's thoughts or daydreams.",
+    "dailyConfig": {
+      "purgedLetters": [
+        "s",
+        "d",
+        "g",
+        "f",
+        "y",
+        "w"
+      ],
+      "freeLetters": [
+        "v"
+      ],
+      "hints": [
+        "A kind of mental state"
+      ]
+    }
+  },
+  {
+    "index": 181,
+    "word": "juxtapose",
+    "category": "Communication and Language",
+    "definition": "To place two or more things side by side, especially for comparison or contrast.",
+    "dailyConfig": {
+      "purgedLetters": [
+        "l",
+        "b",
+        "d",
+        "f",
+        "y",
+        "z"
+      ],
+      "freeLetters": [
+        "x"
+      ],
+      "hints": [
+        "A type of language action"
+      ]
+    }
+  },
+  {
+    "index": 182,
+    "word": "wamble",
+    "category": "Body and Health",
+    "definition": "To experience a feeling of discomfort or rumbling in the stomach, often due to hunger or indigestion.",
+    "dailyConfig": {
+      "purgedLetters": [
+        "t",
+        "h",
+        "u",
+        "x",
+        "k",
+        "v"
+      ],
+      "freeLetters": [
+        "m"
+      ],
+      "hints": [
+        "A physical sensation"
+      ]
+    }
+  },
+  {
+    "index": 183,
+    "word": "xenophobe",
+    "category": "People and Relationships",
+    "definition": "A person who has an intense or irrational dislike or fear of people from other countries.",
+    "dailyConfig": {
+      "purgedLetters": [
+        "a",
+        "u",
+        "d",
+        "q",
+        "v",
+        "f"
+      ],
+      "freeLetters": [
+        "p"
+      ],
+      "hints": [
+        "A type of person"
+      ]
+    }
+  },
+  {
+    "index": 184,
+    "word": "fedora",
+    "category": "Objects and Tools",
+    "definition": "A soft felt hat with a curled brim and a lengthwise crease in the crown, typically worn by men.",
+    "dailyConfig": {
+      "purgedLetters": [
+        "i",
+        "g",
+        "m",
+        "k",
+        "y",
+        "j"
+      ],
+      "freeLetters": [
+        "d"
+      ],
+      "hints": [
+        "A type of hat"
+      ]
+    }
+  },
+  {
+    "index": 185,
+    "word": "centennial",
+    "category": "Time and Dates",
+    "definition": "The hundredth anniversary of an event.",
+    "dailyConfig": {
+      "purgedLetters": [
+        "o",
+        "g",
+        "m",
+        "j",
+        "z",
+        "f"
+      ],
+      "freeLetters": [
+        "t"
+      ],
+      "hints": [
+        "A type of anniversary"
+      ]
+    }
+  },
+  {
+    "index": 186,
+    "word": "inure",
+    "category": "Abstract Concepts",
+    "definition": "To become accustomed to something, especially something unpleasant, through prolonged exposure.",
+    "dailyConfig": {
+      "purgedLetters": [
+        "t",
+        "c",
+        "d",
+        "q",
+        "z",
+        "f"
+      ],
+      "freeLetters": [
+        "u"
+      ],
+      "hints": [
+        "A psychological adjustment"
+      ]
+    }
+  },
+  {
+    "index": 187,
+    "word": "limerence",
+    "category": "Emotions and States",
+    "definition": "A state of intense, involuntary romantic desire for another person, often accompanied by obsessive thoughts and longing.",
+    "dailyConfig": {
+      "purgedLetters": [
+        "a",
+        "d",
+        "h",
+        "f",
+        "y",
+        "q"
+      ],
+      "freeLetters": [
+        "m"
+      ],
+      "hints": [
+        "A feeling or emotional state"
+      ]
+    }
+  },
+  {
+    "index": 188,
+    "word": "differential",
+    "category": "Science and Technology",
+    "definition": "A mathematical expression representing the rate at which a quantity changes; also, a mechanical device allowing wheels to rotate at different speeds.",
+    "dailyConfig": {
+      "purgedLetters": [
+        "s",
+        "c",
+        "u",
+        "q",
+        "y",
+        "z"
+      ],
+      "freeLetters": [
+        "r"
+      ],
+      "hints": [
+        "A mathematical or technical term"
+      ]
+    }
+  },
+  {
+    "index": 189,
+    "word": "legislator",
+    "category": "Society and Politics",
+    "definition": "A person who is part of a body responsible for making or enacting laws.",
+    "dailyConfig": {
+      "purgedLetters": [
+        "n",
+        "u",
+        "p",
+        "v",
+        "x",
+        "q"
+      ],
+      "freeLetters": [
+        "g"
+      ],
+      "hints": [
+        "A government official"
+      ]
+    }
+  },
+  {
+    "index": 190,
+    "word": "ungulate",
+    "category": "Nature and Environment",
+    "definition": "A mammal with hooves, such as a horse, deer, or cow.",
+    "dailyConfig": {
+      "purgedLetters": [
+        "s",
+        "m",
+        "c",
+        "y",
+        "f",
+        "q"
+      ],
+      "freeLetters": [
+        "g"
+      ],
+      "hints": [
+        "A kind of animal"
+      ]
+    }
+  },
+  {
+    "index": 191,
+    "word": "isotope",
+    "category": "Science and Technology",
+    "definition": "A form of an element that has the same number of protons but a different number of neutrons.",
+    "dailyConfig": {
+      "purgedLetters": [
+        "a",
+        "m",
+        "b",
+        "f",
+        "z",
+        "y"
+      ],
+      "freeLetters": [
+        "p"
+      ],
+      "hints": [
+        "A type of atom"
+      ]
+    }
+  },
+  {
+    "index": 192,
+    "word": "longevity",
+    "category": "Time and Dates",
+    "definition": "The quality or state of having a long duration of life or existence.",
+    "dailyConfig": {
+      "purgedLetters": [
+        "r",
+        "p",
+        "h",
+        "j",
+        "f",
+        "w"
+      ],
+      "freeLetters": [
+        "v"
+      ],
+      "hints": [
+        "A measure of lifespan or duration"
+      ]
+    }
+  },
+  {
+    "index": 193,
+    "word": "bronchus",
+    "category": "Body and Health",
+    "definition": "A major air passage of the lungs branching off from the windpipe.",
+    "dailyConfig": {
+      "purgedLetters": [
+        "a",
+        "g",
+        "m",
+        "v",
+        "w",
+        "q"
+      ],
+      "freeLetters": [
+        "c"
+      ],
+      "hints": [
+        "A part of the respiratory system"
+      ]
+    }
+  },
+  {
+    "index": 194,
+    "word": "latitude",
+    "category": "Places and Geography",
+    "definition": "The angular distance north or south of the equator, measured in degrees on the Earth's surface.",
+    "dailyConfig": {
+      "purgedLetters": [
+        "s",
+        "m",
+        "b",
+        "x",
+        "f",
+        "j"
+      ],
+      "freeLetters": [
+        "u"
+      ],
+      "hints": [
+        "A geographical measurement"
+      ]
+    }
+  },
+  {
+    "index": 195,
+    "word": "jetsam",
+    "category": "Objects and Tools",
+    "definition": "Goods or material intentionally thrown overboard from a ship to lighten it, often washed ashore.",
+    "dailyConfig": {
+      "purgedLetters": [
+        "r",
+        "p",
+        "g",
+        "f",
+        "x",
+        "y"
+      ],
+      "freeLetters": [
+        "t"
+      ],
+      "hints": [
+        "Discarded items from ships"
+      ]
+    }
+  },
+  {
+    "index": 196,
+    "word": "effulgent",
+    "category": "Colors and Descriptions",
+    "definition": "Radiating intense brightness or brilliance; shining with a dazzling light.",
+    "dailyConfig": {
+      "purgedLetters": [
+        "a",
+        "c",
+        "m",
+        "k",
+        "w",
+        "v"
+      ],
+      "freeLetters": [
+        "g"
+      ],
+      "hints": [
+        "A descriptive quality"
+      ]
+    }
+  },
+  {
+    "index": 197,
+    "word": "peninsula",
+    "category": "Places and Geography",
+    "definition": "A landform almost entirely surrounded by water but still connected to the mainland.",
+    "dailyConfig": {
+      "purgedLetters": [
+        "o",
+        "m",
+        "d",
+        "q",
+        "w",
+        "z"
+      ],
+      "freeLetters": [
+        "u"
+      ],
+      "hints": [
+        "A type of landform"
+      ]
+    }
+  },
+  {
+    "index": 198,
+    "word": "serenity",
+    "category": "Emotions and States",
+    "definition": "A state of calmness and peacefulness, free from disturbance or agitation.",
+    "dailyConfig": {
+      "purgedLetters": [
+        "l",
+        "c",
+        "h",
+        "f",
+        "z",
+        "q"
+      ],
+      "freeLetters": [
+        "i"
+      ],
+      "hints": [
+        "A feeling or mood"
+      ]
+    }
+  },
+  {
+    "index": 199,
+    "word": "cascade",
+    "category": "Nature and Environment",
+    "definition": "A small, steep waterfall or a series of such falls over rocks.",
+    "dailyConfig": {
+      "purgedLetters": [
+        "l",
+        "h",
+        "b",
+        "w",
+        "v",
+        "k"
+      ],
+      "freeLetters": [
+        "d"
+      ],
+      "hints": [
+        "A natural water feature"
+      ]
+    }
+  },
+  {
+    "index": 200,
+    "word": "insurrection",
+    "category": "Society and Politics",
+    "definition": "A violent uprising or revolt against established authority or government.",
+    "dailyConfig": {
+      "purgedLetters": [
+        "a",
+        "h",
+        "d",
+        "f",
+        "z",
+        "y"
+      ],
+      "freeLetters": [
+        "u"
+      ],
+      "hints": [
+        "A political event"
+      ]
+    }
+  },
+  {
+    "index": 201,
+    "word": "phoenix",
+    "category": "Nature and Environment",
+    "definition": "A legendary bird that cyclically regenerates or is reborn from its ashes.",
+    "dailyConfig": {
+      "purgedLetters": [
+        "a",
+        "b",
+        "d",
+        "k",
+        "j",
+        "f"
+      ],
+      "freeLetters": [
+        "h"
+      ],
+      "hints": [
+        "A mythical animal"
+      ]
+    }
+  },
+  {
+    "index": 202,
+    "word": "susurrus",
+    "category": "Communication and Language",
+    "definition": "A soft, murmuring, or rustling sound, often resembling a whisper.",
+    "dailyConfig": {
+      "purgedLetters": [
+        "n",
+        "c",
+        "h",
+        "j",
+        "v",
+        "f"
+      ],
+      "hints": [
+        "A type of sound"
+      ]
+    }
+  },
+  {
+    "index": 203,
+    "word": "marigold",
+    "category": "Nature and Environment",
+    "definition": "A garden plant with bright yellow or orange blooms and aromatic foliage.",
+    "dailyConfig": {
+      "purgedLetters": [
+        "e",
+        "u",
+        "b",
+        "v",
+        "f",
+        "y"
+      ],
+      "freeLetters": [
+        "g"
+      ],
+      "hints": [
+        "A common garden plant"
+      ]
+    }
+  },
+  {
+    "index": 204,
+    "word": "disenchantment",
+    "category": "Emotions and States",
+    "definition": "A feeling of disappointment resulting from the discovery that something is not as good as believed.",
+    "dailyConfig": {
+      "purgedLetters": [
+        "l",
+        "g",
+        "p",
+        "z",
+        "v",
+        "q"
+      ],
+      "freeLetters": [
+        "h"
+      ],
+      "hints": [
+        "A feeling or emotional state"
+      ]
+    }
+  },
+  {
+    "index": 205,
+    "word": "manatee",
+    "category": "Nature and Environment",
+    "definition": "A large, slow-moving aquatic mammal with a rounded body, found in warm coastal waters and rivers.",
+    "dailyConfig": {
+      "purgedLetters": [
+        "r",
+        "d",
+        "h",
+        "x",
+        "k",
+        "j"
+      ],
+      "freeLetters": [
+        "t"
+      ],
+      "hints": [
+        "A type of aquatic animal"
+      ]
+    }
+  },
+  {
+    "index": 206,
+    "word": "adamantite",
+    "category": "Objects and Tools",
+    "definition": "A mythical or fictional extremely hard metal, often featured in fantasy literature and games.",
+    "dailyConfig": {
+      "purgedLetters": [
+        "s",
+        "p",
+        "u",
+        "j",
+        "f",
+        "y"
+      ],
+      "freeLetters": [
+        "m"
+      ],
+      "hints": [
+        "A fictional material in fantasy stories"
+      ]
+    }
+  },
+  {
+    "index": 207,
+    "word": "precipitate",
+    "category": "Science and Technology",
+    "definition": "A solid that forms and separates from a liquid mixture during a chemical process.",
+    "dailyConfig": {
+      "purgedLetters": [
+        "l",
+        "u",
+        "d",
+        "w",
+        "f",
+        "v"
+      ],
+      "freeLetters": [
+        "c"
+      ],
+      "hints": [
+        "A chemistry and science term"
+      ]
+    }
+  },
+  {
+    "index": 208,
+    "word": "iridescent",
+    "category": "Colors and Descriptions",
+    "definition": "Displaying a spectrum of colors that appear to change when viewed from different angles.",
+    "dailyConfig": {
+      "purgedLetters": [
+        "l",
+        "u",
+        "g",
+        "j",
+        "f",
+        "y"
+      ],
+      "freeLetters": [
+        "d"
+      ],
+      "hints": [
+        "A visual appearance or effect"
+      ]
+    }
+  },
+  {
+    "index": 209,
+    "word": "tarantula",
+    "category": "Nature and Environment",
+    "definition": "A large, hairy spider found mainly in warm regions, known for its size and sometimes intimidating appearance.",
+    "dailyConfig": {
+      "purgedLetters": [
+        "e",
+        "b",
+        "c",
+        "k",
+        "v",
+        "j"
+      ],
+      "freeLetters": [
+        "u"
+      ],
+      "hints": [
+        "A type of spider"
+      ]
+    }
+  },
+  {
+    "index": 210,
+    "word": "pancreas",
+    "category": "Body and Health",
+    "definition": "A gland behind the stomach that produces digestive enzymes and hormones like insulin.",
+    "dailyConfig": {
+      "purgedLetters": [
+        "o",
+        "d",
+        "m",
+        "w",
+        "z",
+        "y"
+      ],
+      "freeLetters": [
+        "c"
+      ],
+      "hints": [
+        "An internal organ"
+      ]
+    }
+  },
+  {
+    "index": 211,
+    "word": "misapprehension",
+    "category": "Abstract Concepts",
+    "definition": "A mistaken belief or incorrect understanding of something.",
+    "dailyConfig": {
+      "purgedLetters": [
+        "l",
+        "u",
+        "d",
+        "q",
+        "f",
+        "y"
+      ],
+      "freeLetters": [
+        "h"
+      ],
+      "hints": [
+        "A type of misunderstanding"
+      ]
+    }
+  },
+  {
+    "index": 212,
+    "word": "malnourishment",
+    "category": "Body and Health",
+    "definition": "A condition resulting from insufficient intake or absorption of essential nutrients needed for health.",
+    "dailyConfig": {
+      "purgedLetters": [
+        "d",
+        "g",
+        "q",
+        "w",
+        "j"
+      ],
+      "freeLetters": [
+        "u"
+      ],
+      "hints": [
+        "A medical condition"
+      ]
+    }
+  },
+  {
+    "index": 213,
+    "word": "unscrupulous",
+    "category": "Emotions and States",
+    "definition": "Lacking moral principles or a sense of right and wrong; willing to act dishonestly or unfairly.",
+    "dailyConfig": {
+      "purgedLetters": [
+        "e",
+        "d",
+        "m",
+        "f",
+        "y",
+        "v"
+      ],
+      "freeLetters": [
+        "p"
+      ],
+      "hints": [
+        "A kind of personal trait"
+      ]
+    }
+  }
+]
