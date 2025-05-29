@@ -1,4 +1,4 @@
-import { MetaProgress, MetaSettings as MetaSettingsType } from '../game/game.model';
+import { MetaSettings as MetaSettingsType } from '../game/game.model';
 
 export const MetaSettings: MetaSettingsType = {
   'Category visible': {
@@ -48,6 +48,8 @@ export const MetaSettings: MetaSettingsType = {
       '<strong>Remove clouds:</strong><br/><br/>Removes the clouds around the word.<br/>Always see full length of the word.',
   },
 };
+
+export const dailyBoostLimit = 5;
 
 export const KeyboardLayout: string[][] = [
   ['q', 'w', 'e', 'r', 't', 'y', 'u', 'i', 'o', 'p'],
