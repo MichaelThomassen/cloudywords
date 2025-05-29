@@ -12,7 +12,7 @@ export const defaultMetaProgress: MetaProgress = {
 };
 
 export const defaultAppState: AppState = {
-  status: AppStatus.Game,
+  status: AppStatus.Help,
   mode: GameMode.Practice,
   gameProgress: {
     [GameMode.Daily]: {
@@ -30,8 +30,8 @@ export const defaultAppState: AppState = {
 
 export const defaultPracticeState: PracticeState = {
   currentPracticeWordIndex: 0,
-  dailyBoostsUsed: 0,
-  dailyBoostResetTime: '',
+  practiceBoostsUsed: 0,
+  practiceBoostsResetTime: 0,
   totalScore: 0,
   metaProgress: defaultMetaProgress,
 };

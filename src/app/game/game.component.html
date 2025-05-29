@@ -51,7 +51,7 @@
         )
       "
     >
-      <span>{{ currentPracticeWordIndex }}/{{ WordList.length }}</span>
+      <span>{{ practiceState.currentPracticeWordIndex }}/{{ WordList.length }}</span>
     </div>
   </div>
   <div *ngIf="appState.status === AppStatus.Help" class="game-container">
@@ -68,15 +68,15 @@
     <div style="max-width: 400px; width: 70%; margin: 0 auto">
       <div style="display: flex; justify-content: space-between; padding: 4px 0">
         <span>Words guessed:</span>
-        <span>{{ currentPracticeWordIndex }}</span>
+        <span>{{ practiceState.currentPracticeWordIndex }}</span>
       </div>
       <div style="display: flex; justify-content: space-between; padding: 4px 0">
         <span>Words remaining:</span>
-        <span>{{ WordList.length - currentPracticeWordIndex }}</span>
+        <span>{{ WordList.length - practiceState.currentPracticeWordIndex }}</span>
       </div>
       <div style="display: flex; justify-content: space-between; padding: 4px 0">
         <span>Available:</span>
-        <span>{{ totalScore }}☁️</span>
+        <span>{{ practiceState.totalScore }}☁️</span>
       </div>
       <div style="display: flex; justify-content: space-between; padding: 4px 0">
         <span>Total:</span>
@@ -84,7 +84,7 @@
       </div>
       <div style="display: flex; justify-content: space-between; padding: 4px 0">
         <span>Average per word:</span>
-        <span>{{ (getTotalScore() / currentPracticeWordIndex | number : "1.0-2") || 0 }}☁️</span>
+        <span>{{ (getTotalScore() / practiceState.currentPracticeWordIndex | number : "1.0-2") || 0 }}☁️</span>
       </div>
     </div>
   </div>
@@ -92,7 +92,7 @@
     <h2 style="padding: 0; margin-top: 0px">☁️ Upgrades ☁️</h2>
     <div>
       <div class="meta-item">☁️ available</div>
-      <div class="meta-progress">{{ totalScore }}/{{ getTotalScore() }}</div>
+      <div class="meta-progress">{{ practiceState.totalScore }}/{{ getTotalScore() }}</div>
       <button class="meta-button" (click)="resetMetaProgress()">Refund</button>
     </div>
     <div *ngFor="let metaItem of MetaSettings | keyvalue : originalOrder">
@@ -100,13 +100,15 @@
         {{ metaItem.key }}
       </div>
       <div class="meta-progress">
-        {{ metaProgress[castVariableToKeyOfMetaProgress(metaItem.key)] }}/{{ MetaSettings[metaItem.key].maxValue }}
+        {{ practiceState.metaProgress[castVariableToKeyOfMetaProgress(metaItem.key)] }}/{{
+          MetaSettings[metaItem.key].maxValue
+        }}
       </div>
       <button
         class="meta-button"
         [disabled]="
-          metaProgress[castVariableToKeyOfMetaProgress(metaItem.key)] >= MetaSettings[metaItem.key].maxValue ||
-          totalScore < MetaSettings[metaItem.key].price
+          practiceState.metaProgress[castVariableToKeyOfMetaProgress(metaItem.key)] >=
+            MetaSettings[metaItem.key].maxValue || practiceState.totalScore < MetaSettings[metaItem.key].price
         "
         (click)="setMetaProgress(castVariableToKeyOfMetaProgress(metaItem.key))"
       >
@@ -153,16 +155,12 @@
         ></div>
       </div>
     </div>
-    <div class="category" *ngIf="metaProgress['Category visible'] >= 1 || isGameOver()">
+    <div class="category" *ngIf="practiceState.metaProgress['Category visible'] >= 1 || isGameOver()">
       {{ getStyledCategory() }}
     </div>
-    <div class="definition" *ngIf="metaProgress['Definition visible'] >= 1 || isGameOver()">
+    <div class="definition" *ngIf="practiceState.metaProgress['Definition visible'] >= 1 || isGameOver()">
       🔍
-      {{
-        isGameOver()
-          ? currentWord.definition
-          : maskDefinition(currentWord.definition.charAt(0).toUpperCase() + currentWord.definition.slice(1))
-      }}
+      {{ isGameOver() ? currentWord.definition : getMaskedDefinition }}
     </div>
     <div *ngIf="!isGameOver()" class="keyboard">
       <div class="keyboardrow" *ngFor="let row of KeyboardLayout">
@@ -190,7 +188,7 @@
     <div *ngIf="isGameOver()" class="win-screen">
       <div class="win-message">{{ getWinMessage() }}</div>
       <div>Earned: +{{ currentScore }} ☁️</div>
-      <div>Balance: {{ totalScore }} ☁️</div>
+      <div>Balance: {{ practiceState.totalScore }} ☁️</div>
       <div>&nbsp;</div>
       <div class="buttons">
         <button #newWordButton (click)="newWord()">New Word</button>
@@ -198,11 +196,16 @@
           [class.daily-boost]="remainingBoosts > 0"
           [disabled]="boostDisabled"
           (click)="newWord(true)"
-          *ngIf="metaProgress['Daily boost'] >= 1"
+          *ngIf="practiceState.metaProgress['Daily boost'] >= 1"
         >
           Daily Boost <br />
-          <span *ngIf="!boostDisabled">({{ remainingBoosts }}/{{ dailyBoostLimit }})</span>
-          <span *ngIf="boostDisabled">{{ countdown }}</span>
+          <span *ngIf="!boostDisabled">({{ remainingBoosts }}/{{ practiceBoostLimit }})</span>
+          <span *ngIf="boostDisabled"
+            ><app-countdown-timer
+              [targetTime]="practiceState.practiceBoostsResetTime"
+              (countdownComplete)="resetPracticeBoostTimer()"
+            ></app-countdown-timer
+          ></span>
         </button>
         <button
           [attr.aria-disabled]="getTotalScore() < 25"

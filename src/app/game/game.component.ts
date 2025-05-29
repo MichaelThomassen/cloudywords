@@ -1,6 +1,7 @@
 import { Component, OnInit, Renderer2, ViewChild, ElementRef } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
+import { CountdownTimerComponent } from '../countdown-timer/countdown-timer.component';
 
 import WordList from '../shared/wordlist.json';
 import DailyWordList from '../shared/dailywordlist.json';
@@ -12,9 +13,9 @@ import {
   winMessagesMid,
   winMessagesHigh,
   styledCategories,
-  dailyBoostLimit,
+  practiceBoostLimit,
 } from '../shared/constants';
-import { AppState, AppStatus, DailyWord, GameMode, MetaProgress, PracticeState, Word } from './game.model';
+import { AppState, AppStatus, DailyWord, MetaProgress, PracticeState, Word } from './game.model';
 import { AboutComponent } from '../about/about.component';
 import { HelpComponent } from '../help/help.component';
 import { OutOfWordsComponent } from '../outofwords/outofwords.component';
@@ -25,7 +26,7 @@ import { defaultAppState, defaultMetaProgress, defaultPracticeState } from '../s
 
 @Component({
   selector: 'app-word-list',
-  imports: [CommonModule, FormsModule, AboutComponent, HelpComponent, OutOfWordsComponent],
+  imports: [CommonModule, FormsModule, AboutComponent, HelpComponent, OutOfWordsComponent, CountdownTimerComponent],
   templateUrl: './game.component.html',
   styleUrls: ['./game.component.css'],
 })
@@ -39,27 +40,15 @@ export class GameComponent implements OnInit {
   winMessagesMid = winMessagesMid;
   winMessagesHigh = winMessagesHigh;
 
-  dailyBoostLimit = dailyBoostLimit;
+  practiceBoostLimit = practiceBoostLimit;
 
   //Data
   WordList: Word[] = WordList;
   DailyWordList: DailyWord[] = DailyWordList;
 
-  //TODO mode to default file
+  //State
   appState: AppState = { ...defaultAppState };
   practiceState: PracticeState = { ...defaultPracticeState };
-
-  currentPracticeWordIndex = 0;
-  dailyBoostsUsed = 0;
-  metaProgress: MetaProgress = { ...defaultMetaProgress };
-  totalScore = 0;
-  countdown = '';
-
-  originalOrder = () => 0;
-
-  viewportWidth: number = window.innerWidth;
-  viewportHeight: number = window.innerHeight;
-  wrongAspect: boolean = false;
 
   currentWord: Word = {
     index: -1,
@@ -68,8 +57,16 @@ export class GameComponent implements OnInit {
     definition: '',
   };
 
-  scoreDecreased: boolean = false;
+  //Helper function for metaSettings order
+  originalOrder = () => 0;
 
+  //Variable for UI
+  scoreDecreased: boolean = false;
+  viewportWidth: number = window.innerWidth;
+  viewportHeight: number = window.innerHeight;
+  wrongAspect: boolean = false;
+
+  //ViewChild for new word button to focus on it after guessing a word
   @ViewChild('newWordButton', { static: false }) newWordButton!: ElementRef;
 
   constructor(
@@ -91,32 +88,16 @@ export class GameComponent implements OnInit {
   helpText: string = '';
 
   ngOnInit() {
-    if (localStorage.getItem('currentPracticeWordIndex') === null) {
-      //first time user, show help component
-      this.appState.status = AppStatus.Help;
-    }
-    this.currentPracticeWordIndex = this.storage.safeLoadInt('currentPracticeWordIndex', 0);
-    this.totalScore = this.storage.safeLoadInt('totalScore', 0);
-    this.metaProgress = this.storage.safeLoad('metaProgress', this.metaProgress);
-    this.appState = this.storage.safeLoad('appState', this.appState);
-
-    if (
-      this.appState.gameProgress[this.appState.mode].guessedLetters.length > 0 ||
-      this.appState.gameProgress[this.appState.mode].removedLetters.length > 0 ||
-      this.appState.gameProgress[this.appState.mode].boostActive
-    ) {
-      this.restoreGameState();
-    } else {
-      this.newWord();
-    }
-
-    this.dailyBoostsUsed = this.checkAndResetDailyBoost();
-    this.updateCountdown();
-    setInterval(() => this.updateCountdown(), 1000);
-
     window.addEventListener('resize', this.updateViewportSize.bind(this));
     this.updateViewportSize();
 
+    this.appState = this.storage.safeLoad('appState', this.appState);
+    this.practiceState = this.storage.safeLoad('practiceState', this.practiceState);
+
+    this.resetPracticeBoostTimer();
+    this.restoreGameState();
+
+    //Just some debug info, only in development mode
     if (!environment.production) {
       const maxLength = Math.max(...WordList.map((w) => w.word.length));
       const longestWords = WordList.filter((w) => w.word.length === maxLength);
@@ -159,7 +140,7 @@ export class GameComponent implements OnInit {
 
   getWord() {
     return WordList.find((word) => {
-      return word.index === this.currentPracticeWordIndex;
+      return word.index === this.practiceState.currentPracticeWordIndex;
     });
   }
 
@@ -190,6 +171,9 @@ export class GameComponent implements OnInit {
     const word = this.getWord();
     if (word) {
       this.currentWord = word;
+    } else {
+      this.updateAppStatus(AppStatus.OutOfWords);
+      return;
     }
     if (!environment.production && word) {
       console.log('Word is:', word.word);
@@ -197,8 +181,7 @@ export class GameComponent implements OnInit {
   }
 
   newWord(boost: boolean = false) {
-    this.currentPracticeWordIndex++;
-    this.storage.save('currentPracticeWordIndex', this.currentPracticeWordIndex);
+    this.increaseCurrentPracticeWordIndex();
 
     const word = this.getWord();
     if (!environment.production && word) {
@@ -229,7 +212,8 @@ export class GameComponent implements OnInit {
     for (let i = 0; i < LetterGroups.length; i++) {
       const lettersInGroup = [...LetterGroups[i]].sort(() => Math.random() - 0.5);
       const lettersToRemoveInGroup =
-        this.metaProgress[`Purge group ${i + 1}` as keyof MetaProgress] + leftOverLettersFromPreviousGroup;
+        this.practiceState.metaProgress[`Purge group ${i + 1}` as keyof MetaProgress] +
+        leftOverLettersFromPreviousGroup;
       if (lettersToRemoveInGroup > 0) {
         let lettersRemoved = 0;
         for (let j = 0; j < lettersInGroup.length; j++) {
@@ -251,7 +235,7 @@ export class GameComponent implements OnInit {
       }
     }
     //add free letter if available
-    if (this.metaProgress['Free letter'] > 0) {
+    if (this.practiceState.metaProgress['Free letter'] > 0) {
       const firstLetter = this.currentWord.word[0];
       const lastLetter = this.currentWord.word[this.currentWord.word.length - 1];
       const regex = new RegExp(`[${firstLetter}${lastLetter}]`, 'g');
@@ -263,6 +247,17 @@ export class GameComponent implements OnInit {
         const randomLetter = uniqueLetters[randomIndex];
         this.addLetterToGuessed(randomLetter);
       }
+    }
+  }
+
+  handleKeyPress(event: KeyboardEvent) {
+    const letter = event.key.toLowerCase();
+    if (
+      KeyboardLayout.flat().includes(letter) &&
+      !this.appState.gameProgress[this.appState.mode].guessedLetters.includes(letter) &&
+      !this.appState.gameProgress[this.appState.mode].removedLetters.includes(letter)
+    ) {
+      this.guessLetter(letter);
     }
   }
 
@@ -282,14 +277,14 @@ export class GameComponent implements OnInit {
 
     // Check if all letters are guessed
     if (this.isGameOver()) {
+      //Update totalScore. We will never get to here, unless we have actually guessed the last letter of the word right now
+      this.practiceState.totalScore += this.currentScore;
+      this.savePracticeState();
+
       //Focus on new word button (for keyboard users to press space/enter for quick next word)
       setTimeout(() => {
         this.newWordButton.nativeElement.focus();
       }, 10);
-
-      //Update totalScore. We will never get to here, unless we have actually guessed the last letter of the word right now
-      this.totalScore += this.currentScore;
-      this.storage.save('totalScore', this.totalScore);
     }
   }
 
@@ -304,17 +299,6 @@ export class GameComponent implements OnInit {
     setTimeout(() => (this.scoreDecreased = false), 500);
   }
 
-  handleKeyPress(event: KeyboardEvent) {
-    const letter = event.key.toLowerCase();
-    if (
-      KeyboardLayout.flat().includes(letter) &&
-      !this.appState.gameProgress[this.appState.mode].guessedLetters.includes(letter) &&
-      !this.appState.gameProgress[this.appState.mode].removedLetters.includes(letter)
-    ) {
-      this.guessLetter(letter);
-    }
-  }
-
   toggleMenu() {
     this.isMenuExpanded = !this.isMenuExpanded;
   }
@@ -322,50 +306,47 @@ export class GameComponent implements OnInit {
   getTotalScore() {
     //calculate total score
     let tmpscore = 0;
-    Object.keys(this.metaProgress).forEach((meta) => {
+    Object.keys(this.practiceState.metaProgress).forEach((meta) => {
       const key = meta as keyof MetaProgress;
       try {
         //needed check in case of meta has changed
-        tmpscore += this.metaProgress[key] * MetaSettings[key].price;
+        tmpscore += this.practiceState.metaProgress[key] * MetaSettings[key].price;
       } catch (e) {
         //just do nothing, as it's not really an error
       }
     });
-    return this.totalScore + tmpscore;
+    return this.practiceState.totalScore + tmpscore;
   }
 
   setMetaProgress(meta: keyof MetaProgress) {
-    if (this.metaProgress[meta] >= MetaSettings[meta].maxValue) {
+    if (this.practiceState.metaProgress[meta] >= MetaSettings[meta].maxValue) {
       return;
     }
     //check if enough points
-    if (this.totalScore < MetaSettings[meta].price) {
+    if (this.practiceState.totalScore < MetaSettings[meta].price) {
       return;
     }
-    this.metaProgress[meta] = this.metaProgress[meta] + 1;
-    this.totalScore -= MetaSettings[meta].price;
-    //update meta progress and total score in local storage
-    this.storage.save('metaProgress', this.metaProgress);
-    this.storage.save('totalScore', this.totalScore);
+    this.practiceState.metaProgress[meta] = this.practiceState.metaProgress[meta] + 1;
+    this.practiceState.totalScore -= MetaSettings[meta].price;
+    this.savePracticeState();
   }
 
   resetMetaProgress() {
     //add points spent back to totalscore
-    Object.keys(this.metaProgress).forEach((meta) => {
+    Object.keys(this.practiceState.metaProgress).forEach((meta) => {
       try {
-        this.totalScore +=
-          this.metaProgress[meta as keyof MetaProgress] * MetaSettings[meta as keyof MetaProgress].price;
+        this.practiceState.totalScore +=
+          this.practiceState.metaProgress[meta as keyof MetaProgress] * MetaSettings[meta as keyof MetaProgress].price;
       } catch (e) {
         //just do nothing, as it's not really an error
       }
     });
 
-    this.metaProgress = { ...defaultMetaProgress };
-    this.storage.save('metaProgress', this.metaProgress);
-    this.storage.save('totalScore', this.totalScore);
+    this.practiceState.metaProgress = { ...defaultMetaProgress };
+    this.savePracticeState();
   }
 
-  maskDefinition(definition: string) {
+  get getMaskedDefinition(): string {
     //mask definition based on metaProgress
     //0 = definition box hidden (so we don't even get in here)
     //1 = every 5th word is visible
@@ -375,8 +356,10 @@ export class GameComponent implements OnInit {
     //5 = every word is visible
     //(commas and periods are included in the words, since we split on spaces)
 
-    const step = 6 - this.metaProgress['Definition visible'];
-    const masked = definition.split(' ').map((word, i) => (i % step === 0 ? word : '.'.repeat(word.length)));
+    const step = 6 - this.practiceState.metaProgress['Definition visible'];
+    const masked = this.currentWord.definition
+      .split(' ')
+      .map((word, i) => (i % step === 0 ? word : '.'.repeat(word.length)));
 
     return masked.join(' ');
   }
@@ -384,26 +367,16 @@ export class GameComponent implements OnInit {
   isAnyMetaAffordable() {
     //check if any meta is affordable
     let affordable = false;
-    Object.keys(this.metaProgress).forEach((meta) => {
+    Object.keys(this.practiceState.metaProgress).forEach((meta) => {
       const key = meta as keyof MetaProgress;
-      if (this.totalScore >= MetaSettings[key].price && this.metaProgress[key] < MetaSettings[key].maxValue) {
+      if (
+        this.practiceState.totalScore >= MetaSettings[key].price &&
+        this.practiceState.metaProgress[key] < MetaSettings[key].maxValue
+      ) {
         affordable = true;
       }
     });
     return affordable;
-  }
-
-  resetAllProgress() {
-    this.metaProgress = { ...defaultMetaProgress };
-    this.storage.save('metaProgress', this.metaProgress);
-    this.totalScore = 0;
-    this.storage.save('totalScore', this.totalScore);
-    this.currentPracticeWordIndex = 0;
-    this.storage.save('currentPracticeWordIndex', this.currentPracticeWordIndex);
-    this.clearGameProgress();
-
-    this.newWord();
-    this.updateAppStatus(AppStatus.Game);
   }
 
   showHelp(txt: string) {
@@ -415,61 +388,41 @@ export class GameComponent implements OnInit {
   }
 
   castVariableToKeyOfMetaProgress(v: unknown): keyof MetaProgress {
+    //Hacky way to cast a variable to keyof MetaProgress
     return v as keyof MetaProgress;
   }
 
-  checkAndResetDailyBoost(): number {
+  resetPracticeBoostTimer() {
+    //called on init, and when button timer reaches 0
     const now = new Date();
-    const resetTimeStr = this.storage.safeLoad<string>('dailyBoostResetTime', '');
-    const resetTime = resetTimeStr ? new Date(resetTimeStr) : null;
-
-    if (!resetTime || resetTime < now) {
-      // Reset usage
-      this.storage.save('dailyBoostsUsed', 0);
-
-      const tomorrow = new Date();
-      tomorrow.setHours(24, 0, 0, 0);
-      this.storage.save('dailyBoostResetTime', tomorrow.toISOString());
-      return 0;
+    const resetTime =
+      this.practiceState.practiceBoostsResetTime && this.practiceState.practiceBoostsResetTime > 0
+        ? new Date(this.practiceState.practiceBoostsResetTime)
+        : null;
+    if (resetTime && resetTime > now) {
+      return;
     }
 
-    return this.storage.safeLoadInt('dailyBoostsUsed', 5);
+    const tomorrow = new Date();
+    tomorrow.setHours(24, 0, 0, 0);
+    this.practiceState.practiceBoostsResetTime = tomorrow.getTime();
+    this.practiceState.practiceBoostsUsed = 0;
+    this.savePracticeState();
   }
+
   incrementBoostedWordUse(): void {
-    const used = this.checkAndResetDailyBoost();
-    if (used < this.dailyBoostLimit) {
-      this.storage.save('dailyBoostsUsed', used + 1);
-      this.dailyBoostsUsed = used + 1;
+    if (this.practiceState.practiceBoostsUsed < this.practiceBoostLimit) {
+      this.practiceState.practiceBoostsUsed += 1;
+      this.savePracticeState();
     }
-  }
-  getTimeUntilReset(): string {
-    const resetStr = this.storage.safeLoad<string>('dailyBoostResetTime', '');
-    if (!resetStr) return '';
-
-    const ms = new Date(resetStr).getTime() - Date.now();
-    if (ms <= 0) return '00:00:00';
-
-    const h = Math.floor(ms / 3600000);
-    const m = Math.floor((ms % 3600000) / 60000);
-    const s = Math.floor((ms % 60000) / 1000);
-
-    return `${this.pad(h)}:${this.pad(m)}:${this.pad(s)}`;
-  }
-
-  pad(num: number): string {
-    return num.toString().padStart(2, '0');
-  }
-  updateCountdown(): void {
-    this.countdown = this.getTimeUntilReset();
-    this.dailyBoostsUsed = this.checkAndResetDailyBoost();
   }
 
   get remainingBoosts(): number {
-    return this.dailyBoostLimit - this.dailyBoostsUsed;
+    return this.practiceBoostLimit - this.practiceState.practiceBoostsUsed;
   }
 
   get boostDisabled(): boolean {
-    return this.dailyBoostsUsed >= this.dailyBoostLimit;
+    return this.practiceState.practiceBoostsUsed >= this.practiceBoostLimit;
   }
 
   get currentScore(): number {
@@ -482,6 +435,41 @@ export class GameComponent implements OnInit {
           ).length
       ) * (this.appState.gameProgress[this.appState.mode].boostActive ? 10 : 1)
     );
+  }
+
+  get currentWordMarkup(): {
+    beginningVisible: boolean;
+    endVisible: boolean;
+    visibleLetters: string;
+  } {
+    let localCurrentWordMarkup = {
+      beginningVisible: false,
+      endVisible: false,
+      visibleLetters: '',
+    };
+    if (this.practiceState.metaProgress['Remove clouds'] > 0) {
+      localCurrentWordMarkup.visibleLetters = this.currentWord.word;
+      localCurrentWordMarkup.beginningVisible = true;
+      localCurrentWordMarkup.endVisible = true;
+    } else {
+      localCurrentWordMarkup.visibleLetters = this.currentWord.word
+        .split('')
+        .map((l) => (this.appState.gameProgress[this.appState.mode].guessedLetters.includes(l) ? l : ' '))
+        .join('');
+      localCurrentWordMarkup.beginningVisible = this.appState.gameProgress[this.appState.mode].guessedLetters.includes(
+        this.currentWord.word.slice(0, 1)
+      );
+      localCurrentWordMarkup.endVisible = this.appState.gameProgress[this.appState.mode].guessedLetters.includes(
+        this.currentWord.word.slice(-1)
+      );
+      localCurrentWordMarkup.visibleLetters = localCurrentWordMarkup.visibleLetters.trim();
+    }
+
+    return {
+      beginningVisible: localCurrentWordMarkup.beginningVisible,
+      endVisible: localCurrentWordMarkup.endVisible,
+      visibleLetters: localCurrentWordMarkup.visibleLetters,
+    };
   }
 
   saveAppState() {
@@ -516,38 +504,12 @@ export class GameComponent implements OnInit {
     };
     this.saveAppState();
   }
-  get currentWordMarkup(): {
-    beginningVisible: boolean;
-    endVisible: boolean;
-    visibleLetters: string;
-  } {
-    let localCurrentWordMarkup = {
-      beginningVisible: false,
-      endVisible: false,
-      visibleLetters: '',
-    };
-    if (this.metaProgress['Remove clouds'] > 0) {
-      localCurrentWordMarkup.visibleLetters = this.currentWord.word;
-      localCurrentWordMarkup.beginningVisible = true;
-      localCurrentWordMarkup.endVisible = true;
-    } else {
-      localCurrentWordMarkup.visibleLetters = this.currentWord.word
-        .split('')
-        .map((l) => (this.appState.gameProgress[this.appState.mode].guessedLetters.includes(l) ? l : ' '))
-        .join('');
-      localCurrentWordMarkup.beginningVisible = this.appState.gameProgress[this.appState.mode].guessedLetters.includes(
-        this.currentWord.word.slice(0, 1)
-      );
-      localCurrentWordMarkup.endVisible = this.appState.gameProgress[this.appState.mode].guessedLetters.includes(
-        this.currentWord.word.slice(-1)
-      );
-      localCurrentWordMarkup.visibleLetters = localCurrentWordMarkup.visibleLetters.trim();
-    }
 
-    return {
-      beginningVisible: localCurrentWordMarkup.beginningVisible,
-      endVisible: localCurrentWordMarkup.endVisible,
-      visibleLetters: localCurrentWordMarkup.visibleLetters,
-    };
+  savePracticeState() {
+    this.storage.save('practiceState', this.practiceState);
+  }
+  increaseCurrentPracticeWordIndex() {
+    this.practiceState.currentPracticeWordIndex++;
+    this.savePracticeState();
   }
 }

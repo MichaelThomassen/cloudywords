@@ -49,7 +49,7 @@ export const MetaSettings: MetaSettingsType = {
   },
 };
 
-export const dailyBoostLimit = 5;
+export const practiceBoostLimit = 5;
 
 export const KeyboardLayout: string[][] = [
   ['q', 'w', 'e', 'r', 't', 'y', 'u', 'i', 'o', 'p'],

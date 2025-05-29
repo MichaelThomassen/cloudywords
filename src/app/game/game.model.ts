@@ -30,10 +30,14 @@ export interface AppState {
 
 export interface PracticeState {
   currentPracticeWordIndex: number;
-  dailyBoostsUsed: number;
-  dailyBoostResetTime: string;
+  practiceBoostsUsed: number;
+  practiceBoostsResetTime: number;
   totalScore: number;
   metaProgress: MetaProgress;
+}
+
+export interface DailyState {
+  dailiesDone: string;
 }
 
 export interface MetaProgress {
