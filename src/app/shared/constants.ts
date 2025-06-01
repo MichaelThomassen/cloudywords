@@ -1,5 +1,8 @@
 import { MetaSettings as MetaSettingsType } from '../game/game.model';
 
+export const practiceBoostLimit = 5;
+export const dailyChallengeStartDate = new Date(2025, 4, 25); // Month is 0 indexed!
+
 export const MetaSettings: MetaSettingsType = {
   'Category visible': {
     maxValue: 1,
@@ -48,8 +51,6 @@ export const MetaSettings: MetaSettingsType = {
       '<strong>Remove clouds:</strong><br/><br/>Removes the clouds around the word.<br/>Always see full length of the word.',
   },
 };
-
-export const practiceBoostLimit = 5;
 
 export const KeyboardLayout: string[][] = [
   ['q', 'w', 'e', 'r', 't', 'y', 'u', 'i', 'o', 'p'],
@@ -177,3 +178,66 @@ export const winMessagesHigh = [
   'Like a boss! 💼',
   'Exacto! 🎯',
 ];
+
+export const sharingMessages = {
+  flawless: [
+    'Nailed it 💅',
+    'Cloud whisperer 🌥️',
+    'Try to top that. I dare you 😎',
+    'Master of letters 🔠',
+    'Guessed like a god 🔮',
+    'No wrong turns — just vibes ✨',
+    'Efficiency = perfection 😇',
+    'Too easy ☁️🧠',
+    'That word didn’t stand a chance 💥',
+    "I'm basically the cloud oracle ⛅",
+  ],
+  solid: [
+    'Not bad at all 😏',
+    'Pretty breezy ☁️',
+    'Beat that if you can 💪',
+    'Smooth skies ahead 🌤️',
+    'I knew what I was doing... mostly 😄',
+    'Respectable run ✅',
+    'Made the word bend to my will 🔤',
+    'Call me a steady guesser 🚶',
+    'Almost elegant 🤓',
+    'I came, I guessed, I won 🏅',
+  ],
+  meh: [
+    'Could’ve been worse 🤷',
+    'Respectable...ish 😬',
+    "Come on, beat me. It's not *that* hard.",
+    "I'm calling it a strategic detour 🗺️",
+    'Guessed like a confused pigeon 🐦',
+    'Some clouds were... unexpected ⛈️',
+    "Let's just say I finished it 🤐",
+    'Took the scenic route 🚗💨',
+    'Letter soup with a happy ending 🍲',
+    'Not proud, not ashamed 🤖',
+  ],
+  rough: [
+    'Well... I made it eventually 😅',
+    'Slipped on a cloud or two 🌧️',
+    'You could probably beat this in your sleep 😴',
+    'That was not pretty 🫣',
+    'I panicked and pressed every letter 🔡',
+    'Look, the important thing is I *won* 😬',
+    'Alphabet soup simulator 🥣',
+    'It’s fine. I had fun. Really. 😐',
+    'Accuracy? Optional. 📉',
+    "Wouldn't call it guessing... more like flailing 🥴",
+  ],
+  disaster: [
+    'Absolute cloud chaos 💀',
+    'Efficiency? Never heard of it 🤡',
+    'Can’t possibly do worse. Or can you? 😬',
+    'Hit every wrong letter like a bingo machine 🎱',
+    'I guessed the whole alphabet and then some 🔠🫣',
+    'I paved the road to the answer with wrong guesses 🧱',
+    'Maximum effort, minimum results 🪦',
+    'It was an... experience 🫥',
+    'Guessing record unlocked: 0 IQ run 🧠❌',
+    'I taught the algorithm what *not* to do 📉',
+  ],
+};

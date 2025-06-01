@@ -1,35 +1,64 @@
 <div *ngIf="wrongAspect === false">
-  <div class="header">
-    <div class="menu-wrapper">
-      <button
-        *ngIf="appState.status === AppStatus.Game || appState.status === AppStatus.OutOfWords"
-        class="menu-button"
-        (click)="toggleMenu()"
-      >
-        ☰
-      </button>
-      <button
-        *ngIf="appState.status !== AppStatus.Game && appState.status !== AppStatus.OutOfWords"
-        class="menu-button"
-        (click)="updateAppStatus(AppStatus.Game)"
-      >
-        ←
-      </button>
-      <div
-        *ngIf="appState.status === AppStatus.Game || appState.status === AppStatus.OutOfWords"
-        class="menu"
-        [ngClass]="{ 'menu-expanded': isMenuExpanded }"
-      >
-        <div class="menu-item" *ngIf="getTotalScore() >= 25" (click)="updateAppStatus(AppStatus.Meta)">Upgrades</div>
-        <div class="menu-item" (click)="updateAppStatus(AppStatus.Stats)">Statistics</div>
-        <div class="menu-item" (click)="updateAppStatus(AppStatus.Help)">Help</div>
-        <div class="menu-item" (click)="updateAppStatus(AppStatus.About)">About</div>
+  <div class="menu-wrapper">
+    <button
+      *ngIf="appState.status === AppStatus.Game || appState.status === AppStatus.OutOfWords"
+      class="menu-button"
+      (click)="toggleMenu()"
+    >
+      ☰
+    </button>
+    <button
+      *ngIf="appState.status !== AppStatus.Game && appState.status !== AppStatus.OutOfWords"
+      class="menu-button"
+      (click)="updateAppStatus(AppStatus.Game)"
+    >
+      ←
+    </button>
+    <div
+      *ngIf="appState.status === AppStatus.Game || appState.status === AppStatus.OutOfWords"
+      class="menu"
+      [ngClass]="{ 'menu-expanded': isMenuExpanded }"
+    >
+      <div class="menu-item" *ngIf="appState.mode === GameMode.Daily" (click)="updateGameMode(GameMode.Practice)">
+        Practice
       </div>
+      <div class="menu-item" *ngIf="appState.mode === GameMode.Practice" (click)="updateGameMode(GameMode.Daily)">
+        Daily Challenge
+      </div>
+      <div
+        class="menu-item"
+        *ngIf="appState.mode === GameMode.Daily"
+        (click)="updateGameMode(GameMode.PreviousDailies)"
+      >
+        Previous Challenges
+      </div>
+      <div
+        class="menu-item"
+        *ngIf="getTotalScore() >= 25 && appState.mode === GameMode.Practice"
+        (click)="updateAppStatus(AppStatus.Meta)"
+      >
+        Upgrades
+      </div>
+      <div class="menu-item" (click)="updateAppStatus(AppStatus.Stats)">Statistics</div>
+      <div class="menu-item" (click)="updateAppStatus(AppStatus.Help)">Help</div>
+      <div class="menu-item" (click)="updateAppStatus(AppStatus.About)">About</div>
     </div>
+  </div>
+  <div class="header">
+    <div
+      class="score-wrapper"
+      *ngIf="
+        appState.mode === GameMode.Practice &&
+        (appState.status === AppStatus.Game || appState.status === AppStatus.OutOfWords)
+      "
+    ></div>
     <div
       class="score-wrapper"
       [ngClass]="{ 'score-decrease': scoreDecreased }"
-      *ngIf="appState.status === AppStatus.Game || appState.status === AppStatus.OutOfWords"
+      *ngIf="
+        appState.mode === GameMode.Practice &&
+        (appState.status === AppStatus.Game || appState.status === AppStatus.OutOfWords)
+      "
       (click)="
         showHelp(
           '<strong>☁️ Clouds ☁️</strong><p>You earn ☁️ by guessing words correctly</p><p>Spend your ☁️ on upgrades to help you progress faster</p><p>Each incorrect letter guess costs 1 ☁️</p><p>You’ll never drop below 2 ☁️, no matter how many mistakes you make</p>'
@@ -44,7 +73,10 @@
     </div>
     <div
       class="progress-wrapper"
-      *ngIf="appState.status === AppStatus.Game || appState.status === AppStatus.OutOfWords"
+      *ngIf="
+        appState.mode === GameMode.Practice &&
+        (appState.status === AppStatus.Game || appState.status === AppStatus.OutOfWords)
+      "
       (click)="
         showHelp(
           '<strong>Word Progress</strong><p>The first number is how many words you have guessed</p><p>The second is the total number of words in the game</p><p>Keep going to earn more ☁️ and unlock upgrades!</p>'
@@ -52,6 +84,15 @@
       "
     >
       <span>{{ practiceState.currentPracticeWordIndex }}/{{ WordList.length }}</span>
+    </div>
+    <div
+      class="daily-wrapper"
+      *ngIf="
+        appState.mode === GameMode.Daily &&
+        (appState.status === AppStatus.Game || appState.status === AppStatus.OutOfWords)
+      "
+    >
+      Daily challenge #{{ dailyWordIndex }} ({{ formattedDate }})
     </div>
   </div>
   <div *ngIf="appState.status === AppStatus.Help" class="game-container">
@@ -155,12 +196,10 @@
         ></div>
       </div>
     </div>
-    <div class="category" *ngIf="practiceState.metaProgress['Category visible'] >= 1 || isGameOver()">
-      {{ getStyledCategory() }}
-    </div>
-    <div class="definition" *ngIf="practiceState.metaProgress['Definition visible'] >= 1 || isGameOver()">
-      🔍
-      {{ isGameOver() ? currentWord.definition : getMaskedDefinition }}
+    <div class="info-box">
+      <div *ngIf="styledCategory !== ''">{{ styledCategory }}</div>
+      <div *ngIf="maskedDefinition !== ''">🔍 {{ maskedDefinition }}</div>
+      <div *ngIf="parsedHints !== ''">💡 {{ parsedHints }}</div>
     </div>
     <div *ngIf="!isGameOver()" class="keyboard">
       <div class="keyboardrow" *ngFor="let row of KeyboardLayout">
@@ -174,10 +213,10 @@
           [ngClass]="{
             guessedincorrect:
               appState.gameProgress[this.appState.mode].guessedLetters.includes(letter) &&
-              !currentWord.word.includes(letter),
+              !currentWord?.word?.includes(letter),
             guessedcorrect:
               appState.gameProgress[this.appState.mode].guessedLetters.includes(letter) &&
-              currentWord.word.includes(letter),
+              currentWord?.word?.includes(letter),
             removedletter: appState.gameProgress[this.appState.mode].removedLetters.includes(letter)
           }"
         >
@@ -185,17 +224,36 @@
         </button>
       </div>
     </div>
-    <div *ngIf="isGameOver()" class="win-screen">
+    <div *ngIf="isGameOver() && appState.mode === GameMode.Daily" class="win-screen">
+      <div class="win-message">{{ getWinMessage() }}</div>
+      <div>Wrong letters guessed: {{ wrongGuessCount }}</div>
+      <div>Cloud score: {{ efficiencyScore }}/10</div>
+      <div>&nbsp;</div>
+      <div class="buttons">
+        <button (click)="updateGameMode(GameMode.Practice)">Practice</button>
+        <button (click)="shareResult()">Share</button>
+        <button [disabled]="true" (click)="newPracticeWord(true)">
+          Next Daily Challenge <br />
+          <span
+            ><app-countdown-timer
+              [targetTime]="dailyResetTime"
+              (countdownComplete)="findAndSetDailyWord()"
+            ></app-countdown-timer
+          ></span>
+        </button>
+      </div>
+    </div>
+    <div *ngIf="isGameOver() && appState.mode === GameMode.Practice" class="win-screen">
       <div class="win-message">{{ getWinMessage() }}</div>
       <div>Earned: +{{ currentScore }} ☁️</div>
       <div>Balance: {{ practiceState.totalScore }} ☁️</div>
       <div>&nbsp;</div>
       <div class="buttons">
-        <button #newWordButton (click)="newWord()">New Word</button>
+        <button #newWordButton (click)="newPracticeWord()">New Word</button>
         <button
           [class.daily-boost]="remainingBoosts > 0"
           [disabled]="boostDisabled"
-          (click)="newWord(true)"
+          (click)="newPracticeWord(true)"
           *ngIf="practiceState.metaProgress['Daily boost'] >= 1"
         >
           Daily Boost <br />

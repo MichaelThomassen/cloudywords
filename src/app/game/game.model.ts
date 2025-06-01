@@ -11,12 +11,15 @@ export enum AppStatus {
 export enum GameMode {
   Daily = 'daily',
   Practice = 'practice',
+  PreviousDailies = 'previousDailies',
 }
 
 export interface GameProgress {
   guessedLetters: string[];
   removedLetters: string[];
   boostActive?: boolean;
+  previousDailyIndex?: number;
+  dailyIndex?: number;
 }
 
 export interface AppState {
@@ -25,6 +28,7 @@ export interface AppState {
   gameProgress: {
     [GameMode.Daily]: GameProgress;
     [GameMode.Practice]: GameProgress;
+    [GameMode.PreviousDailies]: GameProgress;
   };
 }
 

@@ -18,12 +18,17 @@ export const defaultAppState: AppState = {
     [GameMode.Daily]: {
       guessedLetters: [],
       removedLetters: [],
-      boostActive: false,
+      dailyIndex: -1,
     },
     [GameMode.Practice]: {
       guessedLetters: [],
       removedLetters: [],
       boostActive: false,
+    },
+    [GameMode.PreviousDailies]: {
+      guessedLetters: [],
+      removedLetters: [],
+      previousDailyIndex: -1,
     },
   },
 };
