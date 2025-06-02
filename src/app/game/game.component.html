@@ -19,19 +19,13 @@
       class="menu"
       [ngClass]="{ 'menu-expanded': isMenuExpanded }"
     >
-      <div class="menu-item" *ngIf="appState.mode === GameMode.Daily" (click)="updateGameMode(GameMode.Practice)">
+      <div class="menu-item" *ngIf="appState.mode !== GameMode.Practice" (click)="updateGameMode(GameMode.Practice)">
         Practice
       </div>
-      <div class="menu-item" *ngIf="appState.mode === GameMode.Practice" (click)="updateGameMode(GameMode.Daily)">
+      <div class="menu-item" *ngIf="appState.mode !== GameMode.Daily" (click)="updateGameMode(GameMode.Daily)">
         Daily Challenge
       </div>
-      <div
-        class="menu-item"
-        *ngIf="appState.mode === GameMode.Daily"
-        (click)="updateGameMode(GameMode.PreviousDailies)"
-      >
-        Previous Challenges
-      </div>
+      <div class="menu-item" (click)="updateAppStatus(AppStatus.Archive)">Daily Archive</div>
       <div
         class="menu-item"
         *ngIf="getTotalScore() >= 25 && appState.mode === GameMode.Practice"
@@ -85,6 +79,11 @@
     >
       <span>{{ practiceState.currentPracticeWordIndex }}/{{ WordList.length }}</span>
     </div>
+    <div class="daily-wrapper" *ngIf="appState.mode === GameMode.DailyArchive && appState.status === AppStatus.Game">
+      Archive challenge #{{ appState.gameProgress[GameMode.DailyArchive].dailyArchiveIndex }} ({{
+        getDateFromIndex(appState.gameProgress[GameMode.DailyArchive].dailyArchiveIndex!)
+      }})
+    </div>
     <div
       class="daily-wrapper"
       *ngIf="
@@ -94,6 +93,13 @@
     >
       Daily challenge #{{ dailyWordIndex }} ({{ formattedDate }})
     </div>
+  </div>
+  <div *ngIf="appState.status === AppStatus.Archive" class="game-container">
+    <app-dailyarchive
+      [dailyCompleted]="dailyCompleted"
+      [dailyArchiveIndex]="appState.gameProgress[GameMode.DailyArchive].dailyArchiveIndex || -1"
+      (setArchiveIndex)="setArchiveIndex($event)"
+    ></app-dailyarchive>
   </div>
   <div *ngIf="appState.status === AppStatus.Help" class="game-container">
     <app-help [wordCount]="WordList.length" (onClose)="updateAppStatus(AppStatus.Game)"></app-help>
@@ -224,6 +230,25 @@
         </button>
       </div>
     </div>
+    <div *ngIf="isGameOver() && appState.mode === GameMode.DailyArchive" class="win-screen">
+      <div class="win-message">{{ getWinMessage() }}</div>
+      <div>Wrong letters guessed: {{ wrongGuessCount }}</div>
+      <div>Cloud score: {{ efficiencyScore }}/10</div>
+      <div>&nbsp;</div>
+      <div class="buttons">
+        <button (click)="updateGameMode(GameMode.Practice)">Practice</button>
+        <button (click)="updateAppStatus(AppStatus.Archive)">Archive</button>
+        <button [disabled]="true">
+          Next Daily<br />
+          <span
+            ><app-countdown-timer
+              [targetTime]="dailyResetTime"
+              (countdownComplete)="findAndSetDailyWord()"
+            ></app-countdown-timer
+          ></span>
+        </button>
+      </div>
+    </div>
     <div *ngIf="isGameOver() && appState.mode === GameMode.Daily" class="win-screen">
       <div class="win-message">{{ getWinMessage() }}</div>
       <div>Wrong letters guessed: {{ wrongGuessCount }}</div>
@@ -231,9 +256,10 @@
       <div>&nbsp;</div>
       <div class="buttons">
         <button (click)="updateGameMode(GameMode.Practice)">Practice</button>
+        <button (click)="updateGameMode(GameMode.DailyArchive); updateAppStatus(AppStatus.Archive)">Archive</button>
         <button (click)="shareResult()">Share</button>
-        <button [disabled]="true" (click)="newPracticeWord(true)">
-          Next Daily Challenge <br />
+        <button [disabled]="true">
+          Next Daily<br />
           <span
             ><app-countdown-timer
               [targetTime]="dailyResetTime"
@@ -272,6 +298,15 @@
           (click)="getTotalScore() < 25 ? showHelp('Earn 25 ☁️ to unlock upgrades!') : updateAppStatus(AppStatus.Meta)"
         >
           Upgrades
+        </button>
+        <button [disabled]="true">
+          Next Daily<br />
+          <span
+            ><app-countdown-timer
+              [targetTime]="dailyResetTime"
+              (countdownComplete)="findAndSetDailyWord()"
+            ></app-countdown-timer
+          ></span>
         </button>
       </div>
     </div>

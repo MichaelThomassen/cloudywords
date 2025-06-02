@@ -24,10 +24,11 @@ body {
 }
 
 .buttons button {
-  padding: 10px 10px;
-  font-size: clamp(10px, 4vw, 16px);
+  padding: 8px 8px;
+  font-size: clamp(12px, 4vw, 14px);
   font-weight: bold;
   border: 1px solid white;
+  border-radius: 5px;
   background-color: #007bff;
   color: white;
   cursor: pointer;

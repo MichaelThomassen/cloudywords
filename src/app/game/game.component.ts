@@ -2,6 +2,7 @@ import { Component, OnInit, Renderer2, ViewChild, ElementRef } from '@angular/co
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 import { CountdownTimerComponent } from '../countdown-timer/countdown-timer.component';
+import { DailyArchiveComponent } from '../dailyarchive/dailyarchive.component';
 
 import WordList from '../shared/wordlist.json';
 import DailyWordList from '../shared/dailywordlist.json';
@@ -28,7 +29,15 @@ import { defaultAppState, defaultMetaProgress, defaultPracticeState } from '../s
 
 @Component({
   selector: 'app-word-list',
-  imports: [CommonModule, FormsModule, AboutComponent, HelpComponent, OutOfWordsComponent, CountdownTimerComponent],
+  imports: [
+    CommonModule,
+    FormsModule,
+    AboutComponent,
+    HelpComponent,
+    OutOfWordsComponent,
+    CountdownTimerComponent,
+    DailyArchiveComponent,
+  ],
   templateUrl: './game.component.html',
   styleUrls: ['./game.component.css'],
 })
@@ -52,6 +61,7 @@ export class GameComponent implements OnInit {
   //State
   appState: AppState = { ...defaultAppState };
   practiceState: PracticeState = { ...defaultPracticeState };
+  dailyCompleted: string = '';
 
   currentWord: DailyWord | undefined = undefined;
 
@@ -91,6 +101,7 @@ export class GameComponent implements OnInit {
 
     this.appState = this.storage.safeLoad('appState', this.appState);
     this.practiceState = this.storage.safeLoad('practiceState', this.practiceState);
+    this.dailyCompleted = this.storage.safeLoad('dailyCompleted', this.dailyCompleted);
 
     this.resetPracticeBoostTimer();
     this.updateGameMode(this.appState.mode);
@@ -164,6 +175,15 @@ export class GameComponent implements OnInit {
       year: 'numeric',
     });
   }
+  getDateFromIndex(index: number): string {
+    const date = new Date(dailyChallengeStartDate.getTime());
+    date.setDate(date.getDate() + index);
+    return date.toLocaleDateString(undefined, {
+      month: '2-digit',
+      day: '2-digit',
+      year: 'numeric',
+    });
+  }
   get dailyResetTime() {
     const tomorrow = new Date();
     tomorrow.setHours(24, 0, 0, 0);
@@ -202,19 +222,20 @@ export class GameComponent implements OnInit {
     this.currentWord = this.findDailyWord();
   }
 
-  markDailyCompleted(index: number) {
+  saveDailyResult(index: number, wrongGuesses: number | null) {
     const key = 'dailyCompleted';
-    let binary = this.storage.safeLoad(key, '');
+    let data = this.storage.safeLoad(key, '');
 
-    // Extend the binary string if needed
-    if (binary.length <= index) {
-      binary = binary.padEnd(index + 1, '0');
+    // Extend string if needed
+    if (data.length <= index) {
+      data = data.padEnd(index + 1, '0'); // '0' = not completed
     }
 
-    // Replace the character at the given index with '1'
-    binary = binary.substring(0, index) + '1' + binary.substring(index + 1);
+    const char = wrongGuesses === null ? '0' : String.fromCharCode(65 + wrongGuesses); // 'A' = 0, 'Z' = 25
 
-    this.storage.save(key, binary);
+    data = data.substring(0, index) + char + data.substring(index + 1);
+    this.dailyCompleted = data;
+    this.storage.save(key, data);
   }
 
   getWinMessage(): string {
@@ -350,7 +371,19 @@ export class GameComponent implements OnInit {
     if (this.appState.mode === GameMode.Daily) {
       //Handle Daily mode only functionality
       if (this.isGameOver()) {
-        this.markDailyCompleted(this.dailyWordIndex);
+        const incorrectGuesses = this.wrongGuessCount;
+        this.saveDailyResult(this.dailyWordIndex, incorrectGuesses);
+      }
+    }
+    if (this.appState.mode === GameMode.DailyArchive) {
+      //Handle Daily Archive mode only functionality
+      if (this.isGameOver()) {
+        const incorrectGuesses = this.wrongGuessCount;
+        this.saveDailyResult(
+          this.appState.gameProgress[GameMode.DailyArchive].dailyArchiveIndex ?? -1,
+          incorrectGuesses
+        );
+        // this.appState.gameProgress[GameMode.DailyArchive].dailyArchiveIndex = -1; //reset archive index after finishing a word
       }
     }
     return;
@@ -417,7 +450,7 @@ export class GameComponent implements OnInit {
 
   get styledCategory() {
     if (!this.currentWord) return '';
-    if (this.appState.mode === GameMode.Daily) return '';
+    if (this.appState.mode !== GameMode.Practice) return '';
     if (this.practiceState.metaProgress['Category visible'] === 0 && !this.isGameOver()) return '';
 
     const category = this.currentWord.category;
@@ -463,7 +496,7 @@ export class GameComponent implements OnInit {
     if (!this.currentWord) return '';
     if (this.isGameOver()) return '';
     //For now we only use index 0 of the hints array, but it might change later
-    if (this.appState.mode === GameMode.Daily && (this.currentWord.dailyConfig?.hints?.length ?? 0) > 0) {
+    if ((this.currentWord.dailyConfig?.hints?.length ?? 0) > 0) {
       return this.currentWord.dailyConfig?.hints?.[0] ?? '';
     }
     return '';
@@ -524,7 +557,6 @@ export class GameComponent implements OnInit {
   }
 
   get remainingBoosts(): number {
-    console.log('Remaining boosts:', this.practiceBoostLimit - this.practiceState.practiceBoostsUsed);
     return this.practiceBoostLimit - this.practiceState.practiceBoostsUsed;
   }
 
@@ -638,14 +670,20 @@ export class GameComponent implements OnInit {
     if (newMode === GameMode.Daily) {
       this.findAndSetDailyWord();
     }
-    if (newMode === GameMode.PreviousDailies) {
-      //TODO: Implement Previous Dailies mode
+    if (newMode === GameMode.DailyArchive) {
+      //Set current word to the daily archive index, if it exists
+      const dailyArchiveIndex = this.appState.gameProgress[GameMode.DailyArchive].dailyArchiveIndex;
+      if (dailyArchiveIndex !== undefined && dailyArchiveIndex >= 0) {
+        this.setArchiveIndex(dailyArchiveIndex, false);
+      } else {
+        this.currentWord = undefined; // Reset current word if no archive index is set
+      }
     }
     console.log('Word is:', this.currentWord?.word);
   }
 
   get wrongGuessCount(): number {
-    const guesses = this.appState.gameProgress[GameMode.Daily]?.guessedLetters ?? [];
+    const guesses = this.appState.gameProgress[this.appState.mode]?.guessedLetters ?? [];
     const word = this.currentWord?.word ?? '';
     return guesses.filter((letter) => !word.includes(letter)).length;
   }
@@ -728,5 +766,53 @@ export class GameComponent implements OnInit {
     } else {
       alert('Sorry, sharing is not supported on this browser.');
     }
+  }
+
+  setArchiveIndex(index: number, setStatusToGame: boolean = true) {
+    if (index === this.dailyWordIndex) {
+      this.appState.status = AppStatus.Game;
+
+      this.appState.mode = GameMode.Daily;
+      this.saveAppState();
+      this.findAndSetDailyWord();
+      return;
+    }
+
+    this.appState.mode = GameMode.DailyArchive;
+    this.appState.gameProgress[GameMode.DailyArchive].dailyArchiveIndex = index;
+    this.currentWord = DailyWordList.find((word) => word.index === index);
+    console.log('Current word:', this.currentWord?.word);
+    if (!this.currentWord) {
+      console.error('No word found for index:', index);
+      return;
+    }
+    const dailyResult = this.getDailyResult(index);
+    if (dailyResult === null) {
+      //Not played yet
+      this.appState.gameProgress[GameMode.DailyArchive].guessedLetters =
+        this.currentWord.dailyConfig?.freeLetters ?? [];
+      this.appState.gameProgress[GameMode.DailyArchive].removedLetters =
+        this.currentWord.dailyConfig?.purgedLetters ?? [];
+    } else {
+      //If the word is already completed, we can just set guessedLetters to an array of dashes, so that wrongGuesses are shown correctly
+      console.log(dailyResult);
+      const uniqueLetters: string[] = Array.from(new Set(this.currentWord.word.split('')));
+      const wrongLetters = '-'.repeat(dailyResult).split('');
+      this.appState.gameProgress[GameMode.DailyArchive].guessedLetters = [...uniqueLetters, ...wrongLetters];
+      this.appState.gameProgress[GameMode.DailyArchive].removedLetters =
+        this.currentWord.dailyConfig?.purgedLetters ?? [];
+    }
+    if (setStatusToGame) {
+      this.appState.status = AppStatus.Game;
+    }
+    this.saveAppState();
+
+    //if index = current,then just set appState and gamestate
+  }
+
+  getDailyResult(index: number): number | null {
+    if (!this.dailyCompleted || index >= this.dailyCompleted.length) return null;
+    const char = this.dailyCompleted.charAt(index);
+    return char === '0' ? null : char.charCodeAt(0) - 65;
   }
 }

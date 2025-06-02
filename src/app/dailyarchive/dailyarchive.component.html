@@ -1,0 +1,30 @@
+<h2 style="padding: 0; margin-top: 0px">☁️ Daily Archive ☁️</h2>
+
+<label class="toggle-wrapper">
+  <input type="checkbox" [(ngModel)]="showOnlyIncomplete" />
+  <span class="slider"></span>
+  <span class="label-text">Show only incomplete</span>
+</label>
+
+<div class="archive-list">
+  <ng-container *ngFor="let word of preparedDailyWordList">
+    <div
+      *ngIf="!showOnlyIncomplete || !word.completed"
+      class="archive-item"
+      [ngClass]="{
+        completed: word.completed,
+        inProgress: word.inProgress,
+        incomplete: !word.completed && !word.inProgress
+      }"
+      (click)="selectDaily(word)"
+    >
+      <div class="archive-content">
+        <span class="index">#{{ word.index + 1 }}</span>
+        <span class="date">{{ word.date }}</span>
+        <span class="word" *ngIf="word.completed">{{ word.word }}</span>
+        <span class="right-aligned" *ngIf="word.completed">({{ word.score }}/10)</span>
+        <span class="right-aligned" *ngIf="word.inProgress">In progress</span>
+      </div>
+    </div>
+  </ng-container>
+</div>

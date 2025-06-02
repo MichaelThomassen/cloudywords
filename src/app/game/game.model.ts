@@ -6,19 +6,20 @@ export enum AppStatus {
   Help = 'help',
   OutOfWords = 'outofwords',
   Meta = 'meta',
+  Archive = 'archive',
 }
 
 export enum GameMode {
   Daily = 'daily',
   Practice = 'practice',
-  PreviousDailies = 'previousDailies',
+  DailyArchive = 'dailyArchive',
 }
 
 export interface GameProgress {
   guessedLetters: string[];
   removedLetters: string[];
   boostActive?: boolean;
-  previousDailyIndex?: number;
+  dailyArchiveIndex?: number;
   dailyIndex?: number;
 }
 
@@ -28,7 +29,7 @@ export interface AppState {
   gameProgress: {
     [GameMode.Daily]: GameProgress;
     [GameMode.Practice]: GameProgress;
-    [GameMode.PreviousDailies]: GameProgress;
+    [GameMode.DailyArchive]: GameProgress;
   };
 }
 

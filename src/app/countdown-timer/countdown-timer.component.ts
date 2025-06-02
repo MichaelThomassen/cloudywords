@@ -4,8 +4,8 @@ import { map } from 'rxjs/operators';
 import { CommonModule } from '@angular/common';
 
 @Component({
-  selector: 'app-countdown-timer',
   standalone: true,
+  selector: 'app-countdown-timer',
   imports: [CommonModule],
   template: `<span>{{ timeLeft$ | async }}</span>`,
 })

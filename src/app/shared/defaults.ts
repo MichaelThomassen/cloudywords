@@ -25,10 +25,10 @@ export const defaultAppState: AppState = {
       removedLetters: [],
       boostActive: false,
     },
-    [GameMode.PreviousDailies]: {
+    [GameMode.DailyArchive]: {
       guessedLetters: [],
       removedLetters: [],
-      previousDailyIndex: -1,
+      dailyArchiveIndex: -1,
     },
   },
 };
